@@ -1742,6 +1742,14 @@ Albuquerque NM 87106
 
 ## 2026-08-29
 
+* **Update**: Responsive shakedown across full-screen monitor (2560px), desktop (1920px), laptop (1440px), tablet (768px), and mobile (375px): fixed the department footer's fixed-width table that forced horizontal overflow on small screens; capped the hero overlay width on ultra-wide monitors; added three-tier hero framing (phones center on the neon sign, tablets show sign + road + cars, desktops get the full diorama); content tables scroll within the page. Verified zero horizontal overflow at every size and that the hero animations hold up.
+
+* **Update**: Remodeled the hero's cars on the 1959 Cadillac — blade tailfins with twin bullet taillights in chrome pods, quad headlights, eggcrate grille, dagmar bumper, full-length chrome spear, wraparound windshield, long rear overhang. Lobo is now an angular UNM-logo-style wolf and Sparky a 1950s Yoshiya-style tin robot with a glowing chest spark window. The arriving car now stops fully in frame before waving, and the road's centerline dashes shorten with distance for perspective.
+
+* **Update**: Interior pages gained day and night themes (system preference plus a ☾/☀ toggle in the section navigation, remembered per browser); User Documentation and Help Desk render as pill buttons that open in new tabs (↗). The homepage hero's road centerline is now static, replaced by an animated scene: Lobo drives a turquoise finned Cadillac convertible with Sparky the android riding shotgun away toward the mesa; a second car arrives, swings broadside, its occupants wave, and it sinks off-screen before the loop repeats.
+
+* **Update**: All interior pages now render in the UNM Cascade webcore standard — the exact carc.unm.edu header, section navigation, breadcrumbs, department + UNM global footer, and Quick Links panel on every page, with a plain content column replacing the Zensical/Material theme (`scripts/build_cascade_site.py`). The OKF bundle, llms indexes, Markdown mirrors, and robots.txt are unchanged.
+
 * **Update**: Replaced the Zensical-themed homepage with a hand-authored standard-HTML page (`web/index.html`, installed by `scripts/build_home.py`): the UNM Cascade webcore header, Quick Links panel, and footer are retained verbatim, and the hero is a Googie/mid-century D3 scene — neon CARC motel sign with chaser bulbs, atomic orbits, starbursts, and Route 66 — in UNM Cherry/Turquoise/Silver. Interior pages remain Zensical; the machine-readable index remains at `/index.md`.
 
 * **Initialization**: Created this rebuild of [carc.unm.edu](https://carc.unm.edu) with [Zensical](https://zensical.org), structured as an Open Knowledge Format (OKF v0.2) bundle with the same agent surface as the [user documentation](https://unm-carc.github.io/docs/): llms.txt, per-page Markdown mirrors, and an origin-wide robots.txt.

@@ -192,7 +192,7 @@ TEMPLATE = """<!DOCTYPE html>
 <title>{title} :: Center for Advanced Research Computing | The University of New Mexico</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
-<link rel="icon" href="{rel_root}assets/favicon.svg">
+<link rel="icon" href="{rel_root}assets/unm.ico">
 {okf}
 <link rel="stylesheet" href="https://webcore.unm.edu/v2/fonts/unm-fonts.css">
 <link rel="stylesheet" href="https://webcore.unm.edu/v2/css/unm-styles.min.css">
