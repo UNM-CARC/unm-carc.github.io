@@ -47,6 +47,8 @@ jobs:
           python-version: 3.x
       - run: pip install zensical pyyaml
       - run: zensical build --clean
+      # Hand-authored homepage (UNM Cascade header/footer + Googie D3 hero)
+      - run: python scripts/build_home.py site
       # Agent surface: markdown mirror, OKF meta injection, robots.txt
       - run: python scripts/postbuild_agent_surface.py site
       - uses: actions/upload-pages-artifact@v5

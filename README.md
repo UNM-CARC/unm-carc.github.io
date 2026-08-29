@@ -24,6 +24,14 @@ python3 scripts/gen_llms_txt.py             # regenerate llms.txt indexes
 python3 scripts/postbuild_agent_surface.py  # md mirror + meta + robots.txt
 ```
 
+## Homepage
+
+The homepage is **standard HTML**, not Zensical: `web/index.html` keeps the
+UNM Cascade webcore header/footer verbatim (webcore.unm.edu assets) around a
+Googie/mid-century D3 hero in UNM brand colors. `scripts/build_home.py`
+installs it over the generated landing page after every build; interior
+pages remain Zensical. The machine-readable OKF index stays at `/index.md`.
+
 ## Notes
 
 - Content migrated from carc.unm.edu with provenance frontmatter; news

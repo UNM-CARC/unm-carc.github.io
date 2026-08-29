@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Center for Advanced Research Computing | The University of New Mexico</title>
+<meta name="description" content="CARC is the hub of computational research at The University of New Mexico — free high-performance computing, large-scale storage, and expert support.">
+<link rel="canonical" href="https://unm-carc.github.io/">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="alternate" type="text/markdown" title="Markdown source (OKF v0.2 frontmatter)" href="index.md">
+<meta name="okf:type" content="Reference">
+<meta name="okf:status" content="stable">
+<meta name="okf:trust-tier" content="unverified">
+<meta name="okf:generated-at" content="2026-08-29T00:00:00Z">
+<meta name="okf:generated-by" content="claude/fable-5">
+<!-- UNM Cascade webcore (standard header/footer styles) -->
+<link rel="stylesheet" href="https://webcore.unm.edu/v2/fonts/unm-fonts.css">
+<link rel="stylesheet" href="https://webcore.unm.edu/v2/css/unm-styles.min.css">
+<!-- Googie display faces -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&family=Pacifico&display=swap">
+<style>
+/* =====================================================================
+   CARC Googie homepage — mid-century Route 66 / atomic-age, UNM palette
+   Cherry PMS200 #BA0C2F · Silver PMS877 #A7A8AA · Turquoise #007A86
+   All custom rules are .gg- prefixed to coexist with UNM webcore CSS.
+   ===================================================================== */
+:root {
+  --cherry: #ba0c2f; --cherry-neon: #ff4d6a; --cherry-deep: #6d0a1f;
+  --turq: #007a86;   --turq-neon: #3fd6e4;
+  --silver: #a7a8aa; --cream: #f7efdf; --sand: #e8dcc3;
+  --night: #0a0d16;  --night-lo: #123038;
+}
+.gg-hero { position: relative; background: var(--night); overflow: hidden; }
+.gg-hero svg.gg-sky { display: block; width: 100%; height: 74vh; min-height: 540px; }
+.gg-overlay {
+  position: absolute; inset: 0; display: flex; align-items: center;
+  pointer-events: none;
+}
+.gg-overlay .container { pointer-events: none; width: 100%; }
+.gg-panel { max-width: 34rem; margin-left: auto; pointer-events: auto; text-align: left; }
+.gg-kicker {
+  font-family: "Pacifico", cursive; color: var(--turq-neon);
+  font-size: 1.5rem; margin: 0 0 .4rem;
+  text-shadow: 0 0 8px rgba(63,214,228,.8), 0 0 22px rgba(63,214,228,.45);
+}
+.gg-headline {
+  font-family: "Righteous", "Helvetica Neue", Arial, sans-serif;
+  color: #fff; font-size: 2.6rem; line-height: 1.08; margin: 0 0 .8rem;
+  text-transform: uppercase; letter-spacing: .02em;
+  text-shadow: 0 2px 0 rgba(0,0,0,.4);
+}
+.gg-headline .gg-hl { color: var(--cherry-neon);
+  text-shadow: 0 0 10px rgba(255,77,106,.85), 0 0 30px rgba(255,77,106,.4); }
+.gg-sub { color: rgba(247,239,223,.85); font-size: 1.05rem; margin: 0 0 1.2rem; }
+.gg-ctas a {
+  display: inline-block; font-family: "Righteous", sans-serif; text-transform: uppercase;
+  letter-spacing: .06em; font-size: .95rem; padding: .65rem 1.5rem; margin: 0 .6rem .6rem 0;
+  border-radius: 999px; text-decoration: none; transition: transform .12s, box-shadow .12s;
+}
+.gg-ctas a.gg-primary { background: var(--cherry); color: #fff;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.14), 0 6px 18px rgba(186,12,47,.5); }
+.gg-ctas a.gg-secondary { color: var(--turq-neon); border: 2px solid var(--turq-neon);
+  box-shadow: 0 0 12px rgba(63,214,228,.35) inset, 0 0 12px rgba(63,214,228,.25); }
+.gg-ctas a:hover { transform: translateY(-2px) rotate(-.5deg); color: #fff; text-decoration: none; }
+.gg-ctas a.gg-secondary:hover { background: rgba(63,214,228,.12); color: var(--turq-neon); }
+.gg-board {
+  margin-top: 1.4rem; padding: .7rem 1.1rem; display: inline-block;
+  background: rgba(10,13,22,.55); border: 1px solid rgba(167,168,170,.5);
+  border-radius: .4rem; transform: rotate(-1deg);
+  color: var(--cream); font-family: "Righteous", sans-serif; letter-spacing: .08em;
+  font-size: .85rem; text-transform: uppercase;
+}
+.gg-board .st { color: var(--cherry-neon); padding: 0 .35rem; }
+/* ---- content sections ---- */
+.gg-section { background: var(--cream); padding: 3.2rem 0 2.6rem; }
+.gg-section.gg-alt { background: var(--sand); }
+.gg-eyebrow {
+  font-family: "Pacifico", cursive; color: var(--turq); font-size: 1.6rem; margin: 0 0 .2rem;
+}
+.gg-title2 {
+  font-family: "Righteous", sans-serif; text-transform: uppercase; letter-spacing: .04em;
+  color: #201c18; font-size: 1.9rem; margin: 0 0 1.6rem;
+}
+.gg-card {
+  background: #fffdf7; border-radius: .5rem; padding: 1.3rem 1.3rem 1.1rem; height: 100%;
+  border: 1px solid rgba(32,28,24,.08); border-top: 6px solid var(--cherry);
+  box-shadow: 0 8px 22px rgba(32,28,24,.08); position: relative;
+  transition: transform .15s, box-shadow .15s;
+}
+.gg-card:hover { transform: translateY(-4px) rotate(-.4deg); box-shadow: 0 14px 30px rgba(32,28,24,.16); }
+.gg-card:nth-child(even) { border-top-color: var(--turq); }
+.gg-card h3 { font-family: "Righteous", sans-serif; font-size: 1.15rem; color: #201c18; margin: 0 0 .5rem; }
+.gg-card p { color: #4a443c; font-size: .95rem; }
+.gg-card a.gg-more { font-family: "Righteous", sans-serif; font-size: .85rem;
+  text-transform: uppercase; letter-spacing: .06em; color: var(--cherry); text-decoration: none; }
+.gg-card a.gg-more:hover { color: var(--turq); }
+.gg-row { display: flex; flex-wrap: wrap; margin: 0 -12px; }
+.gg-col { padding: 0 12px 24px; flex: 1 1 0; min-width: 250px; }
+.gg-star { color: var(--cherry); }
+.gg-fobs { text-align: center; padding: .4rem 0 0; }
+.gg-fobs a {
+  display: inline-block; margin: .3rem .35rem; padding: .45rem 1.2rem;
+  background: #fffdf7; color: #4a443c; text-decoration: none; font-size: .85rem;
+  border: 1px solid rgba(32,28,24,.15); border-radius: .3rem;
+  transform: skewX(-8deg); transition: all .12s;
+}
+.gg-fobs a > span { display: inline-block; transform: skewX(8deg); }
+.gg-fobs a:hover { background: var(--turq); color: #fff; border-color: var(--turq); }
+/* neon flicker */
+@keyframes gg-flicker {
+  0%,7%,9%,100% { opacity: 1; } 8% { opacity: .35; }
+  62%,64% { opacity: 1; } 63% { opacity: .55; }
+}
+.gg-flicker { animation: gg-flicker 6.5s infinite; }
+@keyframes gg-blink { 0%,49% { opacity: 1; } 50%,100% { opacity: .18; } }
+.gg-blink { animation: gg-blink 1.6s steps(1) infinite; }
+@keyframes gg-spin { to { transform: rotate(360deg); } }
+.gg-spin { transform-origin: center; transform-box: fill-box; animation: gg-spin 28s linear infinite; }
+.gg-spin.fast { animation-duration: 14s; }
+@media (prefers-reduced-motion: reduce) {
+  .gg-flicker, .gg-blink, .gg-spin { animation: none !important; }
+}
+@media (max-width: 900px) {
+  .gg-headline { font-size: 1.9rem; }
+  .gg-overlay { position: static; background: var(--night); padding: 1.4rem 0 2rem; }
+  .gg-hero svg.gg-sky { height: 46vh; min-height: 320px; }
+  .gg-panel { margin: 0 1rem; }
+}
+</style>
+</head>
+<body>
+<a class="sr-only sr-only-focusable skip2content" href="#gg-main">Skip to main content</a>
+
+<!-- ============ UNM Cascade standard header (retained verbatim) ============ -->
+<div aria-label="header navigation" class="navbar navbar-unm" role="navigation"><div class="container"><a class="navbar-brand" href="https://www.unm.edu">The University of New Mexico</a><form action="//search.unm.edu/search" class="pull-right" id="unm_search_form" method="get"><div class="input-append search-query"><input accesskey="4" id="unm_search_form_q" maxlength="255" name="q" placeholder="Search" title="input search query here" type="text"><button accesskey="s" class="btn" id="unm_search_for_submit" name="submit" title="submit search" type="submit">  <span class="fa fa-search"></span> </button></div></form><ul class="nav navbar-nav navbar-right hidden-xs" id="toolbar-nav"><li><a href="https://directory.unm.edu/departments/" title="UNM A to Z">UNM A-Z</a></li><li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li><li><a href="https://directory.unm.edu" title="Directory">Directory</a></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help </a><ul class="dropdown-menu"><li><a href="https://student.unm.edu/student-support.html" title="Student Support">Student Support</a></li><li><a href="https://studentinfo.unm.edu" title="StudentInfo">StudentInfo</a></li><li><a href="https://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li></ul></li><li class="unm_panel_open hidden-sm"><a href="#unm_panel">more <span class="caret"></span></a></li></ul></div></div>
+
+<div aria-label="department logo block" id="header" role="banner"><div class="container"><a href="https://unm-carc.github.io/"><h1>Center for Advanced Research Computing</h1></a></div></div>
+
+<!-- department navigation (site sections) -->
+<div id="nav"><div class="container"><ul class="nav navbar-nav" style="float:none;">
+  <li><a href="about/">About</a></li>
+  <li><a href="research/">Research</a></li>
+  <li><a href="education/">Education</a></li>
+  <li><a href="news/">News</a></li>
+  <li><a href="contact/">Contact</a></li>
+  <li><a href="docs/">User Documentation</a></li>
+  <li><a href="https://support.alliance.unm.edu/">Help Desk</a></li>
+</ul></div></div>
+
+<main id="gg-main">
+<!-- ============ Googie hero ============ -->
+<section class="gg-hero" aria-label="CARC — advanced computing under New Mexico skies">
+  <svg class="gg-sky" viewBox="0 0 1600 740" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Animated night scene: neon CARC motel-style sign, atomic starbursts, and Route 66 under a desert sky.">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#07090f"/><stop offset=".55" stop-color="#0a0d16"/>
+        <stop offset=".85" stop-color="#123038"/><stop offset="1" stop-color="#16424c"/>
+      </linearGradient>
+      <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="glow2" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <rect width="1600" height="740" fill="url(#sky)"/>
+    <g id="gg-stars"></g>
+    <!-- atomic orbits -->
+    <g transform="translate(1180,210)" opacity=".9">
+      <ellipse rx="210" ry="64" fill="none" stroke="#a7a8aa" stroke-opacity=".5" stroke-width="1.5" transform="rotate(-18)"/>
+      <ellipse rx="210" ry="64" fill="none" stroke="#3fd6e4" stroke-opacity=".45" stroke-width="1.5" transform="rotate(42)"/>
+      <ellipse rx="210" ry="64" fill="none" stroke="#ff4d6a" stroke-opacity=".4" stroke-width="1.5" transform="rotate(102)"/>
+      <circle r="7" fill="#f7efdf" filter="url(#glow)"/>
+      <circle id="gg-e1" r="5" fill="#3fd6e4" filter="url(#glow)"/>
+      <circle id="gg-e2" r="5" fill="#ff4d6a" filter="url(#glow)"/>
+      <circle id="gg-e3" r="4" fill="#a7a8aa" filter="url(#glow)"/>
+    </g>
+    <!-- big starbursts -->
+    <g class="gg-spin" id="gg-burst1" transform="translate(230,150)"></g>
+    <g class="gg-spin fast" id="gg-burst2" transform="translate(1450,520)" opacity=".85"></g>
+    <!-- mesa horizon -->
+    <path d="M0 560 L120 560 L170 500 L330 500 L380 560 L640 560 L700 528 L860 528 L910 560 L1600 560 L1600 740 L0 740 Z" fill="#0b0e14"/>
+    <!-- route 66 road -->
+    <g>
+      <path d="M690 740 L810 560 L830 560 L1030 740 Z" fill="#191d26"/>
+      <path id="gg-lane" d="M818 562 L860 740" fill="none" stroke="#f7efdf" stroke-width="7" stroke-dasharray="26 30" stroke-linecap="round" opacity=".8"/>
+      <g transform="translate(1010,600) rotate(3)">
+        <path d="M0 6 Q22 -4 44 6 L40 34 Q22 52 4 34 Z" fill="#f7efdf" stroke="#0b0e14" stroke-width="3"/>
+        <text x="22" y="20" text-anchor="middle" font-family="Righteous, sans-serif" font-size="13" fill="#0b0e14">NM</text>
+        <text x="22" y="36" text-anchor="middle" font-family="Righteous, sans-serif" font-size="16" fill="#0b0e14">66</text>
+      </g>
+    </g>
+    <!-- neon motel sign -->
+    <g transform="translate(305,260)">
+      <rect x="-6" y="120" width="12" height="330" fill="#151922"/>
+      <rect x="-13" y="440" width="26" height="14" rx="4" fill="#151922"/>
+      <g transform="rotate(-4)">
+        <polygon points="-190,-120 210,-140 230,120 -210,130" fill="#141824" stroke="#a7a8aa" stroke-opacity=".65" stroke-width="2"/>
+        <polygon points="-176,-108 196,-126 214,106 -196,116" fill="none" stroke="#3fd6e4" stroke-width="3.5" filter="url(#glow)" class="gg-flicker"/>
+        <text x="8" y="16" text-anchor="middle" font-family="Righteous, sans-serif" font-size="118" fill="#f7efdf" filter="url(#glow2)" class="gg-flicker" style="letter-spacing:.04em">CARC</text>
+        <text x="6" y="82" text-anchor="middle" font-family="Pacifico, cursive" font-size="34" fill="#3fd6e4" filter="url(#glow)">advanced research computing</text>
+        <g id="gg-chase"></g>
+      </g>
+      <!-- topper starburst -->
+      <g class="gg-spin fast" id="gg-burst3" transform="translate(198,-188)"></g>
+      <!-- open access lozenge -->
+      <g transform="translate(0,190) rotate(-4)">
+        <rect x="-120" y="-26" width="240" height="52" rx="26" fill="#141824" stroke="#ff4d6a" stroke-width="3" filter="url(#glow)"/>
+        <text y="9" text-anchor="middle" font-family="Righteous, sans-serif" font-size="26" fill="#ff4d6a" filter="url(#glow)" class="gg-blink">OPEN&#160;ACCESS</text>
+      </g>
+    </g>
+  </svg>
+  <div class="gg-overlay"><div class="container"><div class="gg-panel">
+    <p class="gg-kicker">since 1994 on historic Route 66</p>
+    <h2 class="gg-headline">Advanced computing for <span class="gg-hl">every researcher</span> in New Mexico</h2>
+    <p class="gg-sub">Free high-performance computing, large-scale storage, and expert
+    support for UNM faculty, staff, and students — courtesy of the Office of the
+    Vice President for Research.</p>
+    <p class="gg-ctas">
+      <a class="gg-primary" href="docs/getting-started/">Check In → Get Access</a>
+      <a class="gg-secondary" href="docs/">User Docs</a>
+      <a class="gg-secondary" href="https://support.alliance.unm.edu/">Help Desk</a>
+    </p>
+    <p class="gg-board"><span class="st">✦</span>6,300+ cores <span class="st">✦</span>80+ GPUs
+      <span class="st">✦</span>5+ PB <span class="st">✦</span>100&nbsp;Gbps<span class="st">✦</span></p>
+  </div></div></div>
+</section>
+
+<!-- ============ Latest news ============ -->
+<section class="gg-section" aria-label="Latest news">
+  <div class="container">
+    <p class="gg-eyebrow">no vacancy? never —</p>
+    <h2 class="gg-title2">Latest from CARC</h2>
+    <div class="gg-row">
+      <div class="gg-col"><div class="gg-card">
+        <h3><span class="gg-star">✦</span> CAM 2026 registration is open</h3>
+        <p>The CARC Annual Meeting returns April 21, 2026 at Zimmerman Library — updates, research highlights, and the student poster session.</p>
+        <a class="gg-more" href="news/2026-annual-meeting/">Read more →</a>
+      </div></div>
+      <div class="gg-col"><div class="gg-card">
+        <h3><span class="gg-star">✦</span> UNM leads national HPC research</h3>
+        <p>A UNM-led team wins a DOE NNSA PSAAP IV award, establishing the COMPASS center for predictive-science system software at CARC.</p>
+        <a class="gg-more" href="news/psaap-iv-compass/">Read more →</a>
+      </div></div>
+      <div class="gg-col"><div class="gg-card">
+        <h3><span class="gg-star">✦</span> Easley: our newest cluster</h3>
+        <p>Named for NASA pioneer Annie Easley — H100 GPUs, all-flash storage, and an estimated 7–10× performance leap over its predecessor.</p>
+        <a class="gg-more" href="news/easley-cluster/">Read more →</a>
+      </div></div>
+    </div>
+    <p><a class="gg-more" href="news/">All news →</a></p>
+  </div>
+</section>
+
+<!-- ============ What we do ============ -->
+<section class="gg-section gg-alt" aria-label="What we do">
+  <div class="container">
+    <p class="gg-eyebrow">full service, every orbit —</p>
+    <h2 class="gg-title2">What we do</h2>
+    <div class="gg-row">
+      <div class="gg-col"><div class="gg-card">
+        <h3>Compute &amp; Data</h3>
+        <p>Easley and Hopper clusters, multi-petabyte storage, and a dedicated research data center on UNM's Science DMZ.</p>
+        <a class="gg-more" href="docs/systems/">Systems &amp; docs →</a>
+      </div></div>
+      <div class="gg-col"><div class="gg-card">
+        <h3>Research Support</h3>
+        <p>Free baseline services, premium options, grant-writing boilerplate, and featured projects from across campus.</p>
+        <a class="gg-more" href="research/">Research at CARC →</a>
+      </div></div>
+      <div class="gg-col"><div class="gg-card">
+        <h3>Education &amp; Training</h3>
+        <p>The CSE graduate certificate, semester workshops, courses, and video tutorials — computational workforce development.</p>
+        <a class="gg-more" href="education/">Learn with CARC →</a>
+      </div></div>
+      <div class="gg-col"><div class="gg-card">
+        <h3>About the Center</h3>
+        <p>Our mission, strategic plan, three decades of history, and the advisory board that guides us.</p>
+        <a class="gg-more" href="about/">About CARC →</a>
+      </div></div>
+    </div>
+    <div class="gg-fobs">
+      <a href="https://access-ci.org"><span>ACCESS-CI</span></a>
+      <a href="https://docs.jetstream-cloud.org"><span>Jetstream2</span></a>
+      <a href="https://cyverse.org"><span>CyVerse</span></a>
+      <a href="https://idss-mesa.github.io"><span>MESA</span></a>
+      <a href="https://www.sandia.gov"><span>Sandia</span></a>
+      <a href="https://www.lanl.gov"><span>Los Alamos</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ UNM Cascade standard footer (retained verbatim) ============ -->
+<div aria-label="unm footer" id="footer" role="contentinfo"><div class="container"><div id="primary_aside_5"><div class="adr"><p class="BasicParagraph"><a href="https://unm-carc.github.io/" target="_blank"><strong>UNM Center for Advanced Research Computing</strong></a></p><br><table border="0" style="height: 40px; width: 800px;"><tbody><tr><td><p>MSC01 1190<br>1601 Central Ave NE <br>Albuquerque NM 87106</p><a href="http://www.unm.edu/legal.html" target="_blank">Legal</a></td><td><p>Fax: 505.277.8235<br>Email: <a href="mailto:info@carc.unm.edu" target="_blank">info@carc.unm.edu</a></p><p><a href="http://www.unm.edu/accessibility.html" target="_blank">Accessibility</a></p></td><td><a href="https://twitter.com/unmcarc" target="_blank"><img alt="UNM CARC on Twitter" height="50" src="https://carc.unm.edu/images/twitter-icon.png" width="50"></a><a href="https://www.facebook.com/centerforadvancedresearchcomputing/" target="_blank"><img alt="UNM CARC on Facebook" height="50" src="https://carc.unm.edu/images/facebook-icon.png" width="50"></a></td></tr></tbody></table><p class="BasicParagraph"></p></div></div><hr><div class="row"><div class="col-md-8"><p><a href="https://www.unm.edu"><img alt="The University of New Mexico" src="https://webcore.unm.edu/v2/images/unm-transparent-white.png"></a></p><p class="small">© The University of New Mexico <br> Albuquerque, NM 87131, (505) 277-0111 <br> New Mexico's Flagship University</p></div><div class="col-md-4"><ul class="list-inline"><li><a href="https://www.facebook.com/universityofnewmexico" title="UNM on Facebook"><span class="fa fa-facebook-square fa-2x"><span class="sr-only">UNM on Facebook</span></span></a></li><li><a href="https://instagram.com/uofnm" title="UNM on Instagram"><span class="fa fa-instagram fa-2x"><span class="sr-only">UNM on Instagram</span></span></a></li><li><a href="https://twitter.com/unm" title="UNM on Twitter"><span class="fa fa-twitter-square fa-2x"><span class="sr-only">UNM on Twitter</span></span></a></li><li><a href="https://www.youtube.com/user/unmlive" title="UNM on YouTube"><span class="fa fa-youtube-square fa-2x"><span class="sr-only">UNM on YouTube</span></span></a></li></ul><p>more at <a class="link-underline" href="https://social.unm.edu" title="UNM Social Media Directory &amp; Information">social.unm.edu</a></p><ul class="list-inline" id="unm_footer_links"><li><a href="https://www.unm.edu/accessibility.html">Accessibility</a></li><li><a href="https://www.unm.edu/legal.html">Legal</a></li><li><a href="https://www.unm.edu/contactunm.html">Contact UNM</a></li><li><a href="https://www.unm.edu/consumer-information/">Consumer Information</a></li><li><a href="https://hed.state.nm.us/resources-for-schools/public_schools/tableau-charts-and-tables">New Mexico Higher Education Dashboard</a></li></ul></div></div></div></div>
+
+<div id="totop"><span class="fa fa-arrow-circle-up"></span></div>
+
+<div id="unm_panel" class="hidden-xs hidden-sm"><div class="container"><div class="row">
+<div class="col-sm-4">
+<aside>
+<h1>Quick Links</h1><div class="row quicklinks"><div class="col-lg-6 media"><a href="https://canvas.unm.edu"><span class="pull-left fa fa-graduation-cap fa-3x"></span><div class="media-body"><h2>UNM Canvas</h2>
+      Online Classes</div></a></div><div class="col-lg-6 media"><a href="https://lobomail.unm.edu"><span class="pull-left fa fa-envelope fa-3x"></span><div class="media-body"><h2>LoboMail</h2>
+      email and calendar</div></a></div><div class="col-lg-6 media"><a href="https://library.unm.edu"><span class="pull-left fa fa-book fa-3x"></span><div class="media-body"><h2>Library</h2>
+      library services</div></a></div><div class="col-lg-6 media"><a href="https://my.unm.edu"><span class="pull-left fa fa-circle fa-3x"></span><div class="media-body"><h2>MyUNM</h2>
+      campus portal</div></a></div><div class="col-lg-6 media"><a href="https://studentinfo.unm.edu"><span class="pull-left fa fa-support fa-3x"></span><div class="media-body"><h2>StudentInfo</h2>
+      Student Support</div></a></div><div class="col-lg-6 media"><a href="https://fastinfo.unm.edu"><span class="pull-left fa fa-support fa-3x"></span><div class="media-body"><h2>FastInfo</h2>
+      Faculty and Staff support</div></a></div><div class="col-lg-6 media"><a href="https://directory.unm.edu/departments/"><span class="pull-left fa fa-sort-alpha-asc fa-3x"></span><div class="media-body"><h2>UNM A-Z</h2>
+      departments and services</div></a></div><div class="col-lg-6 media"><a href="https://directory.unm.edu"><span class="pull-left fa fa-phone-square fa-3x"></span><div class="media-body"><h2>Directory</h2>
+      student, staff, and faculty</div></a></div><div class="col-lg-6 media"><a href="https://students.unm.edu"><span class="pull-left fa fa-group fa-3x"></span><div class="media-body"><h2>Students.UNM</h2>
+      get started at UNM</div></a></div></div>
+</aside>
+</div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4"><aside>
+<h1 class="padlock">LoboAlerts</h1>
+<p><strong><a href="https://www.getrave.com/login/unm">Log into LoboAlerts now!</a></strong><br> <br> <a href="https://loboalerts.unm.edu/faq.html">LoboAlerts FAQ</a><a href="http://loboalerts.unm.edu"><br> More info about LoboAlerts</a></p>
+<h1 class="padlock">Join The Pack</h1>
+<ul class="list-inline">
+<li><a href="https://www.facebook.com/universityofnewmexico" title="UNM on Facebook"><span class="fa fa-facebook-square fa-2x"><span class="sr-only">UNM on Facebook</span></span></a></li>
+<li><a href="https://instagram.com/uofnm" title="UNM on Instagram"><span class="fa fa-instagram fa-2x"><span class="sr-only">UNM on Instagram</span></span></a></li>
+<li><a href="https://twitter.com/unm" title="UNM on Twitter"><span class="fa fa-twitter-square fa-2x"><span class="sr-only">UNM on Twitter</span></span></a></li>
+<li><a href="https://www.youtube.com/user/unmlive" title="UNM on YouTube"><span class="fa fa-youtube-square fa-2x"><span class="sr-only">UNM on YouTube</span></span></a></li>
+</ul>
+<p>more at <a href="https://social.unm.edu">social.unm.edu</a></p>
+</aside></div>
+</div></div></div>
+
+<script src="https://webcore.unm.edu/v2/js/unm-scripts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function () {
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var svg = d3.select(".gg-sky");
+
+  // --- starfield ---
+  var stars = d3.select("#gg-stars");
+  var rand = d3.randomUniform(0, 1);
+  for (var i = 0; i < 150; i++) {
+    stars.append("circle")
+      .attr("cx", rand() * 1600).attr("cy", rand() * 520)
+      .attr("r", rand() * 1.6 + 0.4)
+      .attr("fill", ["#f7efdf", "#a7a8aa", "#3fd6e4"][i % 3])
+      .attr("opacity", 0.25 + rand() * 0.75)
+      .classed("gg-tw", true);
+  }
+  if (!reduced) {
+    d3.timer(function (t) {
+      stars.selectAll("circle.gg-tw")
+        .attr("opacity", function (d, i) { return 0.35 + 0.6 * Math.abs(Math.sin(t / 900 + i * 1.7)); });
+    });
+  }
+
+  // --- googie starbursts ---
+  function burst(sel, n, r, colors) {
+    var g = d3.select(sel);
+    for (var i = 0; i < n; i++) {
+      var a = (i / n) * 2 * Math.PI;
+      var len = (i % 2 === 0) ? r : r * 0.55;
+      g.append("line")
+        .attr("x1", Math.cos(a) * r * 0.12).attr("y1", Math.sin(a) * r * 0.12)
+        .attr("x2", Math.cos(a) * len).attr("y2", Math.sin(a) * len)
+        .attr("stroke", colors[i % colors.length]).attr("stroke-width", 3)
+        .attr("stroke-linecap", "round").attr("filter", "url(#glow)");
+      g.append("circle")
+        .attr("cx", Math.cos(a) * len).attr("cy", Math.sin(a) * len)
+        .attr("r", i % 2 === 0 ? 5 : 3).attr("fill", colors[(i + 1) % colors.length])
+        .attr("filter", "url(#glow)");
+    }
+  }
+  burst("#gg-burst1", 12, 92, ["#ff4d6a", "#f7efdf", "#3fd6e4"]);
+  burst("#gg-burst2", 10, 60, ["#3fd6e4", "#a7a8aa", "#ff4d6a"]);
+  burst("#gg-burst3", 10, 44, ["#f7efdf", "#ff4d6a", "#3fd6e4"]);
+
+  // --- electrons on orbits ---
+  if (!reduced) {
+    d3.timer(function (t) {
+      function orbit(id, rot, speed, phase) {
+        var a = t / speed + phase, rx = 210, ry = 64, rad = rot * Math.PI / 180;
+        var x = Math.cos(a) * rx, y = Math.sin(a) * ry;
+        d3.select(id).attr("cx", x * Math.cos(rad) - y * Math.sin(rad))
+                     .attr("cy", x * Math.sin(rad) + y * Math.cos(rad));
+      }
+      orbit("#gg-e1", -18, 1400, 0);
+      orbit("#gg-e2", 42, 1900, 2.1);
+      orbit("#gg-e3", 102, 1100, 4.2);
+    });
+  }
+
+  // --- chaser bulbs along the sign bottom ---
+  var chase = d3.select("#gg-chase");
+  var bulbs = [];
+  for (var b = 0; b < 14; b++) {
+    bulbs.push(chase.append("circle")
+      .attr("cx", -190 + b * 30).attr("cy", 148)
+      .attr("r", 5).attr("fill", "#f7efdf").attr("opacity", 0.25));
+  }
+  if (!reduced) {
+    d3.interval(function () {
+      var k = Math.floor(Date.now() / 140) % bulbs.length;
+      bulbs.forEach(function (c, i) {
+        c.attr("opacity", (i === k || i === (k + 1) % bulbs.length) ? 1 : 0.22)
+         .attr("fill", (i === k) ? "#ff4d6a" : "#f7efdf");
+      });
+    }, 140);
+  }
+
+  // --- road centerline drive + shooting stars ---
+  if (!reduced) {
+    d3.timer(function (t) {
+      d3.select("#gg-lane").attr("stroke-dashoffset", -(t / 12) % 56);
+    });
+    d3.interval(function () {
+      var x0 = 200 + Math.random() * 1000, y0 = 40 + Math.random() * 160;
+      var s = svg.append("line")
+        .attr("x1", x0).attr("y1", y0).attr("x2", x0).attr("y2", y0)
+        .attr("stroke", "#f7efdf").attr("stroke-width", 2.5)
+        .attr("stroke-linecap", "round").attr("filter", "url(#glow)").attr("opacity", 0.9);
+      s.transition().duration(900).ease(d3.easeQuadOut)
+        .attr("x2", x0 + 160).attr("y2", y0 + 46).attr("opacity", 0)
+        .remove();
+    }, 4200);
+  }
+})();
+</script>
+</body>
+</html>
