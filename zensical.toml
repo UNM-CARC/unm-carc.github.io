@@ -1,0 +1,113 @@
+[project]
+site_name = "UNM Center for Advanced Research Computing"
+site_url = "https://unm-carc.github.io/"
+site_description = "The Center for Advanced Research Computing (CARC) is the hub of computational research at The University of New Mexico: high-performance computing, research support, and computational science education."
+site_author = "UNM Center for Advanced Research Computing"
+copyright = "&copy; 2026 The University of New Mexico &mdash; Center for Advanced Research Computing"
+
+repo_url = "https://github.com/UNM-CARC/unm-carc.github.io"
+repo_name = "UNM-CARC/unm-carc.github.io"
+edit_uri = "edit/main/docs/"
+
+extra_css = ["stylesheets/extra.css"]
+
+nav = [
+  { "Home" = "index.md" },
+  { "About" = [ { "Contents" = "about/index.md" }, "about/mission.md", "about/strategic-plan.md", "about/history.md", "about/iab.md" ] },
+  { "Research" = [ { "Contents" = "research/index.md" }, "research/featured-projects.md", "research/publications.md", "research/grant-resources.md", "research/free-services.md", "research/premium-services.md" ] },
+  { "Education" = [ { "Contents" = "education/index.md" }, "education/workshops.md", { "CSE Certificate" = [ "education/cse/index.md", "education/cse/requirements.md", "education/cse/application.md", "education/cse/electives.md", "education/cse/specializations.md" ] } ] },
+  { "News" = [ { "Contents" = "news/index.md" }, "news/2026-annual-meeting.md", "news/director-search.md", "news/psaap-iv-compass.md", "news/easley-cluster.md", "news/2025-annual-meeting.md", "news/hpc-course.md", "news/director-message.md", "news/sc24-team.md", "news/genome-sequencing.md", "news/molecular-modeling.md" ] },
+  { "Contact" = [ { "Contents" = "contact/index.md" }, "contact/personnel.md", "contact/visiting.md" ] },
+  { "User Docs ↗" = "https://unm-carc.github.io/docs/" },
+]
+
+[project.theme]
+favicon = "assets/favicon.svg"
+logo = "assets/carc-logo.svg"
+language = "en"
+features = [
+  "announce.dismiss",
+  "content.action.edit",
+  "content.action.view",
+  "content.code.copy",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.path",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "search.suggest",
+  "toc.follow",
+  "toc.integrate",
+]
+
+[project.theme.font]
+text = "Archivo"
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/UNM-CARC"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/x-twitter"
+link = "https://twitter.com/unmcarc"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/@UNMCARC"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/facebook"
+link = "https://www.facebook.com/centerforadvancedresearchcomputing/"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.details = {}
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.magiclink = {}
+pymdownx.smartsymbols = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+pymdownx.tilde = {}

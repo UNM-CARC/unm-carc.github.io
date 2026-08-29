@@ -1,0 +1,1746 @@
+# UNM CARC website — full corpus
+
+Each page below begins with its canonical URL followed by its original Markdown, OKF frontmatter included.
+
+---8<--- https://unm-carc.github.io/about/history/
+
+---
+title: "History"
+description: "A timeline of CARC milestones from the founding of the Maui and Albuquerque high performance computing centers in the 1990s through recent system donations and retirements."
+type: Reference
+tags:
+  - About
+  - History
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/about-carc/history.html"
+    title: "CARC History (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# History
+
+![Vintage Route 66 map](https://carc.unm.edu/images/route-66-map.jpg)
+
+**1993** Professors Frank Gilfeather, Brian Smith, and John Sobolewski establish the Maui High Performance Computing Center (MHPCC) in Kihei, HI, in support of the Department of Defense High Performance Computing Modernization program.
+
+**1994** The Albuquerque Resource Center, later renamed the Albuquerque High Performance Computing Center (AHPCC), is established in the [Galles Motor Company building](http://albuquerquemodernism.unm.edu/wp/galles-motor-company/){target=_blank} on historic Route 66, along with the High Performance Computing Education and Research Center (HPCERC), an umbrella organization spanning MHPCC and AHPCC.
+
+**1996** National Science Foundation (NSF) Chautauqua meeting hosted at University of New Mexico (UNM) by AHPCC.
+
+**1999** Roadrunner, the first Linux cluster available via NSF national allocation, is installed. Roadrunner is integrated by a small company in Sandy, UT (Alta Tech, subsequently known as Linux Networx).
+
+**1999** The Access Grid (AG) Internet teleconferencing system is installed at UNM and the first-ever AG session is hosted by UNM.
+
+**2000** Los Lobos supercluster, comprising 512 processors with Myrinet commodity fast interconnect, is installed at UNM. This is the first-ever Linux production system built by IBM. During the inauguration, IBM announces their Linux strategy for future product offerings. Los Lobos becomes the highest-ranked open Linux cluster in the world in the subsequent Top 500 list (narrowly edging out the Sandia National Laboratories [SNL] Cplant cluster). The ranking of Los Lobos places UNM among the top five universities in the world in campus compute power. Los Lobos is made available to national users through the NSF National Computational Science Alliance, an early predecessor of the Extreme Science and Engineering Discovery Environment (XSEDE) of NSF supercomputer centers.
+
+**2000** Vista Azul coupled compute/visualization system deployed under an IBM Shared University Research (SUR) award (Principle Investigator [PI] Professor Brian Smith, Computer Science).
+
+**2003** Professor Marc Ingber (Mechanical Engineering) is named Director; Center is renamed HPC@UNM.
+
+**2003** UNM Cancer Center GenomeDW genomics data warehouse is designed and deployed on the CARC Delphi parallel Oracle server.
+
+**2004** Professor Barney Maccabe (Computer Science) named Director; Dr. Tim Thomas (Physics and Astronomy) is named Deputy Director.
+
+**2005** Dedication of a new, state-of-the-art, 1,500 square-foot machine room. Extensive Galles Building renovation to construct machine room also provides new office and studio space for the ARTS (Art, Research, Technology, and Science) Lab.
+
+**2007** Professor Tom Caudell (Electrical and Computer Engineering) is named Director.
+
+**2009** Professor Susan R. Atlas (Physics and Astronomy) is named Director; Center is renamed UNM Center for Advanced Research Computing.
+
+**2010** Professor Andrea Polli (CARC Associate and Social Media Workgroup [SMW] Director, Interdisciplinary Film & Digital Media Program) and students take advantage of the 25-foot ceilings in CARC's location in the historic Galles Building to construct the *e-Oculus* public media-commissioned installation on-site. The piece debuts at the Knowledge Representation & Discovery event in conjunction with the commission of the Research Storage Consortium (RSC) storage system at the Center. The e-Oculus work is now on permanent display at the University of Utah Eccles School of Business.
+
+**2010** The UNM RSC, including four NSF-funded Projects and Centers (DataONE, Long-Term Ecological Research, Earth Data Analysis Center, and CARC) and University Libraries, purchases and installs 281 TB (RAID5 usable) Hewlett-Packard (HP) X9000 research storage system. At the time of its deployment, the RSC system is the most densely-populated HP storage system in the world.
+
+**2011** Supercomputing '11 coupled media demonstration links video (Professor Jack Ox, Music) and voice (Professor Kristen Loree, Theater and Dance) in performance of Kurt Schwitter's *Ursonate* across 1,568 miles between Albuquerque and Seattle, over the National Lambda Rail.
+
+**2011** CARC Gallery opening debuts with the CARC Gallery Exhibition Spring 2011, which presented three graduate students whose work represents the variety of interdisciplinary and multimedia approaches of students who study with SMW Director Andrea Polli.
+
+**2012** Metropolis repurposed Los Alamos National Laboratory (LANL) supercomputer donated to CARC by the New Mexico Consortium, under the auspices of the NSF-supported PRObE project.
+
+**2013** Commissioning of 200-node "green" Galles Beowulf cluster and Hadoop subsystem.
+
+**2013** Supercomputing '13 BD2K (Big Data to Knowledge) video showcases data-intensive research by nine faculty and researchers at UNM as they discuss the complexities and challenges involved in the process of translating very large datasets into new discoveries and understanding.
+
+**2014** Ulam repurposed LANL supercomputer donated to CARC by the New Mexico Consortium, under the auspices of the NSF-supported PRObE project, bringing CARC aggregate core count to 2,200; 15 TFlops peak.
+
+**2014** Dedicated Science DMZ 10 Gbps cross-campus network connection is established with support from UNM Information Technology, linking UNM Cancer Center high-throughput genomic sequencer with RSC storage system.
+
+**2015** Volunteers in Service to America (VISTA) volunteers, through a grant awarded to the UNM SMW led by Professor Andrea Polli, join CARC staff to work on specific projects that will continue to build capacity for Science, Technology, Engineering, Art and Math (STEAM) in New Mexico.
+
+**2016** CARC and the University of New Mexico host the [28th Annual Workshop on Recent Developments in Electronic Structure Methods](http://es16.unm.edu/){target=_blank}.
+
+**2016** Professor Patrick Bridges (Computer Science) is named [Interim Director](http://news.unm.edu/news/bridges-appointed-interim-director-of-the-center-for-advanced-research-computing){target=_blank}.
+
+**2017** A [new computing system](https://carc.unm.edu/news--events/News/lanl-carc-machine.html){target=_blank} is donated to CARC by LANL. The new system is nine times more powerful than the combined computing power of the four machines it replaces.
+
+**2018** Patrick Bridges is named CARC Director.
+
+**2019** The Galles general use supercomputer was retired. Galles was built from over 200 used Dell desktop computers acquired from all over campus, in collaboration with IT and University Libraries. Galles was an important resource for supporting campus research computing needs for many years, but was increasingly difficult to maintain and most Galles users were migrated to newer CARC systems.
+
+**2021** The CREATE system ran at CARC for 17 successful years. NASA has now instituted a similar program called LANCE. Professor Louis Scuderi, using a congressional appropriation, developed CREATE in 2004 to disseminate satellite data to researchers and public entities. The system has been used to monitor forest fires, track severe weather patterns, and study vegetation changes.
+
+---8<--- https://unm-carc.github.io/about/iab/
+
+---
+title: "Internal Advisory Board"
+description: "Membership roster and meeting minutes of the CARC Internal Advisory Board, which meets regularly to make decisions regarding the center's operations and goals."
+type: Reference
+tags:
+  - About
+  - Governance
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/about-carc/iab.html"
+    title: "Internal Advisory Board (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Internal Advisory Board
+
+The CARC Internal Advisory Board meets regularly to make decisions regarding the center's operations and goals.
+
+**Meeting minutes**
+
+[**IAB meeting minutes 10/28/2021**](https://carc.unm.edu/about-carc/minutes-iab-10-28-2021.pdf){target=_blank}
+
+[**IAB meeting minutes 10/29/2020**](https://carc.unm.edu/about-carc/minutes-iab-10-29-20.pdf){target=_blank}
+
+[**IAB meeting minutes 6/20/2019**](https://carc.unm.edu/about-carc/minutes-iab-6-20-19.pdf){target=_blank}
+
+[**IAB meeting minutes 9/19/2018**](https://carc.unm.edu/images/iab-meeting-packet-9-19-18.pdf){target=_blank}
+
+[**IAB meeting minutes 10/11/2017**](https://carc.unm.edu/about-carc/minutes-iab-10-2017.pdf){target=_blank}
+
+[**IAB meeting minutes 2/28/2017**](https://carc.unm.edu/about-carc/minutes-iab-2-2017.pdf){target=_blank}
+
+**Members**:
+
+- **Susan Atlas, Ph.D.** - Research Professor, Physics and Astronomy
+- **Karl Benedict, Ph.D.** - Associate Professor & Director of Research Data Services, College of University Libraries and Learning Sciences
+- **Jeremy Edwards, Ph.D.** - Professor, Chemistry
+- **Hua Guo, Ph.D.** - Distinguished Professor, Department of Chemistry and Chemical Biology, and Department of Physics and Astronomy
+- **Jane Lehr, Ph.D.** - Professor, Electrical and Computer Engineering
+- **Keith Lidke, Ph.D.** - Associate Professor, Physics & Astronomy
+- **Christopher Lippitt, Ph.D.** - Associate Dean for Research, Arts & Sciences; Associate Professor, Geography and Environmental Studies
+- **Monika Nitsche, Ph.D.** - Professor, Mathematics and Statistics
+- **Marek Osinski, Ph.D.** - Distinguished Professor, Electrical & Computer Engineering; Center for High Technology Materials
+- **Brian Pietrewicz, MBA** - Deputy CIO, Information Technologies
+- **Ylva Pihlström, Ph.D.** - Professor, Physics & Astronomy
+- **Andrea Polli, Ph.D.** - Mesa Del Sol Endowed Chair of Digital Media Professor, Fine Arts and Engineering University of New Mexico Department of Art and Art History
+- **Edl Schamiloglu, Ph.D.** - Distinguished Professor, Electrical and Computer Engineering; Associate Dean for Research, School of Engineering
+- **Gregory Taylor, Ph.D.** - Director, Long Wavelength Array; Director, Center for Astrophysical Research and Technology; Professor, Department of Physics and Astronomy
+- **Lee Taylor, Ph.D.** - Associate Professor, Biology
+- **Tom Turner, Ph.D.** - Interim Associate Vice President for Research; Professor, Biology
+- **Katie Witkiewitz, Ph.D.** - Director, Center on Alcohol, Substance use, And Addictions (CASAA); Distinguished Professor, Department of Psychology, University of New Mexico
+
+---8<--- https://unm-carc.github.io/about/mission/
+
+---
+title: "Mission and vision"
+description: "CARC's vision and mission: leading and growing the computational research community at UNM."
+type: Reference
+tags:
+  - About
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/about-carc/mission--vision.html"
+    title: "Mission & vision (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Mission and vision
+
+## Vision
+
+The Center for Advanced Research Computing (CARC) is an interdisciplinary
+community at the University of New Mexico (UNM) that uses computational
+resources to create new research insights.
+
+## Mission
+
+To lead and grow the computational research community at UNM.
+
+To fulfill our mission, we will:
+
+* Provide access to high-end computing resources and associated
+  infrastructure;
+* Offer specialized expertise and technical support;
+* Coordinate and collaborate with other UNM programs that support the
+  community; and
+* Grow the collaborative user community through education, workshops, and
+  outreach events.
+
+CARC is the hub of computational research at UNM and one of the largest
+computing centers in the State of New Mexico. Its services are available to
+faculty, staff, and student researchers free of charge through support from
+the UNM Office of the Vice President for Research.
+
+---8<--- https://unm-carc.github.io/about/strategic-plan/
+
+---
+title: "Strategic plan"
+description: "An overview of CARC's strategic plan to meet user needs and develop a sustainable funding model, with a link to the full plan PDF."
+type: Reference
+tags:
+  - About
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/about-carc/carc-strategic-plan.html"
+    title: "CARC strategic plan (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Strategic plan
+
+**Introduction**
+
+The Center for Advanced Research Computing is the hub of computational research and education at the University of New Mexico. CARC houses the largest high‐performance computing resource at UNM and is hub for the UNM high‐speed research network. A base level of access to CARC systems is available to faculty, staff, and students free of charge. CARC's computing resources can be accessed at any time remotely, while CARC staff are on hand during business hours to assist.
+
+In keeping with the Office of the Vice President of Research's Research2020 plan, we have developed a strategic plan to better meet the needs of our users. We are also working to develop a sustainable funding model to enable the expansion of our systems and services as demand for CARC services grows and evolves. One piece of this plan is a cost model to address services needed beyond the free baseline.
+
+Read full **[PDF](https://carc.unm.edu/about-carc/strategic-plan.pdf){target=_blank}**.
+
+---8<--- https://unm-carc.github.io/research/featured-projects/
+
+---
+title: "Featured projects"
+description: "Feature articles highlighting research projects done using computing, storage, and support resources at the Center for Advanced Research Computing."
+type: Reference
+tags:
+  - Research
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/featured-projects.html"
+    title: "Featured projects (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Featured projects
+
+The following feature articles highlight research projects done using resources at the Center for Advanced Research Computing.
+
+#### [Simulations improve understanding of how floating structures respond to ocean conditions](https://carc.unm.edu/research/floating-structures-reponding-to-ocean-conditions.html){target=_blank}
+
+![shutterstock_2382379513-1-1024x614.jpg](https://carc.unm.edu/images/shutterstock_2382379513-1-1024x614.jpg)Understanding how floating structures behave in ocean environments is essential for the design and safety of offshore and coastal systems. In a recent study, researchers used advanced computer simulations to examine how waves, currents, and mooring systems influence the motion of floating structures under a range of conditions.
+
+#### [Genome sequencing reveals a newly identified virus](https://carc.unm.edu/research/genome-sequencing.html){target=_blank}
+
+![viruses-12-01010-g001.png](https://carc.unm.edu/images/viruses-12-01010-g001.png)Researchers have identified and characterized a previously unrecognized virus using genome sequencing and computational analysis, contributing to a growing body of work that expands current understanding of viral diversity and evolution.
+
+#### [Undergraduate researcher leverages CARC for molecular modeling breakthrough](https://carc.unm.edu/research/molecular-modeling-breakthrough.html){target=_blank}
+
+![picture1.png](https://carc.unm.edu/research/picture11.png)For many students, a senior thesis marks the culmination of their undergraduate studies. For UNM physics major Sol Samuels, it was also an opportunity to make a meaningful contribution to the field of computational molecular science — with the help of the University of New Mexico's Center for Advanced Research Computing.
+
+#### [From Lab to Field: CARC Computing Powers AR-Enhanced Robotics for Infrastructure Safety](https://carc.unm.edu/research/lab-to-field.html){target=_blank}
+
+![carc_ar_robotics_with_border.png](https://carc.unm.edu/images/carc_ar_robotics_with_border.png)A pioneering 2024 study published in the *International Journal of Intelligent Robotics and Applications* introduces a cutting-edge augmented reality system that makes infrastructure inspections faster, safer, and more precise — and it's innovation that came to life thanks to the computing power of the University of New Mexico's Center for Advanced Research Computing.
+
+#### [Harnessing CARC Power to Predict Global Dengue Outbreaks Amid El Niño Swings](https://carc.unm.edu/research/el-nino-swings.html){target=_blank}
+
+![picture1.jpg](https://carc.unm.edu/images/picture1.jpg)A groundbreaking 2024 study published in *Environmental Research* sheds new light on how El Niño events amplify the global risk of dengue fever outbreaks — and it's research that would not have been possible without the computing power of the University of New Mexico's Center for Advanced Research Computing.
+
+#### [Groundbreaking research unveils innovative method to probe dark matter using gravitational lensing](https://carc.unm.edu/research/dark-matter.html){target=_blank}
+
+![untitled-design.png](https://carc.unm.edu/images/untitled-design2.png)In a groundbreaking research initiative led by University of New Mexico (UNM) Physics PhD candidate Birendra Dhanasingham, supervised by UNM Physics professor Francis-Yan Cyr-Racine, unveiled a novel approach to unravel the mysteries of dark matter using gravitational lensing, a phenomenon predicted by Einstein's theory of relativity.
+
+#### [Research efforts play a crucial role in rescuing a Rio Grande fish species from extinction](https://carc.unm.edu/research/silvery-minnow.html){target=_blank}
+
+![silvery-minnow.jpg](https://carc.unm.edu/research/silvery-minnow.jpg)In the heart of the Rio Grande basin, the Rio Grande Silvery Minnow (Hybognathus amarus), a unique fish species, is struggling to survive. Habitat changes, river disruptions caused by dams and water diversion structures, and recent severe drought conditions in the Southwestern United States have intensified the struggle for the Rio Grande Silvery Minnow, resulting in population bottlenecks and even population collapse. These events, linked to diminished snowmelt runoff and increased river drying, have threatened the species' reproductive success and recruitment.
+
+#### [UNM Biology PhD student research leads to the discovery of a new bird family](https://carc.unm.edu/research/shrikes-new-species-of-bird.html){target=_blank}
+
+For nearly two centuries, northern and southern white-crowned shrikes were considered to be part of the shrike bird family, Laniidae. However, the data that was gathered through McCullough's extensive research would show that the northern and southern white-crowned shrikes were clearly different from the other shrike species they had known thus far.
+
+#### [UNM scientists concerned about rising wildfire threats to southwestern U.S. forests](https://carc.unm.edu/research/rising-wildfire-threats-research.html){target=_blank}
+
+![untitled-design-1.png](https://carc.unm.edu/images/untitled-design-1.png)
+
+Scientists at the University of New Mexico recently published a research article describing a new method of modeling reforestation after wildfires. Research has shown an important link between topography and how plants recover after a fire. Topography refers to the natural shape and features of the land, such as its hills, valleys, and overall terrain. Previous models often overlooked this important factor, primarily focusing on weather patterns instead. UNM scientists wanted to focus on the link between topography and how plants recover after a fire, and better understand reforestation in severely burned forests using an updated simulation model while factoring in climate change.
+
+#### [Computational modeling unveils dynamics of SARS-CoV-2 infection](http://carc.unm.edu/research/sars-cov-2.html){target=_blank}
+
+A team of researchers led by University of New Mexico Computer Science Professor Melanie Moses has developed a groundbreaking computational model called Spatial Immune Model of Coronavirus, which offers invaluable insights into the spatial-temporal dynamics of viral spread and immune response within the human lungs.
+
+#### [Students utilize CARC resources through Parallel Processing course](http://carc.unm.edu/research/parallel-processing-course-carc-resources.html){target=_blank}
+
+![preview-cropped.png](https://carc.unm.edu/images/preview-cropped1.png)Parallel processing is a method used in computer science to speed up the execution of tasks by dividing them into smaller parts and processing these parts simultaneously. This is a process that allows computers to tackle complex problems more efficiently and quickly, making it an essential tool for various applications in our daily lives, such as video editing, gaming, and scientific simulations. *Introduction to Parallel Processing* (CS442/542) is a course offered every other Fall semester at the University of New Mexico. The course enables students to grasp the complexities of parallel processing while using resources from the Center for Advanced Research Computing.
+
+#### [CARC graduate assistant creates a program capable of style transfer](http://carc.unm.edu/research/style-transfer-jacob-mccullough.html){target=_blank}
+
+Summer 2022 Center for Advanced Research Computing Graduate Assistant Jacob McCullough created a program capable of style transfer, where a trained algorithm identifies the style of an image and transfers it onto another. The process of style transfer requires a program that is capable of digital manipulation to images or videos. McCullough made this possible using CARC resources by copying and then modifying the code of a program used to classify images.
+
+#### [Computational chemistry researchers complete millennia of research in four years](https://carc.unm.edu/research/computational-chemistry-researchers-complete-millennia-of-research.html){target=_blank}
+
+UNM Distinguished Professor of Chemistry and Chemical Biology Hua Guo and his research team have logged an impressive 7,257 compute years on Center for Advanced Research Computing (CARC) systems in the past four years. Guo's work is in computational chemistry, which allows researchers to simulate chemical reactions on computers rather than conducting real-life experiments that can be dangerous, costly and time-consuming.
+
+#### [New UNM Earth Science Professor to study the health of groundwater aquifers across the state](https://carc.unm.edu/research/new-unm-earth-science-professor-to-study-the-health-of-groundwater-aquifers-across-the-state.html){target=_blank}
+
+![Aquifer Jakarta flooding](https://carc.unm.edu/images/aquifer-jakarta-flooding1.png)Eric Lindsey, Assistant Professor of Earth & Planetary Sciences at the University of New Mexico (UNM), has concerns about the sustainability of aquifers around the world. Aquifers, nature's underground water storage spaces, are vital to life on this planet. Lindsey was recently awarded a National Science Foundation grant to establish new computer storage nodes at UNM's Center for Advance Research Computing (CARC) to store his hundreds of terabytes of InSAR satellite data to study aquifers. This increased storage capacity combined with CARC's high-speed parallel computing abilities will allow Lindsey to process vast amount of data to create a current land subsidence map for the entire state of New Mexico and beyond.
+
+#### [Explore or exploit: How our brains make choices](https://carc.unm.edu/research/explore_or_exploit_how_our_brain_makes_choices.html){target=_blank}
+
+We make countless choices every day. It may be a difficult, complex choice—whether to take the job in a new city or stay in a current position—or be as simple as choosing between visiting a new restaurant or going to an old favorite. Decision-making shapes our knowledge and our perceptions of the world around us. Dr. Jeremy Hogeveen, Assistant Professor in the Department of Psychology details his search for answers in a new article published in the prestigious neuroscience journal *Neuron*.
+
+#### [Talaat studies molten lead as coolant for advanced clean energy nuclear reactors](https://carc.unm.edu/research/student-studies-molten-lead-as-coolant-for-nuclear-reactors.html){target=_blank}
+
+Researchers all over the world are pursuing methods to develop clean, green, and renewable energy resources to reduce our impact on the planet. This includes research dedicated to building new, technologically advanced, nuclear reactors to support the production of clean energy. The U.S. Department of Energy's (DOE) nuclear [Versatile Test Reactor](https://inl.gov/vtr/){target=_blank} (VTR) was conceived with these technological advances in mind. Khaled Talaat, PhD candidate in the University of New Mexico's (UNM) Nuclear Engineering Department, is one of the researchers on the VTR project.
+
+#### [CARC enables groundbreaking immunology discovery](https://carc.unm.edu/research/carc-enables-groundbreaking-immunology-discovery.html){target=_blank}
+
+Associate Professor of Biology at the University of New Mexico's Center for Evolutionary and Theoretical Immunology (CETI) Irene Salinas and her research team recently concluded a study on African lungfish cocoons which provided groundbreaking discoveries with potential implications for studies on human immune systems.
+
+#### [Students create remote-controlled robot to detect potential rockslide danger](https://carc.unm.edu/research/students-create-robot-to-detect-potential-rockslides.html){target=_blank}
+
+![Remote-controlled robot "Brutus"](https://carc.unm.edu/images/brutus.png)
+
+The University of New Mexico's (UNM) Smart Management of Infrastructure Laboratory (SMILab) has created a remote-controlled (RC) robot designed to detect potential rockslide danger. The robot, affectionately nicknamed "Brutus," pinpoints damaged and unstable rocks for roadside safety inspectors, keeping them safely out of harm's way during inspections.
+
+#### [CARC integral in PhD candidate's groundbreaking dissertation on solar forecasting](https://carc.unm.edu/research/groundbreaking-dissertation-on-solar-forecasting.html){target=_blank}
+
+Guillermo Terrén-Serrano, PhD candidate in the Electrical and Computer Engineering (ECE) Department of the University of New Mexico (UNM), has designed a new way for solar forecasters to predict future cloud cover. Terrén-Serrano and his advisor, ECE Professor Manel Martínez-Ramón, have taken an innovative, multidisciplinary approach to solar cloud cover forecasting by building a state-of-the-art, forecasting system completely from scratch. Their system will provide renewable energy providers with a clear sky index so they will know when to compensate for the drop in solar energy to ensure a steady energy transmission to the power grid.
+
+#### [UNM doctoral candidate develops open-source fluid dynamics code](https://carc.unm.edu/research/doctoral-candidate-develops-fluid-dynamics-code.html){target=_blank}
+
+![fiesta-3dsdkhi.png](https://carc.unm.edu/images/fiesta-3dsdkhi.png)When Brian Romero began his doctoral research in the Advanced Fluids Lab, led by Professor Svetlana Poroseva at the University of New Mexico's Mechanical Engineering Department, he quickly realized that the tool he needed to complete his work had not yet been developed. He needed a computational fluid dynamics solver capable of simulating supersonic flows with shock waves. So, Romero turned to UNM's Center for Advanced Research Computing and designed FIESTA© (Fast Interface Evolution, Shocks and Transition in the Atmosphere) to meet his needs as well as those of future researchers.
+
+#### [Ethan Gyllenhaal and colleagues use CARC resources to explain genetic histories of island birds](https://carc.unm.edu/research/researchers-explain-genetic-histories-of-island-birds.html){target=_blank}
+
+Ph.D. candidate Ethan Gyllenhaal has been engaged in a series of research projects that use genomic analyses to explain the complex evolutionary processes that take place within and between island bird populations. He is conducting this research in collaboration with researchers from the UNM Andersen Lab and the University of Kansas Moyle Lab. One of his recent projects, outlined in a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8252742/){target=_blank} published in Molecular Ecology, explains the existence of an unexpected genetic finding in Australian Spectacled Monarch birds.
+
+#### [NMDID supports worldwide research during COVID-19 pandemic](https://carc.unm.edu/research/nmdid-supports-research-during-pandemic.html){target=_blank}
+
+In February of 2020, Professor and Forensic Anthropologist Heather Edgar, in association with Western Michigan University Associate Professor Shamsi Berry and the Center for Advanced Research Computing, [unveiled a groundbreaking new website](https://carc.unm.edu/research/anthropologist-unveils-database-website.html){target=_blank} that gives researchers across the globe access to the demographic information and deidentified complete body scans of over 15,000 deceased New Mexicans. Now, after its first 20 months of operations, Edgar and Berry are preparing to publish some of the insights they have learned from this project, including the important role their database has played in supporting worldwide research throughout a global pandemic.
+
+#### [Manjavacas and colleagues investigate the cause of haziness in nineteenth century daguerreotype photography](https://carc.unm.edu/research/haziness-in-daguerreotype-photography.html){target=_blank}
+
+![daguerreotype image](https://carc.unm.edu/images/daguerrotype-image.jpg)In 2019, a team of scientists, led by UNM Associate Professor Alejandro Manjavacas, used Center for Advanced Research Computing resources to make a [discovery](http://news.unm.edu/news/trailblazing-findings-of-daguerrerotype-properties-revealed-by-the-metropolitan-museum-of-art-and-unm){target=_blank} explaining some of the mysterious characteristics of daguerreotypes. Through continued efforts, Manjavacas' research is helping to explain the characteristic haze that develops over these photographs as they age. This research will help museums like the Metropolitan Museum of Art (MET) preserve antique photographs for future generations.
+
+#### [Ivana Gonzales uses CARC to improve fuel cell technology](https://carc.unm.edu/research/fuel-cell-technology.html){target=_blank}
+
+Research Associate Professor Ivana Gonzales has been using Center for Advanced Research Computing resources to develop improved fuel cell technology. In connection with a broad network of researchers, Gonzales uses computer simulations to interpret experimental data and predict the performance of fuel cells composed of different materials. The fuel cells she helps to create may be implemented in a wide range of products to increase energy efficiency and lower greenhouse gas emission.
+
+#### [Bruzewski and colleagues search for 'sneaky' pulsars](https://carc.unm.edu/research/sneaky-pulsars.html){target=_blank}
+
+![pulsar story image](https://carc.unm.edu/images/pulsar-story-image.png)Department of Physics & Astronomy Ph.D. Student Seth Bruzewski, along with Adjunct Professor Frank Schinzel and Distinguished Professor Greg Taylor, has been using CARC resources to identify "sneaky" pulsars based on radio and gamma ray emissions. Funded by NASA's Fermi Guest Investigator Program, the team uses data from the Fermi Gamma Ray Space Telescope (Fermi) and the Very Large Array (VLA) to find and analyze these mysterious celestial bodies.
+
+#### [Researchers use computer modeling to understand COVID-19 infection mechanism](https://carc.unm.edu/research/computer-modeling-covid-19-infection-mechanism.html){target=_blank}
+
+New Mexico Consortium Researcher Wataru Nishima, in collaboration with University of Warsaw Assistant Professor Marta Kulik, has authored a [paper](https://www.mdpi.com/1999-4915/13/6/1126/htm){target=_blank} detailing new insights into the infection mechanism of COVID-19. The team used Center for Advanced Research Computing systems to develop a novel computational model of SARS-CoV-2, the virus that causes COVID-19, and simulate the way it attaches to host cells.
+
+#### [Jocelyn Colella receives 2021 Popejoy Dissertation Prize for research on weasels](https://carc.unm.edu/research/colella-receives-dissertation-prize.html){target=_blank}
+
+Recent UNM Ph.D. graduate and newly appointed Assistant Professor and Curator of Mammals at the University of Kansas Jocelyn Colella has been awarded the [2021 Popejoy Dissertation Prize](https://graduation.unm.edu/spring-2021/program/popejoy-dissertation-prize-winner/){target=_blank} for her work studying the genetic diversity of weasels. Her research, including the use of CARC resources to conduct analyses of genomic sequences, resulted in new insights into the evolutionary processes that shape boreal species diversity in response to Earth's glacial-interglacial cycles.
+
+#### [UNM biologists use genomic sequencing to inform preservation efforts for Gila Trout](https://carc.unm.edu/research/biologists-use-genomic-sequencing-to-preserve-gila-trout.html){target=_blank}
+
+![trout](https://carc.unm.edu/images/trout.jpg)Ph.D. student David Camak, Professor and Curator of Fishes at the Museum of Southwestern Biology Thomas Turner, and Professor Megan Osborne recently published a [paper](https://link.springer.com/article/10.1007/s10592-021-01355-0){target=_blank} using computing resources at CARC to analyze genomic sequences of fish. Their work will inform local efforts to preserve Gila Trout.
+
+#### [SMILab develops new low-cost strain sensor](https://carc.unm.edu/research/smilab-new-sensor.html){target=_blank}
+
+Researchers from the Smart Management of Infrastructure Laboratory (SMILab), located in the Center for Advanced Research Computing, have developed a new strain sensor as a part of the [Low-Cost Efficient Wireless Intelligent Sensors (LEWIS)](http://smilab.unm.edu/index.php/lewis/){target=_blank} project. The new sensor, called the LEWIS-S, is easy to use, wireless, and can be offered at about 5% of the cost of standard commercial strain sensing equipment.
+
+#### [Team of UNM scientists find landing spot for the Mars Perseverance Rover](https://carc.unm.edu/research/unm-scientists-find-landing-spot-for-perseverance.html){target=_blank}
+
+![perseverance image](https://carc.unm.edu/images/perseverance-image.jpg)Department of Earth and Planetary Sciences Professor Louis Scuderi, in association with a team of researchers from the University of New Mexico and Los Alamos National Laboratory (LANL), used remote sensing and Geographical Information System (GIS) software and CARC computing resources to identify an ideal landing spot for [NASA's Mars Perseverance Rover.](https://mars.nasa.gov/files/mars2020/Mars2020_Fact_Sheet.pdf){target=_blank}
+
+#### [UNM researchers optimize solar power using artificial intelligence](https://carc.unm.edu/research/researchers-optimize-solar-power.html){target=_blank}
+
+Department of Electrical & Computer Engineering Ph.D. candidate Guillermo Terrén-Serrano and Professor Manel Martínez-Ramón, in association with [New Mexico EPSCoR](https://www.nmepscor.org/){target=_blank}, have developed an artificial intelligence algorithm that optimizes the performance of solar power by predicting cloud cover.
+
+#### [Domman and Dinwiddie discover new COVID variation in New Mexico population](https://carc.unm.edu/news--events/News/unm-researchers-discover-new-covid-19-variation-in-new-mexico-population.html){target=_blank}
+
+Daryl Domman, Assistant Professor at the UNM Center for Global Health, and Darrell Dinwiddie, Assistant Professor in the UNM Department of Pediatrics, have discovered a novel variant of the SARS-CoV-2 virus among COVID-positive samples in New Mexico. The two have been working with the New Mexico Department of Health and other health officials to sequence the genomes of Coronavirus samples from across the state, as well as those from other regions of the Rocky Mountains. A new variant has been observed in New Mexican samples dating back to December 2020.
+
+#### [UNM mechanical engineers develop a new way to solve deformation instability problems](https://carc.unm.edu/research/mechanical-engineers-solve-deformation-problems.html){target=_blank}
+
+![deformation image](https://carc.unm.edu/images/deformation-image.JPG)Ph.D. Student Siavash Nikravesh and Mechanical Engineering Professor and Department Chair Yu-Lin Shen, using Center for Advanced Research Computing resources, have developed a new three-dimensional modeling approach to solving deformation problems, making it easier to design a wide variety of products including flexible electronics.
+
+#### [UNM physicist investigates unexplained behavior of cell receptors](https://carc.unm.edu/research/physicist-investigates-cell-receptors.html){target=_blank}
+
+UNM Associate Professor James L. Thomas, assisted by local high school student Ennis Quinn, has been using computational modeling to explain unusual patterns in receptor distribution on cell membranes. Their distribution throughout the surface of a cell can have a considerable effect on intercellular communications, which, in turn, influence a wide variety of bodily processes.
+
+#### [Distinguished Professor Hua Guo solves 30-year ozone mystery](https://carc.unm.edu/research/guo-solves-ozone-mystery.html){target=_blank}
+
+A group of researchers from the University of New Mexico Department of Chemistry and Chemical Biology, led by Distinguished Professor Hua Guo, have teamed up with colleagues from Texas A&M University to understand more about the photochemistry of Earth's ozone. A paper authored by the group and recently published in the Proceedings of the National Academy of Sciences of the United States of America (PNAS) offers a long-awaited explanation for the "odd" behavior of ozone molecules in our atmosphere.
+
+#### [UNM biologists study Antarctic viruses](https://carc.unm.edu/research/unm-biologists-study-antarctic-viruses.html){target=_blank}
+
+![antarctica microbial mat](https://carc.unm.edu/images/antarctica-microbial-mat.jpg)Biologists at the [UNM Vesbach Lab](http://www.vesbachlab.org/){target=_blank} have been using Center for Advanced Research Computing resources to analyze viruses found in the McMurdo Dry Valleys of Antarctica. Funded by a grant from the Joint Genome Institute, Ph.D. student David Robinson and Professor Cristina Takacs-Vesbach, in conjunction with researchers from Miami University and the McMurdo Dry Valleys Long Term Ecological Research Project, are assembling the metagenomic data from microbial mat samples in the hopes of gaining a better understanding of how viruses and bacteria interact.
+
+#### [Miyake Research Group improves quantum computing algorithms](https://carc.unm.edu/research/improving-quantum-computing-algorithms.html){target=_blank}
+
+The [Miyake Research Group](https://cquic.unm.edu/miyake-group/){target=_blank} has been taking part in an initiative called the Software-Tailored Architecture for Quantum co-design, or STAQ, project aimed at developing and improving quantum computing systems. Funded by a $15 million grant from the National Science Foundation, STAQ seeks to make quantum computing a more practical tool for future research.
+
+#### [Gold Lab works toward improved HIV treatment](https://carc.unm.edu/research/gold-lab-aims-for-improved-hiv-treatment.html){target=_blank}
+
+![HIV science guy](https://carc.unm.edu/images/hiv-science-guy.jpg)UNM's [Gold Lab](https://www.goldchemistry.com/){target=_blank}, headed by Assistant Professor Brian Gold, is using computational modeling to learn about HIV. Gold hopes that a better understanding of the chemical processes that allow the virus to flourish will enable him and his lab to design improved treatments.
+
+#### [UNM researchers use artificial intelligence to improve electrical grids](https://carc.unm.edu/research/researchers-improve-electrical-grids.html){target=_blank}
+
+A research team led by UNM Professor Manel Martínez-Ramón of the Department of Electrical and Computer Engineering is developing an algorithm that will help electrical grids use energy more efficiently. The project is a part of the [New Mexico EPSCoR Smart Grid Center](https://www.nmepscor.org/what-we-do/research){target=_blank} grant, funded by the National Science Foundation.
+
+#### [UNM computer scientists compete in NASA Space Robotics Challenge](https://carc.unm.edu/research/computer-scientists-compete-in-robotics-challenge.html){target=_blank}
+
+![space challenge slider](https://carc.unm.edu/images/space-challenge-slider.png)A team of University of New Mexico computer scientists led by Research Assistant Professor Matthew Fricke is competing with diverse computer research groups to develop an algorithm that would instruct robots to autonomously find, collect, and stockpile resources on the Moon. [The competition](https://spacecenter.org/space-robotics-challenge/space-robotics-challenge-phase-2/){target=_blank}, presented by Space Center Houston and NASA's Centennial Challenges Program, offers a variety of cash prizes to the top twenty-five teams.
+
+#### [SMILab research assistant receives national recognition](https://carc.unm.edu/news--events/News/smilab-research-assistant-receives-national-recognition.html){target=_blank}
+
+UNM Civil Engineering Ph.D. student and Graduate Research Assistant at the [Smart Management of Infrastructure Laboratory](http://smilab.unm.edu/){target=_blank} (SMILab) Roya Nasimi has been awarded second place in the American Society of Civil Engineers (ASCE) EMI-Structural Health Monitoring and Control (SHMC) Committee's annual [Student Paper Competition](https://www.asce.org/engineering-mechanics/news/20200610-emi-shmc-student-paper-competition/){target=_blank}.
+
+#### [UNM psychology professor works toward more reliable neuroimaging analysis](https://carc.unm.edu/research/professor-works-toward-reliable-neuroimaging-analysis.html){target=_blank}
+
+A large and highly collaborative new project created by Postdoctoral Researcher at Dartmouth College Rotem Botvinik-Nezer, Senior Lecturer at Tel Aviv University Tom Schonberg, and Professor of Psychology at Stanford University Russel Poldrack seeks to understand how the methodological choices made by neuroscientists can affect research outcomes. A team led by UNM Assistant Professor Jeremy Hogeveen was one of 70 research groups from across the globe to contribute neuroimaging analyses to the project.
+
+#### [UNM professor uses computational simulations to advance substance use disorder treatment](https://carc.unm.edu/research/professor-simulates-substance-use-disorder-treatment.html){target=_blank}
+
+UNM Assistant Professor of Chemistry and Chemical Biology Yi He is leading a research project that investigates a potentially groundbreaking way to treat drug addiction. The study uses computational modeling to understand the role of the PICK1 protein, shown in Figure 1, in the brain of an individual suffering from drug addiction.
+
+#### [UNM researchers use advanced computing to study COVID-19](https://carc.unm.edu/news--events/News/researchers-study-covid-19.html){target=_blank}
+
+![minION](https://carc.unm.edu/images/minion.png)A wide range of University of New Mexico researchers from across main and north campuses are utilizing UNM Center for Advanced Research Computing resources to study COVID-19. Researchers from several departments at UNM, including Anthropology, Biology, Computer Science, Pediatrics, Internal Medicine, and various Health Sciences research centers are studying different aspects of the coronavirus pandemic.
+
+#### [Researchers use CARC systems to understand the shapes of volcanoes](https://carc.unm.edu/research/researchers-study-volcano-shapes.html){target=_blank}
+
+Katherine Cosburn, a Ph.D. candidate in the University of New Mexico Department of Physics and Astronomy, is leading a research initiative that uses computer modeling to better understand volcanoes and, possibly, enable scientists to more accurately predict volcanic activity. The insights yielded from her research may help geologists mitigate the damage caused by volcanoes by predicting their behavior.
+
+#### [UNM anthropologist to unveil new database website](https://carc.unm.edu/research/anthropologist-unveils-database-website.html){target=_blank}
+
+Associate Professor of UNM's Department of Anthropology and Forensic Anthropologist for the Office of the Medical Investigator (OMI) Dr. Heather Edgar is ready to unveil the New Mexico Decedent Image Database website. The site will offer qualified researchers free access to more than 15,000 full body CT scans, along with corresponding information about the deceased. The database, funded by the National Institute of Justice, is being hosted at the UNM Center for Advanced Research Computing.
+
+#### [Researchers develop facial recognition technology for use in firefighting](https://carc.unm.edu/research/researchers-develop-facial-recognition-for-firefighting.html){target=_blank}
+
+![facial recognition](https://carc.unm.edu/images/facial-recognition.jpg)At the University of New Mexico Department of Electrical and Computer Engineering, a team of computer engineers lead by Professor Manel Martínez-Ramón have been working towards the development of a high-tech wearable device for firefighters. The device would help emergency service workers with navigation, communication, and threat assessment during tense life-threatening situations. The projects utilizes an innovative new facial-recognition algorithm formulated for use in firefighting technology.
+
+#### [Cavanagh studies the neurological origin of pleasure](https://carc.unm.edu/research/researcher-studies-origin-of-pleasure.html){target=_blank}
+
+Associate Professor James Cavanagh of the University of New Mexico Department of Psychology is working on a project that would help psychologists study depression, and its treatment, with greater accuracy. Cavanagh's research, funded by a grant from the National Institute of Mental Health, seeks to identify a consistent quantifiable indicator of anhedonia, or the inability to feel pleasure.
+
+#### [McCullough assembles evolutionary tree of birds](https://carc.unm.edu/research/researcher-examines-tropical-birds.html){target=_blank}
+
+![bird evolution](https://carc.unm.edu/images/bird-evolution.png)Though science has advanced considerably since the days of Charles Darwin, the evolutionary history of life on Earth is still largely a mystery – one being solved incrementally by the dedicated biologists who pore over fossils and genetic data to better understand the origins of species. One of these biologists is Jenna McCullough, a Ph.D. student at the University of New Mexico whose master's thesis used Center for Advanced Research Computing resources to examine the evolutionary history of birds.
+
+#### [Professor Terry Loring studies the strange math behind hybrid conductor-insulators](https://carc.unm.edu/research/professor-studies-strange-math.html){target=_blank}
+
+University of New Mexico Professor Terry Loring has added to his remarkable list of contributions to the field of mathematical physics with his newest paper, [*A Guide to the Bott Index and Localizer Index*](https://arxiv.org/pdf/1907.11791.pdf){target=_blank}. Using the Wheeler system at the UNM Center for Advanced Research Computing, Loring has fine-tuned a mathematical tool he calls the "Localizer Index," a faster alternative to the widely used Bott Index.
+
+#### [Environmental Data Initiative receives NSF grant](https://carc.unm.edu/research/environmental-data-initiative-receives-grant.html){target=_blank}
+
+The National Science Foundation has awarded a second grant to the Environmental Data Initiative to continue gathering and storing ecological data. A collaboration between researchers at the University of New Mexico, the University of Wisconsin, and the University of California – Santa Barbara, EDI aims to store environmental data in a way that is Findable, Accessible, Interoperable, and Reusable (FAIR).
+
+#### [SMILab deploys wireless smart sensors on Sandia Peak Tramway](https://carc.unm.edu/research/tramway-sensors.html){target=_blank}
+
+![tramway sensor](https://carc.unm.edu/images/tramway-sensor.png)Researchers from the Smart Management of Infrastructure Laboratory (SMILab), based at the UNM Center for Advanced Research Computing, have installed two wireless smart sensors on the Sandia Peak Tramway. The sensors, designed and developed by SMILab researchers, will collect accelerations, angles, and displacements of both the towers and the cars under different performance conditions.
+
+#### [Engineering team looks at using augmented reality to fix ailing infrastructure](https://carc.unm.edu/research/using-augmented-reality-to-fix-ailing-infrastructure.html){target=_blank}
+
+Civil infrastructure in the United States is in serious disrepair. The American Society of Civil Engineers published an Infrastructure Report Card in 2017, in which it gave the crumbling national infrastructure a dismal grade of D+. According to the report card, over 9 percent of the 614,000-plus US bridges are structurally deficient, and their average age is 43 years. Professor Fernando Moreu and his [SMILab](http://smilab.unm.edu/){target=_blank} team, headquartered at CARC, aim to develop and implement next-generation smart sensing technologies and strategies, which will ensure safety, cost effectiveness, resilience, and sustainability of civil structures.
+
+#### [Method delves under Earth's mantle for more detailed look](https://carc.unm.edu/research/researchers-develop-method-to-look-under-earths-mantle.html){target=_blank}
+
+![Earth layers diagram](https://carc.unm.edu/research/zhan-earth-layers.png)The Earth is composed of four layers: the crust; the mantle, which is divided into the upper mantle, lower mantle, and transition zone in between; the hot liquid outer core, and a solid inner core. In his paper [Application of Ps Scattering Kernels to Imaging the Mantle Transition Zone With Receiver Functions](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JB016274){target=_blank} published recently in the *Journal of Geophysical Research: Solid Earth*, UNM Ph.D. student Han Zhang researched a method called Ps Scattering Kernels to create an image of the layer we can't see in finer detail than previous studies.
+
+#### [Marten research provides insight into breeding, conservation](https://carc.unm.edu/research/marten-research-provides-insight-into-conservation.html){target=_blank}
+
+The American pine marten and Pacific marten are cute, furry animals reminiscent of weasels or ferrets. They live in forests all over the west, from islands off the coast of Alaska, to Canada, California, and even New Mexico. As a federally designated Management Indicator Species (MIS), martens play a big part in monitoring the health of the forest ecosystems they live in, according to Jocelyn Colella, a doctoral student in the University of New Mexico's Biology Department. In a recent paper [Implications of introgression for wildlife translocations: the case of North American martens](https://link.springer.com/article/10.1007/s10592-018-1120-5){target=_blank} published in the [Conservation Genetics Journal](https://link.springer.com/journal/10592){target=_blank}, Colella uses genetic sequences (e.g., DNA) to understand how breeding between these two species impacts their evolution and conservation.
+
+#### [Colombian researchers partner with UNM professor to conduct drone rotor simulations using CARC systems](https://carc.unm.edu/research/colombian-researchers-partner-to-conduct-drone-rotor-simulations.html){target=_blank}
+
+Associate Professor of Mechanical Engineering Dr. Svetlana Poroseva and colleagues from Colombia used CARC systems to conduct simulations to compare accuracy and affordability of two different computational methods to simulate small rotors in hover flight.
+
+#### [Research looks to better understand widespread fungal disease](https://carc.unm.edu/research/research-looks-to-better-understand-widespread-fungal-disease.html){target=_blank}
+
+![Candida albicans](https://carc.unm.edu/images/slider-candida-albicans.png)*Candida albicans* is the most common viral pathogen and causes candidiasis, an infectious disease of the lungs and other organs. Healthcare costs associated with treatment of candidiasis exceed $1 billion annually in the US alone. *Candida albicans* can mask itself so pattern recognition receptors in the human body cannot detect and destroy it. Researchers are trying to understand this masking process, eventually leading to better treatment.
+
+#### [Fire navigation research presented to NM Legislature](https://carc.unm.edu/research/fire-navigation-research-to-be-presented-to-nm-legislature.html){target=_blank}
+
+Firefighters entering a burning building step into a critically risky and potentially lethal environment. How a firefighter handles this combination of factors is a matter of life or death. University of New Mexico Electrical and Computer Engineering (ECE) student Manish Bhattarai presented a project he has been working on to the New Mexico Legislature. *End-to-End Training of Deep Learning Systems for Scene Understanding, Path Planning and Navigation, 3D Scene Reconstruction* is innovative research aimed at preventing injury and deaths.
+
+#### [Neuroscience researchers use CARC to store large stash of data](https://carc.unm.edu/research/neuroscience-researchers-use-carc-to-store-large-stash-of-data.html){target=_blank}
+
+![brain scan](https://carc.unm.edu/images/brain-scan.jpeg)
+
+Psychology Clinical Neuroscience Center (PCNC) and Department of Psychology researchers studying the brain use a system at the UNM Center for Advanced Research Computing, as well as another one on-site, to store data generated by their projects.
+
+#### [Biologist looks at virus genetic past to try to predict future outbreaks](https://carc.unm.edu/research/biologist-looks-at-genetic-past-of-viruses-to-try-to-predict-future-outbreaks.html){target=_blank}
+
+University of New Mexico Ph.D. student Schuyler Liphardt spends his days at the Center for Advanced Research Computing (CARC) not only doing his own research, but helping the Center serve students and faculty pursuing their own studies. Liphardt is currently working on his Ph.D. in biology and employed as a research graduate assistant at CARC.
+
+#### [Dancer, researchers collaborate to expand connection between arts and engineering](https://carc.unm.edu/research/dancer-and-researchers-collaborate.html){target=_blank}
+
+![dance sensors](https://carc.unm.edu/images/dance-sensors.png)Dancing and engineering seem worlds apart, one artsy, the other all about math and technology. But a research group of computer engineering students housed at the University of New Mexico Center for Advanced Research Computing has collaborated with a local dancer to improve her performance while learning more about the possibilities of their own work.
+
+#### [Research shows director networking has impact on company success](https://carc.unm.edu/research/director-networking-and-company-success.html){target=_blank}
+
+On corporate boards, who the directors know and the networks they belong to can make a difference in the success of the company in securing excellent credit ratings crucial to its success.
+
+#### [Researchers seek ways to prevent dangerous, costly railroad crashes](https://carc.unm.edu/research/researchers-look-for-ways-to-prevent-railroad-overpass-crashes.html){target=_blank}
+
+There are hundreds of railroad overpasses all over the country that get hit regularly by vehicles passing underneath. Professor Fernando Moreu and his team are searching for a way to prevent expensive and risky damage to these overpasses.
+
+#### [UNM database of deceased people a national first](https://carc.unm.edu/research/unm-database-of-deceased-people-a-national-first.html){target=_blank}
+
+![deceased body database](https://carc.unm.edu/images/deceased-body-database.png)People die. All the time. From many causes, including old age, disease, accidents, murder. But researchers can learn from these deaths. Dr. Heather Edgar, forensic anthropologist at the UNM Office of Medical Investigator, and her team are currently converting a dataset of whole body decedent CT scans into a searchable database that will be available to researchers.
+
+#### [Robot swarms aid NASA journey to Mars](https://carc.unm.edu/research/robot-swarms-aid-nasa-journey-to-mars.html){target=_blank}
+
+The Mars rover Curiosity is in the news right now as NASA celebrates the robot's five-year sojourn across the planet surface. The rover is sending back breathtaking images and collecting data in anticipation of humans arriving in the 2030s. But before humans arrive, a swarm of smaller robots may already be on the planet, navigating the terrain and working together like a colony of ants to collect resources.
+
+#### [UNM researchers work to meet wind power goal](https://carc.unm.edu/research/unm-researchers-work-to-meet-wind-power-goal-.html){target=_blank}
+
+There is a national goal to increase wind energy in the United States to meet 20 percent of the demand for electricity by the year 2030. However, there are some challenges to reaching this goal. Two of the issues facing wind energy farms are the wakes emitted from each turbine, which reduces the efficiency of turbines around them, and the noise levels caused by the rotors. Dr. Sang Lee and his team are using the resources at the UNM Center for Advanced Research Computing to overcome these issues in order to build more efficient, more powerful wind turbines and wind farms to meet that goal.
+
+#### [Research aims to help patients at risk for diabetic blindness](https://carc.unm.edu/research/research-aims-to-help-patients-at-risk-for-diabetic-blindness.html){target=_blank}
+
+Diabetic retinopathy (DR) is one of the leading causes of blindness in the world and affects up to 80 percent of diabetic patients. However, with proper detection, the effects of DR can be often treated and blindness prevented. Computer Science doctoral student Jeremy Benson is looking at more effective screening methods.
+
+#### [LANL-CARC collaboration works to improve wildfire simulation program](https://carc.unm.edu/research/lanl-carc-collaboration-works-to-improve-wildfire-simulation-program.html){target=_blank}
+
+A collaboration between Los Alamos National Laboratories and CARC is helping the lab improve a wildfire simulation program, as well as preparing students for careers in scientific research.
+
+#### [CARC helps UNM race car team's need for speed](https://carc.unm.edu/news--events/News/carc-helps-unm-race-car-teams-need-for-speed.html){target=_blank}
+
+The University of New Mexico [Formula SAE](http://www.fsae.unm.edu/){target=_blank} is making race cars go faster with CARC's help.
+
+#### [Researchers seek 'magic bullet' using CARC systems](https://carc.unm.edu/research/researchers-seek-magic-bullet-using-carc-systems.html){target=_blank}
+
+UNM researchers are working to encapsulate toxic chemotherapy in nanoparticles.
+
+#### [UNM researchers tackle next generation of VR display](https://carc.unm.edu/research/next-generation-vr-display.html){target=_blank}
+
+UNM researchers work to solve a visual issue that leaves VR users with sickening symptoms.
+
+#### [Mountain lions on the edge](https://carc.unm.edu/research/mountain-lions-on-the-edge.html){target=_blank}
+
+New research is looking at *Integrating Conservation into Urban Planning through Predictive Modeling*: Can city dwellers and wildlife coexist safely and peacefully?
+
+#### [UNM physicist discovers strange forces acting on nanoparticles](http://news.unm.edu/news/unm-physicist-discovers-strange-forces-acting-on-nanoparticles){target=_blank}
+
+A new scientific paper published, in part, by a University of New Mexico physicist is shedding light on a strange force impacting particles at the smallest level of the material world.
+
+#### [Theoretical physicists at UNM manipulate light with nanoscale objects](http://news.unm.edu/news/theoretical-physicists-at-unm-manipulate-light-with-nanoscale-objects){target=_blank}
+
+Scientists at The University of New Mexico studying the field of nanophotonics are developing new perspectives never seen before through their research. In turn, the understanding of these theoretical concepts is enabling physical scientists to create more efficient nanostructures.
+
+---8<--- https://unm-carc.github.io/research/free-services/
+
+---
+title: "Free research computing"
+description: "A description of the free baseline research computing service CARC provides to UNM main campus users, including the core-hour and storage limits."
+type: Reference
+tags:
+  - Research
+  - Services
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/free-research-computing-service.html"
+    title: "Free research computing service (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Free research computing
+
+**CARC provides a free, baseline service to UNM main campus users. In most cases, this is all you will need.** The baseline service is meant to be generous enough to support both solo investigators with modest computational needs and large research labs with significant computational needs. Specifically, without special permission, UNM users have year-round access to 128 cores, 200 GB of home directory storage, 250 GB project directory space, and 1 TB scratch storage.
+
+Storage system limits are enforced, but otherwise CARC does not cap research group usage to this baseline. Users and research groups who are consistently above this level are at risk of having their research delayed or impinged due to meeting or exceeding CARC resource capacity. In this case, these researchers should consider purchasing dedicated resources to support their research.
+
+---8<--- https://unm-carc.github.io/research/grant-resources/
+
+---
+title: "Grant writing resources"
+description: "Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals."
+type: Guide
+tags:
+  - Research
+  - Grants
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/grant-writing-resources.html"
+    title: "Grant writing resources (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Grant writing resources
+
+##### Training
+
+UNM offers a number of research-related courses, many of them online. [Find a list of those here.](http://research.unm.edu/training-networking){target=_blank}
+
+##### Find Funding
+
+UNM's [Office of the Vice President for Research](http://research.unm.edu/){target=_blank} is a great starting point. UNM users can access [Pivot](http://frdo.unm.edu/funding_opportunities){target=_blank} to [search funding](http://research.unm.edu/find-funding){target=_blank}, which includes National Science Foundation and many other opportunities.
+
+[Science Magazine](http://www.sciencemag.org/careers/where-search-funding){target=_blank} also has a list of funding resources.
+
+##### Develop Proposal
+
+Again, the OVPR offers [steps and tools](http://research.unm.edu/develop-proposal){target=_blank} to use in developing your proposal.
+
+The tools available at the [Office for Sponsored Research](http://osp.unm.edu/index.html){target=_blank} website will help you develop budgets and contains lots of key information on rates and procedures.
+
+[NSF Proposal and Award Policies and Procedures Guide](https://www.nsf.gov/pubs/policydocs/pappguide/nsf16001/gpg_print.pdf){target=_blank}
+
+[NSF Guide for Proposal Writing](https://www.nsf.gov/pubs/2004/nsf04016/nsf04016.pdf){target=_blank}
+
+##### Check Compliance
+
+OVPR has a [list of items to check](http://research.unm.edu/ensure-compliance){target=_blank}, including Export Control.
+
+##### Submit Proposal
+
+OVPR gives you [the big picture view of the steps](http://research.unm.edu/submit-proposal){target=_blank} involved. Work with [OSP on specific questions about submitting your proposal](http://osp.unm.edu/index.html){target=_blank} through [Cayuse](http://osp.unm.edu/cayuse-research-suite.html){target=_blank}.
+
+##### Additional Support
+
+Faculty can seek additional support through the [Faculty Research Development Office.](http://frdo.unm.edu/){target=_blank}
+
+[Advance](https://advance.unm.edu/){target=_blank} offers research development events and resources, with an emphasis on promoting and advancing women in STEM fields.
+
+---8<--- https://unm-carc.github.io/research/premium-services/
+
+---
+title: "Premium services"
+description: "CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service."
+type: Reference
+tags:
+  - Research
+  - Services
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/premium-research-computing-services.html"
+    title: "Premium research computing services (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Premium services
+
+To support users with needs consistently above the free baseline service, CARC has a UNM-approved cost model for charging for condo cluster nodes, VM hosting, dedicated storage, and custom system administration and application support. If you are not sure if you need to use the cost model, please **[contact us](mailto:unitadmin@carc.unm.edu)** for assistance.
+
+Costs in this model are broken into three components:
+
+1. **Capital hardware** is the cost of major equipment, and is excluded from F&A. These rates can be used to estimate expenses, but this will be billed based on actual cost from the vendor(s).
+2. **Installation** is the cost of non-major equipment – things like racks, power supplies, and the like. Depending on the size of the purchase, some items in this category may be shared resources and are priced accordingly. As these items are tied to the capital equipment, this cost is also excluded from F&A.
+3. **Service** is the cost of CARC staff required to administer systems or provide individualized support. Note service is subject to F&A if purchased via a grant; purchases made with unrestricted funds are not.
+
+### For all UNM & External Customers:
+
+The below cost model calculator worksheet will allow you to determine the cost of equipment. Clicking on an item title will provide a more detailed description. The worksheet breaks costs into the categories listed above to assist in budget planning. Infrastructure and service are only subject to F&A when paying with a grant; items charged to start up or other non-grant index types will simply pay the calculated amount shown.
+
+**[Preview here](https://unmm-my.sharepoint.com/:x:/g/personal/anw0412_unm_edu/IQBzBub7HRJ-Tqn-xj8o0gd1AfTU22_f_TwPiUr-cEcf_Uw?e=K1beIW){target=_blank}**
+
+**Calculator: [CARC Cost Model Tool (download)](https://carc.unm.edu/assets/carc-cost-model-tool.xlsx){target=_blank}**
+
+---8<--- https://unm-carc.github.io/research/publications/
+
+---
+title: "Publications and acknowledgement"
+description: "The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center."
+type: Policy
+tags:
+  - Research
+  - Publications
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/publications.html"
+    title: "Publications and acknowledgement (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Publications and acknowledgement
+
+**CARC acknowledgement**
+
+Please use the following statement when acknowledging use of Center for Advanced Research Computing resources. Select one or more of the items within the braces { }:
+
+!!! quote
+
+    *We would like to thank the UNM Center for Advanced Research Computing, supported in part by the National Science Foundation, for providing the {high performance computing, large-scale storage, visualization} resources used in this work.*
+
+**Publications**
+
+Please use the following link to view a list of publications that mentions the Center for Advanced Research Computing. The list reflects the broad spectrum of computational research at the University of New Mexico. All publications have made use of CARC resources including computation, storage, machine hosting, or resident research space at the Center.
+
+**[Click here to view publications that feature the Center for Advanced Research Computing](https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29){target=_blank}**
+
+---8<--- https://unm-carc.github.io/education/workshops/
+
+---
+title: "Workshops and seminars"
+description: "Free CARC workshops in the 1601 Central workshop room, the live events calendar, and video alternatives."
+type: Reference
+tags:
+  - Education
+  - Workshops
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/education--training/workshops-and-seminars.html"
+    title: "Workshops & seminars (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Workshops and seminars
+
+CARC teaches regular workshops in the **CARC Workshop Room** at 1601 Central
+Ave NE — from first-login basics to domain-specific computing.
+
+* Free to UNM faculty, staff, and students.
+* B/P lot parking — we can assist with a day pass; please arrive early if
+  you require one ([visitor info](../contact/visiting.md)).
+
+[:material-calendar-month: Upcoming events calendar](https://libcal.unm.edu/calendar?cid=16135&t=m){ .md-button .md-button--primary target=_blank }
+
+!!! tip "Can't attend in person?"
+
+    Most workshop topics are covered by the
+    [video tutorials](https://unm-carc.github.io/docs/training/videos/) on
+    YouTube, and slides from past sessions are archived on the
+    [workshops page](https://unm-carc.github.io/docs/training/workshops/) of
+    the user documentation.
+
+## Workshops for your group or course
+
+CARC staff regularly deliver tailored sessions for research groups and
+classes — email <help@carc.unm.edu> to arrange one.
+
+---8<--- https://unm-carc.github.io/education/cse/application/
+
+---
+title: "CSE application"
+description: "How to apply to the CSE Certificate Program through the UNM ApplyYourself portal."
+type: Guide
+tags:
+  - Education
+  - CSE
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/education--training/cse-program1/cse-application.html"
+    title: "CSE Application (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# CSE application
+
+To apply to the Computational Science and Engineering (CSE) Certificate
+Program, use the
+[UNM ApplyYourself portal](https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=unmgrad){target=_blank}.
+**Please read the instructions before applying:**
+
+[ApplyYourself instructions for CSE (PDF)](https://carc.unm.edu/education--training/cse-program1/cse-application-instructions.pdf){target=_blank}
+
+We will review your application and contact you shortly thereafter. Check the
+[requirements](requirements.md) first, and direct questions to the CSE
+Certificate Program Coordinator at <csecert@carc.unm.edu>.
+
+---8<--- https://unm-carc.github.io/education/cse/electives/
+
+---
+title: "Electives and participating departments"
+description: "Approved CSE elective courses by department, and the departments participating in the certificate program."
+type: Reference
+tags:
+  - Education
+  - CSE
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/education--training/cse-program1/cse-elective-courses--participating-departments.html"
+    title: "Elective courses & participating departments (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Electives and participating departments
+
+The following courses are officially approved electives for the CSE Program.
+Each semester, certain special topics courses may also be approved for
+credit, following evaluation by the CSE Program Director. See the UNM
+[Course Catalog](https://catalog.unm.edu/){target=_blank} for courses offered
+in the current semester.
+
+## Approved electives
+
+**Nuclear Engineering**
+
+* NE 462 Monte Carlo Techniques for Nuclear Systems
+
+**Civil Engineering**
+
+* CE 502 Finite Element Methods in Solid Mechanics
+* CE 548 Fuzzy Logic and Applications
+
+**Computer Science / Electrical & Computer Engineering**
+
+* CS 481/ECE 437L Computer Operating Systems
+* CS 531/ECE 517 Machine Learning Pattern Recognition
+* CS 532/ECE 516 Computer Vision
+* CS 547/ECE 547 Neural Networks
+
+**Computer Science**
+
+* CS 427/527 Principles of Artificially Intelligent Machines
+* CS 485 Intro to Computer Networks
+* CS 491/591 Learning from the Cognitive, Computational and Neuroscience Perspectives
+* CS 530 Geometric and Probabilistic Methods in Computer Science
+* CS 533 Experimental Methods in Computer Science
+* CS 564 Intro to Database Management
+* CS 587 Advanced Operating Systems
+* CS 591 Topics in Scientific Visualization
+
+**Electrical & Computer Engineering**
+
+* ECE 438 Computer Design
+* ECE 440 Introduction to Computer Networks
+* ECE 506 Optimization Theory
+* ECE 533 Digital Image Processing
+* ECE 537 Foundations of Computing
+* ECE 538 Advanced Computer Architecture
+* ECE 540 Advanced Networking
+* ECE 563 Computational Methods in Electromagnetics
+* ECE 595 Virtual Reality and Visualization Technologies
+* ECE 637 Advanced Parallel Algorithms
+
+**Mathematics & Statistics**
+
+* Math 504/CS 575 Introductory Numerical Analysis: Numerical Linear Algebra
+* Math 505/CS 576 Introductory Numerical Analysis: Approximation and Differential Equations
+* Math 570 Asymptotics and Singular Perturbations
+* Math 576 Numerical Linear Algebra
+* Math 578 Numerical Partial Differential Equations
+* Math 579 Numerical Solutions of Ordinary Differential Equations
+
+**Mechanical Engineering**
+
+* ME 500 Numerical Techniques in Mechanical Engineering
+* ME 504 Computational Mechanics
+
+## Participating departments
+
+**[School of Engineering](https://engineering.unm.edu){target=_blank}**
+
+* [Civil Engineering](https://civil.unm.edu){target=_blank}
+* [Computer Science](https://www.cs.unm.edu){target=_blank}
+* [Electrical and Computer Engineering](https://www.ece.unm.edu){target=_blank}
+* [Mechanical Engineering](https://me.unm.edu){target=_blank}
+* [Nuclear Engineering](https://ne.unm.edu){target=_blank}
+
+**[College of Arts & Sciences](https://artsci.unm.edu){target=_blank}**
+
+* [Biology](https://biology.unm.edu){target=_blank}
+* [Chemistry and Chemical Biology](https://chemistry.unm.edu){target=_blank}
+* [Earth and Planetary Sciences](https://epswww.unm.edu){target=_blank}
+* [Mathematics and Statistics](https://math.unm.edu){target=_blank}
+* [Physics and Astronomy](https://physics.unm.edu){target=_blank}
+* [Psychology](https://psych.unm.edu){target=_blank}
+
+---8<--- https://unm-carc.github.io/education/cse/requirements/
+
+---
+title: "CSE program requirements"
+description: "Admission prerequisites, core courses, elective hours, and the research project requirement for the CSE certificate."
+type: Reference
+tags:
+  - Education
+  - CSE
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/education--training/cse-program1/cse-program-requirements.html"
+    title: "CSE Program Requirements (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# CSE program requirements
+
+## Admission requirements
+
+Admission to the CSE program is based on academic record and letters of
+recommendation. GRE scores may also be considered for students in a degree
+program. Prerequisites for admittance, in addition to a bachelor's degree:
+
+* One year of general college physics or chemistry
+* One year of differential/integral calculus, and either a course in
+  differential equations (e.g. MATH \*\*316), a course in applied statistics
+  (e.g. STAT 427), or a course in numerical methods (e.g. MATH \*\*375)
+* A course in computer programming, or equivalent experience with a language
+  used for high-performance and/or data-intensive computing such as C, C++,
+  Fortran, Java, or Python
+* For the certificate earned alongside a degree, admission is to the
+  participating home department. For post-degree CSE students, a graduate
+  degree in a mathematical, scientific, or engineering discipline and
+  degree-seeking admission at UNM is required.
+
+## Program requirements
+
+To complete the CSE program, a student must:
+
+* Be admitted to the CSE program, as described above
+* For students earning the certificate alongside a degree, complete all
+  degree requirements of their participating home department
+* Complete CSE program core requirements, based on the degree program:
+    * M.S. and post-degree students complete **3 credit hours** of CSE
+      program core courses;
+    * Ph.D. students complete **6 credit hours** of CSE program core courses.
+* Complete a total of **9 credit hours** of approved
+  [CSE electives](electives.md) or program core courses not used to fulfill
+  the core requirement
+* Complete a computational science and engineering research project through
+  either:
+    * a thesis or dissertation with a significant computational component
+      under the direction of at least one associated faculty member on the
+      student's committee; or
+    * an advanced computational project (3 credit hour minimum) under the
+      direction of one associated faculty member, presented at an open forum.
+
+## Core courses
+
+* CS/MATH \*471 Introduction to Scientific Computing
+* CS 542 Introduction to Parallel Processing
+* CS 567 Principles and Applications of Big Data
+
+## Electives
+
+The [list of approved CSE program electives](electives.md) is maintained by
+the CSE Program Committee. Students may petition the committee to substitute
+a course (for an equivalent number of credit hours) for any course of the
+approved curriculum. Most CSE program courses have a CSE program course as a
+prerequisite, so students are strongly encouraged to work with a Program
+Advisor to develop their program of study before enrollment.
+
+---8<--- https://unm-carc.github.io/education/cse/specializations/
+
+---
+title: "Program specializations"
+description: "Optional, non-transcripted CSE specializations: Computational Fluid Dynamics and Data Science."
+type: Reference
+tags:
+  - Education
+  - CSE
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/education--training/cse-program1/program-specialization.html"
+    title: "Optional program specializations (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Program specializations
+
+The CSE certificate can be completed in a number of different fields and
+areas of interest. Below are our most commonly requested specializations.
+
+!!! note
+
+    Specializations are not transcripted — your transcript reflects the
+    certificate itself.
+
+* [Computational Fluid Dynamics specialization](https://carc.unm.edu/education--training/cse-program1/cfd-program-specialization.html){target=_blank}
+* [Data Science specialization](https://carc.unm.edu/education--training/cse-program1/data-science-specialization.html){target=_blank}
+
+---8<--- https://unm-carc.github.io/news/2025-annual-meeting/
+
+---
+title: "Registration is open for the 2025 CARC Annual Meeting (CAM)"
+description: "CARC's fourth annual user meeting — April 14, 2025 — with a keynote, open forum, and student poster session."
+type: News
+tags:
+  - News
+  - Events
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/2025-user-meeting.html"
+    title: "CARC Annual Meeting 2025 (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Registration is open for the 2025 CARC Annual Meeting (CAM)
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+The UNM Center for Advanced Research Computing (CARC) is excited to announce
+its fourth annual user meeting, now called the CARC Annual Meeting (CAM),
+scheduled for April 14, 2025.
+
+CAM serves as a platform for meaningful exchanges between users and center
+staff, while also fostering interdisciplinary collaboration and innovation.
+This event provides an opportunity for researchers across various fields to
+share insights, provide feedback, and contribute to the ongoing development
+of CARC's computing resources.
+
+![Attendees at the 2024 CARC user meeting](https://carc.unm.edu/images/2024-carc-user-meeting.png)
+
+Building on the success of last year's student poster session, we are
+thrilled to continue this tradition. We encourage students and researchers
+to submit abstracts when registering to showcase their work at the afternoon
+poster reception. Posters should be 36" × 48".
+
+This year's event featured updates on CARC initiatives over a luncheon, a
+keynote presentation, researcher discussions, and an open forum to discuss
+current research computing needs. The day concluded with the poster session,
+accompanied by coffee and snacks, where students and postdoctoral
+researchers presented their computational research projects.
+
+!!! note "This event has concluded"
+
+    Recordings from CAM 2025 are on the
+    [video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+
+---8<--- https://unm-carc.github.io/news/2026-annual-meeting/
+
+---
+title: "Registration is open for the 2026 CARC Annual Meeting"
+description: "CAM 2026 comes to Zimmerman Library B30 on April 21, 2026 — updates, research highlights, and the student poster session."
+type: News
+tags:
+  - News
+  - Events
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/2026-user-meeting.html"
+    title: "CARC Annual Meeting 2026 (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Registration is open for the 2026 CARC Annual Meeting
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+The UNM Center for Advanced Research Computing (CARC) will host its annual
+**CARC Annual Meeting (CAM)** on Tuesday, April 21, 2026 at Zimmerman Library
+in the technology-enabled B30, located in the basement.
+[Registration is now open!](https://forms.office.com/Pages/ResponsePage.aspx?id=MJiqJfngK0iJfho7PIVeXIwY0OuI-zpOi4KHv9sI6KdUQjdMQVUwS1c2VUZKREoyTk9XT1NXRkFZTC4u){target=_blank}
+
+CAM brings together members of the CARC community for a day of updates,
+discussion, and research highlights from across the university. The meeting
+provides an opportunity for researchers, students, and staff to connect with
+CARC personnel, learn about the latest developments in the center, and share
+how high-performance computing is supporting research across a wide range of
+disciplines.
+
+Building on the success of previous meetings, this year's event will once
+again include a **student poster session**. Students and researchers are
+encouraged to submit posters when registering to share how they are using
+CARC resources in their work. The poster session offers a chance to showcase
+ongoing projects, spark conversations, and connect with other members of the
+research computing community at UNM.
+
+The meeting will also feature updates from CARC staff and discussions about
+the current and future role of research computing at the university. The
+event is designed to foster collaboration between users and the center while
+providing a space for the community to exchange ideas and feedback.
+
+The 2026 CARC Annual Meeting will take place from **11am–3pm on Tuesday,
+April 21, in Zimmerman Library B30**, with lunch provided for attendees.
+Additional details, including the meeting agenda, will be shared soon.
+
+Those interested in attending or presenting a poster can
+[register here](https://forms.office.com/Pages/ResponsePage.aspx?id=MJiqJfngK0iJfho7PIVeXIwY0OuI-zpOi4KHv9sI6KdUQjdMQVUwS1c2VUZKREoyTk9XT1NXRkFZTC4u){target=_blank}!
+
+![Map showing the location of Zimmerman Library room B30](https://carc.unm.edu/news--events/News/b30-locator.png)
+
+Recordings from previous meetings are on the
+[video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+
+---8<--- https://unm-carc.github.io/news/director-message/
+
+---
+title: "An important message from our Director"
+description: "A message to the CARC community from then-Director Patrick G. Bridges on federal executive actions and CARC's commitments."
+type: News
+tags:
+  - News
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/director-message.html"
+    title: "Director's message (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# An important message from our Director
+
+<p class="carc-byline">From the Director, early 2025</p>
+
+Dear CARC Community Member,
+
+The federal government recently issued multiple executive orders and actions
+that impact members of the CARC community related to issues such as
+diversity, equity, inclusion, and accessibility (DEIA) efforts, immigration,
+gender identity, and climate change. These orders have upended long-standing
+programs around the country and placed significant restrictions on
+institutions' abilities to use federally-provided funds for some projects.
+Just as importantly, they have created turmoil, fear, and uncertainty
+nationwide, in New Mexico, at UNM, and at CARC, particularly but not
+exclusively in members of the communities and programs they directly impact.
+
+As Director of CARC, I want to assure you that CARC remains committed to the
+UNM 2040 goal of inclusive excellence for all New Mexicans. As
+[President Stokes shared in her message to the UNM community](https://president.unm.edu/documents/weekly-perspective/2025/presidents-weekly-perspective-2025-01-27.pdf){target=_blank},
+we welcome all members of the UNM community, and CARC will continue our
+efforts to expand opportunity, create new knowledge, and provide service to
+all New Mexicans regardless of their race, color, ethnicity, sex, gender
+identity, age, disability, citizenship, or immigration status. To do so,
+CARC staff and I are working with UNM leadership to ensure that CARC can
+continue to support you and your academic advanced computing needs while
+complying with updated federal rules, regulations, and guidance.
+
+To help us in this endeavor, I ask that all members of the CARC community
+let me know immediately if you encounter any CARC-related challenges related
+to updated federal guidance that I can work with you to address. The
+[President's office](https://president.unm.edu/2025-federal-executive-actions/index.html){target=_blank}
+and the
+[Vice Presidents of Research at UNM](https://research.unm.edu/federalfunding){target=_blank}
+have provided very helpful information in this area; however, due to the
+wide-ranging impacts of this guidance, please do not hesitate to contact me
+if there is anything that CARC leadership can do to help you navigate these
+issues.
+
+Finally, in related news, I encourage you to read the CARC Newsletter, where
+we provide details on the next-generation computing systems CARC recently
+finalized the purchase of, the centerpiece of which is the new
+[Easley cluster](easley-cluster.md), named after NASA computer science and
+math pioneer
+[Annie Easley](https://en.wikipedia.org/wiki/Annie_Easley){target=_blank}.
+
+Sincerely,
+
+Patrick G. Bridges<br>
+Director, UNM Center for Advanced Research Computing<br>
+Professor, Department of Computer Science
+
+---8<--- https://unm-carc.github.io/news/director-search/
+
+---
+title: "UNM launches search for the next director of CARC"
+description: "The University seeks a strategic and operational leader for the Center for Advanced Research Computing. This search has concluded."
+type: News
+tags:
+  - News
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/director-search-story.html"
+    title: "Director search (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# UNM launches search for the next director of CARC
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+!!! info "This position has closed."
+
+The University of New Mexico has launched a search for the next Director of
+the Center for Advanced Research Computing (CARC), an internationally
+recognized center supporting high-performance computing, data-intensive
+research, machine learning, and interdisciplinary computational science
+across campus.
+
+The CARC Director will serve as the strategic and operational leader for the
+center, guiding its mission to support research excellence, educational
+initiatives, and collaborative partnerships across the University. The
+Director will report directly to the Vice President for Research and will
+hold an open full-time faculty or staff rank, depending on the candidate's
+academic and professional background.
+
+CARC provides advanced computing resources to the entire UNM research
+community, including GPU-enabled clusters, high-performance storage systems,
+high-speed networking infrastructure, and a dedicated research data center.
+The center supports research and education across the School of Engineering,
+College of Arts & Sciences, College of Fine Arts, UNM Health Sciences Center,
+and partners closely with Sandia and Los Alamos National Laboratories.
+
+## Role highlights
+
+The Director will:
+
+* Shape CARC's strategic vision and research direction
+* Expand interdisciplinary computational research and external funding
+* Oversee CARC staff, facilities, HPC systems, and operations
+* Strengthen educational and workforce development programs
+* Build partnerships with departments, centers, national laboratories, and industry
+* Support faculty, postdocs, and students engaged in computational research
+
+---8<--- https://unm-carc.github.io/news/easley-cluster/
+
+---
+title: "CARC prepares for deployment of new high-performance computing cluster"
+description: "Easley — named for NASA pioneer Annie Easley — brings H100 GPUs, all-flash storage, and a 7–10× performance leap."
+type: News
+tags:
+  - News
+  - Systems
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/easley-cluster.html"
+    title: "New Easley cluster (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# CARC prepares for deployment of new high-performance computing cluster
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+![Easley cluster announcement graphic](https://carc.unm.edu/images/untitled-design-11.png)
+
+The Center for Advanced Research Computing (CARC) is gearing up to deploy
+its latest high-performance computing (HPC) cluster, tentatively set for a
+summer launch. This state-of-the-art system will provide researchers with
+cutting-edge computing power, supporting a wide range of computational and
+data-intensive projects.
+
+The new cluster, named **Easley**, honors the legacy of
+[Annie Easley](https://en.wikipedia.org/wiki/Annie_Easley){target=_blank}, a
+pioneering computer programmer and mathematician whose contributions to
+early rocket propulsion and coding have left a lasting impact on the field
+of computational science.
+
+Hussein Al-Azzawi, CARC IT Manager, says "We are very excited to launch
+Easley, our new cluster, and bring new cutting-edge technology to support
+UNM faculty, staff, and students. We hope always to provide resources that
+allow research to push the boundaries and act as a crucial resource for
+those looking to utilize the latest technological innovation when conducting
+their research at UNM."
+
+The new Dell HPC cluster will replace Wheeler and will give us an estimated
+performance boost of 7× to 10×, depending on workload type, and a brand-new
+all-flash IBM parallel filesystem.
+
+"This is a massive performance upgrade in efficiency and raw power, which
+comes with a fivefold reduction in the number of racks and physical CPUs,"
+says Al-Azzawi. "This lowers power consumption per compute unit and reduces
+cooling and maintenance costs while providing modern architecture and
+supporting newer software optimizations, preparing us to advance in the AI
+and machine learning age."
+
+Easley will be a mixed-use Dell hardware CPU/GPU cluster, incorporating H100
+GPUs, which are among the most advanced graphics processing units available
+today. These GPUs are designed to accelerate AI, machine learning, and
+scientific computing workloads, offering significant performance
+enhancements over previous generations.
+
+At announcement, the cluster comprised 60 nodes, 3,968 cores, 22.5 TB RAM,
+and 32 NVIDIA GPUs. Easley's core network is based on NVIDIA's 800 Gbps
+InfiniBand, with 200 Gbps connectivity to the nodes and a 768 TB raw
+all-flash parallel filesystem.
+
+Accompanying the deployment is an IBM storage solution, ensuring researchers
+have access to a robust and scalable data storage infrastructure.
+Additionally, the system utilizes a high-speed InfiniBand connection,
+allowing for seamless data transfer and communication between computing
+nodes, optimizing performance for complex simulations and large-scale
+computational tasks.
+
+!!! success "Easley is now in production"
+
+    Easley launched with 65 nodes, 4,160 cores, and 44 NVIDIA GPUs (36 L40S
+    + 8 H100) — see the current specifications in the
+    [systems overview](https://unm-carc.github.io/docs/systems/overview/).
+
+---8<--- https://unm-carc.github.io/news/genome-sequencing/
+
+---
+title: "Genome sequencing reveals a newly identified virus"
+description: "CARC computing supported the sequencing and phylogenetic analysis behind the characterization of a previously unrecognized virus."
+type: News
+tags:
+  - News
+  - Research
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/genome-sequencing.html"
+    title: "Genome sequencing story (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Genome sequencing reveals a newly identified virus
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+Researchers have identified and characterized a previously unrecognized
+virus using genome sequencing and computational analysis, contributing to a
+growing body of work that expands current understanding of viral diversity
+and evolution.
+
+The study, published in
+[PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC11721154/){target=_blank},
+analyzed genetic material obtained from biological samples using
+next-generation sequencing technologies. By assembling the viral genome
+directly from sequencing data, the research team was able to examine its
+genetic structure, identify key features, and compare it with known viral
+sequences.
+
+To determine how the newly identified virus fits within existing viral
+classifications, the researchers conducted phylogenetic analyses that
+evaluated evolutionary relationships across a broad range of viral genomes.
+These analyses required the comparison of large datasets and the evaluation
+of multiple evolutionary models, making the process computationally
+intensive.
+
+High-performance computing resources provided by the University of New
+Mexico's Center for Advanced Research Computing (CARC) supported the
+sequencing and analytical workflows required for this work. Access to
+advanced computing systems enabled efficient processing of large-scale
+datasets and facilitated detailed evolutionary analysis.
+
+Although the discovery does not yet have direct public health implications,
+identifying and characterizing new viruses is a critical step in
+understanding viral circulation, host interactions, and long-term
+evolutionary dynamics. Studies of this kind provide foundational knowledge
+that can inform future research in viral ecology, disease surveillance, and
+evolutionary biology.
+
+![Figure from the virus characterization study](https://carc.unm.edu/images/viruses-12-01010-g001.png)
+
+---8<--- https://unm-carc.github.io/news/hpc-course/
+
+---
+title: "New HPC course bridges the gap between students and local tech industry"
+description: "CS491/591, led by Matthew Fricke and backed by a $1M Department of Education grant, gives students hands-on cluster experience."
+type: News
+tags:
+  - News
+  - Education
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/hpc-course-matthew.html"
+    title: "HPC course (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# New HPC course bridges the gap between students and local tech industry
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+![Matthew Fricke](https://carc.unm.edu/images/matthew-fricke-caption11.png)
+
+The Center for Advanced Research Computing (CARC) is pleased to highlight
+our High-Performance Computing (HPC) course led by University of New Mexico
+Research Assistant Professor Matthew Fricke. This unique course (CS491/591)
+has provided undergraduate and graduate students with hands-on technical
+training while fostering connections between students and the local tech
+workforce.
+
+Backed by a $1 million grant from the Department of Education, the course
+aims to address the growing need for skilled professionals in the fields of
+computational science and advanced computing. Through a combination of
+practical experience and career-focused sessions, students develop essential
+skills and gain insight into potential career pathways in labs, private
+industry, and research institutions.
+
+A key feature of the course is the opportunity for students to work directly
+with their own miniature computing clusters, built using repurposed CARC
+hardware nodes. This hands-on experience allows students to learn essential
+system administration skills on Linux systems, including job scheduling,
+software installation, and system setup.
+
+"Our goal is to provide students with not only technical expertise but also
+a clear understanding of the professional landscape," says Fricke. "By
+connecting students with experts from local labs and the tech sector, we aim
+to bridge the gap between academic training and real-world application."
+
+![Students working with cluster hardware](https://carc.unm.edu/images/photo-courtesy-of-matthew-fricke.png)
+
+In addition to technical training, the course includes a special
+career-building session where students engage with professionals from
+national labs, private industry, and academic research. This session is
+designed to give students a comprehensive view of the current job market and
+help them navigate potential career opportunities.
+
+The HPC course reflects CARC's ongoing commitment to strategic workforce
+development and community engagement. By equipping students with both
+technical and professional skills, the course aims to prepare the next
+generation of computational scientists and system administrators.
+
+For more information on CS491/591, email Matthew Fricke at
+<mfricke@unm.edu>.
+
+---8<--- https://unm-carc.github.io/news/molecular-modeling/
+
+---
+title: "Undergraduate researcher leverages CARC for molecular modeling breakthrough"
+description: "Physics major Sole Samuels used CARC systems to develop radial density encoding, a new molecular representation for machine learning."
+type: News
+tags:
+  - News
+  - Research
+  - Students
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/research/molecular-modeling-breakthrough.html"
+    title: "Molecular modeling story (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Undergraduate researcher leverages CARC for molecular modeling breakthrough
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+For many students, a senior thesis marks the culmination of their
+undergraduate studies. For UNM physics major Sole Samuels, it was also an
+opportunity to make a meaningful contribution to the field of computational
+molecular science — with the help of the University of New Mexico's Center
+for Advanced Research Computing (CARC).
+
+Samuels'
+[2025 honors thesis](https://physics.unm.edu/undergraduate/thesis/2025_samuels.pdf){target=_blank},
+*Radial Density Encoding of Molecular Environments*, introduces a new method
+for representing molecular structures that could improve how scientists use
+machine learning to predict molecular properties. By focusing on radial
+density encoding, Samuels explored how to capture the spatial distribution
+of electron density around atoms in a way that is both compact and highly
+informative for computational models.
+
+"Training and testing my models required more computing power than I could
+ever have accessed on a personal computer," said Samuels. "CARC's
+high-performance computing systems allowed me to work with larger datasets,
+run more complex simulations, and refine my approach much faster than would
+otherwise be possible."
+
+The project bridges physics, chemistry, and data science — demonstrating how
+advanced computational techniques can help scientists tackle challenges in
+quantum chemistry, such as predicting chemical reactivity or designing new
+materials. Using CARC's resources, Samuels was able to train neural networks
+on three-dimensional molecular data, a process that demands both significant
+processing speed and large-scale storage.
+
+"This experience gave me hands-on exposure to the kind of computing
+infrastructure that drives modern scientific research," Samuels said. "It
+wasn't just about finishing a thesis — it was about learning how to turn a
+theoretical idea into a computational tool."
+
+Samuels' work is a reminder that high-performance computing is not only for
+large research teams or faculty-led projects — it is also a critical
+resource for students preparing to enter research careers. By providing
+access to advanced computing power and technical support, CARC helps equip
+the next generation of scientists with the skills and experience needed to
+make meaningful contributions in their fields.
+
+![Figure from the thesis](https://carc.unm.edu/research/picture1.png)
+
+---8<--- https://unm-carc.github.io/news/psaap-iv-compass/
+
+---
+title: "UNM awarded prestigious grant to lead national research on high-performance computing"
+description: "A UNM-led team wins a DOE NNSA PSAAP IV cooperative agreement, establishing the COMPASS center at CARC."
+type: News
+tags:
+  - News
+  - Research
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/psaap-iv.html"
+    title: "PSAAP IV award (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# UNM awarded prestigious grant to lead national research on high-performance computing
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+A collaborative team of universities, spearheaded by the Center for Advanced
+Research Computing (CARC) at the University of New Mexico, has been awarded
+one of nine cooperative agreements under the Predictive Science Academic
+Alliance Program IV (PSAAP IV) by the U.S. Department of Energy's
+[National Nuclear Security Administration (NNSA)](https://www.energy.gov/nnsa){target=_blank}.
+
+Along with UNM, partnering institutions include the
+[University of Alabama](https://www.ua.edu/){target=_blank},
+[Tennessee Technological University](https://www.tntech.edu/){target=_blank},
+and the [University of California at Davis](https://www.ucdavis.edu/){target=_blank}.
+
+Together they will establish the **Center for Optimized Modern Parallel
+Adaptable System Software (COMPASS)**, which will be based within the CARC
+Department at UNM. COMPASS builds on the successes of UNM's previous PSAAP
+III center — the Center for Understandable, Performant Exascale
+Communication Systems (CUP-ECS) — and will focus on developing scalable,
+uncertainty-aware system software to enable predictive modeling at scale.
+
+This research is vital because advances in high-performance computing impact
+fields that touch everyday life — from weather forecasting and climate
+modeling to medical research, national security, and the development of new
+technologies. By creating more efficient and adaptable computing systems,
+COMPASS aims to make scientific discoveries faster and more reliable.
+
+COMPASS will be led by UNM Computer Science Professor Patrick Bridges as
+Principal Investigator, along with co-PIs:
+
+* Amanda Bienz — University of New Mexico
+* Trilce Estrada — University of New Mexico
+* Purushotham Bangalore — University of Alabama
+* Anthony Skjellum — Tennessee Technological University
+* Steve Shkoller — University of California at Davis
+
+This research team combines complementary expertise in scalable software
+systems, communication technologies, and simulation science to advance
+predictive science and train the next generation of computational
+scientists. "COMPASS seeks to use AI insights to transform how scientific
+applications and system software work together to leverage high-performance
+computing systems and address important scientific problems. We are excited
+to continue to move this research forward and look forward to the close
+collaboration with our national lab colleagues that is fundamental to the
+NNSA PSAAP program," said Bridges.
+
+PSAAP is managed by
+[NNSA's Office of Advanced Simulation and Computing and Institutional Research and Development Programs](https://www.energy.gov/nnsa/office-advanced-simulation-and-computing){target=_blank}
+in collaboration with
+[Lawrence Livermore National Laboratory](https://www.llnl.gov/){target=_blank},
+[Los Alamos National Laboratory](https://www.lanl.gov/){target=_blank}, and
+[Sandia National Laboratories](https://www.sandia.gov/){target=_blank}. The
+program engages the U.S. academic community in advancing predictive science
+through high-performance computing and ensures U.S. leadership in
+simulation-based research.
+
+For more information, visit
+[psaap.llnl.gov](https://psaap.llnl.gov/){target=_blank} or the
+[DOE NNSA PSAAP IV announcement](https://www.energy.gov/nnsa/articles/nnsa-announces-selection-next-round-predictive-science-academic-alliance-program){target=_blank}.
+
+![COMPASS center logo](https://carc.unm.edu/images/compass-logo_draft6-06.png)
+
+---8<--- https://unm-carc.github.io/news/sc24-team/
+
+---
+title: "CARC team gears up for SC24 Competition"
+description: "Six UNM students take a Dell/Penguin/Intersect360-sponsored H100 cluster to the SC24 student competition in Atlanta."
+type: News
+tags:
+  - News
+  - Students
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/news--events/News/sc24.html"
+    title: "SC24 team (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# CARC team gears up for SC24 Competition
+
+<p class="carc-byline">By Mariah Rosales</p>
+
+![The UNM SC24 team](https://carc.unm.edu/images/molly-reece-matthew-faculty-advisor-nick-team-coach-xavier-saskia-ryan-sumaya-alex-logistic-coordinator-1.png)
+
+As the 2024 Supercomputing Conference (SC24) approaches, the University of
+New Mexico's Center for Advanced Research Computing (CARC) is in full
+preparation mode. This year, a team of five seniors and one junior is set to
+compete in Atlanta, Georgia this November, showcasing their expertise in
+high-performance computing (HPC).
+
+Leading the team is returning SC23 competitor Ryan Scherbarth, joined by
+seniors Molly Palko, Xavier Barr, Sumaya Houssini Mohamed, Reece Ransby, and
+junior Saskia Trefethen. Most team members have participated in various HPC
+competitions over the past year, equipping them for the challenges they will
+face.
+
+The SC24 competition unfolds over three days, but preparation began long ago
+for the team. For the competition, the teams receive a combination of known
+and mystery benchmarks to tackle. Familiar benchmarks like HPL, often a
+staple in HPC competitions, and MLPerf, which focuses on machine learning,
+are central to their strategy. New challenges such as NAMD add an extra
+layer of complexity. Working at CARC has provided the team with valuable
+insights and hands-on experience with these applications.
+
+This year's competition features a unique opportunity for collaboration with
+hardware sponsors, allowing the team to customize their computing cluster
+for optimal performance. With support from Dell, Penguin Solutions, and
+Intersect360, they built a cluster consisting of three nodes, each equipped
+with four NVIDIA H100 NVL accelerators. This setup aligns with the
+competition's technical requirements and underscores the increasing
+significance of AI and machine learning in the field.
+
+The competition begins with the assembly of their cluster, followed by a
+critical 24-hour benchmarking phase. After submitting their scores, they
+transition to running applications for the subsequent 48 hours. "The
+adrenaline during those first hours is intense, but it's also a great
+opportunity to see how well our preparation pays off," said Sumaya Houssini
+Mohamed.
+
+For many team members, SC24 is not just a competition; it is an opportunity
+to engage with industry professionals and explore potential career paths in
+a dynamic field. "This experience is invaluable. It allows us to network and
+gain insights from experts that can help shape our futures," noted Xavier
+Barr.
+
+The team's journey began in Spring 2023, and they have since seen
+substantial growth and increased interest in HPC at UNM. From a small group,
+they have expanded to include more members and multiple competitions,
+enabling students to develop essential skills in Linux systems and
+command-line operations. "When I started, I had little exposure to HPC, but
+now I feel well-prepared to tackle complex problems. It's amazing to see how
+far we've come," said Molly Palko.
+
+As they prepared to travel to SC24, the team focused on demonstrating their
+capabilities and contributing to the evolving landscape of high-performance
+computing. "This competition is a culmination of our hard work, and I'm
+excited to see how we measure up against other top teams," reflected team
+leader Ryan Scherbarth.
+
+---8<--- https://unm-carc.github.io/contact/personnel/
+
+---
+title: "Personnel"
+description: "The CARC team: leadership, systems staff, and administration."
+type: Reference
+tags:
+  - Contact
+  - People
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/contact-us/staff.html"
+    title: "CARC Personnel (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Personnel
+
+| Name | Title | Email |
+| ---- | ----- | ----- |
+| Swetnam, Tyson | Director | tswetnam [at] unm [dot] edu |
+| Fricke, Matthew | Associate Director | mfricke [at] unm [dot] edu |
+| Ward, Anneliese | Sr. Business Manager | anw0412 [at] unm [dot] edu |
+| Crowley, JJ | Systems/Network Analyst II | jcrowley1 [at] unm [dot] edu |
+| Redfearn, Troy | HPC Systems Specialist III | tredfearn [at] unm [dot] edu |
+| Sanchez, Jose | Systems Analyst I | josesanc [at] unm [dot] edu |
+| Houssini, Sumaya | Systems/Network Analyst II | shoussini [at] unm [dot] edu |
+| Rosales, Mariah | Administrative Coordinator | marosales [at] unm [dot] edu |
+
+Email addresses are written out to deter scrapers — replace *[at]* with `@`
+and *[dot]* with `.`.
+
+For general inquiries, write to <info@carc.unm.edu>; for technical help, see
+[getting help](https://unm-carc.github.io/docs/support/help/) in the user
+documentation.
+
+---8<--- https://unm-carc.github.io/contact/visiting/
+
+---
+title: "Visiting CARC"
+description: "Location, directions, and parking for the CARC building at 1601 Central Avenue NE."
+type: Reference
+tags:
+  - Contact
+  - Visitors
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-29T00:00:00Z"
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/contact-us/visitors.html"
+    title: "Visitor info (carc.unm.edu)"
+    author: "team:unm-carc"
+---
+
+# Visiting CARC
+
+## Location
+
+The Center for Advanced Research Computing is located at:
+
+**1601 Central Avenue NE, Albuquerque NM 87106**
+
+The Center is on the north side of Central Avenue, one block west of
+University Boulevard.
+[Open in Google Maps](https://www.google.com/maps/search/?api=1&query=UNM+Center+for+Advanced+Research+Computing+1601+Central+Ave+NE+Albuquerque){target=_blank}.
+
+## Parking
+
+If you park in either of the lots on the east or west side of the building,
+or on Pine Street on the east side of CARC, obtain a one-day visitor parking
+permit at the CARC front desk.
+
+Free but limited parking is offered on Ash Street to the west of the CARC
+building. Metered parking is available to the northeast of CARC in the lot in
+front of the church.
+
+!!! warning "Neighborhood parking"
+
+    Much of the parking in the neighborhoods around the building is
+    permit-only, and you can be ticketed if you park in these areas.
+
+Employees and resident lab personnel can obtain authorization for a long-term
+P parking pass from UNM Parking and Transportation Services — contact
+Sr. Business Manager [Anneliese Ward](mailto:anw0412@unm.edu) about a
+long-term pass.
+
+## Mailing address
+
+UNM Center for Advanced Research Computing<br>
+MSC01 1190<br>
+1601 Central Ave NE<br>
+Albuquerque NM 87106
+
+---8<--- https://unm-carc.github.io/log/
+
+# Website update log
+
+## 2026-08-29
+
+* **Initialization**: Created this rebuild of [carc.unm.edu](https://carc.unm.edu) with [Zensical](https://zensical.org), structured as an Open Knowledge Format (OKF v0.2) bundle with the same agent surface as the [user documentation](https://unm-carc.github.io/docs/): llms.txt, per-page Markdown mirrors, and an origin-wide robots.txt.
+* **Migration**: Migrated core pages from carc.unm.edu — About (mission, strategic plan, history, IAB), Research (featured projects, publications, services, grant resources), Education (workshops, CSE certificate program), Contact (personnel, visitors) — and the ten most recent news stories, with provenance frontmatter. Content images currently hotlink to carc.unm.edu and must be localized before the old site is retired.
