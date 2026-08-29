@@ -16,21 +16,24 @@ serve every UNM-CARC project site under it (e.g. `carc.unm.edu/docs/`).
 ## Quick start
 
 ```bash
-pip install zensical pyyaml
-zensical serve                              # localhost:8000
-zensical build --clean
+pip install pyyaml markdown
+python3 scripts/build_cascade_site.py       # render all pages (UNM Cascade standard)
+python3 scripts/postbuild_agent_surface.py  # md mirror + meta + robots.txt
+python3 -m http.server 8080 -d site         # preview at localhost:8080
 python3 scripts/okf_validate.py docs        # OKF conformance (CI-enforced)
 python3 scripts/gen_llms_txt.py             # regenerate llms.txt indexes
-python3 scripts/postbuild_agent_surface.py  # md mirror + meta + robots.txt
 ```
 
-## Homepage
+## Rendering: UNM Cascade standard
 
-The homepage is **standard HTML**, not Zensical: `web/index.html` keeps the
-UNM Cascade webcore header/footer verbatim (webcore.unm.edu assets) around a
-Googie/mid-century D3 hero in UNM brand colors. `scripts/build_home.py`
-installs it over the generated landing page after every build; interior
-pages remain Zensical. The machine-readable OKF index stays at `/index.md`.
+Every page uses the UNM Cascade webcore standard — the exact header, section
+navigation, breadcrumbs, footer, and Quick Links panel from carc.unm.edu
+(webcore.unm.edu assets) around a plain Bootstrap content column. Markdown in
+`docs/` (the OKF bundle) is rendered by `scripts/build_cascade_site.py`; the
+homepage is hand-authored standard HTML (`web/index.html`) with the Googie/D3
+hero. Zensical is no longer used to render this site (`zensical.toml` remains
+only as the `site_url` config source). The machine-readable OKF index stays
+at `/index.md`.
 
 ## Notes
 
