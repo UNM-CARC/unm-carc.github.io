@@ -38,7 +38,7 @@
   position: absolute; inset: 0; display: flex; align-items: center;
   pointer-events: none;
 }
-.gg-overlay .container { pointer-events: none; width: 100%; }
+.gg-overlay .container { pointer-events: none; width: 100%; max-width: 1560px; margin: 0 auto; }
 .gg-panel { max-width: 34rem; margin-left: auto; pointer-events: auto; text-align: left; }
 .gg-kicker {
   font-family: "Pacifico", cursive; color: var(--turq-neon);
@@ -119,10 +119,13 @@
 @media (prefers-reduced-motion: reduce) {
   .gg-flicker, .gg-blink { animation: none !important; }
 }
+/* UNM dept footer: neutralize the scraped fixed-width table (mobile overflow) */
+#footer table { width: 100% !important; height: auto !important; }
+#footer td { padding-right: 1em; }
 @media (max-width: 900px) {
   .gg-headline { font-size: 1.9rem; }
   .gg-overlay { position: static; background: var(--night); padding: 1.4rem 0 2rem; }
-  .gg-hero svg.gg-sky { height: 46vh; min-height: 320px; }
+  .gg-hero svg.gg-sky { height: 52vh; min-height: 360px; }
   .gg-panel { margin: 0 1rem; }
 }
 </style>
@@ -481,6 +484,19 @@
 (function () {
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var svg = d3.select(".gg-sky");
+
+  // On narrow screens, reframe the scene on the sign and the road
+  var mqPhone = window.matchMedia("(max-width: 560px)");
+  var mqTablet = window.matchMedia("(max-width: 900px)");
+  function frame() {
+    svg.attr("viewBox", mqPhone.matches ? "70 0 620 740"      // the neon sign
+             : mqTablet.matches ? "60 0 1000 740"             // sign + road + cars
+             : "0 0 1600 740");                               // the full diorama
+  }
+  frame();
+  [mqPhone, mqTablet].forEach(function (m) {
+    if (m.addEventListener) m.addEventListener("change", frame);
+  });
 
   // --- starfield ---
   var stars = d3.select("#gg-stars");

@@ -2,6 +2,8 @@
 
 ## 2026-08-29
 
+* **Update**: Responsive shakedown across full-screen monitor (2560px), desktop (1920px), laptop (1440px), tablet (768px), and mobile (375px): fixed the department footer's fixed-width table that forced horizontal overflow on small screens; capped the hero overlay width on ultra-wide monitors; added three-tier hero framing (phones center on the neon sign, tablets show sign + road + cars, desktops get the full diorama); content tables scroll within the page. Verified zero horizontal overflow at every size and that the hero animations hold up.
+
 * **Update**: Remodeled the hero's cars on the 1959 Cadillac — blade tailfins with twin bullet taillights in chrome pods, quad headlights, eggcrate grille, dagmar bumper, full-length chrome spear, wraparound windshield, long rear overhang. Lobo is now an angular UNM-logo-style wolf and Sparky a 1950s Yoshiya-style tin robot with a glowing chest spark window. The arriving car now stops fully in frame before waving, and the road's centerline dashes shorten with distance for perspective.
 
 * **Update**: Interior pages gained day and night themes (system preference plus a ☾/☀ toggle in the section navigation, remembered per browser); User Documentation and Help Desk render as pill buttons that open in new tabs (↗). The homepage hero's road centerline is now static, replaced by an animated scene: Lobo drives a turquoise finned Cadillac convertible with Sparky the android riding shotgun away toward the mesa; a second car arrives, swings broadside, its occupants wave, and it sinks off-screen before the loop repeats.

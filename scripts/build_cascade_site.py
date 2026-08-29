@@ -137,6 +137,9 @@ html[data-theme="dark"] { --pg-bg:#14161d; --pg-fg:#e8e6e1; --pg-muted:#a7a8aa;
 }
 #page { background: var(--pg-bg) !important; }
 #header h1 { color: var(--pg-fg) !important; }
+#footer table { width: 100% !important; height: auto !important; }
+#footer td { padding-right: 1em; }
+#carc-content table { display: block; overflow-x: auto; }
 #main, #carc-content { background: var(--pg-bg); color: var(--pg-fg); }
 #carc-content h1, #carc-content h2, #carc-content h3, #carc-content h4 { color: var(--pg-fg); }
 #carc-content a { color: var(--pg-link); }
