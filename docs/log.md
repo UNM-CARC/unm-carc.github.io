@@ -2,6 +2,8 @@
 
 ## 2026-08-29
 
+* **Update**: Remodeled the hero's cars on the 1959 Cadillac — blade tailfins with twin bullet taillights in chrome pods, quad headlights, eggcrate grille, dagmar bumper, full-length chrome spear, wraparound windshield, long rear overhang. Lobo is now an angular UNM-logo-style wolf and Sparky a 1950s Yoshiya-style tin robot with a glowing chest spark window. The arriving car now stops fully in frame before waving, and the road's centerline dashes shorten with distance for perspective.
+
 * **Update**: Interior pages gained day and night themes (system preference plus a ☾/☀ toggle in the section navigation, remembered per browser); User Documentation and Help Desk render as pill buttons that open in new tabs (↗). The homepage hero's road centerline is now static, replaced by an animated scene: Lobo drives a turquoise finned Cadillac convertible with Sparky the android riding shotgun away toward the mesa; a second car arrives, swings broadside, its occupants wave, and it sinks off-screen before the loop repeats.
 
 * **Update**: All interior pages now render in the UNM Cascade webcore standard — the exact carc.unm.edu header, section navigation, breadcrumbs, department + UNM global footer, and Quick Links panel on every page, with a plain content column replacing the Zensical/Material theme (`scripts/build_cascade_site.py`). The OKF bundle, llms indexes, Markdown mirrors, and robots.txt are unchanged.

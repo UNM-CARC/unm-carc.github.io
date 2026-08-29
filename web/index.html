@@ -189,65 +189,147 @@
     <!-- route 66 road -->
     <g>
       <path d="M690 740 L810 560 L830 560 L1030 740 Z" fill="#191d26"/>
-      <path id="gg-lane" d="M818 562 L860 740" fill="none" stroke="#f7efdf" stroke-width="7" stroke-dasharray="26 30" stroke-linecap="round" opacity=".8"/>
-      <!-- mid-century Cadillacs: Lobo driving, Sparky riding shotgun -->
+      <g id="gg-lane"></g>
+      <!-- 1959-style Cadillacs: Lobo driving, Sparky riding shotgun -->
+      <defs>
+        <linearGradient id="caddyBody" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7fe0ea"/><stop offset=".35" stop-color="#2fb8c6"/>
+          <stop offset="1" stop-color="#0c6c77"/>
+        </linearGradient>
+        <linearGradient id="caddyChrome" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#c7c8ca"/>
+          <stop offset="1" stop-color="#8b8d90"/>
+        </linearGradient>
+      </defs>
       <g id="gg-cars">
+        <!-- REAR view: twin blade fins, dual bullet lamps per fin, rear grille -->
         <g id="gg-car-away" opacity="0">
-          <ellipse cx="0" cy="30" rx="105" ry="10" fill="#000" opacity=".35"/>
-          <path d="M-95 -60 L-79 -6 L79 -6 L95 -60 L83 -10 Z" fill="#0c6c77"/>
-          <path d="M-95 -60 Q-99 -66 -93 -66 L-84 -20 Z" fill="#2fb8c6"/>
-          <path d="M95 -60 Q99 -66 93 -66 L84 -20 Z" fill="#2fb8c6"/>
-          <rect x="-84" y="-16" width="168" height="40" rx="10" fill="#2fb8c6"/>
-          <rect x="-84" y="4" width="168" height="20" rx="8" fill="#0c6c77"/>
-          <rect x="-92" y="18" width="184" height="10" rx="5" fill="#d9dadb"/>
-          <rect x="-22" y="0" width="44" height="16" rx="3" fill="#f7efdf" stroke="#63666a" stroke-width="1.5"/>
-          <circle cx="-90" cy="-58" r="7" fill="#ff4d6a" filter="url(#glow)"/>
-          <circle cx="90" cy="-58" r="7" fill="#ff4d6a" filter="url(#glow)"/>
-          <circle cx="-70" cy="16" r="5" fill="#ff4d6a" filter="url(#glow)"/>
-          <circle cx="70" cy="16" r="5" fill="#ff4d6a" filter="url(#glow)"/>
-          <path d="M-62 -16 Q0 -34 62 -16 L62 -12 L-62 -12 Z" fill="#10131c"/>
-          <g fill="#8b8d90"><circle cx="-26" cy="-26" r="9"/><polygon points="-33,-30 -37,-44 -27,-33"/><polygon points="-19,-30 -15,-44 -25,-33"/></g>
-          <g><rect x="12" y="-34" width="20" height="17" rx="5" fill="#c7c8ca"/><line x1="22" y1="-34" x2="22" y2="-44" stroke="#c7c8ca" stroke-width="2"/><circle cx="22" cy="-46" r="3" fill="#3fd6e4" filter="url(#glow)"/></g>
-        </g>
-        <g id="gg-car-front" opacity="0">
-          <ellipse cx="0" cy="30" rx="105" ry="10" fill="#000" opacity=".35"/>
-          <path d="M-97 -54 L-90 -14 L90 -14 L97 -54 L88 -18 Z" fill="#0c6c77"/>
-          <rect x="-88" y="-18" width="176" height="42" rx="12" fill="#2fb8c6"/>
-          <rect x="-88" y="2" width="176" height="22" rx="9" fill="#0c6c77"/>
-          <rect x="-94" y="16" width="188" height="11" rx="5" fill="#d9dadb"/>
-          <g stroke="#d9dadb" stroke-width="3"><line x1="-70" y1="-2" x2="70" y2="-2"/><line x1="-70" y1="5" x2="70" y2="5"/><line x1="-70" y1="12" x2="70" y2="12"/></g>
-          <circle cx="-74" cy="-6" r="8" fill="#fff6d8" filter="url(#glow)"/>
-          <circle cx="74" cy="-6" r="8" fill="#fff6d8" filter="url(#glow)"/>
-          <path d="M-64 -18 Q0 -40 64 -18 L64 -14 L-64 -14 Z" fill="#10131c"/>
-          <g fill="#8b8d90"><circle cx="-28" cy="-30" r="10"/><polygon points="-36,-35 -41,-50 -30,-38"/><polygon points="-20,-35 -15,-50 -26,-38"/><circle cx="-31" cy="-32" r="1.6" fill="#10131c"/><circle cx="-25" cy="-32" r="1.6" fill="#10131c"/></g>
-          <g><rect x="16" y="-39" width="22" height="19" rx="6" fill="#c7c8ca"/><rect x="20" y="-34" width="14" height="6" rx="3" fill="#3fd6e4"/><line x1="27" y1="-39" x2="27" y2="-50" stroke="#c7c8ca" stroke-width="2"/><circle cx="27" cy="-52" r="3.5" fill="#ff4d6a" filter="url(#glow)"/></g>
-        </g>
-        <g id="gg-car-side" opacity="0">
-          <ellipse cx="0" cy="34" rx="150" ry="11" fill="#000" opacity=".35"/>
-          <path d="M118 -34 Q142 -66 148 -70 Q152 -44 146 -22 L112 -22 Z" fill="#2fb8c6" stroke="#0c6c77" stroke-width="2"/>
-          <ellipse cx="149" cy="-56" rx="7" ry="5" fill="#ff4d6a" filter="url(#glow)"/>
-          <path d="M-148 -20 Q-150 -38 -128 -40 L-34 -44 Q40 -48 112 -36 L146 -22 Q150 -2 142 8 L-140 8 Q-150 0 -148 -20 Z" fill="#2fb8c6"/>
-          <path d="M-148 -14 L146 -16 L145 -8 L-147 -6 Z" fill="#d9dadb"/>
-          <path d="M-30 -44 L44 -47 L40 -40 L-32 -38 Z" fill="#9adfe8" opacity=".85"/>
-          <circle cx="-88" cy="10" r="22" fill="#10131c"/><circle cx="-88" cy="10" r="14" fill="#f2efe6"/><circle cx="-88" cy="10" r="7" fill="#a7a8aa"/>
-          <circle cx="92" cy="10" r="22" fill="#10131c"/><circle cx="92" cy="10" r="14" fill="#f2efe6"/><circle cx="92" cy="10" r="7" fill="#a7a8aa"/>
-          <circle cx="-152" cy="-12" r="5" fill="#fff6d8" filter="url(#glow)"/>
-          <g id="gg-lobo">
-            <g id="gg-wave1" transform="rotate(0)"><rect x="-64" y="-74" width="7" height="26" rx="3.5" fill="#8b8d90" transform="rotate(-36 -60 -50)"/></g>
-            <circle cx="-46" cy="-60" r="12" fill="#8b8d90"/>
-            <polygon points="-55,-66 -60,-84 -49,-70" fill="#8b8d90"/>
-            <polygon points="-38,-67 -34,-84 -44,-71" fill="#8b8d90"/>
-            <path d="M-36 -58 L-24 -54 L-36 -52 Z" fill="#8b8d90"/>
-            <circle cx="-49" cy="-62" r="1.8" fill="#10131c"/>
-            <rect x="-56" y="-50" width="22" height="10" rx="4" fill="#63666a"/>
+          <ellipse cx="0" cy="32" rx="112" ry="10" fill="#000" opacity=".35"/>
+          <!-- blade fins -->
+          <path d="M-62 -12 L-80 -74 Q-83 -80 -86 -74 L-92 -12 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
+          <path d="M62 -12 L80 -74 Q83 -80 86 -74 L92 -12 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
+          <!-- dual bullet lamps per fin, chrome bezels -->
+          <g>
+            <circle cx="-83" cy="-56" r="6.5" fill="#d9dadb"/><circle cx="-83" cy="-56" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="-85" cy="-38" r="6.5" fill="#d9dadb"/><circle cx="-85" cy="-38" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="83" cy="-56" r="6.5" fill="#d9dadb"/><circle cx="83" cy="-56" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="85" cy="-38" r="6.5" fill="#d9dadb"/><circle cx="85" cy="-38" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
           </g>
+          <!-- trunk deck between the fins -->
+          <path d="M-88 -12 Q0 -22 88 -12 L92 12 L-92 12 Z" fill="url(#caddyBody)"/>
+          <!-- rear grille panel ('59 matches the front) -->
+          <g>
+            <rect x="-64" y="-6" width="128" height="16" rx="3" fill="#10131c"/>
+            <g stroke="#c7c8ca" stroke-width="1.4">
+              <line x1="-64" y1="-1" x2="64" y2="-1"/><line x1="-64" y1="4" x2="64" y2="4"/>
+              <line x1="-52" y1="-6" x2="-52" y2="10"/><line x1="-36" y1="-6" x2="-36" y2="10"/>
+              <line x1="-20" y1="-6" x2="-20" y2="10"/><line x1="-4" y1="-6" x2="-4" y2="10"/>
+              <line x1="12" y1="-6" x2="12" y2="10"/><line x1="28" y1="-6" x2="28" y2="10"/>
+              <line x1="44" y1="-6" x2="44" y2="10"/>
+            </g>
+            <rect x="-16" y="-3" width="32" height="12" rx="2" fill="#f7efdf" stroke="#63666a" stroke-width="1.2"/>
+          </g>
+          <!-- massive chrome bumper with pods -->
+          <rect x="-100" y="12" width="200" height="14" rx="7" fill="url(#caddyChrome)"/>
+          <ellipse cx="-58" cy="19" rx="10" ry="6" fill="#8b8d90"/><ellipse cx="58" cy="19" rx="10" ry="6" fill="#8b8d90"/>
+          <!-- occupants over the deck (backs of heads) -->
+          <g><path d="M-34 -22 L-31 -40 L-26 -30 L-23 -44 L-18 -30 L-15 -36 L-14 -22 Z" fill="#8b8d90" stroke="#63666a" stroke-width="1.2"/></g>
+          <g><path d="M14 -37 Q14 -44 23 -44 Q32 -44 32 -37 L32 -24 L14 -24 Z" fill="url(#caddyChrome)" stroke="#8b8d90" stroke-width="1"/>
+             <circle cx="13" cy="-34" r="2.2" fill="#c7c8ca"/><circle cx="33" cy="-34" r="2.2" fill="#c7c8ca"/>
+             <line x1="23" y1="-44" x2="23" y2="-48" stroke="#c7c8ca" stroke-width="1.8"/><circle cx="23" cy="-50" r="2" fill="#ff4d6a" filter="url(#glow)"/></g>
+        </g>
+        <!-- FRONT view: quad headlights, eggcrate grille, dagmar bumper -->
+        <g id="gg-car-front" opacity="0">
+          <ellipse cx="0" cy="32" rx="112" ry="10" fill="#000" opacity=".35"/>
+          <!-- wraparound windshield + heads (driver on viewer's right) -->
+          <path d="M-70 -20 Q0 -44 70 -20 L66 -14 L-66 -14 Z" fill="#10131c"/>
+          <path d="M-66 -19 Q0 -40 66 -19 L64 -16 L-64 -16 Z" fill="#9adfe8" opacity=".55"/>
+          <g><path d="M18 -24 L20 -44 L25 -34 L28 -48 L31 -34 L36 -44 L38 -24 L32 -20 L24 -20 Z" fill="#8b8d90" stroke="#63666a" stroke-width="1.2"/>
+             <circle cx="24" cy="-32" r="1.6" fill="#10131c"/><circle cx="32" cy="-32" r="1.6" fill="#10131c"/>
+             <polygon points="26,-26 30,-26 28,-22" fill="#10131c"/></g>
+          <g><path d="M-40 -42 Q-40 -50 -29 -50 Q-18 -50 -18 -42 L-18 -26 L-40 -26 Z" fill="url(#caddyChrome)" stroke="#8b8d90" stroke-width="1"/>
+             <circle cx="-35" cy="-40" r="3" fill="#f7efdf" stroke="#63666a" stroke-width="1"/><circle cx="-23" cy="-40" r="3" fill="#f7efdf" stroke="#63666a" stroke-width="1"/>
+             <circle cx="-35" cy="-40" r="1.2" fill="#10131c"/><circle cx="-23" cy="-40" r="1.2" fill="#10131c"/>
+             <g stroke="#63666a" stroke-width="1.4"><line x1="-33" y1="-34" x2="-33" y2="-29"/><line x1="-29" y1="-34" x2="-29" y2="-29"/><line x1="-25" y1="-34" x2="-25" y2="-29"/></g>
+             <circle cx="-41" cy="-42" r="2.2" fill="#c7c8ca"/><circle cx="-17" cy="-42" r="2.2" fill="#c7c8ca"/>
+             <line x1="-29" y1="-50" x2="-29" y2="-54" stroke="#c7c8ca" stroke-width="1.8"/><circle cx="-29" cy="-56" r="2" fill="#ff4d6a" filter="url(#glow)"/></g>
+          <!-- hood with center crease -->
+          <path d="M-96 -16 Q0 -30 96 -16 L92 2 L-92 2 Z" fill="url(#caddyBody)"/>
+          <line x1="0" y1="-27" x2="0" y2="0" stroke="#0c6c77" stroke-width="2" opacity=".6"/>
+          <!-- chrome headlight brows + QUAD headlights -->
+          <path d="M-96 -14 L-46 -18 L-46 -12 L-96 -8 Z" fill="url(#caddyChrome)"/>
+          <path d="M96 -14 L46 -18 L46 -12 L96 -8 Z" fill="url(#caddyChrome)"/>
+          <circle cx="-82" cy="-4" r="7" fill="#fff6d8" filter="url(#glow)"/><circle cx="-64" cy="-5" r="7" fill="#fff6d8" filter="url(#glow)"/>
+          <circle cx="82" cy="-4" r="7" fill="#fff6d8" filter="url(#glow)"/><circle cx="64" cy="-5" r="7" fill="#fff6d8" filter="url(#glow)"/>
+          <!-- eggcrate grille -->
+          <rect x="-52" y="-8" width="104" height="22" rx="3" fill="#10131c"/>
+          <g stroke="#d9dadb" stroke-width="1.6">
+            <line x1="-52" y1="-1" x2="52" y2="-1"/><line x1="-52" y1="6" x2="52" y2="6"/>
+            <line x1="-42" y1="-8" x2="-42" y2="14"/><line x1="-30" y1="-8" x2="-30" y2="14"/>
+            <line x1="-18" y1="-8" x2="-18" y2="14"/><line x1="-6" y1="-8" x2="-6" y2="14"/>
+            <line x1="6" y1="-8" x2="6" y2="14"/><line x1="18" y1="-8" x2="18" y2="14"/>
+            <line x1="30" y1="-8" x2="30" y2="14"/><line x1="42" y1="-8" x2="42" y2="14"/>
+          </g>
+          <!-- bumper with dagmar bullets -->
+          <rect x="-102" y="14" width="204" height="13" rx="6" fill="url(#caddyChrome)"/>
+          <circle cx="-42" cy="20" r="6" fill="#f2f2f3" stroke="#8b8d90" stroke-width="1.5"/>
+          <circle cx="42" cy="20" r="6" fill="#f2f2f3" stroke="#8b8d90" stroke-width="1.5"/>
+        </g>
+        <!-- SIDE view: long low body, knife-edge fin, twin bullets, chrome spear -->
+        <g id="gg-car-side" opacity="0">
+          <ellipse cx="0" cy="30" rx="168" ry="11" fill="#000" opacity=".35"/>
+          <!-- blade fin (rises from the rear quarter to a point past the deck) -->
+          <path d="M52 -30 L148 -44 Q160 -70 163 -74 Q168 -46 164 -24 L150 -18 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
+          <path d="M52 -30 L163 -74" stroke="#e8fbfd" stroke-width="2" opacity=".8"/>
+          <!-- twin bullet taillights in a chrome pod on the fin -->
+          <ellipse cx="152" cy="-52" rx="8" ry="10" fill="#d9dadb"/>
+          <circle cx="152" cy="-57" r="4" fill="#ff4d6a" filter="url(#glow)"/>
+          <circle cx="152" cy="-46" r="4" fill="#ff4d6a" filter="url(#glow)"/>
+          <!-- main body: long hood, dipped belt line, huge rear overhang -->
+          <path d="M-166 -18 Q-168 -30 -156 -32 L-64 -34 L-58 -30 L-20 -30 Q30 -34 96 -30 L160 -22 Q166 -6 160 6 Q80 12 0 12 Q-90 12 -158 6 Q-168 -4 -166 -18 Z" fill="url(#caddyBody)"/>
+          <!-- wraparound windshield -->
+          <path d="M-62 -34 L-40 -60 L-30 -58 L-46 -32 Z" fill="#9adfe8" opacity=".7"/>
+          <path d="M-63 -35 L-41 -62 L-37 -61 L-56 -33 Z" fill="url(#caddyChrome)"/>
+          <!-- cockpit opening + door cut -->
+          <path d="M-44 -31 L92 -31 L90 -27 L-46 -27 Z" fill="#0c6c77" opacity=".7"/>
+          <line x1="12" y1="-28" x2="14" y2="8" stroke="#0c6c77" stroke-width="1.5" opacity=".6"/>
+          <!-- chrome side spear, full length -->
+          <path d="M-160 -14 L158 -17 L158 -11 L-160 -8 Z" fill="url(#caddyChrome)"/>
+          <!-- rocker chrome -->
+          <rect x="-150" y="6" width="300" height="5" rx="2.5" fill="url(#caddyChrome)"/>
+          <!-- wheels: skirted rear look, whitewalls, chrome caps -->
+          <g><circle cx="-98" cy="12" r="21" fill="#10131c"/><circle cx="-98" cy="12" r="13" fill="#f2efe6"/><circle cx="-98" cy="12" r="6.5" fill="url(#caddyChrome)"/></g>
+          <g><circle cx="82" cy="12" r="21" fill="#10131c"/><circle cx="82" cy="12" r="13" fill="#f2efe6"/><circle cx="82" cy="12" r="6.5" fill="url(#caddyChrome)"/></g>
+          <!-- front lights + bumper tip, rear bumper -->
+          <circle cx="-164" cy="-16" r="5" fill="#fff6d8" filter="url(#glow)"/>
+          <circle cx="-158" cy="-22" r="4" fill="#fff6d8" filter="url(#glow)"/>
+          <path d="M-170 -8 L-156 -8 L-156 2 L-170 0 Z" fill="url(#caddyChrome)"/>
+          <path d="M156 -12 L168 -14 L168 0 L156 4 Z" fill="url(#caddyChrome)"/>
+          <!-- steering wheel -->
+          <circle cx="-34" cy="-38" r="8" fill="none" stroke="#63666a" stroke-width="2.5"/>
+          <!-- Lobo driving: angular UNM-logo-style wolf profile -->
+          <g id="gg-lobo">
+            <g id="gg-wave1" transform="rotate(0)"><path d="M-20 -52 L-16 -54 L-10 -76 L-17 -78 Z" fill="#8b8d90" stroke="#63666a" stroke-width="1"/></g>
+            <path d="M-26 -38 L10 -38 L6 -54 L-22 -54 Z" fill="#63666a"/>
+            <path d="M14 -64 L11 -84 L3 -68 L0 -88 L-7 -68 L-15 -70 L-32 -60 L-17 -56 L-24 -51 L-11 -50 L-16 -45 L-2 -46 L14 -50 Z"
+                  fill="#8b8d90" stroke="#63666a" stroke-width="1.5" stroke-linejoin="round"/>
+            <polygon points="-9,-65 -1,-62 -9,-59" fill="#10131c"/>
+            <path d="M-30 -58 L-23 -56 L-28 -53 Z" fill="#ba0c2f"/>
+          </g>
+          <!-- Sparky riding shotgun: 1950s Yoshiya tin-toy robot -->
           <g id="gg-sparky">
-            <g id="gg-wave2" transform="rotate(0)"><rect x="30" y="-72" width="7" height="24" rx="3.5" fill="#c7c8ca" transform="rotate(34 34 -48)"/></g>
-            <rect x="38" y="-70" width="24" height="20" rx="6" fill="#c7c8ca"/>
-            <rect x="42" y="-64" width="16" height="7" rx="3.5" fill="#3fd6e4"/>
-            <line x1="50" y1="-70" x2="50" y2="-82" stroke="#c7c8ca" stroke-width="2.5"/>
-            <circle cx="50" cy="-85" r="4" fill="#ff4d6a" filter="url(#glow)"/>
-            <rect x="40" y="-50" width="20" height="10" rx="4" fill="#a7a8aa"/>
+            <g id="gg-wave2" transform="rotate(0)"><path d="M62 -54 L68 -55 L72 -76 L65 -77 Z" fill="#c7c8ca" stroke="#8b8d90" stroke-width="1"/></g>
+            <rect x="40" y="-56" width="26" height="18" rx="2" fill="url(#caddyChrome)"/>
+            <circle cx="53" cy="-48" r="5" fill="#10131c"/>
+            <circle cx="53" cy="-48" r="3.2" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="44" cy="-53" r="1" fill="#8b8d90"/><circle cx="62" cy="-53" r="1" fill="#8b8d90"/>
+            <path d="M42 -74 Q42 -82 53 -82 Q64 -82 64 -74 L64 -58 L42 -58 Z" fill="url(#caddyChrome)" stroke="#8b8d90" stroke-width="1"/>
+            <circle cx="47" cy="-71" r="3.6" fill="#f7efdf" stroke="#63666a" stroke-width="1"/>
+            <circle cx="47" cy="-71" r="1.5" fill="#10131c"/>
+            <g stroke="#63666a" stroke-width="1.6"><line x1="44" y1="-66" x2="44" y2="-61"/><line x1="47.5" y1="-66" x2="47.5" y2="-61"/><line x1="51" y1="-66" x2="51" y2="-61"/></g>
+            <circle cx="65" cy="-70" r="2.6" fill="#c7c8ca" stroke="#8b8d90" stroke-width="1"/>
+            <line x1="53" y1="-82" x2="53" y2="-87" stroke="#c7c8ca" stroke-width="2"/>
+            <circle cx="53" cy="-89" r="2.4" fill="#ff4d6a" filter="url(#glow)"/>
           </g>
         </g>
       </g>
@@ -529,8 +611,25 @@
     }, 4200);
   }
 
+  // --- road centerline: static dashes, shorter with distance ---
+  (function () {
+    var lane = d3.select("#gg-lane");
+    function road(u) { return { x: 860 - 42 * u, y: 740 - 178 * u }; }  // u: 0 bottom -> 1 horizon
+    var u = 0.02;
+    while (u < 0.94) {
+      var seg = 0.075 * (1 - 0.62 * u);            // dash length shrinks with distance
+      var a = road(u), b = road(Math.min(u + seg, 0.96));
+      lane.append("line")
+        .attr("x1", a.x).attr("y1", a.y).attr("x2", b.x).attr("y2", b.y)
+        .attr("stroke", "#f7efdf").attr("stroke-linecap", "round")
+        .attr("stroke-width", 8 - 6 * u).attr("opacity", 0.85 - 0.35 * u);
+      u += seg * 2.1;                              // gaps shrink in step with the dashes
+    }
+  })();
+
   // --- Cadillac choreography: Lobo & Sparky cruise Route 66 ---
-  function carT(u) { return { x: 860 - 40 * u, y: 745 - 180 * u, s: 1 - 0.93 * u }; }
+  // t=0: stopped in the foreground, fully in frame; t=1: the vanishing point
+  function carT(u) { return { x: 855 - 35 * u, y: 648 - 86 * u, s: 0.95 - 0.89 * u }; }
   function place(sel, u, dy, k) {
     var p = carT(u);
     d3.select(sel).attr("transform", "translate(" + p.x + "," + (p.y + (dy || 0)) +
@@ -540,8 +639,8 @@
       side = d3.select("#gg-car-side"), waveTimer = null;
   function startWave() {
     waveTimer = d3.timer(function (t) {
-      d3.select("#gg-wave1").attr("transform", "rotate(" + (20 * Math.sin(t / 140)) + " -60 -50)");
-      d3.select("#gg-wave2").attr("transform", "rotate(" + (-18 * Math.sin(t / 155 + 1)) + " 34 -48)");
+      d3.select("#gg-wave1").attr("transform", "rotate(" + (22 * Math.sin(t / 140)) + " -18 -53)");
+      d3.select("#gg-wave2").attr("transform", "rotate(" + (-20 * Math.sin(t / 155 + 1)) + " 64 -55)");
     });
   }
   function stopWave() { if (waveTimer) { waveTimer.stop(); waveTimer = null; } }
@@ -563,18 +662,18 @@
   function sceneToward() {
     place("#gg-car-front", 1);
     front.attr("opacity", 1)
-      .transition().duration(5200).ease(d3.easeQuadOut).attrTween("transform", tween(1, 0.06))
+      .transition().duration(5200).ease(d3.easeQuadOut).attrTween("transform", tween(1, 0))
       .on("end", function () {
         setTimeout(function () {                    // stop… then swing broadside
           front.attr("opacity", 0);
-          place("#gg-car-side", 0.06, 0, 0.95);
+          place("#gg-car-side", 0);
           side.attr("opacity", 1);
           startWave();                              // both occupants wave
           setTimeout(function () {
             stopWave();
-            var p = carT(0.06);
+            var p = carT(0);
             side.transition().duration(1500).ease(d3.easeQuadIn)
-              .attr("transform", "translate(" + p.x + "," + (p.y + 310) + ") scale(" + (p.s * 0.95) + ")")
+              .attr("transform", "translate(" + p.x + "," + (p.y + 330) + ") scale(" + p.s + ")")
               .transition().duration(10).attr("opacity", 0)
               .on("end", function () { setTimeout(sceneAway, 1700); });
           }, 3100);
@@ -582,7 +681,7 @@
       });
   }
   if (!reduced) { sceneAway(); }
-  else { place("#gg-car-side", 0.06, 0, 0.9); side.attr("opacity", 1); }
+  else { place("#gg-car-side", 0); side.attr("opacity", 1); }
 })();
 </script>
 </body>
