@@ -127,13 +127,37 @@ PANEL = """<div id="unm_panel" class="hidden-xs hidden-sm"><div class="container
 </div></div></div>"""
 
 PAGE_CSS = """<style>
+:root { --pg-bg:#ffffff; --pg-fg:#3a3a3a; --pg-muted:#63666a; --pg-card:#faf8f4;
+  --pg-border:#dddddd; --pg-link:#ba0c2f; --pg-strip:#f4f2ee; }
+html[data-theme="dark"] { --pg-bg:#14161d; --pg-fg:#e8e6e1; --pg-muted:#a7a8aa;
+  --pg-card:#1c1f28; --pg-border:#333845; --pg-link:#4fd3e0; --pg-strip:#10131a; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) { --pg-bg:#14161d; --pg-fg:#e8e6e1; --pg-muted:#a7a8aa;
+    --pg-card:#1c1f28; --pg-border:#333845; --pg-link:#4fd3e0; --pg-strip:#10131a; }
+}
+#page { background: var(--pg-bg) !important; }
+#header h1 { color: var(--pg-fg) !important; }
+#main, #carc-content { background: var(--pg-bg); color: var(--pg-fg); }
+#carc-content h1, #carc-content h2, #carc-content h3, #carc-content h4 { color: var(--pg-fg); }
+#carc-content a { color: var(--pg-link); }
+#carc-content p, #carc-content li, #carc-content td { color: var(--pg-fg); }
+#nav { background: var(--pg-strip); }
+#breadcrumbs .breadcrumb a { color: var(--pg-link); }
+#breadcrumbs .breadcrumb .active { color: var(--pg-muted); }
+.carc-ext-btn { border: 2px solid #ba0c2f; border-radius: 999px; padding: .3em 1em !important;
+  margin: .25em .15em; font-weight: 700; }
+.carc-ext-btn:hover { background: #ba0c2f; color: #fff !important; }
+.carc-theme-li { float: right; }
+#carc-theme-btn { border: 2px solid var(--pg-link); border-radius: 999px; background: transparent;
+  color: var(--pg-link); padding: .25em .9em; margin: .45em 0; cursor: pointer; font-weight: 700; }
+#carc-theme-btn:hover { background: var(--pg-link); color: var(--pg-bg); }
 #carc-content { padding: 1.6em 0 3em; }
 #carc-content .col-content { max-width: 62em; }
 #carc-content img { max-width: 100%; height: auto; }
 #carc-content table { width: 100%; margin: 1em 0 1.5em; border-collapse: collapse; }
-#carc-content table th { background: #f3f1ec; }
-#carc-content table th, #carc-content table td { border: 1px solid #ddd; padding: .5em .7em; vertical-align: top; }
-#carc-content .admonition { border-left: 5px solid #ba0c2f; background: #faf8f4;
+#carc-content table th { background: var(--pg-strip); }
+#carc-content table th, #carc-content table td { border: 1px solid var(--pg-border); padding: .5em .7em; vertical-align: top; }
+#carc-content .admonition { border-left: 5px solid #ba0c2f; background: var(--pg-card);
   padding: .8em 1em .6em; margin: 1.2em 0; border-radius: 0 4px 4px 0;
   box-shadow: 0 1px 4px rgba(0,0,0,.07); }
 #carc-content .admonition-title { font-weight: 700; margin: 0 0 .3em; color: #ba0c2f; }
@@ -146,14 +170,14 @@ PAGE_CSS = """<style>
 #carc-content .admonition.quote { border-left-color: #a7a8aa; font-style: italic; }
 #carc-content .admonition.quote .admonition-title { color: #63666a; font-style: normal; }
 #carc-content .carc-byline { text-transform: uppercase; letter-spacing: .08em;
-  font-size: .85em; color: #63666a; margin-top: -0.5em; }
+  font-size: .85em; color: var(--pg-muted); margin-top: -0.5em; }
 #carc-content .md-button { display: inline-block; background: #ba0c2f; color: #fff;
   padding: .5em 1.2em; border-radius: 3px; text-decoration: none; margin: .2em 0; }
 #carc-content .md-button:hover { background: #8a0923; color: #fff; }
 #breadcrumbs .breadcrumb { background: transparent; margin: .6em 0 0; padding: 0; }
 #nav ul.carc-sections { margin: 0; padding: 0; list-style: none; }
 #nav ul.carc-sections li { display: inline-block; }
-#nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: #ba0c2f; text-decoration: none; }
+#nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 </style>"""
 
@@ -190,6 +214,29 @@ TEMPLATE = """<!DOCTYPE html>
 <div id="totop"><span class="fa fa-arrow-circle-up"></span></div>
 {panel}
 <script src="https://webcore.unm.edu/v2/js/unm-scripts.min.js"></script>
+<script>
+(function () {{
+  var KEY = "carc-theme", root = document.documentElement, saved = null;
+  try {{ saved = localStorage.getItem(KEY); }} catch (e) {{}}
+  if (saved) root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("carc-theme-btn");
+  function isDark() {{
+    var d = root.getAttribute("data-theme");
+    if (d) return d === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }}
+  function label() {{ if (btn) btn.textContent = isDark() ? "☀ Day" : "☾ Night"; }}
+  if (btn) {{
+    label();
+    btn.addEventListener("click", function () {{
+      var next = isDark() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {{ localStorage.setItem(KEY, next); }} catch (e) {{}}
+      label();
+    }});
+  }}
+}})();
+</script>
 </body>
 </html>
 """
@@ -200,8 +247,12 @@ def nav_items(rel_root: str, active: str) -> str:
     for slug, label in SECTIONS:
         cls = ' class="active"' if slug == active else ""
         items.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
-    items.append('<li><a href="https://unm-carc.github.io/docs/">User Documentation</a></li>')
-    items.append('<li><a href="https://support.alliance.unm.edu/">Help Desk</a></li>')
+    items.append('<li><a class="carc-ext-btn" href="https://unm-carc.github.io/docs/" '
+                 'target="_blank" rel="noopener">User Documentation <span aria-hidden="true">↗</span></a></li>')
+    items.append('<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" '
+                 'target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>')
+    items.append('<li class="carc-theme-li"><button id="carc-theme-btn" type="button" '
+                 'aria-label="Toggle day / night theme">☾ Night</button></li>')
     return "\n".join(items)
 
 

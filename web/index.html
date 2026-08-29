@@ -143,9 +143,14 @@
   <li><a href="education/">Education</a></li>
   <li><a href="news/">News</a></li>
   <li><a href="contact/">Contact</a></li>
-  <li><a href="https://unm-carc.github.io/docs/">User Documentation</a></li>
-  <li><a href="https://support.alliance.unm.edu/">Help Desk</a></li>
+  <li><a class="carc-ext-btn" href="https://unm-carc.github.io/docs/" target="_blank" rel="noopener">User Documentation <span aria-hidden="true">↗</span></a></li>
+  <li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>
 </ul></div></div>
+<style>
+.carc-ext-btn { border: 2px solid #ba0c2f; border-radius: 999px; padding: .3em 1em !important;
+  margin: .25em .15em; font-weight: 700; }
+.carc-ext-btn:hover { background: #ba0c2f; color: #fff !important; }
+</style>
 
 <main id="gg-main">
 <!-- ============ Googie hero ============ -->
@@ -185,6 +190,67 @@
     <g>
       <path d="M690 740 L810 560 L830 560 L1030 740 Z" fill="#191d26"/>
       <path id="gg-lane" d="M818 562 L860 740" fill="none" stroke="#f7efdf" stroke-width="7" stroke-dasharray="26 30" stroke-linecap="round" opacity=".8"/>
+      <!-- mid-century Cadillacs: Lobo driving, Sparky riding shotgun -->
+      <g id="gg-cars">
+        <g id="gg-car-away" opacity="0">
+          <ellipse cx="0" cy="30" rx="105" ry="10" fill="#000" opacity=".35"/>
+          <path d="M-95 -60 L-79 -6 L79 -6 L95 -60 L83 -10 Z" fill="#0c6c77"/>
+          <path d="M-95 -60 Q-99 -66 -93 -66 L-84 -20 Z" fill="#2fb8c6"/>
+          <path d="M95 -60 Q99 -66 93 -66 L84 -20 Z" fill="#2fb8c6"/>
+          <rect x="-84" y="-16" width="168" height="40" rx="10" fill="#2fb8c6"/>
+          <rect x="-84" y="4" width="168" height="20" rx="8" fill="#0c6c77"/>
+          <rect x="-92" y="18" width="184" height="10" rx="5" fill="#d9dadb"/>
+          <rect x="-22" y="0" width="44" height="16" rx="3" fill="#f7efdf" stroke="#63666a" stroke-width="1.5"/>
+          <circle cx="-90" cy="-58" r="7" fill="#ff4d6a" filter="url(#glow)"/>
+          <circle cx="90" cy="-58" r="7" fill="#ff4d6a" filter="url(#glow)"/>
+          <circle cx="-70" cy="16" r="5" fill="#ff4d6a" filter="url(#glow)"/>
+          <circle cx="70" cy="16" r="5" fill="#ff4d6a" filter="url(#glow)"/>
+          <path d="M-62 -16 Q0 -34 62 -16 L62 -12 L-62 -12 Z" fill="#10131c"/>
+          <g fill="#8b8d90"><circle cx="-26" cy="-26" r="9"/><polygon points="-33,-30 -37,-44 -27,-33"/><polygon points="-19,-30 -15,-44 -25,-33"/></g>
+          <g><rect x="12" y="-34" width="20" height="17" rx="5" fill="#c7c8ca"/><line x1="22" y1="-34" x2="22" y2="-44" stroke="#c7c8ca" stroke-width="2"/><circle cx="22" cy="-46" r="3" fill="#3fd6e4" filter="url(#glow)"/></g>
+        </g>
+        <g id="gg-car-front" opacity="0">
+          <ellipse cx="0" cy="30" rx="105" ry="10" fill="#000" opacity=".35"/>
+          <path d="M-97 -54 L-90 -14 L90 -14 L97 -54 L88 -18 Z" fill="#0c6c77"/>
+          <rect x="-88" y="-18" width="176" height="42" rx="12" fill="#2fb8c6"/>
+          <rect x="-88" y="2" width="176" height="22" rx="9" fill="#0c6c77"/>
+          <rect x="-94" y="16" width="188" height="11" rx="5" fill="#d9dadb"/>
+          <g stroke="#d9dadb" stroke-width="3"><line x1="-70" y1="-2" x2="70" y2="-2"/><line x1="-70" y1="5" x2="70" y2="5"/><line x1="-70" y1="12" x2="70" y2="12"/></g>
+          <circle cx="-74" cy="-6" r="8" fill="#fff6d8" filter="url(#glow)"/>
+          <circle cx="74" cy="-6" r="8" fill="#fff6d8" filter="url(#glow)"/>
+          <path d="M-64 -18 Q0 -40 64 -18 L64 -14 L-64 -14 Z" fill="#10131c"/>
+          <g fill="#8b8d90"><circle cx="-28" cy="-30" r="10"/><polygon points="-36,-35 -41,-50 -30,-38"/><polygon points="-20,-35 -15,-50 -26,-38"/><circle cx="-31" cy="-32" r="1.6" fill="#10131c"/><circle cx="-25" cy="-32" r="1.6" fill="#10131c"/></g>
+          <g><rect x="16" y="-39" width="22" height="19" rx="6" fill="#c7c8ca"/><rect x="20" y="-34" width="14" height="6" rx="3" fill="#3fd6e4"/><line x1="27" y1="-39" x2="27" y2="-50" stroke="#c7c8ca" stroke-width="2"/><circle cx="27" cy="-52" r="3.5" fill="#ff4d6a" filter="url(#glow)"/></g>
+        </g>
+        <g id="gg-car-side" opacity="0">
+          <ellipse cx="0" cy="34" rx="150" ry="11" fill="#000" opacity=".35"/>
+          <path d="M118 -34 Q142 -66 148 -70 Q152 -44 146 -22 L112 -22 Z" fill="#2fb8c6" stroke="#0c6c77" stroke-width="2"/>
+          <ellipse cx="149" cy="-56" rx="7" ry="5" fill="#ff4d6a" filter="url(#glow)"/>
+          <path d="M-148 -20 Q-150 -38 -128 -40 L-34 -44 Q40 -48 112 -36 L146 -22 Q150 -2 142 8 L-140 8 Q-150 0 -148 -20 Z" fill="#2fb8c6"/>
+          <path d="M-148 -14 L146 -16 L145 -8 L-147 -6 Z" fill="#d9dadb"/>
+          <path d="M-30 -44 L44 -47 L40 -40 L-32 -38 Z" fill="#9adfe8" opacity=".85"/>
+          <circle cx="-88" cy="10" r="22" fill="#10131c"/><circle cx="-88" cy="10" r="14" fill="#f2efe6"/><circle cx="-88" cy="10" r="7" fill="#a7a8aa"/>
+          <circle cx="92" cy="10" r="22" fill="#10131c"/><circle cx="92" cy="10" r="14" fill="#f2efe6"/><circle cx="92" cy="10" r="7" fill="#a7a8aa"/>
+          <circle cx="-152" cy="-12" r="5" fill="#fff6d8" filter="url(#glow)"/>
+          <g id="gg-lobo">
+            <g id="gg-wave1" transform="rotate(0)"><rect x="-64" y="-74" width="7" height="26" rx="3.5" fill="#8b8d90" transform="rotate(-36 -60 -50)"/></g>
+            <circle cx="-46" cy="-60" r="12" fill="#8b8d90"/>
+            <polygon points="-55,-66 -60,-84 -49,-70" fill="#8b8d90"/>
+            <polygon points="-38,-67 -34,-84 -44,-71" fill="#8b8d90"/>
+            <path d="M-36 -58 L-24 -54 L-36 -52 Z" fill="#8b8d90"/>
+            <circle cx="-49" cy="-62" r="1.8" fill="#10131c"/>
+            <rect x="-56" y="-50" width="22" height="10" rx="4" fill="#63666a"/>
+          </g>
+          <g id="gg-sparky">
+            <g id="gg-wave2" transform="rotate(0)"><rect x="30" y="-72" width="7" height="24" rx="3.5" fill="#c7c8ca" transform="rotate(34 34 -48)"/></g>
+            <rect x="38" y="-70" width="24" height="20" rx="6" fill="#c7c8ca"/>
+            <rect x="42" y="-64" width="16" height="7" rx="3.5" fill="#3fd6e4"/>
+            <line x1="50" y1="-70" x2="50" y2="-82" stroke="#c7c8ca" stroke-width="2.5"/>
+            <circle cx="50" cy="-85" r="4" fill="#ff4d6a" filter="url(#glow)"/>
+            <rect x="40" y="-50" width="20" height="10" rx="4" fill="#a7a8aa"/>
+          </g>
+        </g>
+      </g>
       <g transform="translate(1010,600) rotate(3)">
         <path d="M0 6 Q22 -4 44 6 L40 34 Q22 52 4 34 Z" fill="#f7efdf" stroke="#0b0e14" stroke-width="3"/>
         <text x="22" y="20" text-anchor="middle" font-family="Righteous, sans-serif" font-size="13" fill="#0b0e14">NM</text>
@@ -449,11 +515,8 @@
     }, 2600);
   }
 
-  // --- road centerline drive + shooting stars ---
+  // --- shooting stars (the road centerline is static now) ---
   if (!reduced) {
-    d3.timer(function (t) {
-      d3.select("#gg-lane").attr("stroke-dashoffset", -(t / 12) % 56);
-    });
     d3.interval(function () {
       var x0 = 200 + Math.random() * 1000, y0 = 40 + Math.random() * 160;
       var s = svg.append("line")
@@ -465,6 +528,61 @@
         .remove();
     }, 4200);
   }
+
+  // --- Cadillac choreography: Lobo & Sparky cruise Route 66 ---
+  function carT(u) { return { x: 860 - 40 * u, y: 745 - 180 * u, s: 1 - 0.93 * u }; }
+  function place(sel, u, dy, k) {
+    var p = carT(u);
+    d3.select(sel).attr("transform", "translate(" + p.x + "," + (p.y + (dy || 0)) +
+      ") scale(" + (p.s * (k || 1)) + ")");
+  }
+  var away = d3.select("#gg-car-away"), front = d3.select("#gg-car-front"),
+      side = d3.select("#gg-car-side"), waveTimer = null;
+  function startWave() {
+    waveTimer = d3.timer(function (t) {
+      d3.select("#gg-wave1").attr("transform", "rotate(" + (20 * Math.sin(t / 140)) + " -60 -50)");
+      d3.select("#gg-wave2").attr("transform", "rotate(" + (-18 * Math.sin(t / 155 + 1)) + " 34 -48)");
+    });
+  }
+  function stopWave() { if (waveTimer) { waveTimer.stop(); waveTimer = null; } }
+  function tween(from, to) {
+    return function () {
+      return function (u) {
+        var p = carT(from + (to - from) * u);
+        return "translate(" + p.x + "," + p.y + ") scale(" + p.s + ")";
+      };
+    };
+  }
+  function sceneAway() {
+    place("#gg-car-away", 0);
+    away.attr("opacity", 1)
+      .transition().duration(6200).ease(d3.easeQuadIn).attrTween("transform", tween(0, 1))
+      .transition().duration(250).attr("opacity", 0)
+      .on("end", function () { setTimeout(sceneToward, 1500); });
+  }
+  function sceneToward() {
+    place("#gg-car-front", 1);
+    front.attr("opacity", 1)
+      .transition().duration(5200).ease(d3.easeQuadOut).attrTween("transform", tween(1, 0.06))
+      .on("end", function () {
+        setTimeout(function () {                    // stop… then swing broadside
+          front.attr("opacity", 0);
+          place("#gg-car-side", 0.06, 0, 0.95);
+          side.attr("opacity", 1);
+          startWave();                              // both occupants wave
+          setTimeout(function () {
+            stopWave();
+            var p = carT(0.06);
+            side.transition().duration(1500).ease(d3.easeQuadIn)
+              .attr("transform", "translate(" + p.x + "," + (p.y + 310) + ") scale(" + (p.s * 0.95) + ")")
+              .transition().duration(10).attr("opacity", 0)
+              .on("end", function () { setTimeout(sceneAway, 1700); });
+          }, 3100);
+        }, 420);
+      });
+  }
+  if (!reduced) { sceneAway(); }
+  else { place("#gg-car-side", 0.06, 0, 0.9); side.attr("opacity", 1); }
 })();
 </script>
 </body>
