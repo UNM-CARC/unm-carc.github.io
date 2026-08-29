@@ -116,11 +116,8 @@
 .gg-flicker { animation: gg-flicker 6.5s infinite; }
 @keyframes gg-blink { 0%,49% { opacity: 1; } 50%,100% { opacity: .18; } }
 .gg-blink { animation: gg-blink 1.6s steps(1) infinite; }
-@keyframes gg-spin { to { transform: rotate(360deg); } }
-.gg-spin { transform-origin: center; transform-box: fill-box; animation: gg-spin 28s linear infinite; }
-.gg-spin.fast { animation-duration: 14s; }
 @media (prefers-reduced-motion: reduce) {
-  .gg-flicker, .gg-blink, .gg-spin { animation: none !important; }
+  .gg-flicker, .gg-blink { animation: none !important; }
 }
 @media (max-width: 900px) {
   .gg-headline { font-size: 1.9rem; }
@@ -177,9 +174,10 @@
       <circle id="gg-e2" r="5" fill="#ff4d6a" filter="url(#glow)"/>
       <circle id="gg-e3" r="4" fill="#a7a8aa" filter="url(#glow)"/>
     </g>
-    <!-- big starbursts -->
-    <g class="gg-spin" id="gg-burst1" transform="translate(230,150)"></g>
-    <g class="gg-spin fast" id="gg-burst2" transform="translate(1450,520)" opacity=".85"></g>
+    <!-- big starbursts (behind the sign; gently rotating + drifting) -->
+    <g id="gg-burst1" transform="translate(150,165)"></g>
+    <g id="gg-burst2" transform="translate(1450,520)" opacity=".85"></g>
+    <g id="gg-burst3" transform="translate(505,95)"></g>
     <!-- mesa horizon -->
     <path d="M0 560 L120 560 L170 500 L330 500 L380 560 L640 560 L700 528 L860 528 L910 560 L1600 560 L1600 740 L0 740 Z" fill="#0b0e14"/>
     <!-- route 66 road -->
@@ -203,8 +201,6 @@
         <text x="6" y="82" text-anchor="middle" font-family="Pacifico, cursive" font-size="34" fill="#3fd6e4" filter="url(#glow)">advanced research computing</text>
         <g id="gg-chase"></g>
       </g>
-      <!-- topper starburst -->
-      <g class="gg-spin fast" id="gg-burst3" transform="translate(198,-188)"></g>
       <!-- open access / source / science lozenge -->
       <g transform="translate(0,190) rotate(-4)">
         <rect id="gg-openrect" x="-132" y="-26" width="264" height="52" rx="26" fill="#141824" stroke="#ff4d6a" stroke-width="3" filter="url(#glow)"/>
@@ -373,6 +369,24 @@
   burst("#gg-burst1", 12, 92, ["#ff4d6a", "#f7efdf", "#3fd6e4"]);
   burst("#gg-burst2", 10, 60, ["#3fd6e4", "#a7a8aa", "#ff4d6a"]);
   burst("#gg-burst3", 10, 44, ["#f7efdf", "#ff4d6a", "#3fd6e4"]);
+
+  // gentle rotation + slower ambient drift (behind the sign)
+  var burstCfg = [
+    { sel: "#gg-burst1", x: 150,  y: 165, rot:  4.5, ax: 16, ay: 10, tx: 41000, ty: 53000, ph: 0.0 },
+    { sel: "#gg-burst2", x: 1450, y: 520, rot: -6.0, ax: 22, ay: 14, tx: 47000, ty: 36000, ph: 2.1 },
+    { sel: "#gg-burst3", x: 505,  y: 95,  rot:  5.5, ax: 12, ay:  8, tx: 33000, ty: 44000, ph: 4.2 }
+  ];
+  if (!reduced) {
+    d3.timer(function (t) {
+      burstCfg.forEach(function (c) {
+        var x = c.x + c.ax * Math.sin(t * 2 * Math.PI / c.tx + c.ph);
+        var y = c.y + c.ay * Math.cos(t * 2 * Math.PI / c.ty + c.ph);
+        var a = (t / 1000 * c.rot) % 360;
+        d3.select(c.sel).attr("transform",
+          "translate(" + x + "," + y + ") rotate(" + a + ")");
+      });
+    });
+  }
 
   // --- electrons on orbits ---
   if (!reduced) {
