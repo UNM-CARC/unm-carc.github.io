@@ -145,7 +145,7 @@
   <li><a href="education/">Education</a></li>
   <li><a href="news/">News</a></li>
   <li><a href="contact/">Contact</a></li>
-  <li><a href="docs/">User Documentation</a></li>
+  <li><a href="https://unm-carc.github.io/docs/">User Documentation</a></li>
   <li><a href="https://support.alliance.unm.edu/">Help Desk</a></li>
 </ul></div></div>
 
@@ -205,10 +205,10 @@
       </g>
       <!-- topper starburst -->
       <g class="gg-spin fast" id="gg-burst3" transform="translate(198,-188)"></g>
-      <!-- open access lozenge -->
+      <!-- open access / source / science lozenge -->
       <g transform="translate(0,190) rotate(-4)">
-        <rect x="-120" y="-26" width="240" height="52" rx="26" fill="#141824" stroke="#ff4d6a" stroke-width="3" filter="url(#glow)"/>
-        <text y="9" text-anchor="middle" font-family="Righteous, sans-serif" font-size="26" fill="#ff4d6a" filter="url(#glow)" class="gg-blink">OPEN&#160;ACCESS</text>
+        <rect id="gg-openrect" x="-132" y="-26" width="264" height="52" rx="26" fill="#141824" stroke="#ff4d6a" stroke-width="3" filter="url(#glow)"/>
+        <text id="gg-opentext" y="9" text-anchor="middle" font-family="Righteous, sans-serif" font-size="26" fill="#ff4d6a" filter="url(#glow)">OPEN&#160;ACCESS</text>
       </g>
     </g>
   </svg>
@@ -219,8 +219,8 @@
     support for UNM faculty, staff, and students — courtesy of the Office of the
     Vice President for Research.</p>
     <p class="gg-ctas">
-      <a class="gg-primary" href="docs/getting-started/">Check In → Get Access</a>
-      <a class="gg-secondary" href="docs/">User Docs</a>
+      <a class="gg-primary" href="https://unm-carc.github.io/docs/getting-started/">Check In → Get Access</a>
+      <a class="gg-secondary" href="https://unm-carc.github.io/docs/">User Docs</a>
       <a class="gg-secondary" href="https://support.alliance.unm.edu/">Help Desk</a>
     </p>
     <p class="gg-board"><span class="st">✦</span>6,300+ cores <span class="st">✦</span>80+ GPUs
@@ -263,7 +263,7 @@
       <div class="gg-col"><div class="gg-card">
         <h3>Compute &amp; Data</h3>
         <p>Easley and Hopper clusters, multi-petabyte storage, and a dedicated research data center on UNM's Science DMZ.</p>
-        <a class="gg-more" href="docs/systems/">Systems &amp; docs →</a>
+        <a class="gg-more" href="https://unm-carc.github.io/docs/systems/">Systems &amp; docs →</a>
       </div></div>
       <div class="gg-col"><div class="gg-card">
         <h3>Research Support</h3>
@@ -405,6 +405,31 @@
          .attr("fill", (i === k) ? "#ff4d6a" : "#f7efdf");
       });
     }, 140);
+  }
+
+  // --- OPEN ACCESS / SOURCE / SCIENCE neon cycler ---
+  var openWords = [
+    { w: "ACCESS",  c: "#ff4d6a" },
+    { w: "SOURCE",  c: "#3fd6e4" },
+    { w: "SCIENCE", c: "#f7efdf" }
+  ];
+  var owi = 0;
+  var openText = d3.select("#gg-opentext");
+  var openRect = d3.select("#gg-openrect");
+  if (!reduced) {
+    d3.interval(function () {
+      // neon strike: cut out, swap the tube, strike twice, hold
+      openText.transition().duration(110).attr("opacity", 0)
+        .on("end", function () {
+          owi = (owi + 1) % openWords.length;
+          var o = openWords[owi];
+          openText.text("OPEN " + o.w).attr("fill", o.c);
+          openRect.transition().duration(220).attr("stroke", o.c);
+          openText.transition().duration(70).attr("opacity", 1)
+            .transition().delay(50).duration(70).attr("opacity", 0.35)
+            .transition().duration(90).attr("opacity", 1);
+        });
+    }, 2600);
   }
 
   // --- road centerline drive + shooting stars ---
