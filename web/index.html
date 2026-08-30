@@ -161,6 +161,28 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
 @media (max-width: 900px) {
   body.gg-daybody .gg-overlay { background: #e8d9b4; }
 }
+/* keep the UNM bar, but keep the brand tab from hanging into the masthead:
+   render it as the white UNM wordmark inside the red bar */
+.navbar-unm .navbar-brand { position: static !important; float: left; height: 40px !important;
+  width: 210px !important; text-indent: -9999px; overflow: hidden;
+  background: transparent url("https://webcore.unm.edu/v2/images/unm-transparent-white.png") no-repeat left center !important;
+  background-size: auto 20px !important; box-shadow: none !important; border: 0 !important; margin: 0 !important; }
+
+/* CARC masthead: custom UNM-branded lockup replacing the text banner */
+#carc-masthead { background: #fffdf7; border-bottom: 3px solid #ba0c2f; padding: 16px 0 12px; }
+#carc-masthead .carc-lockup { margin: 0; line-height: 0; }
+#carc-masthead img { height: 56px; width: auto; max-width: 100%; }
+.carc-lockup-night { display: none; }
+html[data-theme="dark"] #carc-masthead { background: var(--night); }
+html[data-theme="dark"] .carc-lockup-day { display: none; }
+html[data-theme="dark"] .carc-lockup-night { display: inline; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) #carc-masthead { background: var(--night); }
+  html:not([data-theme="light"]) .carc-lockup-day { display: none; }
+  html:not([data-theme="light"]) .carc-lockup-night { display: inline; }
+}
+@media (max-width: 600px) { #carc-masthead img { height: 42px; } }
+
 /* nav theme toggle (shared with interior pages) */
 #gg-theme-li { float: right; }
 #gg-theme-btn { border: none; background: transparent; color: #ba0c2f;
@@ -186,7 +208,7 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
 <!-- ============ UNM Cascade standard header (retained verbatim) ============ -->
 <div aria-label="header navigation" class="navbar navbar-unm" role="navigation"><div class="container"><a class="navbar-brand" href="https://www.unm.edu">The University of New Mexico</a><form action="//search.unm.edu/search" class="pull-right" id="unm_search_form" method="get"><div class="input-append search-query"><input accesskey="4" id="unm_search_form_q" maxlength="255" name="q" placeholder="Search" title="input search query here" type="text"><button accesskey="s" class="btn" id="unm_search_for_submit" name="submit" title="submit search" type="submit">  <span class="fa fa-search"></span> </button></div></form><ul class="nav navbar-nav navbar-right hidden-xs" id="toolbar-nav"><li><a href="https://directory.unm.edu/departments/" title="UNM A to Z">UNM A-Z</a></li><li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li><li><a href="https://directory.unm.edu" title="Directory">Directory</a></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help </a><ul class="dropdown-menu"><li><a href="https://student.unm.edu/student-support.html" title="Student Support">Student Support</a></li><li><a href="https://studentinfo.unm.edu" title="StudentInfo">StudentInfo</a></li><li><a href="https://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li></ul></li><li class="unm_panel_open hidden-sm"><a href="#unm_panel">more <span class="caret"></span></a></li></ul></div></div>
 
-<div aria-label="department logo block" id="header" role="banner"><div class="container"><a href="https://unm-carc.github.io/"><h1>Center for Advanced Research Computing</h1></a></div></div>
+<div aria-label="Center for Advanced Research Computing" id="carc-masthead" role="banner"><div class="container"><a href="https://unm-carc.github.io/"><h1 class="carc-lockup"><img class="carc-lockup-day" src="assets/carc-lockup.png" alt="UNM Center for Advanced Research Computing"><img class="carc-lockup-night" src="assets/carc-lockup-dark.png" alt="" aria-hidden="true"></h1></a></div></div>
 
 <!-- department navigation (site sections) -->
 <div id="nav"><div class="container"><ul class="nav navbar-nav" style="float:none;">
@@ -314,12 +336,12 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
           <!-- blade fins -->
           <path d="M-62 -12 L-80 -74 Q-83 -80 -86 -74 L-92 -12 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
           <path d="M62 -12 L80 -74 Q83 -80 86 -74 L92 -12 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
-          <!-- dual bullet lamps per fin, chrome bezels -->
+          <!-- quad taillights: two bullets side by side per fin ('59 style) -->
           <g>
-            <circle cx="-83" cy="-56" r="6.5" fill="#d9dadb"/><circle cx="-83" cy="-56" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
-            <circle cx="-85" cy="-38" r="6.5" fill="#d9dadb"/><circle cx="-85" cy="-38" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
-            <circle cx="83" cy="-56" r="6.5" fill="#d9dadb"/><circle cx="83" cy="-56" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
-            <circle cx="85" cy="-38" r="6.5" fill="#d9dadb"/><circle cx="85" cy="-38" r="4.5" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="-84.5" cy="-46" r="5.5" fill="#d9dadb"/><circle cx="-84.5" cy="-46" r="3.8" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="-73.5" cy="-46" r="5.5" fill="#d9dadb"/><circle cx="-73.5" cy="-46" r="3.8" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="84.5" cy="-46" r="5.5" fill="#d9dadb"/><circle cx="84.5" cy="-46" r="3.8" fill="#ff4d6a" filter="url(#glow)"/>
+            <circle cx="73.5" cy="-46" r="5.5" fill="#d9dadb"/><circle cx="73.5" cy="-46" r="3.8" fill="#ff4d6a" filter="url(#glow)"/>
           </g>
           <!-- trunk deck between the fins -->
           <path d="M-88 -12 Q0 -22 88 -12 L92 12 L-92 12 Z" fill="url(#caddyBody)"/>
@@ -347,6 +369,9 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
         <!-- FRONT view: quad headlights, eggcrate grille, dagmar bumper -->
         <g id="gg-car-front" opacity="0">
           <ellipse cx="0" cy="32" rx="112" ry="10" fill="#000" opacity=".35"/>
+          <!-- rear fin blades peeking above the body, outboard of the cabin -->
+          <path d="M-72 -16 L-79 -48 Q-80 -52 -77 -48 L-64 -14 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.2"/>
+          <path d="M72 -16 L79 -48 Q80 -52 77 -48 L64 -14 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.2"/>
           <!-- wraparound windshield + heads (driver on viewer's right) -->
           <path d="M-70 -20 Q0 -44 70 -20 L66 -14 L-66 -14 Z" fill="#10131c"/>
           <path d="M-66 -19 Q0 -40 66 -19 L64 -16 L-64 -16 Z" fill="#9adfe8" opacity=".55"/>
@@ -384,13 +409,10 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
         <!-- SIDE view: long low body, knife-edge fin, twin bullets, chrome spear -->
         <g id="gg-car-side" opacity="0">
           <ellipse cx="0" cy="30" rx="168" ry="11" fill="#000" opacity=".35"/>
-          <!-- blade fin (rises from the rear quarter to a point past the deck) -->
-          <path d="M52 -30 L148 -44 Q160 -70 163 -74 Q168 -46 164 -24 L150 -18 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
-          <path d="M52 -30 L163 -74" stroke="#e8fbfd" stroke-width="2" opacity=".8"/>
-          <!-- twin bullet taillights in a chrome pod on the fin -->
-          <ellipse cx="152" cy="-52" rx="8" ry="10" fill="#d9dadb"/>
-          <circle cx="152" cy="-57" r="4" fill="#ff4d6a" filter="url(#glow)"/>
-          <circle cx="152" cy="-46" r="4" fill="#ff4d6a" filter="url(#glow)"/>
+          <!-- blade fin (rises from the rear quarter; runs deep under the body
+               so no sky can show through the join) -->
+          <path d="M52 -28 L148 -44 Q160 -70 163 -74 Q168 -46 164 -10 L52 -8 Z" fill="url(#caddyBody)" stroke="#0c6c77" stroke-width="1.5"/>
+          <path d="M52 -28 L163 -74" stroke="#e8fbfd" stroke-width="2" opacity=".8"/>
           <!-- main body: long hood, dipped belt line, huge rear overhang -->
           <path d="M-166 -18 Q-168 -30 -156 -32 L-64 -34 L-58 -30 L-20 -30 Q30 -34 96 -30 L160 -22 Q166 -6 160 6 Q80 12 0 12 Q-90 12 -158 6 Q-168 -4 -166 -18 Z" fill="url(#caddyBody)"/>
           <!-- wraparound windshield -->
@@ -411,21 +433,36 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
           <circle cx="-158" cy="-22" r="4" fill="#fff6d8" filter="url(#glow)"/>
           <path d="M-170 -8 L-156 -8 L-156 2 L-170 0 Z" fill="url(#caddyChrome)"/>
           <path d="M156 -12 L168 -14 L168 0 L156 4 Z" fill="url(#caddyChrome)"/>
+          <!-- twin bullet taillights pointing rearward from a chrome pod on the fin -->
+          <ellipse cx="157" cy="-51" rx="5" ry="12" fill="#d9dadb"/>
+          <path d="M157 -60 Q170 -59.5 174.5 -56 Q170 -52.5 157 -52 Z" fill="#ff4d6a" filter="url(#glow)"/>
+          <path d="M157 -49 Q170 -48.5 174.5 -45 Q170 -41.5 157 -41 Z" fill="#ff4d6a" filter="url(#glow)"/>
+          <circle cx="157" cy="-56" r="2" fill="#f2f2f3" opacity=".8"/>
+          <circle cx="157" cy="-45" r="2" fill="#f2f2f3" opacity=".8"/>
           <!-- steering wheel -->
           <circle cx="-34" cy="-38" r="8" fill="none" stroke="#63666a" stroke-width="2.5"/>
-          <!-- Lobo driving: angular UNM-logo-style wolf profile -->
+          <!-- Lobo driving: angular UNM-logo-style wolf, in profile facing the
+               road ahead — waving arm pivots at the shoulder, chest reaches
+               the door sill so he is seated IN the car -->
           <g id="gg-lobo">
-            <g id="gg-wave1" transform="rotate(0)"><path d="M-20 -52 L-16 -54 L-10 -76 L-17 -78 Z" fill="#8b8d90" stroke="#63666a" stroke-width="1"/></g>
-            <path d="M-26 -38 L10 -38 L6 -54 L-22 -54 Z" fill="#63666a"/>
-            <path d="M14 -64 L11 -84 L3 -68 L0 -88 L-7 -68 L-15 -70 L-32 -60 L-17 -56 L-24 -51 L-11 -50 L-16 -45 L-2 -46 L14 -50 Z"
+            <g id="gg-wave1" transform="rotate(0)"><path d="M6 -44 L12 -46 L27 -70 L20 -74 Z" fill="#8b8d90" stroke="#63666a" stroke-width="1"/><circle cx="24" cy="-72" r="3.4" fill="#8b8d90" stroke="#63666a" stroke-width="1"/></g>
+            <!-- torso: shoulders and chest, down past the sill -->
+            <path d="M-28 -31 L16 -31 L14 -46 Q8 -56 -4 -57 L-16 -55 Q-26 -48 -28 -40 Z"
                   fill="#8b8d90" stroke="#63666a" stroke-width="1.5" stroke-linejoin="round"/>
-            <polygon points="-9,-65 -1,-62 -9,-59" fill="#10131c"/>
-            <path d="M-30 -58 L-23 -56 L-28 -53 Z" fill="#ba0c2f"/>
+            <!-- ruff of chest fur, zig-zag like the logo -->
+            <path d="M-16 -55 L-12 -48 L-6 -54 L0 -47 L6 -55" fill="none" stroke="#63666a" stroke-width="1.5" stroke-linejoin="round"/>
+            <!-- head in profile: muzzle forward (left), angular jaw, two ears -->
+            <path d="M-40 -62 L-24 -68 L-20 -84 L-12 -72 L-2 -86 L2 -68 L6 -60 L-2 -52 L-14 -50 L-30 -54 Z"
+                  fill="#8b8d90" stroke="#63666a" stroke-width="1.5" stroke-linejoin="round"/>
+            <!-- nose, eye, mouth notch, cherry tongue -->
+            <polygon points="-40,-62 -35,-65 -35,-59" fill="#10131c"/>
+            <polygon points="-20,-67 -12,-66 -17,-61" fill="#10131c"/>
+            <path d="M-38 -58 L-30 -56 L-35 -53 Z" fill="#ba0c2f"/>
           </g>
           <!-- Sparky riding shotgun: 1950s Yoshiya tin-toy robot -->
           <g id="gg-sparky">
             <g id="gg-wave2" transform="rotate(0)"><path d="M62 -54 L68 -55 L72 -76 L65 -77 Z" fill="#c7c8ca" stroke="#8b8d90" stroke-width="1"/></g>
-            <rect x="40" y="-56" width="26" height="18" rx="2" fill="url(#caddyChrome)"/>
+            <rect x="40" y="-56" width="26" height="25" rx="2" fill="url(#caddyChrome)"/>
             <circle cx="53" cy="-48" r="5" fill="#10131c"/>
             <circle cx="53" cy="-48" r="3.2" fill="#ff4d6a" filter="url(#glow)"/>
             <circle cx="44" cy="-53" r="1" fill="#8b8d90"/><circle cx="62" cy="-53" r="1" fill="#8b8d90"/>
@@ -772,7 +809,7 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
       side = d3.select("#gg-car-side"), waveTimer = null;
   function startWave() {
     waveTimer = d3.timer(function (t) {
-      d3.select("#gg-wave1").attr("transform", "rotate(" + (22 * Math.sin(t / 140)) + " -18 -53)");
+      d3.select("#gg-wave1").attr("transform", "rotate(" + (24 * Math.sin(t / 140)) + " 9 -45)");
       d3.select("#gg-wave2").attr("transform", "rotate(" + (-20 * Math.sin(t / 155 + 1)) + " 64 -55)");
     });
   }

@@ -150,10 +150,28 @@ html[data-theme="dark"] { --pg-bg:#14161d; --pg-fg:#e8e6e1; --pg-muted:#a7a8aa;
 html, body { height: 100%; }
 #page { min-height: 100vh; display: flex; flex-direction: column; }
 #page > #main { flex: 1 0 auto; min-height: calc(100vh - 180px); }
-#page > .navbar, #page > #header, #page > #nav, #page > #breadcrumbs,
+#page > .navbar, #page > #carc-masthead, #page > #nav, #page > #breadcrumbs,
 #page > #footer { flex: 0 0 auto; }
 #page { background: var(--pg-bg) !important; }
-#header h1 { color: var(--pg-fg) !important; }
+/* keep the UNM bar, but keep the brand tab from hanging into the masthead:
+   render it as the white UNM wordmark inside the red bar */
+.navbar-unm .navbar-brand { position: static !important; float: left; height: 40px !important;
+  width: 210px !important; text-indent: -9999px; overflow: hidden;
+  background: transparent url("https://webcore.unm.edu/v2/images/unm-transparent-white.png") no-repeat left center !important;
+  background-size: auto 20px !important; box-shadow: none !important; border: 0 !important; margin: 0 !important; }
+
+/* CARC masthead: custom UNM-branded lockup replacing the text banner */
+#carc-masthead { background: var(--pg-bg); border-bottom: 3px solid #ba0c2f; padding: 16px 0 12px; }
+#carc-masthead .carc-lockup { margin: 0; line-height: 0; }
+#carc-masthead img { height: 56px; width: auto; max-width: 100%; }
+.carc-lockup-night { display: none; }
+html[data-theme="dark"] .carc-lockup-day { display: none; }
+html[data-theme="dark"] .carc-lockup-night { display: inline; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .carc-lockup-day { display: none; }
+  html:not([data-theme="light"]) .carc-lockup-night { display: inline; }
+}
+@media (max-width: 600px) { #carc-masthead img { height: 42px; } }
 #footer table { width: 100% !important; height: auto !important; }
 #footer td { padding-right: 1em; }
 #carc-content table { display: block; overflow-x: auto; }
@@ -220,7 +238,7 @@ TEMPLATE = """<!DOCTYPE html>
 <a class="sr-only sr-only-focusable skip2content" href="#carc-content">Skip to main content</a>
 <div id="page">
 {navbar}
-<div aria-label="department logo block" id="header" role="banner"><div class="container"><a href="{rel_root}"><h1>Center for Advanced Research Computing</h1></a></div></div>
+<div aria-label="Center for Advanced Research Computing" id="carc-masthead" role="banner"><div class="container"><a href="{rel_root}"><h1 class="carc-lockup"><img class="carc-lockup-day" src="{rel_root}assets/carc-lockup.png" alt="UNM Center for Advanced Research Computing"><img class="carc-lockup-night" src="{rel_root}assets/carc-lockup-dark.png" alt="" aria-hidden="true"></h1></a></div></div>
 <div id="nav"><div class="container"><ul class="carc-sections">
 {navitems}
 </ul></div></div>

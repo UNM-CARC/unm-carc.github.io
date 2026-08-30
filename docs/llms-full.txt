@@ -1809,6 +1809,10 @@ Albuquerque NM 87106
 
 ## 2026-08-30
 
+* **Update**: New site masthead. The text-only department banner is gone; in its place is the official UNM + Center for Advanced Research Computing lockup (cherry interlocking monogram, gray wordmark) on a clean band — colorway on light, silver-on-dark after dusk — with the UNM webcore bar kept above it in the spirit of the university standard (its hanging brand tab now renders as the compact white UNM wordmark inside the red bar, as other UNM centers do). Applied to the homepage and every interior page.
+
+* **Fix**: Cadillac scene corrections from review: Lobo now has a full body and a cleaner angular profile (and his wave is visible over the door); Sparky sits *in* the car instead of floating above it; the side-view fin is solid with twin bullet taillights pointing rearward; the rear fins are now visible in the approaching view; and the driving-away view shows the quad taillights as two horizontal pairs, '59-style.
+
 * **Update**: Overhauled the [CSE Certificate Program](education/cse/index.md) course pages. Every core course and approved elective was validated against the UNM Schedule of Classes for Fall 2026 (checked August 30, 2026) and now links directly to its live schedule entry; the [electives page](education/cse/electives.md) shows per-course offering status, notes renamed courses (ECE 517 "Machine Learning", CE 502, ME 500, MATH 505), and flags the CS/ECE/MATH graduate renumbering for Program Committee review. The Spring 2027 schedule publishes mid-October 2026 and the pages say so.
 
 * **Fix**: Corrected a site-wide link-rewriting bug that resolved relative links against the rendered page directory instead of the source file's directory — the cause of the broken `/education/cse/requirements/electives/` URL (and several other cross-section links). A full-site sweep now reports zero broken internal links.
