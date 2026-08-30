@@ -69,8 +69,15 @@ def pretty_dir(rel: Path) -> str:
     return str(rel.with_suffix("")) + "/"
 
 
-def rewrite_md_links(html_text: str, page_dir: str) -> str:
-    """Rewrite hrefs pointing at .md sources to their pretty URLs."""
+def rewrite_md_links(html_text: str, src_dir: str, page_dir: str) -> str:
+    """Rewrite hrefs pointing at .md sources to their pretty URLs.
+
+    Relative links in the Markdown are relative to the SOURCE file's
+    directory (src_dir, e.g. "education/cse" for education/cse/requirements.md),
+    while the emitted URL must be relative to the rendered page's pretty
+    directory (page_dir, e.g. "education/cse/requirements/") — a non-index
+    page gains one directory level when it becomes <page>/index.html.
+    """
     def sub(m):
         href = m.group(2)
         if href.startswith(("http://", "https://", "mailto:", "#", "/")):
@@ -78,7 +85,7 @@ def rewrite_md_links(html_text: str, page_dir: str) -> str:
         path, _, frag = href.partition("#")
         if not path.endswith(".md"):
             return m.group(0)
-        target = posixpath.normpath(posixpath.join(page_dir or ".", path))
+        target = posixpath.normpath(posixpath.join(src_dir or ".", path))
         if target.startswith(".."):
             return m.group(0)
         tdir = pretty_dir(Path(target))
@@ -308,7 +315,8 @@ def main():
             (l[2:].strip() for l in body.splitlines() if l.startswith("# ")),
             rel.stem.replace("-", " ").title())
         content = markdown.markdown(body, extensions=MD_EXTENSIONS)
-        content = rewrite_md_links(content, pdir)
+        src_dir = "" if str(rel.parent) == "." else str(rel.parent)
+        content = rewrite_md_links(content, src_dir, pdir)
         depth = len(pdir.rstrip("/").split("/")) if pdir else 0
         rel_root = "../" * depth if depth else "./"
         page = TEMPLATE.format(

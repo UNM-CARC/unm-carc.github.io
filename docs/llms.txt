@@ -28,7 +28,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 ## CSE Certificate Program
 
 - [CSE application](https://unm-carc.github.io/education/cse/application/): How to apply to the CSE Certificate Program through the UNM ApplyYourself portal.
-- [Electives and participating departments](https://unm-carc.github.io/education/cse/electives/): Approved CSE elective courses by department, and the departments participating in the certificate program.
+- [Electives and participating departments](https://unm-carc.github.io/education/cse/electives/): Approved CSE elective courses by department — with live schedule links and Fall 2026 offering status — and the departments participating in the certificate program.
 - [CSE program requirements](https://unm-carc.github.io/education/cse/requirements/): Admission prerequisites, core courses, elective hours, and the research project requirement for the CSE certificate.
 - [Program specializations](https://unm-carc.github.io/education/cse/specializations/): Optional, non-transcripted CSE specializations: Computational Fluid Dynamics and Data Science.
 

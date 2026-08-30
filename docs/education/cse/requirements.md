@@ -7,12 +7,16 @@ tags:
   - CSE
 generated:
   by: "claude/fable-5"
-  at: "2026-08-29T00:00:00Z"
+  at: "2026-08-30T00:00:00Z"
 sources:
   - id: carc-web
     resource: "https://carc.unm.edu/education--training/cse-program1/cse-program-requirements.html"
     title: "CSE Program Requirements (carc.unm.edu)"
     author: "team:unm-carc"
+  - id: unm-schedule
+    resource: "https://lobowebapp.unm.edu/apex_ods/f?p=176:1:0"
+    title: "UNM Schedule of Classes (Fall 2026 offerings checked 2026-08-30)"
+    author: "team:unm-registrar"
 ---
 
 # CSE program requirements
@@ -25,8 +29,12 @@ program. Prerequisites for admittance, in addition to a bachelor's degree:
 
 * One year of general college physics or chemistry
 * One year of differential/integral calculus, and either a course in
-  differential equations (e.g. MATH \*\*316), a course in applied statistics
-  (e.g. STAT 427), or a course in numerical methods (e.g. MATH \*\*375)
+  differential equations (e.g.
+  [MATH 316](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,MATH,316){target=_blank}),
+  a course in applied statistics (e.g.
+  [STAT 427](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,STAT,427){target=_blank}),
+  or a course in numerical methods (e.g.
+  [MATH 375](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,MATH,375){target=_blank})
 * A course in computer programming, or equivalent experience with a language
   used for high-performance and/or data-intensive computing such as C, C++,
   Fortran, Java, or Python
@@ -59,9 +67,18 @@ To complete the CSE program, a student must:
 
 ## Core courses
 
-* CS/MATH \*471 Introduction to Scientific Computing
-* CS 542 Introduction to Parallel Processing
-* CS 567 Principles and Applications of Big Data
+| Course | Title | Fall 2026 |
+| ------ | ----- | :-------: |
+| [CS 471](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,CS,471){target=_blank} / [MATH 471](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,MATH,471){target=_blank} | Introduction to Scientific Computing | ✅ |
+| [CS 542](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,CS,542){target=_blank} | Introduction to Parallel Processing | — |
+| [CS 567](https://lobowebapp.unm.edu/apex_ods/f?p=176:3:0:::RIR,3:P3PERIOD,P3CAMPUS,IREQ_subject,IREQ_course:202680,ABQ,CS,567){target=_blank} | Principles and Applications of Big Data | — |
+
+Offering status checked against the UNM
+[Schedule of Classes](https://schedule.unm.edu/){target=_blank} for Fall 2026
+on August 30, 2026 (click a course for its live schedule entry). Core courses
+typically alternate semesters — the **Spring 2027 schedule publishes in
+mid-October 2026**. Plan your sequence with the Program Advisor
+(<csecert@carc.unm.edu>).
 
 ## Electives
 

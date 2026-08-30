@@ -2,6 +2,10 @@
 
 ## 2026-08-30
 
+* **Update**: Overhauled the [CSE Certificate Program](education/cse/index.md) course pages. Every core course and approved elective was validated against the UNM Schedule of Classes for Fall 2026 (checked August 30, 2026) and now links directly to its live schedule entry; the [electives page](education/cse/electives.md) shows per-course offering status, notes renamed courses (ECE 517 "Machine Learning", CE 502, ME 500, MATH 505), and flags the CS/ECE/MATH graduate renumbering for Program Committee review. The Spring 2027 schedule publishes mid-October 2026 and the pages say so.
+
+* **Fix**: Corrected a site-wide link-rewriting bug that resolved relative links against the rendered page directory instead of the source file's directory — the cause of the broken `/education/cse/requirements/electives/` URL (and several other cross-section links). A full-site sweep now reports zero broken internal links.
+
 * **Update**: Added ready-made page templates (`templates/news-article.md`, `templates/content-page.md`) and an admin guide (`SITE_INSTRUCTIONS.md`) so staff can publish news articles and edit any page entirely from the GitHub web interface — no Cascade CMS or local tooling required. The deploy pipeline now regenerates the llms.txt machine indexes and sitemap dates automatically at build time.
 
 * **Fix**: The hero's text panel now keeps identical size and position in the day and night themes (the night layout is canonical); the daytime cream backing is painted without affecting layout. Also replaced a Material icon code on the workshops page that rendered as literal text.
