@@ -2,6 +2,8 @@
 
 ## 2026-08-30
 
+* **Fix**: Removed the department footer's X/Twitter and Facebook icons — those CARC accounts no longer exist. (The UNM global footer's university-wide social links remain.)
+
 * **Update**: New site masthead. The text-only department banner is gone; in its place is the official UNM + Center for Advanced Research Computing lockup (cherry interlocking monogram, gray wordmark) on a clean band — colorway on light, silver-on-dark after dusk — with the UNM webcore bar kept above it in the spirit of the university standard (its hanging brand tab now renders as the compact white UNM wordmark inside the red bar, as other UNM centers do). Applied to the homepage and every interior page.
 
 * **Fix**: Cadillac scene corrections from review: Lobo now has a full body and a cleaner angular profile (and his wave is visible over the door); Sparky sits *in* the car instead of floating above it; the side-view fin is solid with twin bullet taillights pointing rearward; the rear fins are now visible in the approaching view; and the driving-away view shows the quad taillights as two horizontal pairs, '59-style.
