@@ -161,9 +161,10 @@ html, body { height: 100%; }
   margin: .25em .15em; font-weight: 700; }
 .carc-ext-btn:hover { background: #ba0c2f; color: #fff !important; }
 .carc-theme-li { float: right; }
-#carc-theme-btn { border: 2px solid var(--pg-link); border-radius: 999px; background: transparent;
-  color: var(--pg-link); padding: .25em .9em; margin: .45em 0; cursor: pointer; font-weight: 700; }
-#carc-theme-btn:hover { background: var(--pg-link); color: var(--pg-bg); }
+#carc-theme-btn { border: none; background: transparent; color: var(--pg-link);
+  font-size: 1.35em; line-height: 1; padding: .15em .35em; margin: .3em 0;
+  cursor: pointer; transition: transform .15s; }
+#carc-theme-btn:hover { transform: scale(1.25) rotate(-12deg); }
 #carc-content { padding: 1.6em 0 3em; }
 #carc-content .col-content { max-width: 62em; }
 #carc-content img { max-width: 100%; height: auto; }
@@ -238,7 +239,7 @@ TEMPLATE = """<!DOCTYPE html>
     if (d) return d === "dark";
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   }}
-  function label() {{ if (btn) btn.textContent = isDark() ? "☀ Day" : "☾ Night"; }}
+  function label() {{ if (btn) btn.textContent = isDark() ? "☀" : "☾"; }}
   if (btn) {{
     label();
     btn.addEventListener("click", function () {{
@@ -265,7 +266,7 @@ def nav_items(rel_root: str, active: str) -> str:
     items.append('<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" '
                  'target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>')
     items.append('<li class="carc-theme-li"><button id="carc-theme-btn" type="button" '
-                 'aria-label="Toggle day / night theme">☾ Night</button></li>')
+                 'aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>')
     return "\n".join(items)
 
 

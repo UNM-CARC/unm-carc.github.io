@@ -1746,6 +1746,8 @@ Albuquerque NM 87106
 
 * **Fix**: The hero's text panel now keeps identical size and position in the day and night themes (the night layout is canonical); the daytime cream backing is painted without affecting layout. Also replaced a Material icon code on the workshops page that rendered as literal text.
 
+* **Update**: The day/night toggle is now a bare ☾/☀ glyph in the navigation — no outline or text — so it no longer resembles the User Documentation and Help Desk buttons.
+
 ## 2026-08-29
 
 * **Update**: Deepened the hero landscape in both themes: snow-capped peaks inspired by the Sangre de Cristo Mountains now rise behind the eastern mesas (rosy brown with white caps by day, moonlit blue-gray by night), with a mid-distance ridge, a horizon haze band, and a foreground of chamisa bushes and yuccas scattered along old Route 66 — all theme-aware.

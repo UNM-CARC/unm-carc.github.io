@@ -163,9 +163,10 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
 }
 /* nav theme toggle (shared with interior pages) */
 #gg-theme-li { float: right; }
-#gg-theme-btn { border: 2px solid #ba0c2f; border-radius: 999px; background: transparent;
-  color: #ba0c2f; padding: .25em .9em; margin: .3em 0; cursor: pointer; font-weight: 700; }
-#gg-theme-btn:hover { background: #ba0c2f; color: #fff; }
+#gg-theme-btn { border: none; background: transparent; color: #ba0c2f;
+  font-size: 1.35em; line-height: 1; padding: .15em .35em; margin: .18em 0;
+  cursor: pointer; transition: transform .15s; }
+#gg-theme-btn:hover { transform: scale(1.25) rotate(-12deg); }
 
 /* UNM dept footer: neutralize the scraped fixed-width table (mobile overflow) */
 #footer table { width: 100% !important; height: auto !important; }
@@ -196,7 +197,7 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
   <li><a href="contact/">Contact</a></li>
   <li><a class="carc-ext-btn" href="https://unm-carc.github.io/docs/" target="_blank" rel="noopener">User Documentation <span aria-hidden="true">↗</span></a></li>
   <li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>
-  <li id="gg-theme-li"><button id="gg-theme-btn" type="button" aria-label="Toggle day / night theme">☾ Night</button></li>
+  <li id="gg-theme-li"><button id="gg-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>
 </ul></div></div>
 <style>
 .carc-ext-btn { border: 2px solid #ba0c2f; border-radius: 999px; padding: .3em 1em !important;
@@ -902,7 +903,7 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
     document.body.classList.toggle("gg-daybody", isDay);
     d3.select("#gg-night-layer").style("display", isDay ? "none" : null);
     day.style("display", isDay ? null : "none");
-    if (themeBtn) themeBtn.textContent = isDay ? "☾ Night" : "☀ Day";
+    if (themeBtn) themeBtn.textContent = isDay ? "☾" : "☀";
   }
   applyHero();
   if (sysDark.addEventListener) sysDark.addEventListener("change", applyHero);
