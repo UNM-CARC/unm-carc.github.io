@@ -2,6 +2,8 @@
 
 ## 2026-08-30
 
+* **Update**: The homepage "Latest from CARC" cards now feature the newest announcements (new Director, departures & retirements, new NSF awards), and the "no vacancy? never —" and "full service, every orbit —" taglines are retired.
+
 * **Update**: Restructured the [News](news/index.md) section: six new announcements are staged as placeholders pending final text from CARC administration — the new Director (Tyson Swetnam), recent departures and retirements (Patrick Bridges, Hussein Al-Azzawi, Jim Prewett), an In Memoriam for Cleve Moler by Matthew Fricke, two new NSF awards (IDSS MESA; research hardware, Ruskai), and a 2026 PSAAP COMPASS update. All stories from before August 2026 moved into an Archive with by-year headers.
 
 * **Fix**: The homepage section navigation now uses exactly the interior pages' styling (same type, spacing, hover, and theme-aware strip colors) instead of the Bootstrap default it had been inheriting.
