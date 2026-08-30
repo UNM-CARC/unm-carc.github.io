@@ -135,6 +135,13 @@ html[data-theme="dark"] { --pg-bg:#14161d; --pg-fg:#e8e6e1; --pg-muted:#a7a8aa;
   html:not([data-theme="light"]) { --pg-bg:#14161d; --pg-fg:#e8e6e1; --pg-muted:#a7a8aa;
     --pg-card:#1c1f28; --pg-border:#333845; --pg-link:#4fd3e0; --pg-strip:#10131a; }
 }
+/* sticky footer: short pages pin the footer to the viewport bottom,
+   so it sits at the same height on every section page */
+html, body { height: 100%; }
+#page { min-height: 100vh; display: flex; flex-direction: column; }
+#page > #main { flex: 1 0 auto; min-height: calc(100vh - 180px); }
+#page > .navbar, #page > #header, #page > #nav, #page > #breadcrumbs,
+#page > #footer { flex: 0 0 auto; }
 #page { background: var(--pg-bg) !important; }
 #header h1 { color: var(--pg-fg) !important; }
 #footer table { width: 100% !important; height: auto !important; }
