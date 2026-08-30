@@ -2,6 +2,8 @@
 
 ## 2026-08-29
 
+* **Update**: The homepage hero now follows the site-wide day/night theme (same saved preference and a ☾/☀ toggle in the navigation). By day it becomes a monsoon scene over the high desert: turquoise sky, tan and brown mesas, a googie ray-sun risen above the horizon, towering cumulonimbus drifting slowly with rain curtains and falling streaks, and a hawk riding the thermals — while the neon sign goes unlit (the OPEN lozenge stays on) and the Cadillacs keep cruising. Night remains the neon Route 66 scene. Hero CTAs now open in new tabs.
+
 * **Update**: Responsive shakedown across full-screen monitor (2560px), desktop (1920px), laptop (1440px), tablet (768px), and mobile (375px): fixed the department footer's fixed-width table that forced horizontal overflow on small screens; capped the hero overlay width on ultra-wide monitors; added three-tier hero framing (phones center on the neon sign, tablets show sign + road + cars, desktops get the full diorama); content tables scroll within the page. Verified zero horizontal overflow at every size and that the hero animations hold up.
 
 * **Update**: Remodeled the hero's cars on the 1959 Cadillac — blade tailfins with twin bullet taillights in chrome pods, quad headlights, eggcrate grille, dagmar bumper, full-length chrome spear, wraparound windshield, long rear overhang. Lobo is now an angular UNM-logo-style wolf and Sparky a 1950s Yoshiya-style tin robot with a glowing chest spark window. The arriving car now stops fully in frame before waving, and the road's centerline dashes shorten with distance for perspective.

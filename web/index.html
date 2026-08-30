@@ -119,6 +119,39 @@
 @media (prefers-reduced-motion: reduce) {
   .gg-flicker, .gg-blink { animation: none !important; }
 }
+/* ---- daytime hero (monsoon over the high desert) ---- */
+body.gg-daybody .gg-hero { background: #e8d9b4; }
+.gg-day .gg-skyrect { fill: url(#skyDay); }
+.gg-day .gg-land { fill: #b98d5f; }
+.gg-day .gg-road { fill: #6d6257; }
+.gg-day .gg-flicker { animation: none; filter: none !important; opacity: .55; }
+.gg-day g[id^="gg-burst"] { opacity: .5; }
+.gg-day g[id^="gg-burst"] line, .gg-day g[id^="gg-burst"] circle { filter: none; }
+.gg-day text.gg-flicker { opacity: .9; filter: none !important; }
+@keyframes gg-rainfall { to { stroke-dashoffset: -64; } }
+.gg-rainline { stroke-dasharray: 12 20; animation: gg-rainfall 1.1s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .gg-rainline { animation: none; } }
+body.gg-daybody .gg-overlay { }
+body.gg-daybody .gg-panel { background: rgba(247, 239, 223, 0.86); border-radius: .6rem;
+  padding: 1.2rem 1.4rem; box-shadow: 0 8px 26px rgba(60, 45, 20, .18); }
+body.gg-daybody .gg-kicker { color: #007a86; text-shadow: none; }
+body.gg-daybody .gg-headline { color: #201c18; text-shadow: none; }
+body.gg-daybody .gg-headline .gg-hl { color: #ba0c2f; text-shadow: none; }
+body.gg-daybody .gg-sub { color: #4a443c; }
+body.gg-daybody .gg-ctas a.gg-secondary { color: #007a86; border-color: #007a86; box-shadow: none; }
+body.gg-daybody .gg-ctas a.gg-secondary:hover { background: #007a86; color: #fff; }
+body.gg-daybody .gg-board { background: rgba(255, 253, 247, .8); color: #201c18;
+  border-color: #b98d5f; }
+body.gg-daybody .gg-board .st { color: #ba0c2f; }
+@media (max-width: 900px) {
+  body.gg-daybody .gg-overlay { background: #e8d9b4; }
+}
+/* nav theme toggle (shared with interior pages) */
+#gg-theme-li { float: right; }
+#gg-theme-btn { border: 2px solid #ba0c2f; border-radius: 999px; background: transparent;
+  color: #ba0c2f; padding: .25em .9em; margin: .3em 0; cursor: pointer; font-weight: 700; }
+#gg-theme-btn:hover { background: #ba0c2f; color: #fff; }
+
 /* UNM dept footer: neutralize the scraped fixed-width table (mobile overflow) */
 #footer table { width: 100% !important; height: auto !important; }
 #footer td { padding-right: 1em; }
@@ -148,6 +181,7 @@
   <li><a href="contact/">Contact</a></li>
   <li><a class="carc-ext-btn" href="https://unm-carc.github.io/docs/" target="_blank" rel="noopener">User Documentation <span aria-hidden="true">↗</span></a></li>
   <li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>
+  <li id="gg-theme-li"><button id="gg-theme-btn" type="button" aria-label="Toggle day / night theme">☾ Night</button></li>
 </ul></div></div>
 <style>
 .carc-ext-btn { border: 2px solid #ba0c2f; border-radius: 999px; padding: .3em 1em !important;
@@ -160,6 +194,19 @@
 <section class="gg-hero" aria-label="CARC — advanced computing under New Mexico skies">
   <svg class="gg-sky" viewBox="0 0 1600 740" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Animated night scene: neon CARC motel-style sign, atomic starbursts, and Route 66 under a desert sky.">
     <defs>
+      <linearGradient id="skyDay" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2f8fae"/><stop offset=".45" stop-color="#7fc6d4"/>
+        <stop offset=".8" stop-color="#cfe6dd"/><stop offset="1" stop-color="#e8d9b4"/>
+      </linearGradient>
+      <radialGradient id="sunGlow">
+        <stop offset="0" stop-color="#fff6d8" stop-opacity=".95"/>
+        <stop offset=".55" stop-color="#f7e9b8" stop-opacity=".38"/>
+        <stop offset="1" stop-color="#f7e9b8" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="rainGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fa5b5" stop-opacity=".5"/>
+        <stop offset="1" stop-color="#8fa5b5" stop-opacity=".08"/>
+      </linearGradient>
       <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0" stop-color="#07090f"/><stop offset=".55" stop-color="#0a0d16"/>
         <stop offset=".85" stop-color="#123038"/><stop offset="1" stop-color="#16424c"/>
@@ -171,8 +218,9 @@
         <feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
       </filter>
     </defs>
-    <rect width="1600" height="740" fill="url(#sky)"/>
-    <g id="gg-stars"></g>
+    <rect class="gg-skyrect" width="1600" height="740" fill="url(#sky)"/>
+    <g id="gg-day-layer" style="display:none"></g>
+    <g id="gg-night-layer"><g id="gg-stars"></g>
     <!-- atomic orbits -->
     <g transform="translate(1180,210)" opacity=".9">
       <ellipse rx="210" ry="64" fill="none" stroke="#a7a8aa" stroke-opacity=".5" stroke-width="1.5" transform="rotate(-18)"/>
@@ -183,15 +231,16 @@
       <circle id="gg-e2" r="5" fill="#ff4d6a" filter="url(#glow)"/>
       <circle id="gg-e3" r="4" fill="#a7a8aa" filter="url(#glow)"/>
     </g>
+    </g><!-- /gg-night-layer -->
     <!-- big starbursts (behind the sign; gently rotating + drifting) -->
     <g id="gg-burst1" transform="translate(150,165)"></g>
     <g id="gg-burst2" transform="translate(1450,520)" opacity=".85"></g>
     <g id="gg-burst3" transform="translate(505,95)"></g>
     <!-- mesa horizon -->
-    <path d="M0 560 L120 560 L170 500 L330 500 L380 560 L640 560 L700 528 L860 528 L910 560 L1600 560 L1600 740 L0 740 Z" fill="#0b0e14"/>
+    <path class="gg-land" d="M0 560 L120 560 L170 500 L330 500 L380 560 L640 560 L700 528 L860 528 L910 560 L1600 560 L1600 740 L0 740 Z" fill="#0b0e14"/>
     <!-- route 66 road -->
     <g>
-      <path d="M690 740 L810 560 L830 560 L1030 740 Z" fill="#191d26"/>
+      <path class="gg-road" d="M690 740 L810 560 L830 560 L1030 740 Z" fill="#191d26"/>
       <g id="gg-lane"></g>
       <!-- 1959-style Cadillacs: Lobo driving, Sparky riding shotgun -->
       <defs>
@@ -613,9 +662,10 @@
     }, 2600);
   }
 
-  // --- shooting stars (the road centerline is static now) ---
+  // --- shooting stars (night only; the road centerline is static now) ---
   if (!reduced) {
     d3.interval(function () {
+      if (document.body.classList.contains("gg-daybody")) return;
       var x0 = 200 + Math.random() * 1000, y0 = 40 + Math.random() * 160;
       var s = svg.append("line")
         .attr("x1", x0).attr("y1", y0).attr("x2", x0).attr("y2", y0)
@@ -698,6 +748,106 @@
   }
   if (!reduced) { sceneAway(); }
   else { place("#gg-car-side", 0); side.attr("opacity", 1); }
+
+  // =====================================================================
+  // DAYTIME: monsoon over the high desert — sun, cumulonimbus, rain, hawk
+  // =====================================================================
+  var day = d3.select("#gg-day-layer");
+
+  // googie ray-sun, risen above the horizon
+  var sun = day.append("g").attr("transform", "translate(1240,150)");
+  sun.append("circle").attr("r", 86).attr("fill", "url(#sunGlow)");
+  var rays = sun.append("g");
+  for (var ri = 0; ri < 12; ri++) {
+    var ra = ri * Math.PI / 6;
+    rays.append("line")
+      .attr("x1", Math.cos(ra) * 52).attr("y1", Math.sin(ra) * 52)
+      .attr("x2", Math.cos(ra) * (ri % 2 ? 66 : 78)).attr("y2", Math.sin(ra) * (ri % 2 ? 66 : 78))
+      .attr("stroke", "#f7efdf").attr("stroke-width", ri % 2 ? 3 : 5).attr("stroke-linecap", "round");
+  }
+  sun.append("circle").attr("r", 42).attr("fill", "#f7efdf")
+     .attr("stroke", "#e8c88a").attr("stroke-width", 3);
+
+  // towering monsoon cumulonimbus with rain curtains
+  function cloud(cx, cy, k, vx) {
+    var g = day.append("g");
+    var puffs = [[-70,10,58,22],[62,12,52,20],[0,0,78,30],[-34,-30,48,24],[30,-34,44,22],
+                 [-2,-62,40,20],[26,-84,34,17],[-20,-88,30,15],[6,-106,26,13]];
+    var rain = g.append("g");
+    rain.append("path")
+      .attr("d", "M" + (-60*k) + " " + (26*k) + " L" + (60*k) + " " + (26*k) +
+                 " L" + (34*k) + " " + (560-cy) + " L" + (-86*k) + " " + (560-cy) + " Z")
+      .attr("fill", "url(#rainGrad)");
+    for (var rj = 0; rj < 7; rj++) {
+      var rx = (-58 + rj * 18) * k;
+      rain.append("line").attr("class", "gg-rainline")
+        .attr("x1", rx).attr("y1", 28*k)
+        .attr("x2", rx - (560-cy) * 0.09).attr("y2", 560 - cy)
+        .attr("stroke", "#8fa5b5").attr("stroke-width", 2.4).attr("opacity", 0.7);
+    }
+    puffs.forEach(function (p) {
+      g.append("ellipse").attr("cx", p[0]*k).attr("cy", p[1]*k)
+        .attr("rx", p[2]*k).attr("ry", p[3]*k)
+        .attr("fill", p[1] > 5 ? "#aab8c2" : (p[1] > -40 ? "#dfe6ea" : "#f6f8f9"));
+    });
+    g.append("ellipse").attr("cx", 8*k).attr("cy", -118*k).attr("rx", 88*k).attr("ry", 14*k)
+      .attr("fill", "#f6f8f9").attr("opacity", .9);   // anvil top
+    return { g: g, cx: cx, cy: cy, vx: vx };
+  }
+  var clouds = [cloud(430, 190, 1.15, 7), cloud(940, 150, 0.85, 11), cloud(1420, 230, 0.6, 15)];
+
+  // a hawk riding the thermals
+  var hawk = day.append("g");
+  hawk.append("path").attr("d", "M-16 0 Q-8 -7 0 -1 Q8 -7 16 0 Q8 -3 0 2 Q-8 -3 -16 0 Z")
+      .attr("fill", "#4a3b2a");
+  var hawkC = { x: 760, y: 260 };
+
+  if (!reduced) {
+    d3.timer(function (tt) {
+      clouds.forEach(function (c) {
+        var x = ((c.cx + tt * c.vx / 1000) % 2000) - 200;
+        var bob = 4 * Math.sin(tt / 5000 + c.cx);
+        c.g.attr("transform", "translate(" + x + "," + (c.cy + bob) + ")");
+      });
+      rays.attr("transform", "rotate(" + (tt / 900 % 360) + ")");
+      var ha = tt / 6000;
+      hawk.attr("transform", "translate(" + (hawkC.x + 130 * Math.cos(ha)) + "," +
+        (hawkC.y + 44 * Math.sin(2 * ha)) + ") scale(" + (0.8 + 0.25 * Math.sin(ha)) + ") " +
+        "rotate(" + (8 * Math.cos(ha)) + ")");
+    });
+  } else {
+    clouds.forEach(function (c) { c.g.attr("transform", "translate(" + c.cx + "," + c.cy + ")"); });
+    hawk.attr("transform", "translate(760,260)");
+  }
+
+  // ---- theme plumbing (shared carc-theme key with the interior pages) ----
+  var themeKey = "carc-theme", rootEl = document.documentElement;
+  try { var savedT = localStorage.getItem(themeKey); if (savedT) rootEl.setAttribute("data-theme", savedT); } catch (e) {}
+  var sysDark = window.matchMedia("(prefers-color-scheme: dark)");
+  function heroDark() {
+    var d = rootEl.getAttribute("data-theme");
+    if (d) return d === "dark";
+    return sysDark.matches;
+  }
+  var themeBtn = document.getElementById("gg-theme-btn");
+  function applyHero() {
+    var isDay = !heroDark();
+    svg.node().classList.toggle("gg-day", isDay);
+    document.body.classList.toggle("gg-daybody", isDay);
+    d3.select("#gg-night-layer").style("display", isDay ? "none" : null);
+    day.style("display", isDay ? null : "none");
+    if (themeBtn) themeBtn.textContent = isDay ? "☾ Night" : "☀ Day";
+  }
+  applyHero();
+  if (sysDark.addEventListener) sysDark.addEventListener("change", applyHero);
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      var next = heroDark() ? "light" : "dark";
+      rootEl.setAttribute("data-theme", next);
+      try { localStorage.setItem(themeKey, next); } catch (e) {}
+      applyHero();
+    });
+  }
 })();
 </script>
 </body>
