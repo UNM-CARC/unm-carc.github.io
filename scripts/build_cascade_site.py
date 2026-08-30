@@ -22,6 +22,7 @@ import posixpath
 import re
 import shutil
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import markdown
@@ -339,7 +340,7 @@ def main():
     # sitemap
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    lastmod = "2026-08-29"
+    lastmod = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     sm += [f"<url><loc>{u}</loc><lastmod>{lastmod}</lastmod></url>" for u in urls]
     sm.append("</urlset>")
     (SITE / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")

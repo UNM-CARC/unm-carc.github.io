@@ -144,9 +144,11 @@ body.gg-daybody .gg-hero { background: #e8d9b4; }
 @keyframes gg-rainfall { to { stroke-dashoffset: -64; } }
 .gg-rainline { stroke-dasharray: 12 20; animation: gg-rainfall 1.1s linear infinite; }
 @media (prefers-reduced-motion: reduce) { .gg-rainline { animation: none; } }
-body.gg-daybody .gg-overlay { }
-body.gg-daybody .gg-panel { background: rgba(247, 239, 223, 0.86); border-radius: .6rem;
-  padding: 1.2rem 1.4rem; box-shadow: 0 8px 26px rgba(60, 45, 20, .18); }
+/* Day panel: identical geometry to night — no padding, so the text box never
+   resizes or shifts on theme toggle. The cream backing is drawn as a spread
+   box-shadow, which paints a uniform halo without affecting layout. */
+body.gg-daybody .gg-panel { background: rgba(247, 239, 223, 0.86); border-radius: .3rem;
+  box-shadow: 0 0 0 1.25rem rgba(247, 239, 223, 0.86), 0 10px 30px rgba(60, 45, 20, .2); }
 body.gg-daybody .gg-kicker { color: #007a86; text-shadow: none; }
 body.gg-daybody .gg-headline { color: #201c18; text-shadow: none; }
 body.gg-daybody .gg-headline .gg-hl { color: #ba0c2f; text-shadow: none; }

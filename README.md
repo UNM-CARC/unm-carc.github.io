@@ -1,5 +1,10 @@
 # unm-carc.github.io
 
+> **Adding a news article or editing a page?** See
+> **[SITE_INSTRUCTIONS.md](SITE_INSTRUCTIONS.md)** — the admin guide for
+> updating this site entirely from the GitHub web interface — and start from
+> the ready-made page templates in [`templates/`](templates/).
+
 The public website of the [UNM Center for Advanced Research Computing](https://unm-carc.github.io/)
 — a rebuild of [carc.unm.edu](https://carc.unm.edu) built with
 [Zensical](https://zensical.org) and structured as an

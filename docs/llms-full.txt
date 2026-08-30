@@ -1740,6 +1740,12 @@ Albuquerque NM 87106
 
 # Website update log
 
+## 2026-08-30
+
+* **Update**: Added ready-made page templates (`templates/news-article.md`, `templates/content-page.md`) and an admin guide (`SITE_INSTRUCTIONS.md`) so staff can publish news articles and edit any page entirely from the GitHub web interface — no Cascade CMS or local tooling required. The deploy pipeline now regenerates the llms.txt machine indexes and sitemap dates automatically at build time.
+
+* **Fix**: The hero's text panel now keeps identical size and position in the day and night themes (the night layout is canonical); the daytime cream backing is painted without affecting layout. Also replaced a Material icon code on the workshops page that rendered as literal text.
+
 ## 2026-08-29
 
 * **Update**: Deepened the hero landscape in both themes: snow-capped peaks inspired by the Sangre de Cristo Mountains now rise behind the eastern mesas (rosy brown with white caps by day, moonlit blue-gray by night), with a mid-distance ridge, a horizon haze band, and a foreground of chamisa bushes and yuccas scattered along old Route 66 — all theme-aware.

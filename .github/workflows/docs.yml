@@ -26,10 +26,6 @@ jobs:
           python-version: 3.x
       - run: pip install pyyaml
       - run: python scripts/okf_validate.py docs
-      # Fail if the llms.txt machine-readable indexes are out of date
-      - run: |
-          python scripts/gen_llms_txt.py
-          git diff --exit-code docs/llms.txt docs/llms-full.txt
 
   deploy:
     needs: okf-conformance
@@ -46,6 +42,10 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install pyyaml markdown
+      # Regenerate the llms.txt machine-readable indexes at build time, so
+      # content edited straight in the GitHub web UI ships fresh indexes
+      # without anyone running scripts locally
+      - run: python scripts/gen_llms_txt.py
       # UNM Cascade standard rendering for every page + Googie homepage
       - run: python scripts/build_cascade_site.py
       # Agent surface: markdown mirror, OKF meta injection, robots.txt
