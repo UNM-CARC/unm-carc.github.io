@@ -2,6 +2,8 @@
 
 ## 2026-08-30
 
+* **Update**: Restructured the [News](news/index.md) section: six new announcements are staged as placeholders pending final text from CARC administration — the new Director (Tyson Swetnam), recent departures and retirements (Patrick Bridges, Hussein Al-Azzawi, Jim Prewett), an In Memoriam for Cleve Moler by Matthew Fricke, two new NSF awards (IDSS MESA; research hardware, Ruskai), and a 2026 PSAAP COMPASS update. All stories from before August 2026 moved into an Archive with by-year headers.
+
 * **Fix**: The homepage section navigation now uses exactly the interior pages' styling (same type, spacing, hover, and theme-aware strip colors) instead of the Bootstrap default it had been inheriting.
 
 * **Fix**: Removed the department footer's X/Twitter and Facebook icons — those CARC accounts no longer exist; the live [UNM CARC YouTube channel](https://www.youtube.com/@UNMCARC) stands in their place. (The UNM global footer's university-wide social links remain.)

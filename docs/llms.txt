@@ -36,14 +36,20 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 
 - [Registration is open for the 2025 CARC Annual Meeting (CAM)](https://unm-carc.github.io/news/2025-annual-meeting/): CARC's fourth annual user meeting — April 14, 2025 — with a keynote, open forum, and student poster session.
 - [Registration is open for the 2026 CARC Annual Meeting](https://unm-carc.github.io/news/2026-annual-meeting/): CAM 2026 comes to Zimmerman Library B30 on April 21, 2026 — updates, research highlights, and the student poster session.
+- [In memoriam: Cleve Moler](https://unm-carc.github.io/news/cleve-moler-memoriam/): Remembering Cleve Moler — creator of MATLAB and former UNM professor — by Matthew Fricke. (draft)
+- [Recent departures and retirements](https://unm-carc.github.io/news/departures-retirements/): Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement. (draft)
 - [An important message from our Director](https://unm-carc.github.io/news/director-message/): A message to the CARC community from then-Director Patrick G. Bridges on federal executive actions and CARC's commitments.
 - [UNM launches search for the next director of CARC](https://unm-carc.github.io/news/director-search/): The University seeks a strategic and operational leader for the Center for Advanced Research Computing. This search has concluded.
 - [CARC prepares for deployment of new high-performance computing cluster](https://unm-carc.github.io/news/easley-cluster/): Easley — named for NASA pioneer Annie Easley — brings H100 GPUs, all-flash storage, and a 7–10× performance leap.
 - [Genome sequencing reveals a newly identified virus](https://unm-carc.github.io/news/genome-sequencing/): CARC computing supported the sequencing and phylogenetic analysis behind the characterization of a previously unrecognized virus.
 - [New HPC course bridges the gap between students and local tech industry](https://unm-carc.github.io/news/hpc-course/): CS491/591, led by Matthew Fricke and backed by a $1M Department of Education grant, gives students hands-on cluster experience.
 - [Undergraduate researcher leverages CARC for molecular modeling breakthrough](https://unm-carc.github.io/news/molecular-modeling/): Physics major Sole Samuels used CARC systems to develop radial density encoding, a new molecular representation for machine learning.
+- [New NSF research hardware award](https://unm-carc.github.io/news/nsf-hardware-ruskai/): A new NSF award led by Ruskai brings new research computing hardware to UNM. (draft)
+- [New NSF award: IDSS MESA](https://unm-carc.github.io/news/nsf-idss-mesa/): A new National Science Foundation award supports the IDSS MESA project. (draft)
+- [PSAAP COMPASS center: 2026 update](https://unm-carc.github.io/news/psaap-2026-update/): An update on the DOE NNSA PSAAP IV COMPASS center led by UNM. (draft)
 - [UNM awarded prestigious grant to lead national research on high-performance computing](https://unm-carc.github.io/news/psaap-iv-compass/): A UNM-led team wins a DOE NNSA PSAAP IV cooperative agreement, establishing the COMPASS center at CARC.
 - [CARC team gears up for SC24 Competition](https://unm-carc.github.io/news/sc24-team/): Six UNM students take a Dell/Penguin/Intersect360-sponsored H100 cluster to the SC24 student competition in Atlanta.
+- [Welcome our new CARC Director, Tyson Swetnam](https://unm-carc.github.io/news/welcome-director-swetnam/): The Center for Advanced Research Computing welcomes Tyson Swetnam as its new Director. (draft)
 
 ## Contact
 

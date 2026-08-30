@@ -1151,6 +1151,68 @@ Those interested in attending or presenting a poster can
 Recordings from previous meetings are on the
 [video tutorials page](https://unm-carc.github.io/docs/training/videos/).
 
+---8<--- https://unm-carc.github.io/news/cleve-moler-memoriam/
+
+---
+title: "In memoriam: Cleve Moler"
+description: "Remembering Cleve Moler — creator of MATLAB and former UNM professor — by Matthew Fricke."
+type: News
+tags:
+  - News
+status: draft
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-30T00:00:00Z"
+---
+
+# In memoriam: Cleve Moler
+
+<p class="carc-byline">By Matthew Fricke</p>
+
+CARC joins the computational science community in remembering **Cleve
+Moler** — the creator of MATLAB, co-founder of MathWorks, and a former
+professor and Computer Science chair at the University of New Mexico. A
+full remembrance by Matthew Fricke will be published here.
+
+!!! note "Placeholder"
+
+    This is a placeholder announcement. The full text is being prepared by
+    CARC administration and will replace this page shortly.
+
+---8<--- https://unm-carc.github.io/news/departures-retirements/
+
+---
+title: "Recent departures and retirements"
+description: "Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement."
+type: News
+tags:
+  - News
+status: draft
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-30T00:00:00Z"
+---
+
+# Recent departures and retirements
+
+<p class="carc-byline">By CARC staff</p>
+
+CARC extends its deepest gratitude to three colleagues whose leadership and
+service shaped the center:
+
+* **Patrick Bridges**, outgoing CARC Director — thank you for your years of
+  leadership of the center.
+* **Hussein Al-Azzawi**, outgoing senior CARC manager — congratulations on
+  your appointment as HPC Center Director at the University of North
+  Carolina at Charlotte.
+* **Jim Prewett** — congratulations on your retirement, and thank you for
+  your many years of service to CARC and its users.
+
+!!! note "Placeholder"
+
+    This is a placeholder announcement. The full text is being prepared by
+    CARC administration and will replace this page shortly.
+
 ---8<--- https://unm-carc.github.io/news/director-message/
 
 ---
@@ -1544,6 +1606,88 @@ make meaningful contributions in their fields.
 
 ![Figure from the thesis](https://carc.unm.edu/research/picture1.png)
 
+---8<--- https://unm-carc.github.io/news/nsf-hardware-ruskai/
+
+---
+title: "New NSF research hardware award"
+description: "A new NSF award led by Ruskai brings new research computing hardware to UNM."
+type: News
+tags:
+  - News
+status: draft
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-30T00:00:00Z"
+---
+
+# New NSF research hardware award
+
+<p class="carc-byline">By CARC staff</p>
+
+A new National Science Foundation award, led by Ruskai, will bring new
+research computing hardware to UNM. Details on the award and the systems it
+funds will be published here.
+
+!!! note "Placeholder"
+
+    This is a placeholder announcement. The full text is being prepared by
+    CARC administration and will replace this page shortly.
+
+---8<--- https://unm-carc.github.io/news/nsf-idss-mesa/
+
+---
+title: "New NSF award: IDSS MESA"
+description: "A new National Science Foundation award supports the IDSS MESA project."
+type: News
+tags:
+  - News
+status: draft
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-30T00:00:00Z"
+---
+
+# New NSF award: IDSS MESA
+
+<p class="carc-byline">By CARC staff</p>
+
+A new National Science Foundation award supports the
+[IDSS MESA](https://idss-mesa.github.io){target=_blank} project. Details on
+the award, the team, and what it means for research computing at UNM will
+be published here.
+
+!!! note "Placeholder"
+
+    This is a placeholder announcement. The full text is being prepared by
+    CARC administration and will replace this page shortly.
+
+---8<--- https://unm-carc.github.io/news/psaap-2026-update/
+
+---
+title: "PSAAP COMPASS center: 2026 update"
+description: "An update on the DOE NNSA PSAAP IV COMPASS center led by UNM."
+type: News
+tags:
+  - News
+status: draft
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-30T00:00:00Z"
+---
+
+# PSAAP COMPASS center: 2026 update
+
+<p class="carc-byline">By CARC staff</p>
+
+An update on the [DOE NNSA PSAAP IV COMPASS center](psaap-iv-compass.md)
+led by UNM: progress, people, and what comes next. The full update will be
+published here.
+
+!!! note "Placeholder"
+
+    This is a placeholder announcement. The full text is being prepared by
+    CARC administration and will replace this page shortly.
+
 ---8<--- https://unm-carc.github.io/news/psaap-iv-compass/
 
 ---
@@ -1706,6 +1850,34 @@ computing. "This competition is a culmination of our hard work, and I'm
 excited to see how we measure up against other top teams," reflected team
 leader Ryan Scherbarth.
 
+---8<--- https://unm-carc.github.io/news/welcome-director-swetnam/
+
+---
+title: "Welcome our new CARC Director, Tyson Swetnam"
+description: "The Center for Advanced Research Computing welcomes Tyson Swetnam as its new Director."
+type: News
+tags:
+  - News
+status: draft
+generated:
+  by: "claude/fable-5"
+  at: "2026-08-30T00:00:00Z"
+---
+
+# Welcome our new CARC Director, Tyson Swetnam
+
+<p class="carc-byline">By CARC staff</p>
+
+The Center for Advanced Research Computing is pleased to welcome **Tyson
+Swetnam** as its new Director. A full introduction — including Dr. Swetnam's
+background in research cyberinfrastructure and his vision for CARC — will be
+published here.
+
+!!! note "Placeholder"
+
+    This is a placeholder announcement. The full text is being prepared by
+    CARC administration and will replace this page shortly.
+
 ---8<--- https://unm-carc.github.io/contact/personnel/
 
 ---
@@ -1808,6 +1980,8 @@ Albuquerque NM 87106
 # Website update log
 
 ## 2026-08-30
+
+* **Update**: Restructured the [News](news/index.md) section: six new announcements are staged as placeholders pending final text from CARC administration — the new Director (Tyson Swetnam), recent departures and retirements (Patrick Bridges, Hussein Al-Azzawi, Jim Prewett), an In Memoriam for Cleve Moler by Matthew Fricke, two new NSF awards (IDSS MESA; research hardware, Ruskai), and a 2026 PSAAP COMPASS update. All stories from before August 2026 moved into an Archive with by-year headers.
 
 * **Fix**: The homepage section navigation now uses exactly the interior pages' styling (same type, spacing, hover, and theme-aware strip colors) instead of the Bootstrap default it had been inheriting.
 
