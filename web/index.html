@@ -126,6 +126,18 @@ body.gg-daybody .gg-hero { background: #e8d9b4; }
 .gg-day .gg-road { fill: #6d6257; }
 .gg-day .gg-flicker { animation: none; filter: none !important; opacity: .55; }
 .gg-day g[id^="gg-burst"] { opacity: .5; }
+.gg-range { color: #141b28; }
+.gg-day .gg-range { color: #8a5f52; }
+.gg-midhill { color: #10141d; }
+.gg-day .gg-midhill { color: #a8825f; }
+.gg-snow { fill: #aebdca; }
+.gg-day .gg-snow { fill: #f6f8f9; }
+.gg-haze { color: #22304a; opacity: .22; }
+.gg-day .gg-haze { color: #fdf6e3; opacity: .5; }
+.gg-bush { color: #0e1119; }
+.gg-day .gg-bush { color: #6d7a52; }
+.gg-yucca { color: #141826; }
+.gg-day .gg-yucca { color: #55613f; }
 .gg-day g[id^="gg-burst"] line, .gg-day g[id^="gg-burst"] circle { filter: none; }
 .gg-day text.gg-flicker { opacity: .9; filter: none !important; }
 @keyframes gg-rainfall { to { stroke-dashoffset: -64; } }
@@ -234,8 +246,27 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
     </g><!-- /gg-night-layer -->
     <!-- big starbursts (behind the sign; gently rotating + drifting) -->
     <g id="gg-burst1" transform="translate(150,165)"></g>
-    <g id="gg-burst2" transform="translate(1450,520)" opacity=".85"></g>
+    <g id="gg-burst2" transform="translate(1450,330)" opacity=".85"></g>
     <g id="gg-burst3" transform="translate(505,95)"></g>
+    <!-- distant ranges: snow-capped Sangre de Cristos to the east -->
+    <g class="gg-range">
+      <path fill="currentColor" d="M860 560 L960 502 L1012 530 L1082 462 L1136 502 L1204 448 L1262 490 L1332 440 L1402 482 L1472 450 L1544 498 L1600 468 L1600 560 Z"/>
+      <g opacity=".2" fill="#000">
+        <polygon points="1082,462 1136,502 1108,502"/>
+        <polygon points="1204,448 1262,490 1230,490"/>
+        <polygon points="1332,440 1402,482 1366,482"/>
+        <polygon points="1472,450 1544,498 1506,498"/>
+      </g>
+      <g class="gg-snow">
+        <polygon points="1066,476 1082,462 1098,476 1090,481 1082,476 1074,482"/>
+        <polygon points="1188,462 1204,448 1220,462 1212,468 1204,462 1196,468"/>
+        <polygon points="1315,455 1332,440 1349,455 1340,461 1332,455 1323,462"/>
+        <polygon points="1457,463 1472,450 1487,463 1480,468 1472,463 1464,469"/>
+        <polygon points="946,514 960,502 974,514 967,518 960,514 953,519"/>
+      </g>
+    </g>
+    <path class="gg-midhill" fill="currentColor" d="M300 560 Q420 524 540 552 Q640 528 740 560 Z"/>
+    <rect class="gg-haze" x="0" y="546" width="1600" height="14" fill="currentColor"/>
     <!-- mesa horizon -->
     <path class="gg-land" d="M0 560 L120 560 L170 500 L330 500 L380 560 L640 560 L700 528 L860 528 L910 560 L1600 560 L1600 740 L0 740 Z" fill="#0b0e14"/>
     <!-- route 66 road -->
@@ -248,7 +279,26 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
           <stop offset="0" stop-color="#7fe0ea"/><stop offset=".35" stop-color="#2fb8c6"/>
           <stop offset="1" stop-color="#0c6c77"/>
         </linearGradient>
-        <linearGradient id="caddyChrome" x1="0" y1="0" x2="0" y2="1">
+        <g id="def-bush">
+        <ellipse cx="0" cy="0" rx="22" ry="14" fill="currentColor"/>
+        <ellipse cx="-16" cy="4" rx="14" ry="10" fill="currentColor"/>
+        <ellipse cx="16" cy="4" rx="15" ry="10" fill="currentColor"/>
+        <ellipse cx="0" cy="-10" rx="13" ry="9" fill="currentColor"/>
+        <ellipse cx="5" cy="2" rx="12" ry="7" fill="#000" opacity=".16"/>
+        <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <line x1="-4" y1="-16" x2="-7" y2="-24"/><line x1="3" y1="-17" x2="5" y2="-26"/><line x1="10" y1="-13" x2="14" y2="-20"/>
+        </g>
+      </g>
+      <g id="def-yucca">
+        <g fill="currentColor">
+          <polygon points="0,2 -20,-12 -3,-3"/><polygon points="0,2 -13,-22 -1,-4"/>
+          <polygon points="0,2 1,-26 3,-4"/><polygon points="0,2 14,-21 3,-3"/>
+          <polygon points="0,2 21,-10 4,-1"/><polygon points="0,2 -22,2 -4,3"/><polygon points="0,2 22,3 4,4"/>
+        </g>
+        <line x1="0" y1="-4" x2="0" y2="-40" stroke="currentColor" stroke-width="2.4"/>
+        <ellipse cx="0" cy="-44" rx="4.5" ry="7" fill="currentColor"/>
+      </g>
+      <linearGradient id="caddyChrome" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#c7c8ca"/>
           <stop offset="1" stop-color="#8b8d90"/>
         </linearGradient>
@@ -407,6 +457,19 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
         <rect id="gg-openrect" x="-132" y="-26" width="264" height="52" rx="26" fill="#141824" stroke="#ff4d6a" stroke-width="3" filter="url(#glow)"/>
         <text id="gg-opentext" y="9" text-anchor="middle" font-family="Righteous, sans-serif" font-size="26" fill="#ff4d6a" filter="url(#glow)">OPEN&#160;ACCESS</text>
       </g>
+    </g>
+    <!-- foreground: chamisa and yucca along old 66 -->
+    <g class="gg-flora">
+      <use href="#def-bush" class="gg-bush" transform="translate(120,700) scale(1.25)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(244,674) scale(.8)"/>
+      <use href="#def-yucca" class="gg-yucca" transform="translate(520,704) scale(1.1)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(436,718) scale(1.45)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(614,672) scale(.7)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(1112,692) scale(1.1)"/>
+      <use href="#def-yucca" class="gg-yucca" transform="translate(1198,708) scale(1.25)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(1268,662) scale(.75)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(1424,714) scale(1.55)"/>
+      <use href="#def-bush" class="gg-bush" transform="translate(1564,678) scale(.9)"/>
     </g>
   </svg>
   <div class="gg-overlay"><div class="container"><div class="gg-panel">
@@ -589,7 +652,7 @@ body.gg-daybody .gg-board .st { color: #ba0c2f; }
   // gentle rotation + slower ambient drift (behind the sign)
   var burstCfg = [
     { sel: "#gg-burst1", x: 150,  y: 165, rot:  4.5, ax: 16, ay: 10, tx: 41000, ty: 53000, ph: 0.0 },
-    { sel: "#gg-burst2", x: 1450, y: 520, rot: -6.0, ax: 22, ay: 14, tx: 47000, ty: 36000, ph: 2.1 },
+    { sel: "#gg-burst2", x: 1450, y: 330, rot: -6.0, ax: 22, ay: 14, tx: 47000, ty: 36000, ph: 2.1 },
     { sel: "#gg-burst3", x: 505,  y: 95,  rot:  5.5, ax: 12, ay:  8, tx: 33000, ty: 44000, ph: 4.2 }
   ];
   if (!reduced) {
