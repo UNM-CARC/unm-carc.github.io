@@ -185,6 +185,22 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 
 /* nav theme toggle (shared with interior pages) */
 #gg-theme-li { float: right; }
+/* section nav: identical styling to the interior pages (carc-sections) */
+#nav { background: #f4f2ee; }
+#nav ul.carc-sections { margin: 0; padding: 0; list-style: none; }
+#nav ul.carc-sections li { display: inline-block; }
+#nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: #ba0c2f; text-decoration: none; }
+#nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+html[data-theme="dark"] #nav { background: #10131a; }
+html[data-theme="dark"] #nav ul.carc-sections li a { color: #4fd3e0; }
+html[data-theme="dark"] #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+html[data-theme="dark"] #gg-theme-btn { color: #4fd3e0; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) #nav { background: #10131a; }
+  html:not([data-theme="light"]) #nav ul.carc-sections li a { color: #4fd3e0; }
+  html:not([data-theme="light"]) #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+  html:not([data-theme="light"]) #gg-theme-btn { color: #4fd3e0; }
+}
 #gg-theme-btn { border: none; background: transparent; color: #ba0c2f;
   font-size: 1.35em; line-height: 1; padding: .15em .35em; margin: .18em 0;
   cursor: pointer; transition: transform .15s; }
@@ -211,7 +227,7 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 <div aria-label="Center for Advanced Research Computing" id="carc-masthead" role="banner"><div class="container"><a href="https://unm-carc.github.io/"><h1 class="carc-lockup"><img class="carc-lockup-day" src="assets/carc-lockup.png" alt="UNM Center for Advanced Research Computing"><img class="carc-lockup-night" src="assets/carc-lockup-dark.png" alt="" aria-hidden="true"></h1></a></div></div>
 
 <!-- department navigation (site sections) -->
-<div id="nav"><div class="container"><ul class="nav navbar-nav" style="float:none;">
+<div id="nav"><div class="container"><ul class="carc-sections">
   <li><a href="about/">About</a></li>
   <li><a href="research/">Research</a></li>
   <li><a href="education/">Education</a></li>
