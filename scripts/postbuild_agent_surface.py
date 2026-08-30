@@ -123,13 +123,17 @@ def main():
         injected += 1
 
     # 3. robots.txt — explicitly welcome AI fetchers alongside the blanket allow.
-    ai_agents = ["Google-Extended", "GPTBot", "OAI-SearchBot", "ChatGPT-User",
+    ai_agents = ["Googlebot", "Google-Extended", "GoogleOther", "Google-CloudVertexBot",
+                 "GPTBot", "OAI-SearchBot", "ChatGPT-User",
                  "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot",
-                 "cohere-ai", "Applebot-Extended", "CCBot"]
+                 "cohere-ai", "Applebot-Extended", "CCBot", "meta-externalagent",
+                 "Amazonbot", "DuckAssistBot", "MistralAI-User"]
     ai_block = "".join(f"User-agent: {a}\nAllow: /\n\n" for a in ai_agents)
     (site / "robots.txt").write_text(
-        "# CARC Documentation — https://carc.unm.edu\n"
-        "# This documentation is published for people AND for AI agents.\n"
+        "# UNM Center for Advanced Research Computing\n"
+        "# This site is published for people AND for AI agents. All crawling,\n"
+        "# indexing, snippeting, and AI grounding of this content is welcome.\n"
+        "# Future canonical home: https://carc.unm.edu/\n"
         "User-agent: *\n"
         "Allow: /\n"
         "\n"

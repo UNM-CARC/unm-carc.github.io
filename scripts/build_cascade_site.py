@@ -98,7 +98,9 @@ def okf_meta(fm: dict) -> str:
         entries = v if isinstance(v, list) else [v]
         return ("human-reviewed" if any(str(e.get("by", "")).startswith("human:")
                 for e in entries if isinstance(e, dict)) else "machine-confirmed")
-    lines = ['<link rel="alternate" type="text/markdown" '
+    lines = ['<meta name="robots" content="index, follow, max-snippet:-1, '
+             'max-image-preview:large, max-video-preview:-1">',
+             '<link rel="alternate" type="text/markdown" '
              'title="Markdown source (OKF v0.2 frontmatter)" href="index.md">']
     def meta(n, v):
         if v:
@@ -337,7 +339,8 @@ def main():
     # sitemap
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f"<url><loc>{u}</loc></url>" for u in urls]
+    lastmod = "2026-08-29"
+    sm += [f"<url><loc>{u}</loc><lastmod>{lastmod}</lastmod></url>" for u in urls]
     sm.append("</urlset>")
     (SITE / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
 
