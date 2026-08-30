@@ -717,7 +717,7 @@ Ave NE — from first-login basics to domain-specific computing.
 * B/P lot parking — we can assist with a day pass; please arrive early if
   you require one ([visitor info](../contact/visiting.md)).
 
-[:material-calendar-month: Upcoming events calendar](https://libcal.unm.edu/calendar?cid=16135&t=m){ .md-button .md-button--primary target=_blank }
+[📅 Upcoming events calendar](https://libcal.unm.edu/calendar?cid=16135&t=m){ .md-button .md-button--primary target=_blank }
 
 !!! tip "Can't attend in person?"
 
