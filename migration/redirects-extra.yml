@@ -17,9 +17,12 @@ redirects:
     to: /contact/
     note: section landing page
 
-  - from: /news--events/News/index.html
-    to: /news/
-    note: news index; the old archive listing is superseded by the News section
+# Deliberately NOT redirected: /news--events/News/index.html
+#
+# The old news archive index still serves from the document root and still
+# lists the ~53 stories from before the rebuild that were never migrated. The
+# News section carries 16, so redirecting the archive would destroy the only
+# listing of the rest — and docs/news/index.md links to it on purpose.
 
 # Never add /index.html here. On a static host that path IS the site root, and a
 # rule for it would fight the homepage the build installs from web/index.html.
