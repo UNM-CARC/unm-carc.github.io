@@ -1,10 +1,10 @@
 # UNM Center for Advanced Research Computing
 
-> The UNM Center for Advanced Research Computing (CARC): mission, research, the CSE certificate program, news, and contact information. User documentation for CARC systems lives at https://unm-carc.github.io/docs/ (with its own llms.txt). The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance, and lifecycle fields.
+> The UNM Center for Advanced Research Computing (CARC): mission, research, the CSE certificate program, news, and contact information. User documentation for CARC systems lives at https://docs.carc.unm.edu/ (with its own llms.txt). The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance, and lifecycle fields.
 
 Full corpus for ingestion: https://unm-carc.github.io/llms-full.txt
 
-Every page's Markdown source (OKF frontmatter included) is served at its URL plus `index.md` — for example https://unm-carc.github.io/about/mission/index.md. Agent guide: https://unm-carc.github.io/docs/about/ai-agents/
+Every page's Markdown source (OKF frontmatter included) is served at its URL plus `index.md` — for example https://unm-carc.github.io/about/mission/index.md. Agent guide: https://docs.carc.unm.edu/about/ai-agents/
 
 ## About CARC
 

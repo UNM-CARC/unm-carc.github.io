@@ -29,9 +29,9 @@ Ave NE — from first-login basics to domain-specific computing.
 !!! tip "Can't attend in person?"
 
     Most workshop topics are covered by the
-    [video tutorials](https://unm-carc.github.io/docs/training/videos/) on
+    [video tutorials](https://docs.carc.unm.edu/training/videos/) on
     YouTube, and slides from past sessions are archived on the
-    [workshops page](https://unm-carc.github.io/docs/training/workshops/) of
+    [workshops page](https://docs.carc.unm.edu/training/workshops/) of
     the user documentation.
 
 ## Workshops for your group or course

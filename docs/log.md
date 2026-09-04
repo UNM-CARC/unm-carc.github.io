@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-09-04
+
+* **Update**: Every link to the user documentation now points at <https://docs.carc.unm.edu/> instead of `unm-carc.github.io/docs/`. The documentation is moving onto its own `.edu` hostname while staying built and maintained with Zensical on GitHub ([UNM-CARC/docs#3](https://github.com/UNM-CARC/docs/pull/3)). `robots.txt` is only honoured at a host root, so the documentation's crawler policy — published until now at a path no crawler reads — becomes authoritative on its own hostname, and its `llms.txt` sits at a real root. The site `robots.txt` no longer advertises the documentation's sitemap, which belongs to that host now.
+
 ## 2026-08-30
 
 * **Update**: The homepage "Latest from CARC" cards now feature the newest announcements (new Director, departures & retirements, new NSF awards), and the "no vacancy? never —" and "full service, every orbit —" taglines are retired.

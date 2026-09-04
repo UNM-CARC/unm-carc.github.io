@@ -73,4 +73,4 @@ computational tasks.
 
     Easley launched with 65 nodes, 4,160 cores, and 44 NVIDIA GPUs (36 L40S
     + 8 H100) — see the current specifications in the
-    [systems overview](https://unm-carc.github.io/docs/systems/overview/).
+    [systems overview](https://docs.carc.unm.edu/systems/overview/).

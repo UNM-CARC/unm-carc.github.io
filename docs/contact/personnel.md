@@ -32,5 +32,5 @@ Email addresses are written out to deter scrapers — replace *[at]* with `@`
 and *[dot]* with `.`.
 
 For general inquiries, write to <info@carc.unm.edu>; for technical help, see
-[getting help](https://unm-carc.github.io/docs/support/help/) in the user
+[getting help](https://docs.carc.unm.edu/support/help/) in the user
 documentation.

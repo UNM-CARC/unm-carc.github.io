@@ -33,6 +33,11 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
+# The user documentation is a separate OKF bundle on its own hostname
+# (UNM-CARC/docs), so it does not derive from this site's site_url — and it
+# publishes its own robots.txt and sitemap at that host's root.
+DOCS_URL = "https://docs.carc.unm.edu/"
+
 
 def site_url() -> str:
     text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
@@ -138,16 +143,18 @@ def main():
         "Allow: /\n"
         "\n"
         + ai_block +
+        # Only this host's sitemap belongs here. The documentation is a
+        # different origin with its own robots.txt, and a cross-host Sitemap:
+        # line carries no weight anyway.
         f"Sitemap: {base}sitemap.xml\n"
-        f"Sitemap: {base}docs/sitemap.xml\n"
         "\n"
         "# AI agents and harnesses:\n"
         f"#   Machine-readable outline:  {base}llms.txt\n"
         f"#   Full corpus (one file):    {base}llms-full.txt\n"
         "#   Markdown source of any page (OKF v0.2 frontmatter: type, provenance,\n"
         "#   trust, lifecycle): append `index.md` to the page URL.\n"
-        f"#   Agent guide:               {base}docs/about/ai-agents/\n"
-        f"#   User documentation bundle: {base}docs/llms.txt\n",
+        f"#   Agent guide:               {DOCS_URL}about/ai-agents/\n"
+        f"#   User documentation bundle: {DOCS_URL}llms.txt\n",
         encoding="utf-8")
 
     print(f"agent surface: mirrored {mirrored} markdown files, "

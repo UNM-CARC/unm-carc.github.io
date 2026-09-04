@@ -11,7 +11,7 @@ The public website of the [UNM Center for Advanced Research Computing](https://u
 [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
 knowledge bundle, sharing its design system and agent surface with the
 [user documentation](https://github.com/UNM-CARC/docs) served at
-[/docs/](https://unm-carc.github.io/docs/).
+[/docs/](https://docs.carc.unm.edu/).
 
 Because this is the **organization root site**, it owns the origin-wide
 `robots.txt` (which advertises the llms.txt indexes and sitemaps of both this

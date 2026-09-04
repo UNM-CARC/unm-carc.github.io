@@ -722,9 +722,9 @@ Ave NE — from first-login basics to domain-specific computing.
 !!! tip "Can't attend in person?"
 
     Most workshop topics are covered by the
-    [video tutorials](https://unm-carc.github.io/docs/training/videos/) on
+    [video tutorials](https://docs.carc.unm.edu/training/videos/) on
     YouTube, and slides from past sessions are archived on the
-    [workshops page](https://unm-carc.github.io/docs/training/workshops/) of
+    [workshops page](https://docs.carc.unm.edu/training/workshops/) of
     the user documentation.
 
 ## Workshops for your group or course
@@ -1090,7 +1090,7 @@ researchers presented their computational research projects.
 !!! note "This event has concluded"
 
     Recordings from CAM 2025 are on the
-    [video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+    [video tutorials page](https://docs.carc.unm.edu/training/videos/).
 
 ---8<--- https://unm-carc.github.io/news/2026-annual-meeting/
 
@@ -1149,7 +1149,7 @@ Those interested in attending or presenting a poster can
 ![Map showing the location of Zimmerman Library room B30](https://carc.unm.edu/news--events/News/b30-locator.png)
 
 Recordings from previous meetings are on the
-[video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+[video tutorials page](https://docs.carc.unm.edu/training/videos/).
 
 ---8<--- https://unm-carc.github.io/news/cleve-moler-memoriam/
 
@@ -1414,7 +1414,7 @@ computational tasks.
 
     Easley launched with 65 nodes, 4,160 cores, and 44 NVIDIA GPUs (36 L40S
     + 8 H100) — see the current specifications in the
-    [systems overview](https://unm-carc.github.io/docs/systems/overview/).
+    [systems overview](https://docs.carc.unm.edu/systems/overview/).
 
 ---8<--- https://unm-carc.github.io/news/genome-sequencing/
 
@@ -1914,7 +1914,7 @@ Email addresses are written out to deter scrapers — replace *[at]* with `@`
 and *[dot]* with `.`.
 
 For general inquiries, write to <info@carc.unm.edu>; for technical help, see
-[getting help](https://unm-carc.github.io/docs/support/help/) in the user
+[getting help](https://docs.carc.unm.edu/support/help/) in the user
 documentation.
 
 ---8<--- https://unm-carc.github.io/contact/visiting/
@@ -1978,6 +1978,10 @@ Albuquerque NM 87106
 ---8<--- https://unm-carc.github.io/log/
 
 # Website update log
+
+## 2026-09-04
+
+* **Update**: Every link to the user documentation now points at <https://docs.carc.unm.edu/> instead of `unm-carc.github.io/docs/`. The documentation is moving onto its own `.edu` hostname while staying built and maintained with Zensical on GitHub ([UNM-CARC/docs#3](https://github.com/UNM-CARC/docs/pull/3)). `robots.txt` is only honoured at a host root, so the documentation's crawler policy — published until now at a path no crawler reads — becomes authoritative on its own hostname, and its `llms.txt` sits at a real root. The site `robots.txt` no longer advertises the documentation's sitemap, which belongs to that host now.
 
 ## 2026-08-30
 

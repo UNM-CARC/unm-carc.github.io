@@ -286,7 +286,7 @@ def nav_items(rel_root: str, active: str) -> str:
     for slug, label in SECTIONS:
         cls = ' class="active"' if slug == active else ""
         items.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
-    items.append('<li><a class="carc-ext-btn" href="https://unm-carc.github.io/docs/" '
+    items.append('<li><a class="carc-ext-btn" href="https://docs.carc.unm.edu/" '
                  'target="_blank" rel="noopener">User Documentation <span aria-hidden="true">↗</span></a></li>')
     items.append('<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" '
                  'target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>')

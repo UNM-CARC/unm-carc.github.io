@@ -7,5 +7,5 @@ a graduate certificate.
 * [CSE Certificate Program](cse/index.md) - The interdisciplinary Computational Science & Engineering graduate certificate administered by CARC.
 
 Looking for self-paced material? The user documentation carries
-[video tutorials](https://unm-carc.github.io/docs/training/videos/) and
-[archived workshop slides](https://unm-carc.github.io/docs/training/workshops/).
+[video tutorials](https://docs.carc.unm.edu/training/videos/) and
+[archived workshop slides](https://docs.carc.unm.edu/training/workshops/).

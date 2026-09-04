@@ -27,6 +27,10 @@ SECTION_ORDER = [
     "about", "research", "education", "education/cse", "news", "contact",
 ]
 
+# The user documentation is a separate OKF bundle on its own hostname
+# (UNM-CARC/docs), so it does not derive from this site's site_url.
+DOCS_URL = "https://docs.carc.unm.edu/"
+
 
 def site_url() -> str:
     text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
@@ -74,7 +78,7 @@ def main():
         "> The UNM Center for Advanced Research Computing (CARC): mission, "
         "research, the CSE certificate program, news, and contact information. "
         "User documentation for CARC systems lives at "
-        "https://unm-carc.github.io/docs/ (with its own llms.txt). The source "
+        f"{DOCS_URL} (with its own llms.txt). The source "
         "repository is an Open Knowledge Format (OKF v0.2) bundle: every page "
         "carries YAML frontmatter with type, provenance, and lifecycle fields.",
         "",
@@ -83,7 +87,7 @@ def main():
         "Every page's Markdown source (OKF frontmatter included) is served at "
         "its URL plus `index.md` — for example "
         f"{base}about/mission/index.md. Agent guide: "
-        f"{base}docs/about/ai-agents/",
+        f"{DOCS_URL}about/ai-agents/",
         "",
     ]
     full = [
