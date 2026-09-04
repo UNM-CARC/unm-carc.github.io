@@ -20,31 +20,31 @@ The following feature articles highlight research projects done using resources 
 
 #### [Simulations improve understanding of how floating structures respond to ocean conditions](https://carc.unm.edu/research/floating-structures-reponding-to-ocean-conditions.html){target=_blank}
 
-![shutterstock_2382379513-1-1024x614.jpg](https://carc.unm.edu/images/shutterstock_2382379513-1-1024x614.jpg)Understanding how floating structures behave in ocean environments is essential for the design and safety of offshore and coastal systems. In a recent study, researchers used advanced computer simulations to examine how waves, currents, and mooring systems influence the motion of floating structures under a range of conditions.
+![Floating structure in ocean conditions](/assets/floating-structures-ocean.jpg)Understanding how floating structures behave in ocean environments is essential for the design and safety of offshore and coastal systems. In a recent study, researchers used advanced computer simulations to examine how waves, currents, and mooring systems influence the motion of floating structures under a range of conditions.
 
 #### [Genome sequencing reveals a newly identified virus](https://carc.unm.edu/research/genome-sequencing.html){target=_blank}
 
-![viruses-12-01010-g001.png](https://carc.unm.edu/images/viruses-12-01010-g001.png)Researchers have identified and characterized a previously unrecognized virus using genome sequencing and computational analysis, contributing to a growing body of work that expands current understanding of viral diversity and evolution.
+![Figure from the virus characterization study](/assets/newly-identified-virus-figure.jpg)Researchers have identified and characterized a previously unrecognized virus using genome sequencing and computational analysis, contributing to a growing body of work that expands current understanding of viral diversity and evolution.
 
 #### [Undergraduate researcher leverages CARC for molecular modeling breakthrough](https://carc.unm.edu/research/molecular-modeling-breakthrough.html){target=_blank}
 
-![picture1.png](https://carc.unm.edu/research/picture11.png)For many students, a senior thesis marks the culmination of their undergraduate studies. For UNM physics major Sol Samuels, it was also an opportunity to make a meaningful contribution to the field of computational molecular science — with the help of the University of New Mexico's Center for Advanced Research Computing.
+![Figure from the molecular modeling thesis](/assets/molecular-modeling-figure.png)For many students, a senior thesis marks the culmination of their undergraduate studies. For UNM physics major Sol Samuels, it was also an opportunity to make a meaningful contribution to the field of computational molecular science — with the help of the University of New Mexico's Center for Advanced Research Computing.
 
 #### [From Lab to Field: CARC Computing Powers AR-Enhanced Robotics for Infrastructure Safety](https://carc.unm.edu/research/lab-to-field.html){target=_blank}
 
-![carc_ar_robotics_with_border.png](https://carc.unm.edu/images/carc_ar_robotics_with_border.png)A pioneering 2024 study published in the *International Journal of Intelligent Robotics and Applications* introduces a cutting-edge augmented reality system that makes infrastructure inspections faster, safer, and more precise — and it's innovation that came to life thanks to the computing power of the University of New Mexico's Center for Advanced Research Computing.
+![Augmented-reality robotics system for infrastructure inspection](/assets/ar-robotics-infrastructure.jpg)A pioneering 2024 study published in the *International Journal of Intelligent Robotics and Applications* introduces a cutting-edge augmented reality system that makes infrastructure inspections faster, safer, and more precise — and it's innovation that came to life thanks to the computing power of the University of New Mexico's Center for Advanced Research Computing.
 
 #### [Harnessing CARC Power to Predict Global Dengue Outbreaks Amid El Niño Swings](https://carc.unm.edu/research/el-nino-swings.html){target=_blank}
 
-![picture1.jpg](https://carc.unm.edu/images/picture1.jpg)A groundbreaking 2024 study published in *Environmental Research* sheds new light on how El Niño events amplify the global risk of dengue fever outbreaks — and it's research that would not have been possible without the computing power of the University of New Mexico's Center for Advanced Research Computing.
+![El Niño and global dengue outbreak risk](/assets/dengue-el-nino.jpg)A groundbreaking 2024 study published in *Environmental Research* sheds new light on how El Niño events amplify the global risk of dengue fever outbreaks — and it's research that would not have been possible without the computing power of the University of New Mexico's Center for Advanced Research Computing.
 
 #### [Groundbreaking research unveils innovative method to probe dark matter using gravitational lensing](https://carc.unm.edu/research/dark-matter.html){target=_blank}
 
-![untitled-design.png](https://carc.unm.edu/images/untitled-design2.png)In a groundbreaking research initiative led by University of New Mexico (UNM) Physics PhD candidate Birendra Dhanasingham, supervised by UNM Physics professor Francis-Yan Cyr-Racine, unveiled a novel approach to unravel the mysteries of dark matter using gravitational lensing, a phenomenon predicted by Einstein's theory of relativity.
+![Gravitational lensing used to probe dark matter](/assets/dark-matter-lensing.jpg)In a groundbreaking research initiative led by University of New Mexico (UNM) Physics PhD candidate Birendra Dhanasingham, supervised by UNM Physics professor Francis-Yan Cyr-Racine, unveiled a novel approach to unravel the mysteries of dark matter using gravitational lensing, a phenomenon predicted by Einstein's theory of relativity.
 
 #### [Research efforts play a crucial role in rescuing a Rio Grande fish species from extinction](https://carc.unm.edu/research/silvery-minnow.html){target=_blank}
 
-![silvery-minnow.jpg](https://carc.unm.edu/research/silvery-minnow.jpg)In the heart of the Rio Grande basin, the Rio Grande Silvery Minnow (Hybognathus amarus), a unique fish species, is struggling to survive. Habitat changes, river disruptions caused by dams and water diversion structures, and recent severe drought conditions in the Southwestern United States have intensified the struggle for the Rio Grande Silvery Minnow, resulting in population bottlenecks and even population collapse. These events, linked to diminished snowmelt runoff and increased river drying, have threatened the species' reproductive success and recruitment.
+![Rio Grande silvery minnow](/assets/rio-grande-silvery-minnow.jpg)In the heart of the Rio Grande basin, the Rio Grande Silvery Minnow (Hybognathus amarus), a unique fish species, is struggling to survive. Habitat changes, river disruptions caused by dams and water diversion structures, and recent severe drought conditions in the Southwestern United States have intensified the struggle for the Rio Grande Silvery Minnow, resulting in population bottlenecks and even population collapse. These events, linked to diminished snowmelt runoff and increased river drying, have threatened the species' reproductive success and recruitment.
 
 #### [UNM Biology PhD student research leads to the discovery of a new bird family](https://carc.unm.edu/research/shrikes-new-species-of-bird.html){target=_blank}
 
@@ -52,7 +52,7 @@ For nearly two centuries, northern and southern white-crowned shrikes were consi
 
 #### [UNM scientists concerned about rising wildfire threats to southwestern U.S. forests](https://carc.unm.edu/research/rising-wildfire-threats-research.html){target=_blank}
 
-![untitled-design-1.png](https://carc.unm.edu/images/untitled-design-1.png)
+![Wildfire threatening a southwestern forest](/assets/southwest-wildfire-threat.png)
 
 Scientists at the University of New Mexico recently published a research article describing a new method of modeling reforestation after wildfires. Research has shown an important link between topography and how plants recover after a fire. Topography refers to the natural shape and features of the land, such as its hills, valleys, and overall terrain. Previous models often overlooked this important factor, primarily focusing on weather patterns instead. UNM scientists wanted to focus on the link between topography and how plants recover after a fire, and better understand reforestation in severely burned forests using an updated simulation model while factoring in climate change.
 
@@ -62,7 +62,7 @@ A team of researchers led by University of New Mexico Computer Science Professor
 
 #### [Students utilize CARC resources through Parallel Processing course](http://carc.unm.edu/research/parallel-processing-course-carc-resources.html){target=_blank}
 
-![preview-cropped.png](https://carc.unm.edu/images/preview-cropped1.png)Parallel processing is a method used in computer science to speed up the execution of tasks by dividing them into smaller parts and processing these parts simultaneously. This is a process that allows computers to tackle complex problems more efficiently and quickly, making it an essential tool for various applications in our daily lives, such as video editing, gaming, and scientific simulations. *Introduction to Parallel Processing* (CS442/542) is a course offered every other Fall semester at the University of New Mexico. The course enables students to grasp the complexities of parallel processing while using resources from the Center for Advanced Research Computing.
+![Visualization from the parallel processing course](/assets/parallel-processing-course.png)Parallel processing is a method used in computer science to speed up the execution of tasks by dividing them into smaller parts and processing these parts simultaneously. This is a process that allows computers to tackle complex problems more efficiently and quickly, making it an essential tool for various applications in our daily lives, such as video editing, gaming, and scientific simulations. *Introduction to Parallel Processing* (CS442/542) is a course offered every other Fall semester at the University of New Mexico. The course enables students to grasp the complexities of parallel processing while using resources from the Center for Advanced Research Computing.
 
 #### [CARC graduate assistant creates a program capable of style transfer](http://carc.unm.edu/research/style-transfer-jacob-mccullough.html){target=_blank}
 
@@ -74,7 +74,7 @@ UNM Distinguished Professor of Chemistry and Chemical Biology Hua Guo and his re
 
 #### [New UNM Earth Science Professor to study the health of groundwater aquifers across the state](https://carc.unm.edu/research/new-unm-earth-science-professor-to-study-the-health-of-groundwater-aquifers-across-the-state.html){target=_blank}
 
-![Aquifer Jakarta flooding](https://carc.unm.edu/images/aquifer-jakarta-flooding1.png)Eric Lindsey, Assistant Professor of Earth & Planetary Sciences at the University of New Mexico (UNM), has concerns about the sustainability of aquifers around the world. Aquifers, nature's underground water storage spaces, are vital to life on this planet. Lindsey was recently awarded a National Science Foundation grant to establish new computer storage nodes at UNM's Center for Advance Research Computing (CARC) to store his hundreds of terabytes of InSAR satellite data to study aquifers. This increased storage capacity combined with CARC's high-speed parallel computing abilities will allow Lindsey to process vast amount of data to create a current land subsidence map for the entire state of New Mexico and beyond.
+![Flooding in Jakarta linked to aquifer depletion](/assets/aquifer-jakarta-flooding.png)Eric Lindsey, Assistant Professor of Earth & Planetary Sciences at the University of New Mexico (UNM), has concerns about the sustainability of aquifers around the world. Aquifers, nature's underground water storage spaces, are vital to life on this planet. Lindsey was recently awarded a National Science Foundation grant to establish new computer storage nodes at UNM's Center for Advance Research Computing (CARC) to store his hundreds of terabytes of InSAR satellite data to study aquifers. This increased storage capacity combined with CARC's high-speed parallel computing abilities will allow Lindsey to process vast amount of data to create a current land subsidence map for the entire state of New Mexico and beyond.
 
 #### [Explore or exploit: How our brains make choices](https://carc.unm.edu/research/explore_or_exploit_how_our_brain_makes_choices.html){target=_blank}
 
@@ -90,7 +90,7 @@ Associate Professor of Biology at the University of New Mexico's Center for Evol
 
 #### [Students create remote-controlled robot to detect potential rockslide danger](https://carc.unm.edu/research/students-create-robot-to-detect-potential-rockslides.html){target=_blank}
 
-![Remote-controlled robot "Brutus"](https://carc.unm.edu/images/brutus.png)
+![Remote-controlled robot "Brutus"](/assets/rockslide-robot-brutus.png)
 
 The University of New Mexico's (UNM) Smart Management of Infrastructure Laboratory (SMILab) has created a remote-controlled (RC) robot designed to detect potential rockslide danger. The robot, affectionately nicknamed "Brutus," pinpoints damaged and unstable rocks for roadside safety inspectors, keeping them safely out of harm's way during inspections.
 
@@ -100,7 +100,7 @@ Guillermo Terrén-Serrano, PhD candidate in the Electrical and Computer Engineer
 
 #### [UNM doctoral candidate develops open-source fluid dynamics code](https://carc.unm.edu/research/doctoral-candidate-develops-fluid-dynamics-code.html){target=_blank}
 
-![fiesta-3dsdkhi.png](https://carc.unm.edu/images/fiesta-3dsdkhi.png)When Brian Romero began his doctoral research in the Advanced Fluids Lab, led by Professor Svetlana Poroseva at the University of New Mexico's Mechanical Engineering Department, he quickly realized that the tool he needed to complete his work had not yet been developed. He needed a computational fluid dynamics solver capable of simulating supersonic flows with shock waves. So, Romero turned to UNM's Center for Advanced Research Computing and designed FIESTA© (Fast Interface Evolution, Shocks and Transition in the Atmosphere) to meet his needs as well as those of future researchers.
+![Visualization from the FIESTA fluid dynamics code](/assets/fiesta-fluid-dynamics.png)When Brian Romero began his doctoral research in the Advanced Fluids Lab, led by Professor Svetlana Poroseva at the University of New Mexico's Mechanical Engineering Department, he quickly realized that the tool he needed to complete his work had not yet been developed. He needed a computational fluid dynamics solver capable of simulating supersonic flows with shock waves. So, Romero turned to UNM's Center for Advanced Research Computing and designed FIESTA© (Fast Interface Evolution, Shocks and Transition in the Atmosphere) to meet his needs as well as those of future researchers.
 
 #### [Ethan Gyllenhaal and colleagues use CARC resources to explain genetic histories of island birds](https://carc.unm.edu/research/researchers-explain-genetic-histories-of-island-birds.html){target=_blank}
 
@@ -112,7 +112,7 @@ In February of 2020, Professor and Forensic Anthropologist Heather Edgar, in ass
 
 #### [Manjavacas and colleagues investigate the cause of haziness in nineteenth century daguerreotype photography](https://carc.unm.edu/research/haziness-in-daguerreotype-photography.html){target=_blank}
 
-![daguerreotype image](https://carc.unm.edu/images/daguerrotype-image.jpg)In 2019, a team of scientists, led by UNM Associate Professor Alejandro Manjavacas, used Center for Advanced Research Computing resources to make a [discovery](http://news.unm.edu/news/trailblazing-findings-of-daguerrerotype-properties-revealed-by-the-metropolitan-museum-of-art-and-unm){target=_blank} explaining some of the mysterious characteristics of daguerreotypes. Through continued efforts, Manjavacas' research is helping to explain the characteristic haze that develops over these photographs as they age. This research will help museums like the Metropolitan Museum of Art (MET) preserve antique photographs for future generations.
+![Nineteenth-century daguerreotype photograph](/assets/daguerreotype-haziness.jpg)In 2019, a team of scientists, led by UNM Associate Professor Alejandro Manjavacas, used Center for Advanced Research Computing resources to make a [discovery](http://news.unm.edu/news/trailblazing-findings-of-daguerrerotype-properties-revealed-by-the-metropolitan-museum-of-art-and-unm){target=_blank} explaining some of the mysterious characteristics of daguerreotypes. Through continued efforts, Manjavacas' research is helping to explain the characteristic haze that develops over these photographs as they age. This research will help museums like the Metropolitan Museum of Art (MET) preserve antique photographs for future generations.
 
 #### [Ivana Gonzales uses CARC to improve fuel cell technology](https://carc.unm.edu/research/fuel-cell-technology.html){target=_blank}
 
@@ -120,7 +120,7 @@ Research Associate Professor Ivana Gonzales has been using Center for Advanced R
 
 #### [Bruzewski and colleagues search for 'sneaky' pulsars](https://carc.unm.edu/research/sneaky-pulsars.html){target=_blank}
 
-![pulsar story image](https://carc.unm.edu/images/pulsar-story-image.png)Department of Physics & Astronomy Ph.D. Student Seth Bruzewski, along with Adjunct Professor Frank Schinzel and Distinguished Professor Greg Taylor, has been using CARC resources to identify "sneaky" pulsars based on radio and gamma ray emissions. Funded by NASA's Fermi Guest Investigator Program, the team uses data from the Fermi Gamma Ray Space Telescope (Fermi) and the Very Large Array (VLA) to find and analyze these mysterious celestial bodies.
+![Pulsar](/assets/pulsar-research.png)Department of Physics & Astronomy Ph.D. Student Seth Bruzewski, along with Adjunct Professor Frank Schinzel and Distinguished Professor Greg Taylor, has been using CARC resources to identify "sneaky" pulsars based on radio and gamma ray emissions. Funded by NASA's Fermi Guest Investigator Program, the team uses data from the Fermi Gamma Ray Space Telescope (Fermi) and the Very Large Array (VLA) to find and analyze these mysterious celestial bodies.
 
 #### [Researchers use computer modeling to understand COVID-19 infection mechanism](https://carc.unm.edu/research/computer-modeling-covid-19-infection-mechanism.html){target=_blank}
 
@@ -132,7 +132,7 @@ Recent UNM Ph.D. graduate and newly appointed Assistant Professor and Curator of
 
 #### [UNM biologists use genomic sequencing to inform preservation efforts for Gila Trout](https://carc.unm.edu/research/biologists-use-genomic-sequencing-to-preserve-gila-trout.html){target=_blank}
 
-![trout](https://carc.unm.edu/images/trout.jpg)Ph.D. student David Camak, Professor and Curator of Fishes at the Museum of Southwestern Biology Thomas Turner, and Professor Megan Osborne recently published a [paper](https://link.springer.com/article/10.1007/s10592-021-01355-0){target=_blank} using computing resources at CARC to analyze genomic sequences of fish. Their work will inform local efforts to preserve Gila Trout.
+![Gila trout](/assets/gila-trout.jpg)Ph.D. student David Camak, Professor and Curator of Fishes at the Museum of Southwestern Biology Thomas Turner, and Professor Megan Osborne recently published a [paper](https://link.springer.com/article/10.1007/s10592-021-01355-0){target=_blank} using computing resources at CARC to analyze genomic sequences of fish. Their work will inform local efforts to preserve Gila Trout.
 
 #### [SMILab develops new low-cost strain sensor](https://carc.unm.edu/research/smilab-new-sensor.html){target=_blank}
 
@@ -140,7 +140,7 @@ Researchers from the Smart Management of Infrastructure Laboratory (SMILab), loc
 
 #### [Team of UNM scientists find landing spot for the Mars Perseverance Rover](https://carc.unm.edu/research/unm-scientists-find-landing-spot-for-perseverance.html){target=_blank}
 
-![perseverance image](https://carc.unm.edu/images/perseverance-image.jpg)Department of Earth and Planetary Sciences Professor Louis Scuderi, in association with a team of researchers from the University of New Mexico and Los Alamos National Laboratory (LANL), used remote sensing and Geographical Information System (GIS) software and CARC computing resources to identify an ideal landing spot for [NASA's Mars Perseverance Rover.](https://mars.nasa.gov/files/mars2020/Mars2020_Fact_Sheet.pdf){target=_blank}
+![Perseverance rover landing site on Mars](/assets/perseverance-landing-site.jpg)Department of Earth and Planetary Sciences Professor Louis Scuderi, in association with a team of researchers from the University of New Mexico and Los Alamos National Laboratory (LANL), used remote sensing and Geographical Information System (GIS) software and CARC computing resources to identify an ideal landing spot for [NASA's Mars Perseverance Rover.](https://mars.nasa.gov/files/mars2020/Mars2020_Fact_Sheet.pdf){target=_blank}
 
 #### [UNM researchers optimize solar power using artificial intelligence](https://carc.unm.edu/research/researchers-optimize-solar-power.html){target=_blank}
 
@@ -152,7 +152,7 @@ Daryl Domman, Assistant Professor at the UNM Center for Global Health, and Darre
 
 #### [UNM mechanical engineers develop a new way to solve deformation instability problems](https://carc.unm.edu/research/mechanical-engineers-solve-deformation-problems.html){target=_blank}
 
-![deformation image](https://carc.unm.edu/images/deformation-image.JPG)Ph.D. Student Siavash Nikravesh and Mechanical Engineering Professor and Department Chair Yu-Lin Shen, using Center for Advanced Research Computing resources, have developed a new three-dimensional modeling approach to solving deformation problems, making it easier to design a wide variety of products including flexible electronics.
+![Simulation of a deformation instability](/assets/deformation-instability.jpg)Ph.D. Student Siavash Nikravesh and Mechanical Engineering Professor and Department Chair Yu-Lin Shen, using Center for Advanced Research Computing resources, have developed a new three-dimensional modeling approach to solving deformation problems, making it easier to design a wide variety of products including flexible electronics.
 
 #### [UNM physicist investigates unexplained behavior of cell receptors](https://carc.unm.edu/research/physicist-investigates-cell-receptors.html){target=_blank}
 
@@ -164,7 +164,7 @@ A group of researchers from the University of New Mexico Department of Chemistry
 
 #### [UNM biologists study Antarctic viruses](https://carc.unm.edu/research/unm-biologists-study-antarctic-viruses.html){target=_blank}
 
-![antarctica microbial mat](https://carc.unm.edu/images/antarctica-microbial-mat.jpg)Biologists at the [UNM Vesbach Lab](http://www.vesbachlab.org/){target=_blank} have been using Center for Advanced Research Computing resources to analyze viruses found in the McMurdo Dry Valleys of Antarctica. Funded by a grant from the Joint Genome Institute, Ph.D. student David Robinson and Professor Cristina Takacs-Vesbach, in conjunction with researchers from Miami University and the McMurdo Dry Valleys Long Term Ecological Research Project, are assembling the metagenomic data from microbial mat samples in the hopes of gaining a better understanding of how viruses and bacteria interact.
+![Microbial mat in Antarctica](/assets/antarctic-microbial-mat.jpg)Biologists at the [UNM Vesbach Lab](http://www.vesbachlab.org/){target=_blank} have been using Center for Advanced Research Computing resources to analyze viruses found in the McMurdo Dry Valleys of Antarctica. Funded by a grant from the Joint Genome Institute, Ph.D. student David Robinson and Professor Cristina Takacs-Vesbach, in conjunction with researchers from Miami University and the McMurdo Dry Valleys Long Term Ecological Research Project, are assembling the metagenomic data from microbial mat samples in the hopes of gaining a better understanding of how viruses and bacteria interact.
 
 #### [Miyake Research Group improves quantum computing algorithms](https://carc.unm.edu/research/improving-quantum-computing-algorithms.html){target=_blank}
 
@@ -172,7 +172,7 @@ The [Miyake Research Group](https://cquic.unm.edu/miyake-group/){target=_blank} 
 
 #### [Gold Lab works toward improved HIV treatment](https://carc.unm.edu/research/gold-lab-aims-for-improved-hiv-treatment.html){target=_blank}
 
-![HIV science guy](https://carc.unm.edu/images/hiv-science-guy.jpg)UNM's [Gold Lab](https://www.goldchemistry.com/){target=_blank}, headed by Assistant Professor Brian Gold, is using computational modeling to learn about HIV. Gold hopes that a better understanding of the chemical processes that allow the virus to flourish will enable him and his lab to design improved treatments.
+![Researcher working on HIV treatment](/assets/hiv-treatment-research.jpg)UNM's [Gold Lab](https://www.goldchemistry.com/){target=_blank}, headed by Assistant Professor Brian Gold, is using computational modeling to learn about HIV. Gold hopes that a better understanding of the chemical processes that allow the virus to flourish will enable him and his lab to design improved treatments.
 
 #### [UNM researchers use artificial intelligence to improve electrical grids](https://carc.unm.edu/research/researchers-improve-electrical-grids.html){target=_blank}
 
@@ -180,7 +180,7 @@ A research team led by UNM Professor Manel Martínez-Ramón of the Department of
 
 #### [UNM computer scientists compete in NASA Space Robotics Challenge](https://carc.unm.edu/research/computer-scientists-compete-in-robotics-challenge.html){target=_blank}
 
-![space challenge slider](https://carc.unm.edu/images/space-challenge-slider.png)A team of University of New Mexico computer scientists led by Research Assistant Professor Matthew Fricke is competing with diverse computer research groups to develop an algorithm that would instruct robots to autonomously find, collect, and stockpile resources on the Moon. [The competition](https://spacecenter.org/space-robotics-challenge/space-robotics-challenge-phase-2/){target=_blank}, presented by Space Center Houston and NASA's Centennial Challenges Program, offers a variety of cash prizes to the top twenty-five teams.
+![NASA space robotics challenge](/assets/space-robotics-challenge.png)A team of University of New Mexico computer scientists led by Research Assistant Professor Matthew Fricke is competing with diverse computer research groups to develop an algorithm that would instruct robots to autonomously find, collect, and stockpile resources on the Moon. [The competition](https://spacecenter.org/space-robotics-challenge/space-robotics-challenge-phase-2/){target=_blank}, presented by Space Center Houston and NASA's Centennial Challenges Program, offers a variety of cash prizes to the top twenty-five teams.
 
 #### [SMILab research assistant receives national recognition](https://carc.unm.edu/news--events/News/smilab-research-assistant-receives-national-recognition.html){target=_blank}
 
@@ -196,7 +196,7 @@ UNM Assistant Professor of Chemistry and Chemical Biology Yi He is leading a res
 
 #### [UNM researchers use advanced computing to study COVID-19](https://carc.unm.edu/news--events/News/researchers-study-covid-19.html){target=_blank}
 
-![minION](https://carc.unm.edu/images/minion.png)A wide range of University of New Mexico researchers from across main and north campuses are utilizing UNM Center for Advanced Research Computing resources to study COVID-19. Researchers from several departments at UNM, including Anthropology, Biology, Computer Science, Pediatrics, Internal Medicine, and various Health Sciences research centers are studying different aspects of the coronavirus pandemic.
+![MinION genome sequencer](/assets/minion-sequencer.jpg)A wide range of University of New Mexico researchers from across main and north campuses are utilizing UNM Center for Advanced Research Computing resources to study COVID-19. Researchers from several departments at UNM, including Anthropology, Biology, Computer Science, Pediatrics, Internal Medicine, and various Health Sciences research centers are studying different aspects of the coronavirus pandemic.
 
 #### [Researchers use CARC systems to understand the shapes of volcanoes](https://carc.unm.edu/research/researchers-study-volcano-shapes.html){target=_blank}
 
@@ -208,7 +208,7 @@ Associate Professor of UNM's Department of Anthropology and Forensic Anthropolog
 
 #### [Researchers develop facial recognition technology for use in firefighting](https://carc.unm.edu/research/researchers-develop-facial-recognition-for-firefighting.html){target=_blank}
 
-![facial recognition](https://carc.unm.edu/images/facial-recognition.jpg)At the University of New Mexico Department of Electrical and Computer Engineering, a team of computer engineers lead by Professor Manel Martínez-Ramón have been working towards the development of a high-tech wearable device for firefighters. The device would help emergency service workers with navigation, communication, and threat assessment during tense life-threatening situations. The projects utilizes an innovative new facial-recognition algorithm formulated for use in firefighting technology.
+![Facial-recognition system for firefighting](/assets/firefighting-facial-recognition.jpg)At the University of New Mexico Department of Electrical and Computer Engineering, a team of computer engineers lead by Professor Manel Martínez-Ramón have been working towards the development of a high-tech wearable device for firefighters. The device would help emergency service workers with navigation, communication, and threat assessment during tense life-threatening situations. The projects utilizes an innovative new facial-recognition algorithm formulated for use in firefighting technology.
 
 #### [Cavanagh studies the neurological origin of pleasure](https://carc.unm.edu/research/researcher-studies-origin-of-pleasure.html){target=_blank}
 
@@ -216,7 +216,7 @@ Associate Professor James Cavanagh of the University of New Mexico Department of
 
 #### [McCullough assembles evolutionary tree of birds](https://carc.unm.edu/research/researcher-examines-tropical-birds.html){target=_blank}
 
-![bird evolution](https://carc.unm.edu/images/bird-evolution.png)Though science has advanced considerably since the days of Charles Darwin, the evolutionary history of life on Earth is still largely a mystery – one being solved incrementally by the dedicated biologists who pore over fossils and genetic data to better understand the origins of species. One of these biologists is Jenna McCullough, a Ph.D. student at the University of New Mexico whose master's thesis used Center for Advanced Research Computing resources to examine the evolutionary history of birds.
+![Diagram of island bird evolution](/assets/island-bird-evolution.jpg)Though science has advanced considerably since the days of Charles Darwin, the evolutionary history of life on Earth is still largely a mystery – one being solved incrementally by the dedicated biologists who pore over fossils and genetic data to better understand the origins of species. One of these biologists is Jenna McCullough, a Ph.D. student at the University of New Mexico whose master's thesis used Center for Advanced Research Computing resources to examine the evolutionary history of birds.
 
 #### [Professor Terry Loring studies the strange math behind hybrid conductor-insulators](https://carc.unm.edu/research/professor-studies-strange-math.html){target=_blank}
 
@@ -228,7 +228,7 @@ The National Science Foundation has awarded a second grant to the Environmental 
 
 #### [SMILab deploys wireless smart sensors on Sandia Peak Tramway](https://carc.unm.edu/research/tramway-sensors.html){target=_blank}
 
-![tramway sensor](https://carc.unm.edu/images/tramway-sensor.png)Researchers from the Smart Management of Infrastructure Laboratory (SMILab), based at the UNM Center for Advanced Research Computing, have installed two wireless smart sensors on the Sandia Peak Tramway. The sensors, designed and developed by SMILab researchers, will collect accelerations, angles, and displacements of both the towers and the cars under different performance conditions.
+![Sensors on the Sandia Peak Tramway](/assets/tramway-sensors.jpg)Researchers from the Smart Management of Infrastructure Laboratory (SMILab), based at the UNM Center for Advanced Research Computing, have installed two wireless smart sensors on the Sandia Peak Tramway. The sensors, designed and developed by SMILab researchers, will collect accelerations, angles, and displacements of both the towers and the cars under different performance conditions.
 
 #### [Engineering team looks at using augmented reality to fix ailing infrastructure](https://carc.unm.edu/research/using-augmented-reality-to-fix-ailing-infrastructure.html){target=_blank}
 
@@ -236,7 +236,7 @@ Civil infrastructure in the United States is in serious disrepair. The American 
 
 #### [Method delves under Earth's mantle for more detailed look](https://carc.unm.edu/research/researchers-develop-method-to-look-under-earths-mantle.html){target=_blank}
 
-![Earth layers diagram](https://carc.unm.edu/research/zhan-earth-layers.png)The Earth is composed of four layers: the crust; the mantle, which is divided into the upper mantle, lower mantle, and transition zone in between; the hot liquid outer core, and a solid inner core. In his paper [Application of Ps Scattering Kernels to Imaging the Mantle Transition Zone With Receiver Functions](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JB016274){target=_blank} published recently in the *Journal of Geophysical Research: Solid Earth*, UNM Ph.D. student Han Zhang researched a method called Ps Scattering Kernels to create an image of the layer we can't see in finer detail than previous studies.
+![Earth layers diagram](/assets/earth-layers-diagram.png)The Earth is composed of four layers: the crust; the mantle, which is divided into the upper mantle, lower mantle, and transition zone in between; the hot liquid outer core, and a solid inner core. In his paper [Application of Ps Scattering Kernels to Imaging the Mantle Transition Zone With Receiver Functions](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JB016274){target=_blank} published recently in the *Journal of Geophysical Research: Solid Earth*, UNM Ph.D. student Han Zhang researched a method called Ps Scattering Kernels to create an image of the layer we can't see in finer detail than previous studies.
 
 #### [Marten research provides insight into breeding, conservation](https://carc.unm.edu/research/marten-research-provides-insight-into-conservation.html){target=_blank}
 
@@ -248,7 +248,7 @@ Associate Professor of Mechanical Engineering Dr. Svetlana Poroseva and colleagu
 
 #### [Research looks to better understand widespread fungal disease](https://carc.unm.edu/research/research-looks-to-better-understand-widespread-fungal-disease.html){target=_blank}
 
-![Candida albicans](https://carc.unm.edu/images/slider-candida-albicans.png)*Candida albicans* is the most common viral pathogen and causes candidiasis, an infectious disease of the lungs and other organs. Healthcare costs associated with treatment of candidiasis exceed $1 billion annually in the US alone. *Candida albicans* can mask itself so pattern recognition receptors in the human body cannot detect and destroy it. Researchers are trying to understand this masking process, eventually leading to better treatment.
+![Candida albicans](/assets/candida-albicans.png)*Candida albicans* is the most common viral pathogen and causes candidiasis, an infectious disease of the lungs and other organs. Healthcare costs associated with treatment of candidiasis exceed $1 billion annually in the US alone. *Candida albicans* can mask itself so pattern recognition receptors in the human body cannot detect and destroy it. Researchers are trying to understand this masking process, eventually leading to better treatment.
 
 #### [Fire navigation research presented to NM Legislature](https://carc.unm.edu/research/fire-navigation-research-to-be-presented-to-nm-legislature.html){target=_blank}
 
@@ -256,7 +256,7 @@ Firefighters entering a burning building step into a critically risky and potent
 
 #### [Neuroscience researchers use CARC to store large stash of data](https://carc.unm.edu/research/neuroscience-researchers-use-carc-to-store-large-stash-of-data.html){target=_blank}
 
-![brain scan](https://carc.unm.edu/images/brain-scan.jpeg)
+![Brain scan from a neuroimaging study](/assets/neuroimaging-brain-scan.jpg)
 
 Psychology Clinical Neuroscience Center (PCNC) and Department of Psychology researchers studying the brain use a system at the UNM Center for Advanced Research Computing, as well as another one on-site, to store data generated by their projects.
 
@@ -266,7 +266,7 @@ University of New Mexico Ph.D. student Schuyler Liphardt spends his days at the 
 
 #### [Dancer, researchers collaborate to expand connection between arts and engineering](https://carc.unm.edu/research/dancer-and-researchers-collaborate.html){target=_blank}
 
-![dance sensors](https://carc.unm.edu/images/dance-sensors.png)Dancing and engineering seem worlds apart, one artsy, the other all about math and technology. But a research group of computer engineering students housed at the University of New Mexico Center for Advanced Research Computing has collaborated with a local dancer to improve her performance while learning more about the possibilities of their own work.
+![Dancer wearing motion sensors](/assets/dance-motion-sensors.png)Dancing and engineering seem worlds apart, one artsy, the other all about math and technology. But a research group of computer engineering students housed at the University of New Mexico Center for Advanced Research Computing has collaborated with a local dancer to improve her performance while learning more about the possibilities of their own work.
 
 #### [Research shows director networking has impact on company success](https://carc.unm.edu/research/director-networking-and-company-success.html){target=_blank}
 
@@ -278,7 +278,7 @@ There are hundreds of railroad overpasses all over the country that get hit regu
 
 #### [UNM database of deceased people a national first](https://carc.unm.edu/research/unm-database-of-deceased-people-a-national-first.html){target=_blank}
 
-![deceased body database](https://carc.unm.edu/images/deceased-body-database.png)People die. All the time. From many causes, including old age, disease, accidents, murder. But researchers can learn from these deaths. Dr. Heather Edgar, forensic anthropologist at the UNM Office of Medical Investigator, and her team are currently converting a dataset of whole body decedent CT scans into a searchable database that will be available to researchers.
+![New Mexico Decedent Image Database](/assets/nmdid-decedent-database.png)People die. All the time. From many causes, including old age, disease, accidents, murder. But researchers can learn from these deaths. Dr. Heather Edgar, forensic anthropologist at the UNM Office of Medical Investigator, and her team are currently converting a dataset of whole body decedent CT scans into a searchable database that will be available to researchers.
 
 #### [Robot swarms aid NASA journey to Mars](https://carc.unm.edu/research/robot-swarms-aid-nasa-journey-to-mars.html){target=_blank}
 

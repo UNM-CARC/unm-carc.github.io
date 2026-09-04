@@ -50,7 +50,7 @@ Additional details, including the meeting agenda, will be shared soon.
 Those interested in attending or presenting a poster can
 [register here](https://forms.office.com/Pages/ResponsePage.aspx?id=MJiqJfngK0iJfho7PIVeXIwY0OuI-zpOi4KHv9sI6KdUQjdMQVUwS1c2VUZKREoyTk9XT1NXRkFZTC4u){target=_blank}!
 
-![Map showing the location of Zimmerman Library room B30](https://carc.unm.edu/news--events/News/b30-locator.png)
+![Map showing the location of Zimmerman Library room B-30](/assets/zimmerman-library-b30-map.png)
 
 Recordings from previous meetings are on the
 [video tutorials page](https://unm-carc.github.io/docs/training/videos/).

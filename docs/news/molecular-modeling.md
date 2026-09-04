@@ -60,4 +60,4 @@ access to advanced computing power and technical support, CARC helps equip
 the next generation of scientists with the skills and experience needed to
 make meaningful contributions in their fields.
 
-![Figure from the thesis](https://carc.unm.edu/research/picture1.png)
+![Figure from the molecular modeling thesis](/assets/molecular-modeling-figure.png)

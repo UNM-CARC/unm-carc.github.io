@@ -42,9 +42,15 @@ at `/index.md`.
 
 ## Notes
 
-- Content migrated from carc.unm.edu with provenance frontmatter; news
-  images currently **hotlink to carc.unm.edu** and must be localized into
-  `docs/assets/` before the old site is retired.
+- Content migrated from carc.unm.edu with provenance frontmatter. All images
+  and documents are localized into `docs/assets/` — nothing hotlinks the old
+  host any more, and `scripts/check_legacy_links.py` fails the build if a page
+  reintroduces one. The mapping from legacy URL to local filename lives in
+  `migration/assets.yml`.
+- Legacy Cascade URLs that were superseded get real Apache 301s, generated into
+  `.htaccess` by `scripts/gen_htaccess.py` from each page's OKF
+  `sources[].resource` provenance. Legacy pages whose content never moved get no
+  redirect: their files stay in the document root and keep serving.
 - The repository must be named `unm-carc.github.io` to serve at the org
   root. Deployment is via GitHub Actions (`.github/workflows/docs.yml`);
   set Pages source to "GitHub Actions".

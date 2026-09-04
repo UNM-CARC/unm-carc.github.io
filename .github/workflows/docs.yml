@@ -29,6 +29,9 @@ jobs:
           python-version: 3.x
       - run: pip install pyyaml
       - run: python scripts/okf_validate.py docs
+      # No page may hotlink a binary from the old Cascade host, and every local
+      # /assets/ reference must resolve. Hermetic — no network.
+      - run: python scripts/check_legacy_links.py docs
 
   build:
     needs: okf-conformance

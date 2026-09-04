@@ -22,7 +22,7 @@ Program, use the
 [UNM ApplyYourself portal](https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=unmgrad){target=_blank}.
 **Please read the instructions before applying:**
 
-[ApplyYourself instructions for CSE (PDF)](https://carc.unm.edu/education--training/cse-program1/cse-application-instructions.pdf){target=_blank}
+[ApplyYourself instructions for CSE (PDF)](/assets/cse-application-instructions.pdf){target=_blank}
 
 We will review your application and contact you shortly thereafter. Check the
 [requirements](requirements.md) first, and direct questions to the CSE

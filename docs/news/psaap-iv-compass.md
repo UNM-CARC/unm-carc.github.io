@@ -76,4 +76,4 @@ For more information, visit
 [psaap.llnl.gov](https://psaap.llnl.gov/){target=_blank} or the
 [DOE NNSA PSAAP IV announcement](https://www.energy.gov/nnsa/articles/nnsa-announces-selection-next-round-predictive-science-academic-alliance-program){target=_blank}.
 
-![COMPASS center logo](https://carc.unm.edu/images/compass-logo_draft6-06.png)
+![COMPASS center logo](/assets/compass-center-logo.png)

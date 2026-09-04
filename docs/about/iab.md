@@ -21,17 +21,17 @@ The CARC Internal Advisory Board meets regularly to make decisions regarding the
 
 **Meeting minutes**
 
-[**IAB meeting minutes 10/28/2021**](https://carc.unm.edu/about-carc/minutes-iab-10-28-2021.pdf){target=_blank}
+[**IAB meeting minutes 10/28/2021**](/assets/iab-minutes-2021-10-28.pdf){target=_blank}
 
-[**IAB meeting minutes 10/29/2020**](https://carc.unm.edu/about-carc/minutes-iab-10-29-20.pdf){target=_blank}
+[**IAB meeting minutes 10/29/2020**](/assets/iab-minutes-2020-10-29.pdf){target=_blank}
 
-[**IAB meeting minutes 6/20/2019**](https://carc.unm.edu/about-carc/minutes-iab-6-20-19.pdf){target=_blank}
+[**IAB meeting minutes 6/20/2019**](/assets/iab-minutes-2019-06-20.pdf){target=_blank}
 
-[**IAB meeting minutes 9/19/2018**](https://carc.unm.edu/images/iab-meeting-packet-9-19-18.pdf){target=_blank}
+[**IAB meeting minutes 9/19/2018**](/assets/iab-minutes-2018-09-19.pdf){target=_blank}
 
-[**IAB meeting minutes 10/11/2017**](https://carc.unm.edu/about-carc/minutes-iab-10-2017.pdf){target=_blank}
+[**IAB meeting minutes 10/11/2017**](/assets/iab-minutes-2017-10-11.pdf){target=_blank}
 
-[**IAB meeting minutes 2/28/2017**](https://carc.unm.edu/about-carc/minutes-iab-2-2017.pdf){target=_blank}
+[**IAB meeting minutes 2/28/2017**](/assets/iab-minutes-2017-02-28.pdf){target=_blank}
 
 **Members**:
 

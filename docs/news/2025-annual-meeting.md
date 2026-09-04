@@ -29,7 +29,7 @@ This event provides an opportunity for researchers across various fields to
 share insights, provide feedback, and contribute to the ongoing development
 of CARC's computing resources.
 
-![Attendees at the 2024 CARC user meeting](https://carc.unm.edu/images/2024-carc-user-meeting.png)
+![Attendees at the 2024 CARC user meeting](/assets/2024-user-meeting-attendees.jpg)
 
 Building on the success of last year's student poster session, we are
 thrilled to continue this tradition. We encourage students and researchers

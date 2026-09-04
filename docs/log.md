@@ -8,6 +8,8 @@
 
 * **Update**: CI now also runs on pull requests, so validation and a full trial build catch problems before they reach `main` rather than after.
 
+* **Update**: Every image and document is now stored in this repository. The 47 files that previously hotlinked carc.unm.edu — news photographs, featured-project images, the IAB minutes, the strategic plan, the CSE application instructions, and the cost model spreadsheet — were fetched, given descriptive filenames and accurate alt text, optimized from 91 MB down to 13 MB, and localized into `docs/assets/` (`migration/assets.yml`, `scripts/migrate_assets.py`). `scripts/check_legacy_links.py` now fails the build if a page reintroduces a hotlink or points at an asset that does not exist.
+
 ## 2026-08-30
 
 * **Update**: The homepage "Latest from CARC" cards now feature the newest announcements (new Director, departures & retirements, new NSF awards), and the "no vacancy? never —" and "full service, every orbit —" taglines are retired.

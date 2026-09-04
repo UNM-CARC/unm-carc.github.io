@@ -76,9 +76,10 @@ section list lives in `SECTIONS` at the top of
    ![Students at the CAM 2026 poster session](/assets/cam-2026-poster.jpg)
    ```
 
-Keep images under ~1 MB (resize before uploading). Note: older news articles
-still hotlink images from carc.unm.edu — when you touch one, re-home its
-images into `docs/assets/` this way.
+Keep images under ~1 MB (resize before uploading). Every image on the site is
+already stored this way — **never paste an image URL from carc.unm.edu into a
+page.** Those addresses only work by accident of the old server still running,
+and the build check rejects them.
 
 ## The frontmatter, briefly
 
@@ -150,8 +151,10 @@ newest at the top):
 A red ✗ in the **Actions** tab means the check caught something — the live
 site is untouched until it's fixed. Click the failed run → the failed step
 prints the file and problem, almost always one of: missing frontmatter
-(deleted a `---` line?), missing `type:`, or frontmatter accidentally added
-to a section `index.md`. Fix the file, commit again, and the pipeline reruns.
+(deleted a `---` line?), missing `type:`, frontmatter accidentally added
+to a section `index.md`, an image URL pasted from carc.unm.edu, or a
+`/assets/...` path that doesn't match an uploaded file. Fix the file, commit
+again, and the pipeline reruns.
 
 ## Working locally (optional)
 
