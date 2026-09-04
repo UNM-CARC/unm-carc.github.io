@@ -101,7 +101,8 @@ def main():
     fms: dict[Path, dict] = {}
     for path in sorted(DOCS.rglob("*.md")):
         rel = path.relative_to(DOCS)
-        if rel.parts[0] == "assets":
+        # 404.md renders to /404.html, not to a pretty URL, so it has no mirror
+        if rel.parts[0] == "assets" or rel.name == "404.md":
             continue
         dest = dest_for(rel, site)
         dest.parent.mkdir(parents=True, exist_ok=True)

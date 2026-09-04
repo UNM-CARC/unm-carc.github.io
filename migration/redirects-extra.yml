@@ -1,0 +1,26 @@
+# Hand-authored legacy redirects for carc.unm.edu.
+#
+# Most old->new redirects are derived automatically from each page's OKF
+# `sources[].resource` provenance field, so migrating a page and recording where
+# it came from is all it takes to get its redirect. This file is only for
+# mappings provenance cannot express: section landing pages, renamed indexes,
+# and anything pointing off-site.
+#
+# Paths are origin-relative. `to` may be an absolute URL for off-site targets.
+# Anything NOT listed here and NOT covered by provenance is deliberately left
+# alone: the original file stays in the document root and keeps serving at its
+# original URL. That is the point of the overlay approach — no redirect is
+# needed for content that never moved.
+
+redirects:
+  - from: /contact-us/index.html
+    to: /contact/
+    note: section landing page
+
+  - from: /news--events/News/index.html
+    to: /news/
+    note: news index; the old archive listing is superseded by the News section
+
+# Never add /index.html here. On a static host that path IS the site root, and a
+# rule for it would fight the homepage the build installs from web/index.html.
+# gen_htaccess.py refuses to emit one regardless.

@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  # Run validation and a full trial build on PRs, so a broken page or a missing
+  # legacy redirect fails BEFORE it reaches main rather than after.
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -27,16 +30,10 @@ jobs:
       - run: pip install pyyaml
       - run: python scripts/okf_validate.py docs
 
-  deploy:
+  build:
     needs: okf-conformance
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/configure-pages@v6
-        with:
-          enablement: true
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v6
         with:
@@ -50,8 +47,80 @@ jobs:
       - run: python scripts/build_cascade_site.py
       # Agent surface: markdown mirror, OKF meta injection, robots.txt
       - run: python scripts/postbuild_agent_surface.py site
+      # Apache 301s for superseded legacy Cascade URLs, plus ErrorDocument 404.
+      # Only meaningful on the UNM host; harmless in the Pages artifact.
+      - run: python scripts/gen_htaccess.py site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site
+          retention-days: 7
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
+  # Staging mirror at unm-carc.github.io — free, and lets a build be inspected
+  # before it reaches the public host.
+  deploy-pages:
+    needs: build
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@v6
+        with:
+          enablement: true
       - uses: actions/deploy-pages@v5
         id: deployment
+
+  # Publish to UNM's Apache document root for carc.unm.edu.
+  #
+  # Inert until the repository has CARC_DEPLOY_KEY / CARC_DEPLOY_HOST /
+  # CARC_DEPLOY_USER / CARC_DOCROOT secrets, so it is safe to merge before the
+  # hosting details are settled.
+  #
+  # NOTE: intentionally no --delete. The document root may be shared with other
+  # UNM sites, and the migration deliberately leaves legacy Cascade files in
+  # place so old URLs keep serving. Do not add --delete until the docroot is
+  # confirmed to belong to CARC alone, and then only after a --dry-run.
+  publish-unm:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    environment: unm-production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site
+
+      - name: Check deploy secrets are configured
+        id: check
+        env:
+          KEY: ${{ secrets.CARC_DEPLOY_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::UNM deploy secrets not set; skipping publish to carc.unm.edu"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish over rsync/SSH
+        if: steps.check.outputs.configured == 'true'
+        env:
+          KEY: ${{ secrets.CARC_DEPLOY_KEY }}
+          HOST: ${{ secrets.CARC_DEPLOY_HOST }}
+          USER: ${{ secrets.CARC_DEPLOY_USER }}
+          DOCROOT: ${{ secrets.CARC_DOCROOT }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          rsync -avz --checksum --no-perms --no-owner --no-group \
+                -e "ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes" \
+                site/ "$USER@$HOST:$DOCROOT/"

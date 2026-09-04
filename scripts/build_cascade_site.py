@@ -42,6 +42,11 @@ SECTIONS = [
 
 MD_EXTENSIONS = ["extra", "admonition", "sane_lists", "smarty"]
 
+# Pages rendered in the site chrome but served from the root under their own
+# filename rather than a pretty directory, and kept out of the sitemap.
+# 404.html backs the Apache ErrorDocument that gen_htaccess.py emits.
+ROOT_HTML_PAGES = {"404.md": "404.html"}
+
 
 def site_url() -> str:
     text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
@@ -328,14 +333,15 @@ def main():
         if rel.parts[0] in ("assets", "stylesheets"):
             continue
         fm, body = split_frontmatter(src.read_text(encoding="utf-8"))
-        pdir = pretty_dir(rel)
+        root_html = ROOT_HTML_PAGES.get(rel.name)
+        pdir = root_html if root_html else pretty_dir(rel)
         title = fm.get("title") or next(
             (l[2:].strip() for l in body.splitlines() if l.startswith("# ")),
             rel.stem.replace("-", " ").title())
         content = markdown.markdown(body, extensions=MD_EXTENSIONS)
         src_dir = "" if str(rel.parent) == "." else str(rel.parent)
         content = rewrite_md_links(content, src_dir, pdir)
-        depth = len(pdir.rstrip("/").split("/")) if pdir else 0
+        depth = 0 if root_html else (len(pdir.rstrip("/").split("/")) if pdir else 0)
         rel_root = "../" * depth if depth else "./"
         page = TEMPLATE.format(
             title=html.escape(title),
@@ -351,6 +357,10 @@ def main():
             footer=FOOTER.format(base=base),
             panel=PANEL,
         )
+        if root_html:
+            # served via ErrorDocument, so it gets no sitemap entry
+            (SITE / root_html).write_text(page, encoding="utf-8")
+            continue
         if pdir == "":
             continue  # root index.md: homepage comes from web/, mirror serves index.md
         out = SITE / pdir / "index.html"
