@@ -1,0 +1,37 @@
+# Hand-authored legacy redirects for carc.unm.edu.
+#
+# Most old->new redirects are derived automatically from each page's OKF
+# `sources[].resource` provenance field, so migrating a page and recording where
+# it came from is all it takes to get its redirect. This file is only for
+# mappings provenance cannot express: section landing pages, renamed indexes,
+# and anything pointing off-site.
+#
+# Paths are origin-relative. `to` may be an absolute URL for off-site targets.
+# Anything NOT listed here and NOT covered by provenance is deliberately left
+# alone: the original file stays in the document root and keeps serving at its
+# original URL. That is the point of the overlay approach — no redirect is
+# needed for content that never moved.
+
+redirects:
+  - from: /contact-us/index.html
+    to: /contact/
+    note: section landing page
+
+# Deliberately NOT redirected: /news--events/News/index.html
+#
+# The old news archive index still serves from the document root and still
+# lists the ~53 stories from before the rebuild that were never migrated. The
+# News section carries 16, so redirecting the archive would destroy the only
+# listing of the rest — and docs/news/index.md links to it on purpose.
+
+# Never add /index.html here. On a static host that path IS the site root, and a
+# rule for it would fight the homepage the build installs from web/index.html.
+# gen_htaccess.py refuses to emit one regardless.
+
+  # Ported from the legacy Cascade .htaccess (see migration/htaccess-legacy.conf):
+  # it sent /getting-started/ to a host that is now dead. The user documentation
+  # has a real Getting Started section. Off-build target, so not verified.
+  - from: /getting-started/
+    to: /docs/getting-started/
+    verify: false
+    note: legacy .htaccess rule, retargeted; prefix match covers /getting-started/*

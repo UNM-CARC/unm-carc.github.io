@@ -31,4 +31,4 @@ The below cost model calculator worksheet will allow you to determine the cost o
 
 **[Preview here](https://unmm-my.sharepoint.com/:x:/g/personal/anw0412_unm_edu/IQBzBub7HRJ-Tqn-xj8o0gd1AfTU22_f_TwPiUr-cEcf_Uw?e=K1beIW){target=_blank}**
 
-**Calculator: [CARC Cost Model Tool (download)](https://carc.unm.edu/assets/carc-cost-model-tool.xlsx){target=_blank}**
+**Calculator: [CARC Cost Model Tool (download)](/assets/carc-cost-model-tool.xlsx){target=_blank}**

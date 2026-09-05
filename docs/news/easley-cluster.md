@@ -19,7 +19,7 @@ sources:
 
 <p class="carc-byline">By Mariah Rosales</p>
 
-![Easley cluster announcement graphic](https://carc.unm.edu/images/untitled-design-11.png)
+![Easley cluster announcement graphic](/assets/easley-cluster-announcement.jpg)
 
 The Center for Advanced Research Computing (CARC) is gearing up to deploy
 its latest high-performance computing (HPC) cluster, tentatively set for a

@@ -17,7 +17,7 @@ sources:
 
 # History
 
-![Vintage Route 66 map](https://carc.unm.edu/images/route-66-map.jpg)
+![Vintage Route 66 map](/assets/route-66-map.jpg)
 
 **1993** Professors Frank Gilfeather, Brian Smith, and John Sobolewski establish the Maui High Performance Computing Center (MHPCC) in Kihei, HI, in support of the Department of Defense High Performance Computing Modernization program.
 

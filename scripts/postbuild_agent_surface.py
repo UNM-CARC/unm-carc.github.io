@@ -23,6 +23,7 @@ Usage: python3 scripts/postbuild_agent_surface.py [site_dir]
 from __future__ import annotations
 
 import html
+import os
 import re
 import shutil
 import sys
@@ -35,6 +36,11 @@ DOCS = ROOT / "docs"
 
 
 def site_url() -> str:
+    """Canonical site origin. CARC_SITE_URL overrides zensical.toml so a build can
+    be pointed at a different host (a test push, CI) without a commit."""
+    override = os.environ.get("CARC_SITE_URL")
+    if override:
+        return override.rstrip("/") + "/"
     text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
     m = re.search(r'^site_url\s*=\s*"([^"]+)"', text, re.MULTILINE)
     return (m.group(1) if m else "/").rstrip("/") + "/"
@@ -101,7 +107,8 @@ def main():
     fms: dict[Path, dict] = {}
     for path in sorted(DOCS.rglob("*.md")):
         rel = path.relative_to(DOCS)
-        if rel.parts[0] == "assets":
+        # 404.md renders to /404.html, not to a pretty URL, so it has no mirror
+        if rel.parts[0] == "assets" or rel.name == "404.md":
             continue
         dest = dest_for(rel, site)
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -122,22 +129,20 @@ def main():
         htmlfile.write_text(text, encoding="utf-8")
         injected += 1
 
-    # 3. robots.txt — explicitly welcome AI fetchers alongside the blanket allow.
-    ai_agents = ["Googlebot", "Google-Extended", "GoogleOther", "Google-CloudVertexBot",
-                 "GPTBot", "OAI-SearchBot", "ChatGPT-User",
-                 "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot",
-                 "cohere-ai", "Applebot-Extended", "CCBot", "meta-externalagent",
-                 "Amazonbot", "DuckAssistBot", "MistralAI-User"]
-    ai_block = "".join(f"User-agent: {a}\nAllow: /\n\n" for a in ai_agents)
+    # 3. robots.txt — one wildcard group and nothing else. Under RFC 9309 a
+    # crawler obeys only its most specific matching group, so naming AI agents
+    # here would *replace* these rules for them rather than add to them; every
+    # crawler is welcome, named or not. The two Disallows are the host's
+    # legacy ones (cPanel serves /cgi-bin/).
     (site / "robots.txt").write_text(
         "# UNM Center for Advanced Research Computing\n"
-        "# This site is published for people AND for AI agents. All crawling,\n"
-        "# indexing, snippeting, and AI grounding of this content is welcome.\n"
-        "# Future canonical home: https://carc.unm.edu/\n"
-        "User-agent: *\n"
-        "Allow: /\n"
+        "# This site is published for people and for AI agents alike: crawling,\n"
+        "# indexing, snippeting, and AI grounding of this content are all welcome.\n"
         "\n"
-        + ai_block +
+        "User-agent: *\n"
+        "Disallow: /cgi-bin/\n"
+        "Disallow: /tmp/\n"
+        "\n"
         f"Sitemap: {base}sitemap.xml\n"
         f"Sitemap: {base}docs/sitemap.xml\n"
         "\n"

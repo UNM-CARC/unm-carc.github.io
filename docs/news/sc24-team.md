@@ -19,7 +19,7 @@ sources:
 
 <p class="carc-byline">By Mariah Rosales</p>
 
-![The UNM SC24 team](https://carc.unm.edu/images/molly-reece-matthew-faculty-advisor-nick-team-coach-xavier-saskia-ryan-sumaya-alex-logistic-coordinator-1.png)
+![The UNM SC24 team](/assets/sc24-team.jpg)
 
 As the 2024 Supercomputing Conference (SC24) approaches, the University of
 New Mexico's Center for Advanced Research Computing (CARC) is in full

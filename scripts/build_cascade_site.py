@@ -19,10 +19,10 @@ from __future__ import annotations
 
 import html
 import posixpath
+import os
 import re
 import shutil
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 import markdown
@@ -42,8 +42,38 @@ SECTIONS = [
 
 MD_EXTENSIONS = ["extra", "admonition", "sane_lists", "smarty"]
 
+# Google Tag Manager container carried over from the Cascade-era homepage, so
+# analytics continue uninterrupted after the swap. (The old Universal Analytics
+# tag that sat beside it is not carried: Google retired UA in 2024.)
+GTM_ID = "GTM-WQT2MB"
+GTM_HEAD = (
+    "<!-- Google Tag Manager -->\n"
+    "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
+    "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
+    "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n"
+    "'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
+    "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>\n"
+    "<!-- End Google Tag Manager -->"
+)
+GTM_BODY = (
+    "<!-- Google Tag Manager (noscript) -->\n"
+    '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID + '"\n'
+    'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+    "<!-- End Google Tag Manager (noscript) -->"
+)
+
+# Pages rendered in the site chrome but served from the root under their own
+# filename rather than a pretty directory, and kept out of the sitemap.
+# 404.html backs the Apache ErrorDocument that gen_htaccess.py emits.
+ROOT_HTML_PAGES = {"404.md": "404.html"}
+
 
 def site_url() -> str:
+    """Canonical site origin. CARC_SITE_URL overrides zensical.toml so a build can
+    be pointed at a different host (a test push, CI) without a commit."""
+    override = os.environ.get("CARC_SITE_URL")
+    if override:
+        return override.rstrip("/") + "/"
     text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
     m = re.search(r'^site_url\s*=\s*"([^"]+)"', text, re.MULTILINE)
     return (m.group(1) if m else "/").rstrip("/") + "/"
@@ -225,6 +255,7 @@ TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{gtm_head}
 <title>{title} :: Center for Advanced Research Computing | The University of New Mexico</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
@@ -235,6 +266,7 @@ TEMPLATE = """<!DOCTYPE html>
 {css}
 </head>
 <body>
+{gtm_body}
 <a class="sr-only sr-only-focusable skip2content" href="#carc-content">Skip to main content</a>
 <div id="page">
 {navbar}
@@ -286,8 +318,8 @@ def nav_items(rel_root: str, active: str) -> str:
     for slug, label in SECTIONS:
         cls = ' class="active"' if slug == active else ""
         items.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
-    items.append('<li><a class="carc-ext-btn" href="https://unm-carc.github.io/docs/" '
-                 'target="_blank" rel="noopener">User Documentation <span aria-hidden="true">↗</span></a></li>')
+    items.append(f'<li><a class="carc-ext-btn" href="{rel_root}docs/">'
+                 'User Documentation <span aria-hidden="true">↗</span></a></li>')
     items.append('<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" '
                  'target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>')
     items.append('<li class="carc-theme-li"><button id="carc-theme-btn" type="button" '
@@ -328,16 +360,19 @@ def main():
         if rel.parts[0] in ("assets", "stylesheets"):
             continue
         fm, body = split_frontmatter(src.read_text(encoding="utf-8"))
-        pdir = pretty_dir(rel)
+        root_html = ROOT_HTML_PAGES.get(rel.name)
+        pdir = root_html if root_html else pretty_dir(rel)
         title = fm.get("title") or next(
             (l[2:].strip() for l in body.splitlines() if l.startswith("# ")),
             rel.stem.replace("-", " ").title())
         content = markdown.markdown(body, extensions=MD_EXTENSIONS)
         src_dir = "" if str(rel.parent) == "." else str(rel.parent)
         content = rewrite_md_links(content, src_dir, pdir)
-        depth = len(pdir.rstrip("/").split("/")) if pdir else 0
+        depth = 0 if root_html else (len(pdir.rstrip("/").split("/")) if pdir else 0)
         rel_root = "../" * depth if depth else "./"
         page = TEMPLATE.format(
+            gtm_head=GTM_HEAD,
+            gtm_body=GTM_BODY,
             title=html.escape(title),
             description=html.escape(fm.get("description", "")),
             canonical=base + pdir,
@@ -351,6 +386,10 @@ def main():
             footer=FOOTER.format(base=base),
             panel=PANEL,
         )
+        if root_html:
+            # served via ErrorDocument, so it gets no sitemap entry
+            (SITE / root_html).write_text(page, encoding="utf-8")
+            continue
         if pdir == "":
             continue  # root index.md: homepage comes from web/, mirror serves index.md
         out = SITE / pdir / "index.html"
@@ -358,8 +397,11 @@ def main():
         out.write_text(page, encoding="utf-8")
         urls.append(base + pdir)
 
-    # homepage + assets
-    shutil.copy2(ROOT / "web" / "index.html", SITE / "index.html")
+    # homepage + assets. web/index.html is hand-authored against the GitHub
+    # Pages origin; its canonical and self-links follow site_url at build time.
+    home = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
+    (SITE / "index.html").write_text(home.replace("https://unm-carc.github.io/", base),
+                                     encoding="utf-8")
     urls.insert(0, base)
     if (DOCS / "assets").exists():
         shutil.copytree(DOCS / "assets", SITE / "assets", dirs_exist_ok=True)
@@ -367,8 +409,9 @@ def main():
     # sitemap
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    lastmod = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    sm += [f"<url><loc>{u}</loc><lastmod>{lastmod}</lastmod></url>" for u in urls]
+    # No <lastmod>: a build-time date changed on every run, which under the
+    # Cascade sync meant one needless edit+publish of sitemap.xml per deploy.
+    sm += [f"<url><loc>{u}</loc></url>" for u in urls]
     sm.append("</urlset>")
     (SITE / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
 

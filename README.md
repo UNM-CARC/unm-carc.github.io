@@ -42,11 +42,25 @@ at `/index.md`.
 
 ## Notes
 
-- Content migrated from carc.unm.edu with provenance frontmatter; news
-  images currently **hotlink to carc.unm.edu** and must be localized into
-  `docs/assets/` before the old site is retired.
+- Content migrated from carc.unm.edu with provenance frontmatter. All images
+  and documents are localized into `docs/assets/` — nothing hotlinks the old
+  host any more, and `scripts/check_legacy_links.py` fails the build if a page
+  reintroduces one. The mapping from legacy URL to local filename lives in
+  `migration/assets.yml`.
+- Legacy Cascade URLs that were superseded get real Apache 301s, generated into
+  `.htaccess` by `scripts/gen_htaccess.py` from each page's OKF
+  `sources[].resource` provenance. Legacy pages whose content never moved get no
+  redirect: their files stay in the document root and keep serving.
 - The repository must be named `unm-carc.github.io` to serve at the org
-  root. Deployment is via GitHub Actions (`.github/workflows/docs.yml`);
-  set Pages source to "GitHub Actions".
+  root. GitHub Pages (`unm-carc.github.io`) is the staging mirror; the
+  public site is `carc.unm.edu`, published by the `publish-cascade` job in
+  `.github/workflows/docs.yml`: `scripts/cascade_sync.py` pushes the built
+  tree into Cascade CMS through its REST API and Cascade publishes it to
+  the UNM web host by SFTP. Cascade is a conduit, not an editor — **anything
+  edited in Cascade is overwritten by the next sync.** The tool owns only
+  the assets recorded in its manifest and never touches the legacy folders.
+- The user documentation (`UNM-CARC/docs`) is published the same way into
+  `/docs/` on the same host, so it shares this site's root `robots.txt` —
+  a `robots.txt` at `/docs/robots.txt` is ignored by crawlers.
 - Editing conventions match the docs repo — see its
   [AGENTS.md](https://github.com/UNM-CARC/docs/blob/main/AGENTS.md).

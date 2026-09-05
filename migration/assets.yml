@@ -1,0 +1,156 @@
+# Legacy carc.unm.edu binaries -> localized files in docs/assets/
+#
+# Hand-curated: the machine cannot infer "easley-cluster-announcement.png" from
+# "untitled-design-11.png". Names are descriptive kebab-case; `alt` replaces the
+# alt text where the original merely repeated the filename.
+#
+# Applied by scripts/migrate_assets.py, which fetches, optimizes, writes into
+# docs/assets/, and rewrites every reference in docs/**/*.md.
+#
+# `review` marks a file a human must clear before it ships — see the licensing
+# note on the stock photograph below.
+
+assets:
+  # --- News ---
+  - from: /images/2024-carc-user-meeting.png
+    to: 2024-user-meeting-attendees.jpg
+    alt: Attendees at the 2024 CARC user meeting
+  - from: /images/untitled-design-11.png
+    to: easley-cluster-announcement.jpg
+    alt: Easley cluster announcement graphic
+  - from: /images/compass-logo_draft6-06.png
+    to: compass-center-logo.png
+    alt: COMPASS center logo
+  - from: /images/matthew-fricke-caption11.png
+    to: matthew-fricke.png
+    alt: Matthew Fricke
+  - from: /images/photo-courtesy-of-matthew-fricke.png
+    to: hpc-course-cluster-hardware.jpg
+    alt: Students working with cluster hardware
+  - from: /images/molly-reece-matthew-faculty-advisor-nick-team-coach-xavier-saskia-ryan-sumaya-alex-logistic-coordinator-1.png
+    to: sc24-team.jpg
+    alt: The UNM SC24 team
+  - from: /news--events/News/b30-locator.png
+    to: zimmerman-library-b30-map.png
+    alt: Map showing the location of Zimmerman Library room B-30
+  - from: /images/viruses-12-01010-g001.png
+    to: newly-identified-virus-figure.jpg
+    alt: Figure from the virus characterization study
+  - from: /research/picture1.png
+    to: molecular-modeling-figure.png
+    alt: Figure from the molecular modeling thesis
+  - from: /research/picture11.png
+    to: molecular-modeling-figure.png    # byte-identical to /research/picture1.png
+    alt: Figure from the molecular modeling thesis
+
+  # --- About ---
+  - from: /images/route-66-map.jpg
+    to: route-66-map.jpg
+    alt: Vintage Route 66 map
+
+  # --- Featured research projects ---
+  - from: /images/shutterstock_2382379513-1-1024x614.jpg
+    to: floating-structures-ocean.jpg
+    alt: Floating structure in ocean conditions
+    review: >-
+      Licensed stock photograph. Hotlinking it and re-hosting it are different
+      legal questions — confirm CARC's Shutterstock licence covers republication
+      from this repository before shipping, or replace the image.
+  - from: /images/antarctica-microbial-mat.jpg
+    to: antarctic-microbial-mat.jpg
+    alt: Microbial mat in Antarctica
+  - from: /images/aquifer-jakarta-flooding1.png
+    to: aquifer-jakarta-flooding.png
+    alt: Flooding in Jakarta linked to aquifer depletion
+  - from: /images/bird-evolution.png
+    to: island-bird-evolution.jpg
+    alt: Diagram of island bird evolution
+  - from: /images/brain-scan.jpeg
+    to: neuroimaging-brain-scan.jpg
+    alt: Brain scan from a neuroimaging study
+  - from: /images/brutus.png
+    to: rockslide-robot-brutus.png
+    alt: Remote-controlled robot "Brutus"
+  - from: /images/carc_ar_robotics_with_border.png
+    to: ar-robotics-infrastructure.jpg
+    alt: Augmented-reality robotics system for infrastructure inspection
+  - from: /images/daguerrotype-image.jpg
+    to: daguerreotype-haziness.jpg
+    alt: Nineteenth-century daguerreotype photograph
+  - from: /images/dance-sensors.png
+    to: dance-motion-sensors.png
+    alt: Dancer wearing motion sensors
+  - from: /images/deceased-body-database.png
+    to: nmdid-decedent-database.png
+    alt: New Mexico Decedent Image Database
+  - from: /images/deformation-image.JPG
+    to: deformation-instability.jpg
+    alt: Simulation of a deformation instability
+  - from: /images/facial-recognition.jpg
+    to: firefighting-facial-recognition.jpg
+    alt: Facial-recognition system for firefighting
+  - from: /images/fiesta-3dsdkhi.png
+    to: fiesta-fluid-dynamics.png
+    alt: Visualization from the FIESTA fluid dynamics code
+  - from: /images/hiv-science-guy.jpg
+    to: hiv-treatment-research.jpg
+    alt: Researcher working on HIV treatment
+  - from: /images/minion.png
+    to: minion-sequencer.jpg
+    alt: MinION genome sequencer
+  - from: /images/perseverance-image.jpg
+    to: perseverance-landing-site.jpg
+    alt: Perseverance rover landing site on Mars
+  - from: /images/picture1.jpg
+    to: dengue-el-nino.jpg
+    alt: El Niño and global dengue outbreak risk
+  - from: /images/preview-cropped1.png
+    to: parallel-processing-course.png
+    alt: Visualization from the parallel processing course
+  - from: /images/pulsar-story-image.png
+    to: pulsar-research.png
+    alt: Pulsar
+  - from: /images/slider-candida-albicans.png
+    to: candida-albicans.png
+    alt: Candida albicans
+  - from: /images/space-challenge-slider.png
+    to: space-robotics-challenge.png
+    alt: NASA space robotics challenge
+  - from: /images/tramway-sensor.png
+    to: tramway-sensors.jpg
+    alt: Sensors on the Sandia Peak Tramway
+  - from: /images/trout.jpg
+    to: gila-trout.jpg
+    alt: Gila trout
+  - from: /images/untitled-design-1.png
+    to: southwest-wildfire-threat.png
+    alt: Wildfire threatening a southwestern forest
+  - from: /images/untitled-design2.png
+    to: dark-matter-lensing.jpg
+    alt: Gravitational lensing used to probe dark matter
+  - from: /research/silvery-minnow.jpg
+    to: rio-grande-silvery-minnow.jpg
+    alt: Rio Grande silvery minnow
+  - from: /research/zhan-earth-layers.png
+    to: earth-layers-diagram.png
+    alt: Earth layers diagram
+
+  # --- Documents: never re-encoded, copied byte-for-byte ---
+  - from: /about-carc/minutes-iab-10-2017.pdf
+    to: iab-minutes-2017-10-11.pdf
+  - from: /about-carc/minutes-iab-2-2017.pdf
+    to: iab-minutes-2017-02-28.pdf
+  - from: /images/iab-meeting-packet-9-19-18.pdf
+    to: iab-minutes-2018-09-19.pdf
+  - from: /about-carc/minutes-iab-6-20-19.pdf
+    to: iab-minutes-2019-06-20.pdf
+  - from: /about-carc/minutes-iab-10-29-20.pdf
+    to: iab-minutes-2020-10-29.pdf
+  - from: /about-carc/minutes-iab-10-28-2021.pdf
+    to: iab-minutes-2021-10-28.pdf
+  - from: /about-carc/strategic-plan.pdf
+    to: carc-strategic-plan.pdf
+  - from: /education--training/cse-program1/cse-application-instructions.pdf
+    to: cse-application-instructions.pdf
+  - from: /assets/carc-cost-model-tool.xlsx
+    to: carc-cost-model-tool.xlsx

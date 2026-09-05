@@ -22,4 +22,4 @@ The Center for Advanced Research Computing is the hub of computational research 
 
 In keeping with the Office of the Vice President of Research's Research2020 plan, we have developed a strategic plan to better meet the needs of our users. We are also working to develop a sustainable funding model to enable the expansion of our systems and services as demand for CARC services grows and evolves. One piece of this plan is a cost model to address services needed beyond the free baseline.
 
-Read full **[PDF](https://carc.unm.edu/about-carc/strategic-plan.pdf){target=_blank}**.
+Read full **[PDF](/assets/carc-strategic-plan.pdf){target=_blank}**.

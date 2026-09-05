@@ -4,8 +4,14 @@ How to add news articles, edit pages, and keep this site current — **no
 Cascade CMS, no local software required**. Everything on the site is a plain
 Markdown text file in the `docs/` folder of this repository. When a change is
 committed to the `main` branch, GitHub Actions checks it, rebuilds every page
-in the UNM Cascade standard (header, footer, navigation), and publishes to
-<https://unm-carc.github.io/> — live in about two minutes.
+in the UNM Cascade standard (header, footer, navigation), and publishes it
+to <https://carc.unm.edu/> — live in a few minutes. (A staging copy also
+lands at <https://unm-carc.github.io/>.)
+
+**Do not edit the site in Cascade CMS any more.** The publishing pipeline
+pushes every page through Cascade automatically, and anything changed there
+by hand is overwritten on the next publish. This repository is the only place
+to edit.
 
 You can do all of this in the GitHub web interface in your browser. The
 optional [local preview](#working-locally-optional) is for bigger changes.
@@ -76,9 +82,10 @@ section list lives in `SECTIONS` at the top of
    ![Students at the CAM 2026 poster session](/assets/cam-2026-poster.jpg)
    ```
 
-Keep images under ~1 MB (resize before uploading). Note: older news articles
-still hotlink images from carc.unm.edu — when you touch one, re-home its
-images into `docs/assets/` this way.
+Keep images under ~1 MB (resize before uploading). Every image on the site is
+already stored this way — **never paste an image URL from carc.unm.edu into a
+page.** Those addresses only work by accident of the old server still running,
+and the build check rejects them.
 
 ## The frontmatter, briefly
 
@@ -150,8 +157,10 @@ newest at the top):
 A red ✗ in the **Actions** tab means the check caught something — the live
 site is untouched until it's fixed. Click the failed run → the failed step
 prints the file and problem, almost always one of: missing frontmatter
-(deleted a `---` line?), missing `type:`, or frontmatter accidentally added
-to a section `index.md`. Fix the file, commit again, and the pipeline reruns.
+(deleted a `---` line?), missing `type:`, frontmatter accidentally added
+to a section `index.md`, an image URL pasted from carc.unm.edu, or a
+`/assets/...` path that doesn't match an uploaded file. Fix the file, commit
+again, and the pipeline reruns.
 
 ## Working locally (optional)
 
@@ -178,6 +187,7 @@ checks.
   automatically at deploy time.
 * The site chrome (UNM header, footer, Quick Links) — it's generated from
   the official UNM webcore standard inside `scripts/build_cascade_site.py`.
+* Anything in Cascade CMS — see above; it is no longer an editing surface.
 
 Questions or something beyond this guide (new sections, homepage changes,
 design work): open an issue on this repository or ask a maintainer. The

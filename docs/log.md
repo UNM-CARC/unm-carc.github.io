@@ -1,5 +1,17 @@
 # Website update log
 
+## 2026-09-04
+
+* **Update**: The site now publishes into Cascade CMS through its REST API (`scripts/cascade_sync.py`), and Cascade delivers it to `carc.unm.edu` by SFTP — the only route into that host, since its SSH port is closed to GitHub's runners. Cascade is a conduit, not an editing surface. First live increments from this repository: the [About](about/index.md) section at `carc.unm.edu/about/`, and the user documentation at `carc.unm.edu/docs/` (244 files, byte-verified). The homepage carries the site's existing Google Tag Manager container; links to the documentation are relative to the same host; the sitemap no longer stamps a build date; and the root `robots.txt` uses a single wildcard group that welcomes every crawler and advertises both sitemaps.
+
+* **Update**: Groundwork for publishing this site into UNM's Apache document root for [carc.unm.edu](https://carc.unm.edu), so the site keeps its `.edu` address while all editing moves to this repository and Cascade is retired. The build now emits an `.htaccess` of real 301 redirects (`scripts/gen_htaccess.py`) — something GitHub Pages cannot do — derived automatically from each page's OKF `sources[].resource` provenance, so migrating a page and recording its origin is all it takes to redirect its old URL. Legacy Cascade pages whose content never moved are deliberately left alone: their files stay in the document root and keep serving at their original addresses.
+
+* **New**: A [Page not found](404.md) page, wired to the Apache `ErrorDocument` directive. The live site's `ErrorDocument` currently points at a file that does not exist, so 404s fall back to the stock Apache error.
+
+* **Update**: CI now also runs on pull requests, so validation and a full trial build catch problems before they reach `main` rather than after.
+
+* **Update**: Every image and document is now stored in this repository. The 47 files that previously hotlinked carc.unm.edu — news photographs, featured-project images, the IAB minutes, the strategic plan, the CSE application instructions, and the cost model spreadsheet — were fetched, given descriptive filenames and accurate alt text, optimized from 91 MB down to 13 MB, and localized into `docs/assets/` (`migration/assets.yml`, `scripts/migrate_assets.py`). `scripts/check_legacy_links.py` now fails the build if a page reintroduces a hotlink or points at an asset that does not exist.
+
 ## 2026-08-30
 
 * **Update**: The homepage "Latest from CARC" cards now feature the newest announcements (new Director, departures & retirements, new NSF awards), and the "no vacancy? never —" and "full service, every orbit —" taglines are retired.

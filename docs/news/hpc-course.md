@@ -19,7 +19,7 @@ sources:
 
 <p class="carc-byline">By Mariah Rosales</p>
 
-![Matthew Fricke](https://carc.unm.edu/images/matthew-fricke-caption11.png)
+![Matthew Fricke](/assets/matthew-fricke.png)
 
 The Center for Advanced Research Computing (CARC) is pleased to highlight
 our High-Performance Computing (HPC) course led by University of New Mexico
@@ -46,7 +46,7 @@ a clear understanding of the professional landscape," says Fricke. "By
 connecting students with experts from local labs and the tech sector, we aim
 to bridge the gap between academic training and real-world application."
 
-![Students working with cluster hardware](https://carc.unm.edu/images/photo-courtesy-of-matthew-fricke.png)
+![Students working with cluster hardware](/assets/hpc-course-cluster-hardware.jpg)
 
 In addition to technical training, the course includes a special
 career-building session where students engage with professionals from

@@ -52,4 +52,4 @@ evolutionary dynamics. Studies of this kind provide foundational knowledge
 that can inform future research in viral ecology, disease surveillance, and
 evolutionary biology.
 
-![Figure from the virus characterization study](https://carc.unm.edu/images/viruses-12-01010-g001.png)
+![Figure from the virus characterization study](/assets/newly-identified-virus-figure.jpg)
