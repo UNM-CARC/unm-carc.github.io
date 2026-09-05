@@ -80,7 +80,8 @@ around a plain content column. The homepage is hand-authored
 whose frontmatter says `layout: cards` renders its `#### [Title](url)` +
 image + summary list as a card grid (`research/featured-projects`). The
 Google Tag Manager container from the original site is carried into every
-page.
+page, and `ga4_id` in `zensical.toml` adds CARC's own Google Analytics 4 tag
+(leave it empty to disable).
 
 ## Content conventions
 
