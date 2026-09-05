@@ -455,6 +455,11 @@ def main():
     (SITE / "index.html").write_text(home.replace("https://unm-carc.github.io/", base),
                                      encoding="utf-8")
     urls.insert(0, base)
+    # Search Console ownership files: served verbatim at the root, never in
+    # the sitemap. Keeping them in the repo means they survive any tidying of
+    # the CMS tree and appear on the staging mirror too.
+    for gsv in sorted((ROOT / "web").glob("google*.html")):
+        shutil.copy2(gsv, SITE / gsv.name)
     if (DOCS / "assets").exists():
         shutil.copytree(DOCS / "assets", SITE / "assets", dirs_exist_ok=True)
 
