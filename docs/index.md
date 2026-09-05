@@ -27,4 +27,4 @@ HTML page.
 
 ## Related bundles
 
-* [User documentation](https://unm-carc.github.io/docs/) - Complete guides for computing on CARC systems (its own OKF bundle with llms.txt at /docs/llms.txt).
+* [User documentation](/docs/) - Complete guides for computing on CARC systems (its own OKF bundle with llms.txt at /docs/llms.txt).

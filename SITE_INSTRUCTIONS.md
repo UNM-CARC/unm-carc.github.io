@@ -192,6 +192,6 @@ checks.
 Questions or something beyond this guide (new sections, homepage changes,
 design work): open an issue on this repository or ask a maintainer. The
 companion user documentation at
-[unm-carc.github.io/docs](https://unm-carc.github.io/docs/) lives in the
+[carc.unm.edu/docs](https://carc.unm.edu/docs/) lives in the
 separate [UNM-CARC/docs](https://github.com/UNM-CARC/docs) repository with
 its own contributor guide.

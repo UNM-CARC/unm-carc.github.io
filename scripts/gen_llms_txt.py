@@ -80,7 +80,7 @@ def main():
         "> The UNM Center for Advanced Research Computing (CARC): mission, "
         "research, the CSE certificate program, news, and contact information. "
         "User documentation for CARC systems lives at "
-        "https://unm-carc.github.io/docs/ (with its own llms.txt). The source "
+        f"{base}docs/ (with its own llms.txt). The source "
         "repository is an Open Knowledge Format (OKF v0.2) bundle: every page "
         "carries YAML frontmatter with type, provenance, and lifecycle fields.",
         "",

@@ -53,4 +53,4 @@ Those interested in attending or presenting a poster can
 ![Map showing the location of Zimmerman Library room B-30](/assets/zimmerman-library-b30-map.png)
 
 Recordings from previous meetings are on the
-[video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+[video tutorials page](/docs/training/videos/).

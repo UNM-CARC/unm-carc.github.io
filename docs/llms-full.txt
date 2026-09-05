@@ -722,9 +722,9 @@ Ave NE — from first-login basics to domain-specific computing.
 !!! tip "Can't attend in person?"
 
     Most workshop topics are covered by the
-    [video tutorials](https://unm-carc.github.io/docs/training/videos/) on
+    [video tutorials](/docs/training/videos/) on
     YouTube, and slides from past sessions are archived on the
-    [workshops page](https://unm-carc.github.io/docs/training/workshops/) of
+    [workshops page](/docs/training/workshops/) of
     the user documentation.
 
 ## Workshops for your group or course
@@ -1090,7 +1090,7 @@ researchers presented their computational research projects.
 !!! note "This event has concluded"
 
     Recordings from CAM 2025 are on the
-    [video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+    [video tutorials page](/docs/training/videos/).
 
 ---8<--- https://unm-carc.github.io/news/2026-annual-meeting/
 
@@ -1149,7 +1149,7 @@ Those interested in attending or presenting a poster can
 ![Map showing the location of Zimmerman Library room B-30](/assets/zimmerman-library-b30-map.png)
 
 Recordings from previous meetings are on the
-[video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+[video tutorials page](/docs/training/videos/).
 
 ---8<--- https://unm-carc.github.io/news/cleve-moler-memoriam/
 
@@ -1414,7 +1414,7 @@ computational tasks.
 
     Easley launched with 65 nodes, 4,160 cores, and 44 NVIDIA GPUs (36 L40S
     + 8 H100) — see the current specifications in the
-    [systems overview](https://unm-carc.github.io/docs/systems/overview/).
+    [systems overview](/docs/systems/overview/).
 
 ---8<--- https://unm-carc.github.io/news/genome-sequencing/
 
@@ -1914,7 +1914,7 @@ Email addresses are written out to deter scrapers — replace *[at]* with `@`
 and *[dot]* with `.`.
 
 For general inquiries, write to <info@carc.unm.edu>; for technical help, see
-[getting help](https://unm-carc.github.io/docs/support/help/) in the user
+[getting help](/docs/support/help/) in the user
 documentation.
 
 ---8<--- https://unm-carc.github.io/contact/visiting/
@@ -1981,6 +1981,8 @@ Albuquerque NM 87106
 
 ## 2026-09-04
 
+* **Update**: The site now publishes into Cascade CMS through its REST API (`scripts/cascade_sync.py`), and Cascade delivers it to `carc.unm.edu` by SFTP — the only route into that host, since its SSH port is closed to GitHub's runners. Cascade is a conduit, not an editing surface. First live increments from this repository: the [About](about/index.md) section at `carc.unm.edu/about/`, and the user documentation at `carc.unm.edu/docs/` (244 files, byte-verified). The homepage carries the site's existing Google Tag Manager container; links to the documentation are relative to the same host; the sitemap no longer stamps a build date; and the root `robots.txt` uses a single wildcard group that welcomes every crawler and advertises both sitemaps.
+
 * **Update**: Groundwork for publishing this site into UNM's Apache document root for [carc.unm.edu](https://carc.unm.edu), so the site keeps its `.edu` address while all editing moves to this repository and Cascade is retired. The build now emits an `.htaccess` of real 301 redirects (`scripts/gen_htaccess.py`) — something GitHub Pages cannot do — derived automatically from each page's OKF `sources[].resource` provenance, so migrating a page and recording its origin is all it takes to redirect its old URL. Legacy Cascade pages whose content never moved are deliberately left alone: their files stay in the document root and keep serving at their original addresses.
 
 * **New**: A [Page not found](404.md) page, wired to the Apache `ErrorDocument` directive. The live site's `ErrorDocument` currently points at a file that does not exist, so 404s fall back to the stock Apache error.
@@ -2029,5 +2031,5 @@ Albuquerque NM 87106
 
 * **Update**: Replaced the Zensical-themed homepage with a hand-authored standard-HTML page (`web/index.html`, installed by `scripts/build_home.py`): the UNM Cascade webcore header, Quick Links panel, and footer are retained verbatim, and the hero is a Googie/mid-century D3 scene — neon CARC motel sign with chaser bulbs, atomic orbits, starbursts, and Route 66 — in UNM Cherry/Turquoise/Silver. Interior pages remain Zensical; the machine-readable index remains at `/index.md`.
 
-* **Initialization**: Created this rebuild of [carc.unm.edu](https://carc.unm.edu) with [Zensical](https://zensical.org), structured as an Open Knowledge Format (OKF v0.2) bundle with the same agent surface as the [user documentation](https://unm-carc.github.io/docs/): llms.txt, per-page Markdown mirrors, and an origin-wide robots.txt.
+* **Initialization**: Created this rebuild of [carc.unm.edu](https://carc.unm.edu) with [Zensical](https://zensical.org), structured as an Open Knowledge Format (OKF v0.2) bundle with the same agent surface as the [user documentation](/docs/): llms.txt, per-page Markdown mirrors, and an origin-wide robots.txt.
 * **Migration**: Migrated core pages from carc.unm.edu — About (mission, strategic plan, history, IAB), Research (featured projects, publications, services, grant resources), Education (workshops, CSE certificate program), Contact (personnel, visitors) — and the ten most recent news stories, with provenance frontmatter. Content images currently hotlink to carc.unm.edu and must be localized before the old site is retired.
