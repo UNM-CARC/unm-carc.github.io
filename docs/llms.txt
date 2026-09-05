@@ -36,7 +36,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 
 - [Registration is open for the 2025 CARC Annual Meeting (CAM)](https://carc.unm.edu/news/2025-annual-meeting/): CARC's fourth annual user meeting — April 14, 2025 — with a keynote, open forum, and student poster session.
 - [Registration is open for the 2026 CARC Annual Meeting](https://carc.unm.edu/news/2026-annual-meeting/): CAM 2026 comes to Zimmerman Library B30 on April 21, 2026 — updates, research highlights, and the student poster session.
-- [In memoriam: Cleve Moler](https://carc.unm.edu/news/cleve-moler-memoriam/): Remembering Cleve Moler — creator of MATLAB and former UNM professor — by Matthew Fricke. (draft)
+- [Remembering Cleve Moler](https://carc.unm.edu/news/cleve-moler-memoriam/): Matthew Fricke remembers Cleve Moler — creator of MATLAB, former UNM Computer Science chair, and a giant of high-performance computing — who died on May 20, 2026, at 86.
 - [Recent departures and retirements](https://carc.unm.edu/news/departures-retirements/): Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement. (draft)
 - [An important message from our Director](https://carc.unm.edu/news/director-message/): A message to the CARC community from then-Director Patrick G. Bridges on federal executive actions and CARC's commitments.
 - [UNM launches search for the next director of CARC](https://carc.unm.edu/news/director-search/): The University seeks a strategic and operational leader for the Center for Advanced Research Computing. This search has concluded.

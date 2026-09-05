@@ -2,6 +2,8 @@
 
 ## 2026-09-05
 
+* **News**: [Remembering Cleve Moler](news/cleve-moler-memoriam.md) — Matthew Fricke's full remembrance, with its three figures, replaces the placeholder.
+
 * **Cutover**: `carc.unm.edu` is now served from this repository. The site's canonical origin (`site_url`) is `https://carc.unm.edu/`; GitHub Pages at `unm-carc.github.io` remains as a staging mirror. Every section, the root files and all assets are published through Cascade from the build; the legacy Cascade pages that were superseded are retired into an unpublished `_retired` folder rather than deleted, and the ones that never moved keep serving at their old addresses.
 
 ## 2026-09-04
