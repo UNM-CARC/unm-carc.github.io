@@ -46,8 +46,9 @@ column. Filenames are lowercase-with-hyphens (`kebab-case.md`).
 
 5. Commit both changes (green **Commit changes** button; a short message like
    "news: fall workshops announcement" is perfect).
-6. Watch the **Actions** tab if you like — when the run goes green, the
-   article is live.
+6. Watch the **Actions** tab if you like — when the `publish-cascade` job
+   goes green, the article is live at carc.unm.edu (the `deploy-pages` job
+   updates the staging copy).
 
 ## Edit an existing page
 
@@ -106,6 +107,18 @@ generated:
   at: "2026-09-15T00:00:00Z"             # when
 ---
 ```
+
+Two things the frontmatter does that are easy to miss:
+
+* **`sources` creates redirects.** If a page lists a `https://carc.unm.edu/...`
+  address under `sources:` (the old Cascade page it replaces), the build
+  automatically redirects that old address to the new page. Only record an
+  old address when the new page really supersedes it.
+* **`layout: cards`** renders a page whose body is a list of
+  `#### [Title](link)` + image + paragraph entries as a grid of cards — the
+  [Featured projects](docs/research/featured-projects.md) page works this way.
+  To add a project there, append a heading, an image and a paragraph in the
+  same shape; the card appears on its own.
 
 Two special rules:
 
@@ -170,18 +183,25 @@ For previewing bigger changes before they publish:
 git clone https://github.com/UNM-CARC/unm-carc.github.io.git
 cd unm-carc.github.io
 pip install pyyaml markdown
-python3 scripts/okf_validate.py docs        # the same check CI runs
-python3 scripts/build_cascade_site.py       # render the site
-python3 scripts/postbuild_agent_surface.py  # robots.txt + agent surface
-python3 -m http.server 8080 -d site         # browse at http://localhost:8080
+python3 scripts/okf_validate.py docs           # the same checks CI runs...
+python3 scripts/check_legacy_links.py docs     # ...
+python3 scripts/gen_llms_txt.py                # llms.txt indexes
+python3 scripts/build_cascade_site.py          # render the site
+python3 scripts/postbuild_agent_surface.py site  # robots.txt + agent surface
+python3 scripts/gen_htaccess.py site           # redirects for old addresses
+python3 -m http.server 8080 -d site            # browse at http://localhost:8080
 ```
 
 Edit, rebuild, refresh. Commit and push when happy — CI still runs the same
-checks.
+checks and does the publishing. (Publishing from a laptop is possible with
+`scripts/cascade_sync.py` and a Cascade API key, but the normal route is
+simply pushing to `main`.)
 
 ## What not to touch
 
 * `web/index.html` — the hand-authored homepage with the animated hero.
+  (The "Latest from CARC" cards near the bottom are plain HTML and safe to
+  edit when a headline changes; keep the same `gg-card` shape.)
 * `scripts/` and `.github/workflows/` — the build pipeline.
 * The `docs/llms.txt` / `docs/llms-full.txt` indexes — regenerated
   automatically at deploy time.
