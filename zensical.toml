@@ -1,6 +1,8 @@
 [project]
 site_name = "UNM Center for Advanced Research Computing"
 site_url = "https://carc.unm.edu/"
+# Google Analytics 4 measurement id; empty or absent disables the tag.
+ga4_id = "G-4N7W3PW5BF"
 site_description = "The Center for Advanced Research Computing (CARC) is the hub of computational research at The University of New Mexico: high-performance computing, research support, and computational science education."
 site_author = "UNM Center for Advanced Research Computing"
 copyright = "&copy; 2026 The University of New Mexico &mdash; Center for Advanced Research Computing"

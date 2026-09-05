@@ -79,6 +79,26 @@ def site_url() -> str:
     return (m.group(1) if m else "/").rstrip("/") + "/"
 
 
+def ga4_id() -> str:
+    """GA4 measurement id from zensical.toml (`ga4_id = "G-..."`), or ""."""
+    text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
+    m = re.search(r'^ga4_id\s*=\s*"([^"]*)"', text, re.MULTILINE)
+    return (m.group(1).strip() if m else "")
+
+
+def ga4_head(mid: str) -> str:
+    """Google's gtag.js snippet for a GA4 property; empty when no id is set.
+    Sits beside the UNM-wide GTM loader; nothing pushes `site-ga4`, so the
+    central container does not also count this property."""
+    if not mid:
+        return ""
+    return ("<!-- Google tag (gtag.js) -->\n"
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id={mid}"></script>\n'
+            "<script>window.dataLayer = window.dataLayer || [];"
+            "function gtag(){dataLayer.push(arguments);}gtag('js', new Date());"
+            f"gtag('config', '{mid}');</script>")
+
+
 def split_frontmatter(text: str):
     if text.startswith("---"):
         m = re.match(r"^---\s*\n(.*?)\n---\s*\n?", text, re.DOTALL)
@@ -306,6 +326,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {gtm_head}
+{ga4_head}
 <title>{title} :: Center for Advanced Research Computing | The University of New Mexico</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
@@ -424,6 +445,7 @@ def main():
         rel_root = "../" * depth if depth else "./"
         page = TEMPLATE.format(
             gtm_head=GTM_HEAD,
+            ga4_head=ga4_head(ga4_id()),
             gtm_body=GTM_BODY,
             title=html.escape(title),
             description=html.escape(fm.get("description", "")),
@@ -452,8 +474,10 @@ def main():
     # homepage + assets. web/index.html is hand-authored against the GitHub
     # Pages origin; its canonical and self-links follow site_url at build time.
     home = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
-    (SITE / "index.html").write_text(home.replace("https://unm-carc.github.io/", base),
-                                     encoding="utf-8")
+    home = home.replace("https://unm-carc.github.io/", base)
+    if ga4_id():
+        home = home.replace("<!-- Google Tag Manager", ga4_head(ga4_id()) + "\n<!-- Google Tag Manager", 1)
+    (SITE / "index.html").write_text(home, encoding="utf-8")
     urls.insert(0, base)
     # Search Console ownership files: served verbatim at the root, never in
     # the sitemap. Keeping them in the repo means they survive any tidying of
