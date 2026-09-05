@@ -1,6 +1,6 @@
 # UNM Center for Advanced Research Computing
 
-> The UNM Center for Advanced Research Computing (CARC): mission, research, the CSE certificate program, news, and contact information. User documentation for CARC systems lives at https://carc.unm.edu/docs/ (with its own llms.txt). The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance, and lifecycle fields.
+> The UNM Center for Advanced Research Computing (CARC): mission, research, the CSE certificate program, news, open positions, and contact information. User documentation for CARC systems lives at https://carc.unm.edu/docs/ (with its own llms.txt). The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance, and lifecycle fields.
 
 Full corpus for ingestion: https://carc.unm.edu/llms-full.txt
 
@@ -50,6 +50,12 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 - [UNM awarded prestigious grant to lead national research on high-performance computing](https://carc.unm.edu/news/psaap-iv-compass/): A UNM-led team wins a DOE NNSA PSAAP IV cooperative agreement, establishing the COMPASS center at CARC.
 - [CARC team gears up for SC24 Competition](https://carc.unm.edu/news/sc24-team/): Six UNM students take a Dell/Penguin/Intersect360-sponsored H100 cluster to the SC24 student competition in Atlanta.
 - [Welcome our new CARC Director, Tyson Swetnam](https://carc.unm.edu/news/welcome-director-swetnam/): The Center for Advanced Research Computing welcomes Tyson Swetnam as its new Director. (draft)
+
+## Jobs
+
+- [Postdoctoral Researcher — Agentic AI](https://carc.unm.edu/jobs/postdoc-agentic-ai/): Lead the agentic AI orchestration prototype for the NSF MESA project at CARC: self-hosted LLM serving, retrieval over scientific metadata, and the MCP server framework. 1.0 FTE.
+- [Program Manager](https://carc.unm.edu/jobs/program-manager/): Manage the $4.6M NSF MESA cooperative agreement at CARC: execution plan, schedule and budget tracking, risk register, and coordination across three institutions. 1.0 FTE.
+- [Research Computing Facilitator](https://carc.unm.edu/jobs/research-computing-facilitator/): Consult with UNM research groups, build and maintain Linux systems, install scientific software, and bring labs onto CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2.
 
 ## Contact
 
