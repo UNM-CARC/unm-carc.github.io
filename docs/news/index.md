@@ -4,7 +4,7 @@ Announcements and stories from the CARC community.
 
 * [Welcome our new CARC Director, Tyson Swetnam](welcome-director-swetnam.md) - The Center for Advanced Research Computing welcomes its new Director.
 * [Recent departures and retirements](departures-retirements.md) - Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement.
-* [In memoriam: Cleve Moler](cleve-moler-memoriam.md) - Remembering the creator of MATLAB and former UNM professor, by Matthew Fricke.
+* [Remembering Cleve Moler](cleve-moler-memoriam.md) - Matthew Fricke remembers the creator of MATLAB, former UNM Computer Science chair, and a giant of high-performance computing (1939–2026).
 * [New NSF award: IDSS MESA](nsf-idss-mesa.md) - A new National Science Foundation award supports the IDSS MESA project.
 * [New NSF research hardware award](nsf-hardware-ruskai.md) - A new NSF award led by Ruskai brings new research computing hardware to UNM.
 * [PSAAP COMPASS center: 2026 update](psaap-2026-update.md) - An update on the DOE NNSA PSAAP IV COMPASS center led by UNM.
