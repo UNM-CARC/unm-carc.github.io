@@ -11,12 +11,11 @@ The public website of the [UNM Center for Advanced Research Computing](https://u
 [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
 knowledge bundle, sharing its design system and agent surface with the
 [user documentation](https://github.com/UNM-CARC/docs) served at
-[/docs/](https://unm-carc.github.io/docs/).
+[carc.unm.edu/docs/](https://carc.unm.edu/docs/).
 
-Because this is the **organization root site**, it owns the origin-wide
-`robots.txt` (which advertises the llms.txt indexes and sitemaps of both this
-site and /docs/), and a future custom domain set on this repository will
-serve every UNM-CARC project site under it (e.g. `carc.unm.edu/docs/`).
+Because this site owns the host root, it owns the origin-wide `robots.txt`,
+which advertises the llms.txt indexes and sitemaps of both this site and
+`/docs/` — a `robots.txt` under `/docs/` is ignored by crawlers.
 
 ## Quick start
 

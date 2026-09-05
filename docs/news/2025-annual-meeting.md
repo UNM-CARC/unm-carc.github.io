@@ -45,4 +45,4 @@ researchers presented their computational research projects.
 !!! note "This event has concluded"
 
     Recordings from CAM 2025 are on the
-    [video tutorials page](https://unm-carc.github.io/docs/training/videos/).
+    [video tutorials page](/docs/training/videos/).
