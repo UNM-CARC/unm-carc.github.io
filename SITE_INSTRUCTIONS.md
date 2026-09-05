@@ -60,14 +60,16 @@ column. Filenames are lowercase-with-hyphens (`kebab-case.md`).
 3. Commit. Done.
 
 Routine examples: staff changes go in `docs/contact/personnel.md`; workshop
-details in `docs/education/workshops.md`; services in `docs/research/`.
+details in `docs/education/workshops.md`; services in `docs/research/`. Job
+postings are one page each in `docs/jobs/`, listed with an *Apply* link in
+`docs/jobs/index.md` — when a position closes, delete its page and its bullet.
 
 ## Add a page to any other section
 
 Same as a news article, but start from
 [`templates/content-page.md`](templates/content-page.md), place the file in
 the section's folder (`docs/about/`, `docs/research/`, `docs/education/`,
-`docs/contact/`), and link it from that section's `index.md`. Creating a
+`docs/jobs/`, `docs/contact/`), and link it from that section's `index.md`. Creating a
 brand-new top-level section is the one thing that needs a maintainer: the
 section list lives in `SECTIONS` at the top of
 `scripts/build_cascade_site.py`.
