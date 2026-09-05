@@ -1,6 +1,6 @@
 [project]
 site_name = "UNM Center for Advanced Research Computing"
-site_url = "https://unm-carc.github.io/"
+site_url = "https://carc.unm.edu/"
 site_description = "The Center for Advanced Research Computing (CARC) is the hub of computational research at The University of New Mexico: high-performance computing, research support, and computational science education."
 site_author = "UNM Center for Advanced Research Computing"
 copyright = "&copy; 2026 The University of New Mexico &mdash; Center for Advanced Research Computing"

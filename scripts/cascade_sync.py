@@ -402,7 +402,8 @@ def referenced_assets(site: Path, files: dict[str, Path], selected: list[str]) -
 # --------------------------------------------------------------------- plan
 
 def build_plan(cx: Cascade, man: Manifest, site: Path, prefix: str, scopes: list[str],
-               excludes: list[str], with_assets: bool, allow_edit: set[str]) -> dict:
+               excludes: list[str], with_assets: bool, allow_edit: set[str],
+               allow_shadow: set[str] = frozenset()) -> dict:
     files = walk_site(site)
     selected = [r for r in files if in_scope(r, scopes, excludes)]
     if with_assets:
@@ -470,7 +471,7 @@ def build_plan(cx: Cascade, man: Manifest, site: Path, prefix: str, scopes: list
                         continue
                 plan["collisions"].append((cpath, f"{hit[0]} {hit[1]} already exists (not in manifest)"))
                 continue
-            if cpath.endswith(".html"):
+            if cpath.endswith(".html") and cpath not in allow_shadow:
                 shadow = cx.read("page", cpath[:-5])
                 if shadow:
                     plan["collisions"].append((cpath, f"page {shadow['page']['id']} publishes to the same URL"))
@@ -1014,6 +1015,18 @@ def cmd_retire_page(cx: Cascade, man: Manifest, args) -> int:
     return 0 if r.get("success") else 1
 
 
+def cmd_unpublishable(cx: Cascade, man: Manifest, args) -> int:
+    for path in args.paths:
+        a = cx.read("page", path)
+        if not a:
+            log(f"  no page at {path}"); return 1
+        a["page"]["shouldBePublished"] = False
+        cx.edit(a)
+        back = cx.read("page", path)["page"]
+        log(f"  page {path}: shouldBePublished={back.get('shouldBePublished')}")
+    return 0
+
+
 def cmd_tombstone(cx: Cascade, man: Manifest, args) -> int:
     base = args.verify_live or LIVE_BASE
     enc = man.meta.get("encoding") or "uint8"
@@ -1038,7 +1051,7 @@ def cmd_tombstone(cx: Cascade, man: Manifest, args) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cmd", choices=["preflight", "probe", "plan", "sync", "verify", "remove",
-                                    "adopt", "retire-page", "tombstone"])
+                                    "adopt", "retire-page", "unpublishable", "tombstone"])
     ap.add_argument("paths", nargs="*")
     ap.add_argument("--site", default=str(ROOT / "site"))
     ap.add_argument("--prefix", default="")
@@ -1046,6 +1059,8 @@ def main() -> int:
     ap.add_argument("--exclude", action="append", default=[])
     ap.add_argument("--with-referenced-assets", action="store_true")
     ap.add_argument("--allow-edit", action="append", default=[])
+    ap.add_argument("--allow-shadow", action="append", default=[],
+                    help="push X.html although a Page X publishes to the same URL")
     ap.add_argument("--publish", choices=["changed", "none"], default="changed")
     ap.add_argument("--verify-live", nargs="?", const=LIVE_BASE, default=None)
     ap.add_argument("--manifest-store", choices=["cascade", "local"], default="cascade")
@@ -1075,7 +1090,7 @@ def main() -> int:
         if not site.is_dir():
             sys.exit(f"error: {site} is not a directory")
         plan = build_plan(cx, man, site, man.prefix, args.scope, args.exclude,
-                          args.with_referenced_assets, set(args.allow_edit))
+                          args.with_referenced_assets, set(args.allow_edit), set(args.allow_shadow))
         print_plan(plan, man.prefix)
         if args.cmd == "plan":
             return 1 if plan["collisions"] or plan["refused"] else 0
@@ -1088,6 +1103,8 @@ def main() -> int:
         return cmd_adopt(cx, man, args)
     if args.cmd == "retire-page":
         return cmd_retire_page(cx, man, args)
+    if args.cmd == "unpublishable":
+        return cmd_unpublishable(cx, man, args)
     if args.cmd == "tombstone":
         return cmd_tombstone(cx, man, args)
     return 2

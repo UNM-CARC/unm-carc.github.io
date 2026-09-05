@@ -13,7 +13,7 @@ The Center for Advanced Research Computing (CARC) is the hub of computational
 research at The University of New Mexico — free high-performance computing,
 large-scale storage, and expert support for faculty, staff, and student
 researchers. This page is the machine-readable index of the site; the
-human-facing homepage at [/](https://unm-carc.github.io/) is a standalone
+human-facing homepage at [/](/) is a standalone
 HTML page.
 
 ## Sections
