@@ -55,8 +55,7 @@ PROBE_FOLDER = "_carc-sync-probe"
 NEVER_TOUCH = (
     "_internal", "archive", "images", "new-users", "systems", "user-support-2",
     "news--events", "about-carc", "contact-us", "education--training",
-    "assets/css", "assets/img", "assets/js",
-    "google6adb8a45c621767b.html", "donate-to-carc",
+    "assets/css", "assets/img", "assets/js", "donate-to-carc",
 )
 # Pre-existing assets we may edit by id but never create over or delete.
 PROTECTED = {
