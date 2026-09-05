@@ -4,6 +4,7 @@
 
 * **Housekeeping**: The Cascade site tree was tidied — every folder, page and file the rebuilt site does not own now lives under `archive/` in Cascade (moved without unpublishing, so no address changed); `research/` and `assets/` hold only what this repository publishes. Automatic publishing on push to `main` is on. README, AGENTS/CLAUDE and SITE_INSTRUCTIONS describe the pipeline as it actually is.
 * **News**: [Remembering Cleve Moler](news/cleve-moler-memoriam.md) — Matthew Fricke's full remembrance, with its three figures, replaces the placeholder.
+* **Homepage**: "Latest from CARC" leads with the Cleve Moler remembrance; the row now carries four cards.
 
 * **Cutover**: `carc.unm.edu` is now served from this repository. The site's canonical origin (`site_url`) is `https://carc.unm.edu/`; GitHub Pages at `unm-carc.github.io` remains as a staging mirror. Every section, the root files and all assets are published through Cascade from the build; the legacy Cascade pages that were superseded are retired into an unpublished `_retired` folder rather than deleted, and the ones that never moved keep serving at their old addresses.
 
