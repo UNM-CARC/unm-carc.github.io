@@ -223,3 +223,6 @@ site/
 .venv/
 __pycache__/
 .DS_Store
+
+# local cache of the Cascade sync manifest + journals (authoritative copy lives in Cascade)
+.cascade-sync/

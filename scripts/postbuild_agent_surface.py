@@ -23,6 +23,7 @@ Usage: python3 scripts/postbuild_agent_surface.py [site_dir]
 from __future__ import annotations
 
 import html
+import os
 import re
 import shutil
 import sys
@@ -35,6 +36,11 @@ DOCS = ROOT / "docs"
 
 
 def site_url() -> str:
+    """Canonical site origin. CARC_SITE_URL overrides zensical.toml so a build can
+    be pointed at a different host (a test push, CI) without a commit."""
+    override = os.environ.get("CARC_SITE_URL")
+    if override:
+        return override.rstrip("/") + "/"
     text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
     m = re.search(r'^site_url\s*=\s*"([^"]+)"', text, re.MULTILINE)
     return (m.group(1) if m else "/").rstrip("/") + "/"
