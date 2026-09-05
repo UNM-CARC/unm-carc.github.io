@@ -2,7 +2,7 @@
 
 Each page below begins with its canonical URL followed by its original Markdown, OKF frontmatter included.
 
----8<--- https://unm-carc.github.io/about/history/
+---8<--- https://carc.unm.edu/about/history/
 
 ---
 title: "History"
@@ -83,7 +83,7 @@ sources:
 
 **2021** The CREATE system ran at CARC for 17 successful years. NASA has now instituted a similar program called LANCE. Professor Louis Scuderi, using a congressional appropriation, developed CREATE in 2004 to disseminate satellite data to researchers and public entities. The system has been used to monitor forest fires, track severe weather patterns, and study vegetation changes.
 
----8<--- https://unm-carc.github.io/about/iab/
+---8<--- https://carc.unm.edu/about/iab/
 
 ---
 title: "Internal Advisory Board"
@@ -140,7 +140,7 @@ The CARC Internal Advisory Board meets regularly to make decisions regarding the
 - **Tom Turner, Ph.D.** - Interim Associate Vice President for Research; Professor, Biology
 - **Katie Witkiewitz, Ph.D.** - Director, Center on Alcohol, Substance use, And Addictions (CASAA); Distinguished Professor, Department of Psychology, University of New Mexico
 
----8<--- https://unm-carc.github.io/about/mission/
+---8<--- https://carc.unm.edu/about/mission/
 
 ---
 title: "Mission and vision"
@@ -185,7 +185,7 @@ computing centers in the State of New Mexico. Its services are available to
 faculty, staff, and student researchers free of charge through support from
 the UNM Office of the Vice President for Research.
 
----8<--- https://unm-carc.github.io/about/strategic-plan/
+---8<--- https://carc.unm.edu/about/strategic-plan/
 
 ---
 title: "Strategic plan"
@@ -213,7 +213,7 @@ In keeping with the Office of the Vice President of Research's Research2020 plan
 
 Read full **[PDF](/assets/carc-strategic-plan.pdf){target=_blank}**.
 
----8<--- https://unm-carc.github.io/research/featured-projects/
+---8<--- https://carc.unm.edu/research/featured-projects/
 
 ---
 title: "Featured projects"
@@ -537,7 +537,7 @@ A new scientific paper published, in part, by a University of New Mexico physici
 
 Scientists at The University of New Mexico studying the field of nanophotonics are developing new perspectives never seen before through their research. In turn, the understanding of these theoretical concepts is enabling physical scientists to create more efficient nanostructures.
 
----8<--- https://unm-carc.github.io/research/free-services/
+---8<--- https://carc.unm.edu/research/free-services/
 
 ---
 title: "Free research computing"
@@ -562,7 +562,7 @@ sources:
 
 Storage system limits are enforced, but otherwise CARC does not cap research group usage to this baseline. Users and research groups who are consistently above this level are at risk of having their research delayed or impinged due to meeting or exceeding CARC resource capacity. In this case, these researchers should consider purchasing dedicated resources to support their research.
 
----8<--- https://unm-carc.github.io/research/grant-resources/
+---8<--- https://carc.unm.edu/research/grant-resources/
 
 ---
 title: "Grant writing resources"
@@ -617,7 +617,7 @@ Faculty can seek additional support through the [Faculty Research Development Of
 
 [Advance](https://advance.unm.edu/){target=_blank} offers research development events and resources, with an emphasis on promoting and advancing women in STEM fields.
 
----8<--- https://unm-carc.github.io/research/premium-services/
+---8<--- https://carc.unm.edu/research/premium-services/
 
 ---
 title: "Premium services"
@@ -654,7 +654,7 @@ The below cost model calculator worksheet will allow you to determine the cost o
 
 **Calculator: [CARC Cost Model Tool (download)](/assets/carc-cost-model-tool.xlsx){target=_blank}**
 
----8<--- https://unm-carc.github.io/research/publications/
+---8<--- https://carc.unm.edu/research/publications/
 
 ---
 title: "Publications and acknowledgement"
@@ -689,7 +689,7 @@ Please use the following link to view a list of publications that mentions the C
 
 **[Click here to view publications that feature the Center for Advanced Research Computing](https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29){target=_blank}**
 
----8<--- https://unm-carc.github.io/education/workshops/
+---8<--- https://carc.unm.edu/education/workshops/
 
 ---
 title: "Workshops and seminars"
@@ -732,7 +732,7 @@ Ave NE — from first-login basics to domain-specific computing.
 CARC staff regularly deliver tailored sessions for research groups and
 classes — email <help@carc.unm.edu> to arrange one.
 
----8<--- https://unm-carc.github.io/education/cse/application/
+---8<--- https://carc.unm.edu/education/cse/application/
 
 ---
 title: "CSE application"
@@ -764,7 +764,7 @@ We will review your application and contact you shortly thereafter. Check the
 [requirements](requirements.md) first, and direct questions to the CSE
 Certificate Program Coordinator at <csecert@carc.unm.edu>.
 
----8<--- https://unm-carc.github.io/education/cse/electives/
+---8<--- https://carc.unm.edu/education/cse/electives/
 
 ---
 title: "Electives and participating departments"
@@ -916,7 +916,7 @@ approval to count toward the certificate.
 * [Physics and Astronomy](https://physics.unm.edu){target=_blank}
 * [Psychology](https://psych.unm.edu){target=_blank}
 
----8<--- https://unm-carc.github.io/education/cse/requirements/
+---8<--- https://carc.unm.edu/education/cse/requirements/
 
 ---
 title: "CSE program requirements"
@@ -1009,7 +1009,7 @@ approved curriculum. Most CSE program courses have a CSE program course as a
 prerequisite, so students are strongly encouraged to work with a Program
 Advisor to develop their program of study before enrollment.
 
----8<--- https://unm-carc.github.io/education/cse/specializations/
+---8<--- https://carc.unm.edu/education/cse/specializations/
 
 ---
 title: "Program specializations"
@@ -1041,7 +1041,7 @@ areas of interest. Below are our most commonly requested specializations.
 * [Computational Fluid Dynamics specialization](https://carc.unm.edu/education--training/cse-program1/cfd-program-specialization.html){target=_blank}
 * [Data Science specialization](https://carc.unm.edu/education--training/cse-program1/data-science-specialization.html){target=_blank}
 
----8<--- https://unm-carc.github.io/news/2025-annual-meeting/
+---8<--- https://carc.unm.edu/news/2025-annual-meeting/
 
 ---
 title: "Registration is open for the 2025 CARC Annual Meeting (CAM)"
@@ -1092,7 +1092,7 @@ researchers presented their computational research projects.
     Recordings from CAM 2025 are on the
     [video tutorials page](/docs/training/videos/).
 
----8<--- https://unm-carc.github.io/news/2026-annual-meeting/
+---8<--- https://carc.unm.edu/news/2026-annual-meeting/
 
 ---
 title: "Registration is open for the 2026 CARC Annual Meeting"
@@ -1151,7 +1151,7 @@ Those interested in attending or presenting a poster can
 Recordings from previous meetings are on the
 [video tutorials page](/docs/training/videos/).
 
----8<--- https://unm-carc.github.io/news/cleve-moler-memoriam/
+---8<--- https://carc.unm.edu/news/cleve-moler-memoriam/
 
 ---
 title: "In memoriam: Cleve Moler"
@@ -1179,7 +1179,7 @@ full remembrance by Matthew Fricke will be published here.
     This is a placeholder announcement. The full text is being prepared by
     CARC administration and will replace this page shortly.
 
----8<--- https://unm-carc.github.io/news/departures-retirements/
+---8<--- https://carc.unm.edu/news/departures-retirements/
 
 ---
 title: "Recent departures and retirements"
@@ -1213,7 +1213,7 @@ service shaped the center:
     This is a placeholder announcement. The full text is being prepared by
     CARC administration and will replace this page shortly.
 
----8<--- https://unm-carc.github.io/news/director-message/
+---8<--- https://carc.unm.edu/news/director-message/
 
 ---
 title: "An important message from our Director"
@@ -1282,7 +1282,7 @@ Patrick G. Bridges<br>
 Director, UNM Center for Advanced Research Computing<br>
 Professor, Department of Computer Science
 
----8<--- https://unm-carc.github.io/news/director-search/
+---8<--- https://carc.unm.edu/news/director-search/
 
 ---
 title: "UNM launches search for the next director of CARC"
@@ -1337,7 +1337,7 @@ The Director will:
 * Build partnerships with departments, centers, national laboratories, and industry
 * Support faculty, postdocs, and students engaged in computational research
 
----8<--- https://unm-carc.github.io/news/easley-cluster/
+---8<--- https://carc.unm.edu/news/easley-cluster/
 
 ---
 title: "CARC prepares for deployment of new high-performance computing cluster"
@@ -1416,7 +1416,7 @@ computational tasks.
     + 8 H100) — see the current specifications in the
     [systems overview](/docs/systems/overview/).
 
----8<--- https://unm-carc.github.io/news/genome-sequencing/
+---8<--- https://carc.unm.edu/news/genome-sequencing/
 
 ---
 title: "Genome sequencing reveals a newly identified virus"
@@ -1474,7 +1474,7 @@ evolutionary biology.
 
 ![Figure from the virus characterization study](/assets/newly-identified-virus-figure.jpg)
 
----8<--- https://unm-carc.github.io/news/hpc-course/
+---8<--- https://carc.unm.edu/news/hpc-course/
 
 ---
 title: "New HPC course bridges the gap between students and local tech industry"
@@ -1540,7 +1540,7 @@ generation of computational scientists and system administrators.
 For more information on CS491/591, email Matthew Fricke at
 <mfricke@unm.edu>.
 
----8<--- https://unm-carc.github.io/news/molecular-modeling/
+---8<--- https://carc.unm.edu/news/molecular-modeling/
 
 ---
 title: "Undergraduate researcher leverages CARC for molecular modeling breakthrough"
@@ -1606,7 +1606,7 @@ make meaningful contributions in their fields.
 
 ![Figure from the molecular modeling thesis](/assets/molecular-modeling-figure.png)
 
----8<--- https://unm-carc.github.io/news/nsf-hardware-ruskai/
+---8<--- https://carc.unm.edu/news/nsf-hardware-ruskai/
 
 ---
 title: "New NSF research hardware award"
@@ -1633,7 +1633,7 @@ funds will be published here.
     This is a placeholder announcement. The full text is being prepared by
     CARC administration and will replace this page shortly.
 
----8<--- https://unm-carc.github.io/news/nsf-idss-mesa/
+---8<--- https://carc.unm.edu/news/nsf-idss-mesa/
 
 ---
 title: "New NSF award: IDSS MESA"
@@ -1661,7 +1661,7 @@ be published here.
     This is a placeholder announcement. The full text is being prepared by
     CARC administration and will replace this page shortly.
 
----8<--- https://unm-carc.github.io/news/psaap-2026-update/
+---8<--- https://carc.unm.edu/news/psaap-2026-update/
 
 ---
 title: "PSAAP COMPASS center: 2026 update"
@@ -1688,7 +1688,7 @@ published here.
     This is a placeholder announcement. The full text is being prepared by
     CARC administration and will replace this page shortly.
 
----8<--- https://unm-carc.github.io/news/psaap-iv-compass/
+---8<--- https://carc.unm.edu/news/psaap-iv-compass/
 
 ---
 title: "UNM awarded prestigious grant to lead national research on high-performance computing"
@@ -1770,7 +1770,7 @@ For more information, visit
 
 ![COMPASS center logo](/assets/compass-center-logo.png)
 
----8<--- https://unm-carc.github.io/news/sc24-team/
+---8<--- https://carc.unm.edu/news/sc24-team/
 
 ---
 title: "CARC team gears up for SC24 Competition"
@@ -1850,7 +1850,7 @@ computing. "This competition is a culmination of our hard work, and I'm
 excited to see how we measure up against other top teams," reflected team
 leader Ryan Scherbarth.
 
----8<--- https://unm-carc.github.io/news/welcome-director-swetnam/
+---8<--- https://carc.unm.edu/news/welcome-director-swetnam/
 
 ---
 title: "Welcome our new CARC Director, Tyson Swetnam"
@@ -1878,7 +1878,7 @@ published here.
     This is a placeholder announcement. The full text is being prepared by
     CARC administration and will replace this page shortly.
 
----8<--- https://unm-carc.github.io/contact/personnel/
+---8<--- https://carc.unm.edu/contact/personnel/
 
 ---
 title: "Personnel"
@@ -1917,7 +1917,7 @@ For general inquiries, write to <info@carc.unm.edu>; for technical help, see
 [getting help](/docs/support/help/) in the user
 documentation.
 
----8<--- https://unm-carc.github.io/contact/visiting/
+---8<--- https://carc.unm.edu/contact/visiting/
 
 ---
 title: "Visiting CARC"
@@ -1975,9 +1975,13 @@ MSC01 1190<br>
 1601 Central Ave NE<br>
 Albuquerque NM 87106
 
----8<--- https://unm-carc.github.io/log/
+---8<--- https://carc.unm.edu/log/
 
 # Website update log
+
+## 2026-09-05
+
+* **Cutover**: `carc.unm.edu` is now served from this repository. The site's canonical origin (`site_url`) is `https://carc.unm.edu/`; GitHub Pages at `unm-carc.github.io` remains as a staging mirror. Every section, the root files and all assets are published through Cascade from the build; the legacy Cascade pages that were superseded are retired into an unpublished `_retired` folder rather than deleted, and the ones that never moved keep serving at their old addresses.
 
 ## 2026-09-04
 

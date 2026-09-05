@@ -1,61 +1,61 @@
 # UNM Center for Advanced Research Computing
 
-> The UNM Center for Advanced Research Computing (CARC): mission, research, the CSE certificate program, news, and contact information. User documentation for CARC systems lives at https://unm-carc.github.io/docs/ (with its own llms.txt). The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance, and lifecycle fields.
+> The UNM Center for Advanced Research Computing (CARC): mission, research, the CSE certificate program, news, and contact information. User documentation for CARC systems lives at https://carc.unm.edu/docs/ (with its own llms.txt). The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance, and lifecycle fields.
 
-Full corpus for ingestion: https://unm-carc.github.io/llms-full.txt
+Full corpus for ingestion: https://carc.unm.edu/llms-full.txt
 
-Every page's Markdown source (OKF frontmatter included) is served at its URL plus `index.md` — for example https://unm-carc.github.io/about/mission/index.md. Agent guide: https://unm-carc.github.io/docs/about/ai-agents/
+Every page's Markdown source (OKF frontmatter included) is served at its URL plus `index.md` — for example https://carc.unm.edu/about/mission/index.md. Agent guide: https://carc.unm.edu/docs/about/ai-agents/
 
 ## About CARC
 
-- [History](https://unm-carc.github.io/about/history/): A timeline of CARC milestones from the founding of the Maui and Albuquerque high performance computing centers in the 1990s through recent system donations and retirements.
-- [Internal Advisory Board](https://unm-carc.github.io/about/iab/): Membership roster and meeting minutes of the CARC Internal Advisory Board, which meets regularly to make decisions regarding the center's operations and goals.
-- [Mission and vision](https://unm-carc.github.io/about/mission/): CARC's vision and mission: leading and growing the computational research community at UNM.
-- [Strategic plan](https://unm-carc.github.io/about/strategic-plan/): An overview of CARC's strategic plan to meet user needs and develop a sustainable funding model, with a link to the full plan PDF.
+- [History](https://carc.unm.edu/about/history/): A timeline of CARC milestones from the founding of the Maui and Albuquerque high performance computing centers in the 1990s through recent system donations and retirements.
+- [Internal Advisory Board](https://carc.unm.edu/about/iab/): Membership roster and meeting minutes of the CARC Internal Advisory Board, which meets regularly to make decisions regarding the center's operations and goals.
+- [Mission and vision](https://carc.unm.edu/about/mission/): CARC's vision and mission: leading and growing the computational research community at UNM.
+- [Strategic plan](https://carc.unm.edu/about/strategic-plan/): An overview of CARC's strategic plan to meet user needs and develop a sustainable funding model, with a link to the full plan PDF.
 
 ## Research
 
-- [Featured projects](https://unm-carc.github.io/research/featured-projects/): Feature articles highlighting research projects done using computing, storage, and support resources at the Center for Advanced Research Computing.
-- [Free research computing](https://unm-carc.github.io/research/free-services/): A description of the free baseline research computing service CARC provides to UNM main campus users, including the core-hour and storage limits.
-- [Grant writing resources](https://unm-carc.github.io/research/grant-resources/): Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals.
-- [Premium services](https://unm-carc.github.io/research/premium-services/): CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service.
-- [Publications and acknowledgement](https://unm-carc.github.io/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center.
+- [Featured projects](https://carc.unm.edu/research/featured-projects/): Feature articles highlighting research projects done using computing, storage, and support resources at the Center for Advanced Research Computing.
+- [Free research computing](https://carc.unm.edu/research/free-services/): A description of the free baseline research computing service CARC provides to UNM main campus users, including the core-hour and storage limits.
+- [Grant writing resources](https://carc.unm.edu/research/grant-resources/): Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals.
+- [Premium services](https://carc.unm.edu/research/premium-services/): CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service.
+- [Publications and acknowledgement](https://carc.unm.edu/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center.
 
 ## Education & training
 
-- [Workshops and seminars](https://unm-carc.github.io/education/workshops/): Free CARC workshops in the 1601 Central workshop room, the live events calendar, and video alternatives.
+- [Workshops and seminars](https://carc.unm.edu/education/workshops/): Free CARC workshops in the 1601 Central workshop room, the live events calendar, and video alternatives.
 
 ## CSE Certificate Program
 
-- [CSE application](https://unm-carc.github.io/education/cse/application/): How to apply to the CSE Certificate Program through the UNM ApplyYourself portal.
-- [Electives and participating departments](https://unm-carc.github.io/education/cse/electives/): Approved CSE elective courses by department — with live schedule links and Fall 2026 offering status — and the departments participating in the certificate program.
-- [CSE program requirements](https://unm-carc.github.io/education/cse/requirements/): Admission prerequisites, core courses, elective hours, and the research project requirement for the CSE certificate.
-- [Program specializations](https://unm-carc.github.io/education/cse/specializations/): Optional, non-transcripted CSE specializations: Computational Fluid Dynamics and Data Science.
+- [CSE application](https://carc.unm.edu/education/cse/application/): How to apply to the CSE Certificate Program through the UNM ApplyYourself portal.
+- [Electives and participating departments](https://carc.unm.edu/education/cse/electives/): Approved CSE elective courses by department — with live schedule links and Fall 2026 offering status — and the departments participating in the certificate program.
+- [CSE program requirements](https://carc.unm.edu/education/cse/requirements/): Admission prerequisites, core courses, elective hours, and the research project requirement for the CSE certificate.
+- [Program specializations](https://carc.unm.edu/education/cse/specializations/): Optional, non-transcripted CSE specializations: Computational Fluid Dynamics and Data Science.
 
 ## News
 
-- [Registration is open for the 2025 CARC Annual Meeting (CAM)](https://unm-carc.github.io/news/2025-annual-meeting/): CARC's fourth annual user meeting — April 14, 2025 — with a keynote, open forum, and student poster session.
-- [Registration is open for the 2026 CARC Annual Meeting](https://unm-carc.github.io/news/2026-annual-meeting/): CAM 2026 comes to Zimmerman Library B30 on April 21, 2026 — updates, research highlights, and the student poster session.
-- [In memoriam: Cleve Moler](https://unm-carc.github.io/news/cleve-moler-memoriam/): Remembering Cleve Moler — creator of MATLAB and former UNM professor — by Matthew Fricke. (draft)
-- [Recent departures and retirements](https://unm-carc.github.io/news/departures-retirements/): Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement. (draft)
-- [An important message from our Director](https://unm-carc.github.io/news/director-message/): A message to the CARC community from then-Director Patrick G. Bridges on federal executive actions and CARC's commitments.
-- [UNM launches search for the next director of CARC](https://unm-carc.github.io/news/director-search/): The University seeks a strategic and operational leader for the Center for Advanced Research Computing. This search has concluded.
-- [CARC prepares for deployment of new high-performance computing cluster](https://unm-carc.github.io/news/easley-cluster/): Easley — named for NASA pioneer Annie Easley — brings H100 GPUs, all-flash storage, and a 7–10× performance leap.
-- [Genome sequencing reveals a newly identified virus](https://unm-carc.github.io/news/genome-sequencing/): CARC computing supported the sequencing and phylogenetic analysis behind the characterization of a previously unrecognized virus.
-- [New HPC course bridges the gap between students and local tech industry](https://unm-carc.github.io/news/hpc-course/): CS491/591, led by Matthew Fricke and backed by a $1M Department of Education grant, gives students hands-on cluster experience.
-- [Undergraduate researcher leverages CARC for molecular modeling breakthrough](https://unm-carc.github.io/news/molecular-modeling/): Physics major Sole Samuels used CARC systems to develop radial density encoding, a new molecular representation for machine learning.
-- [New NSF research hardware award](https://unm-carc.github.io/news/nsf-hardware-ruskai/): A new NSF award led by Ruskai brings new research computing hardware to UNM. (draft)
-- [New NSF award: IDSS MESA](https://unm-carc.github.io/news/nsf-idss-mesa/): A new National Science Foundation award supports the IDSS MESA project. (draft)
-- [PSAAP COMPASS center: 2026 update](https://unm-carc.github.io/news/psaap-2026-update/): An update on the DOE NNSA PSAAP IV COMPASS center led by UNM. (draft)
-- [UNM awarded prestigious grant to lead national research on high-performance computing](https://unm-carc.github.io/news/psaap-iv-compass/): A UNM-led team wins a DOE NNSA PSAAP IV cooperative agreement, establishing the COMPASS center at CARC.
-- [CARC team gears up for SC24 Competition](https://unm-carc.github.io/news/sc24-team/): Six UNM students take a Dell/Penguin/Intersect360-sponsored H100 cluster to the SC24 student competition in Atlanta.
-- [Welcome our new CARC Director, Tyson Swetnam](https://unm-carc.github.io/news/welcome-director-swetnam/): The Center for Advanced Research Computing welcomes Tyson Swetnam as its new Director. (draft)
+- [Registration is open for the 2025 CARC Annual Meeting (CAM)](https://carc.unm.edu/news/2025-annual-meeting/): CARC's fourth annual user meeting — April 14, 2025 — with a keynote, open forum, and student poster session.
+- [Registration is open for the 2026 CARC Annual Meeting](https://carc.unm.edu/news/2026-annual-meeting/): CAM 2026 comes to Zimmerman Library B30 on April 21, 2026 — updates, research highlights, and the student poster session.
+- [In memoriam: Cleve Moler](https://carc.unm.edu/news/cleve-moler-memoriam/): Remembering Cleve Moler — creator of MATLAB and former UNM professor — by Matthew Fricke. (draft)
+- [Recent departures and retirements](https://carc.unm.edu/news/departures-retirements/): Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement. (draft)
+- [An important message from our Director](https://carc.unm.edu/news/director-message/): A message to the CARC community from then-Director Patrick G. Bridges on federal executive actions and CARC's commitments.
+- [UNM launches search for the next director of CARC](https://carc.unm.edu/news/director-search/): The University seeks a strategic and operational leader for the Center for Advanced Research Computing. This search has concluded.
+- [CARC prepares for deployment of new high-performance computing cluster](https://carc.unm.edu/news/easley-cluster/): Easley — named for NASA pioneer Annie Easley — brings H100 GPUs, all-flash storage, and a 7–10× performance leap.
+- [Genome sequencing reveals a newly identified virus](https://carc.unm.edu/news/genome-sequencing/): CARC computing supported the sequencing and phylogenetic analysis behind the characterization of a previously unrecognized virus.
+- [New HPC course bridges the gap between students and local tech industry](https://carc.unm.edu/news/hpc-course/): CS491/591, led by Matthew Fricke and backed by a $1M Department of Education grant, gives students hands-on cluster experience.
+- [Undergraduate researcher leverages CARC for molecular modeling breakthrough](https://carc.unm.edu/news/molecular-modeling/): Physics major Sole Samuels used CARC systems to develop radial density encoding, a new molecular representation for machine learning.
+- [New NSF research hardware award](https://carc.unm.edu/news/nsf-hardware-ruskai/): A new NSF award led by Ruskai brings new research computing hardware to UNM. (draft)
+- [New NSF award: IDSS MESA](https://carc.unm.edu/news/nsf-idss-mesa/): A new National Science Foundation award supports the IDSS MESA project. (draft)
+- [PSAAP COMPASS center: 2026 update](https://carc.unm.edu/news/psaap-2026-update/): An update on the DOE NNSA PSAAP IV COMPASS center led by UNM. (draft)
+- [UNM awarded prestigious grant to lead national research on high-performance computing](https://carc.unm.edu/news/psaap-iv-compass/): A UNM-led team wins a DOE NNSA PSAAP IV cooperative agreement, establishing the COMPASS center at CARC.
+- [CARC team gears up for SC24 Competition](https://carc.unm.edu/news/sc24-team/): Six UNM students take a Dell/Penguin/Intersect360-sponsored H100 cluster to the SC24 student competition in Atlanta.
+- [Welcome our new CARC Director, Tyson Swetnam](https://carc.unm.edu/news/welcome-director-swetnam/): The Center for Advanced Research Computing welcomes Tyson Swetnam as its new Director. (draft)
 
 ## Contact
 
-- [Personnel](https://unm-carc.github.io/contact/personnel/): The CARC team: leadership, systems staff, and administration.
-- [Visiting CARC](https://unm-carc.github.io/contact/visiting/): Location, directions, and parking for the CARC building at 1601 Central Avenue NE.
+- [Personnel](https://carc.unm.edu/contact/personnel/): The CARC team: leadership, systems staff, and administration.
+- [Visiting CARC](https://carc.unm.edu/contact/visiting/): Location, directions, and parking for the CARC building at 1601 Central Avenue NE.
 
 ## Meta
 
-- [Documentation update log](https://unm-carc.github.io/log/): dated history of changes to this bundle.
+- [Documentation update log](https://carc.unm.edu/log/): dated history of changes to this bundle.

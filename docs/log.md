@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-09-05
+
+* **Cutover**: `carc.unm.edu` is now served from this repository. The site's canonical origin (`site_url`) is `https://carc.unm.edu/`; GitHub Pages at `unm-carc.github.io` remains as a staging mirror. Every section, the root files and all assets are published through Cascade from the build; the legacy Cascade pages that were superseded are retired into an unpublished `_retired` folder rather than deleted, and the ones that never moved keep serving at their old addresses.
+
 ## 2026-09-04
 
 * **Update**: The site now publishes into Cascade CMS through its REST API (`scripts/cascade_sync.py`), and Cascade delivers it to `carc.unm.edu` by SFTP — the only route into that host, since its SSH port is closed to GitHub's runners. Cascade is a conduit, not an editing surface. First live increments from this repository: the [About](about/index.md) section at `carc.unm.edu/about/`, and the user documentation at `carc.unm.edu/docs/` (244 files, byte-verified). The homepage carries the site's existing Google Tag Manager container; links to the documentation are relative to the same host; the sitemap no longer stamps a build date; and the root `robots.txt` uses a single wildcard group that welcomes every crawler and advertises both sitemaps.
