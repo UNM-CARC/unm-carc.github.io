@@ -18,7 +18,7 @@ nav = [
   { "Education" = [ { "Contents" = "education/index.md" }, "education/workshops.md", { "CSE Certificate" = [ "education/cse/index.md", "education/cse/requirements.md", "education/cse/application.md", "education/cse/electives.md", "education/cse/specializations.md" ] } ] },
   { "News" = [ { "Contents" = "news/index.md" }, "news/2026-annual-meeting.md", "news/director-search.md", "news/psaap-iv-compass.md", "news/easley-cluster.md", "news/2025-annual-meeting.md", "news/hpc-course.md", "news/director-message.md", "news/sc24-team.md", "news/genome-sequencing.md", "news/molecular-modeling.md" ] },
   { "Contact" = [ { "Contents" = "contact/index.md" }, "contact/personnel.md", "contact/visiting.md" ] },
-  { "User Docs ↗" = "https://unm-carc.github.io/docs/" },
+  { "User Docs ↗" = "/docs/" },
 ]
 
 [project.theme]
