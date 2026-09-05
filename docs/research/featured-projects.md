@@ -2,6 +2,7 @@
 title: "Featured projects"
 description: "Feature articles highlighting research projects done using computing, storage, and support resources at the Center for Advanced Research Computing."
 type: Reference
+layout: cards
 tags:
   - Research
 generated:
@@ -22,11 +23,11 @@ The following feature articles highlight research projects done using resources 
 
 ![Floating structure in ocean conditions](/assets/floating-structures-ocean.jpg)Understanding how floating structures behave in ocean environments is essential for the design and safety of offshore and coastal systems. In a recent study, researchers used advanced computer simulations to examine how waves, currents, and mooring systems influence the motion of floating structures under a range of conditions.
 
-#### [Genome sequencing reveals a newly identified virus](https://carc.unm.edu/research/genome-sequencing.html){target=_blank}
+#### [Genome sequencing reveals a newly identified virus](../news/genome-sequencing.md)
 
 ![Figure from the virus characterization study](/assets/newly-identified-virus-figure.jpg)Researchers have identified and characterized a previously unrecognized virus using genome sequencing and computational analysis, contributing to a growing body of work that expands current understanding of viral diversity and evolution.
 
-#### [Undergraduate researcher leverages CARC for molecular modeling breakthrough](https://carc.unm.edu/research/molecular-modeling-breakthrough.html){target=_blank}
+#### [Undergraduate researcher leverages CARC for molecular modeling breakthrough](../news/molecular-modeling.md)
 
 ![Figure from the molecular modeling thesis](/assets/molecular-modeling-figure.png)For many students, a senior thesis marks the culmination of their undergraduate studies. For UNM physics major Sol Samuels, it was also an opportunity to make a meaningful contribution to the field of computational molecular science — with the help of the University of New Mexico's Center for Advanced Research Computing.
 
@@ -112,7 +113,7 @@ In February of 2020, Professor and Forensic Anthropologist Heather Edgar, in ass
 
 #### [Manjavacas and colleagues investigate the cause of haziness in nineteenth century daguerreotype photography](https://carc.unm.edu/research/haziness-in-daguerreotype-photography.html){target=_blank}
 
-![Nineteenth-century daguerreotype photograph](/assets/daguerreotype-haziness.jpg)In 2019, a team of scientists, led by UNM Associate Professor Alejandro Manjavacas, used Center for Advanced Research Computing resources to make a [discovery](http://news.unm.edu/news/trailblazing-findings-of-daguerrerotype-properties-revealed-by-the-metropolitan-museum-of-art-and-unm){target=_blank} explaining some of the mysterious characteristics of daguerreotypes. Through continued efforts, Manjavacas' research is helping to explain the characteristic haze that develops over these photographs as they age. This research will help museums like the Metropolitan Museum of Art (MET) preserve antique photographs for future generations.
+![Nineteenth-century daguerreotype photograph](/assets/daguerreotype-haziness.jpg)In 2019, a team of scientists, led by UNM Associate Professor Alejandro Manjavacas, used Center for Advanced Research Computing resources to make a [discovery](https://news.unm.edu/news/trailblazing-findings-of-daguerrerotype-properties-revealed-by-the-metropolitan-museum-of-art-and-unm){target=_blank} explaining some of the mysterious characteristics of daguerreotypes. Through continued efforts, Manjavacas' research is helping to explain the characteristic haze that develops over these photographs as they age. This research will help museums like the Metropolitan Museum of Art (MET) preserve antique photographs for future generations.
 
 #### [Ivana Gonzales uses CARC to improve fuel cell technology](https://carc.unm.edu/research/fuel-cell-technology.html){target=_blank}
 
@@ -312,10 +313,10 @@ UNM researchers work to solve a visual issue that leaves VR users with sickening
 
 New research is looking at *Integrating Conservation into Urban Planning through Predictive Modeling*: Can city dwellers and wildlife coexist safely and peacefully?
 
-#### [UNM physicist discovers strange forces acting on nanoparticles](http://news.unm.edu/news/unm-physicist-discovers-strange-forces-acting-on-nanoparticles){target=_blank}
+#### [UNM physicist discovers strange forces acting on nanoparticles](https://news.unm.edu/news/unm-physicist-discovers-strange-forces-acting-on-nanoparticles){target=_blank}
 
 A new scientific paper published, in part, by a University of New Mexico physicist is shedding light on a strange force impacting particles at the smallest level of the material world.
 
-#### [Theoretical physicists at UNM manipulate light with nanoscale objects](http://news.unm.edu/news/theoretical-physicists-at-unm-manipulate-light-with-nanoscale-objects){target=_blank}
+#### [Theoretical physicists at UNM manipulate light with nanoscale objects](https://news.unm.edu/news/theoretical-physicists-at-unm-manipulate-light-with-nanoscale-objects){target=_blank}
 
 Scientists at The University of New Mexico studying the field of nanophotonics are developing new perspectives never seen before through their research. In turn, the understanding of these theoretical concepts is enabling physical scientists to create more efficient nanostructures.

@@ -154,6 +154,42 @@ def okf_meta(fm: dict) -> str:
     return "\n".join(lines)
 
 
+def cards_html(content: str) -> str:
+    """Turn a list page (intro, then repeated `#### [Title](url)` + optional
+    image + summary) into a card grid. The Markdown source stays a plain list
+    editors can append to; only the rendered presentation changes."""
+    chunks = re.split(r"(?=<h4\b)", content)
+    intro, cards = chunks[0], []
+    for chunk in chunks[1:]:
+        m = re.match(r"<h4[^>]*>(.*?)</h4>(.*)", chunk, re.S)
+        if not m:
+            intro += chunk
+            continue
+        title_html, rest = m.group(1), m.group(2)
+        link = re.search(r'<a\s[^>]*href="([^"]+)"[^>]*>', title_html)
+        href = link.group(1) if link else None
+        target = ' target="_blank" rel="noopener"' if link and 'target="_blank"' in link.group(0) else ""
+        title = re.sub(r"<[^>]+>", "", title_html).strip()
+        img = re.search(r"<img\b[^>]*>", rest)
+        media = ""
+        if img:
+            src = re.search(r'src="([^"]+)"', img.group(0))
+            alt = re.search(r'alt="([^"]*)"', img.group(0))
+            tag = (f'<img src="{src.group(1)}" alt="{alt.group(1) if alt else ""}" loading="lazy">'
+                   if src else "")
+            media = (f'<a class="carc-card-media" href="{href}"{target}>{tag}</a>' if href
+                     else f'<div class="carc-card-media">{tag}</div>')
+            rest = rest.replace(img.group(0), "", 1)
+        summary = re.sub(r"<p>\s*</p>", "", rest).strip()
+        heading = f'<a href="{href}"{target}>{title}</a>' if href else title
+        more = (f'<a class="carc-card-more" href="{href}"{target}>Read the story '
+                f'<span aria-hidden="true">→</span></a>' if href else "")
+        cards.append(f'<article class="carc-card">{media}<div class="carc-card-body">'
+                     f'<h3 class="carc-card-title">{heading}</h3>'
+                     f'<div class="carc-card-text">{summary}</div>{more}</div></article>')
+    return intro + '<div class="carc-cards">' + "".join(cards) + "</div>"
+
+
 # --- Cascade chrome (scraped verbatim from carc.unm.edu) --------------------
 
 NAVBAR = """<div aria-label="header navigation" class="navbar navbar-unm" role="navigation"><div class="container"><a class="navbar-brand" href="https://www.unm.edu">The University of New Mexico</a><form action="//search.unm.edu/search" class="pull-right" id="unm_search_form" method="get"><div class="input-append search-query"><input accesskey="4" id="unm_search_form_q" maxlength="255" name="q" placeholder="Search" title="input search query here" type="text"><button accesskey="s" class="btn" id="unm_search_for_submit" name="submit" title="submit search" type="submit">  <span class="fa fa-search"></span> </button></div></form><ul class="nav navbar-nav navbar-right hidden-xs" id="toolbar-nav"><li><a href="https://directory.unm.edu/departments/" title="UNM A to Z">UNM A-Z</a></li><li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li><li><a href="https://directory.unm.edu" title="Directory">Directory</a></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help </a><ul class="dropdown-menu"><li><a href="https://student.unm.edu/student-support.html" title="Student Support">Student Support</a></li><li><a href="https://studentinfo.unm.edu" title="StudentInfo">StudentInfo</a></li><li><a href="https://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li></ul></li><li class="unm_panel_open hidden-sm"><a href="#unm_panel">more <span class="caret"></span></a></li></ul></div></div>"""
@@ -248,6 +284,20 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+/* card grid for `layout: cards` pages (research/featured-projects) */
+.carc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
+.carc-card { display: flex; flex-direction: column; background: var(--pg-card); border: 1px solid var(--pg-border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s ease, transform .15s ease; }
+.carc-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,.12); transform: translateY(-2px); }
+.carc-card-media { display: block; background: var(--pg-strip); }
+.carc-card-media img { display: block; width: 100%; height: 170px; object-fit: cover; }
+.carc-card-body { display: flex; flex-direction: column; flex: 1; padding: .9rem 1rem 1rem; }
+#carc-content .carc-card-title { font-size: 1.02rem; line-height: 1.3; margin: 0 0 .5rem; font-weight: 700; }
+#carc-content .carc-card-title a { color: var(--pg-fg); text-decoration: none; }
+#carc-content .carc-card-title a:hover { color: var(--pg-link); }
+.carc-card-text { font-size: .9rem; line-height: 1.45; color: var(--pg-muted); display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+#carc-content .carc-card-text p { margin: 0 0 .5rem; color: var(--pg-muted); }
+#carc-content .carc-card-more { margin-top: auto; padding-top: .6rem; font-weight: 600; font-size: .9rem; text-decoration: none; }
+@media (max-width: 480px) { .carc-cards { grid-template-columns: 1fr; } }
 </style>"""
 
 TEMPLATE = """<!DOCTYPE html>
@@ -368,6 +418,8 @@ def main():
         content = markdown.markdown(body, extensions=MD_EXTENSIONS)
         src_dir = "" if str(rel.parent) == "." else str(rel.parent)
         content = rewrite_md_links(content, src_dir, pdir)
+        if fm.get("layout") == "cards":
+            content = cards_html(content)
         depth = 0 if root_html else (len(pdir.rstrip("/").split("/")) if pdir else 0)
         rel_root = "../" * depth if depth else "./"
         page = TEMPLATE.format(
