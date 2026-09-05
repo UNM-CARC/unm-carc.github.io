@@ -1,65 +1,99 @@
 # unm-carc.github.io
 
 > **Adding a news article or editing a page?** See
-> **[SITE_INSTRUCTIONS.md](SITE_INSTRUCTIONS.md)** — the admin guide for
-> updating this site entirely from the GitHub web interface — and start from
-> the ready-made page templates in [`templates/`](templates/).
+> **[SITE_INSTRUCTIONS.md](SITE_INSTRUCTIONS.md)** — the guide for updating
+> the site entirely from the GitHub web interface — and start from the
+> ready-made page templates in [`templates/`](templates/).
 
-The public website of the [UNM Center for Advanced Research Computing](https://unm-carc.github.io/)
-— a rebuild of [carc.unm.edu](https://carc.unm.edu) built with
-[Zensical](https://zensical.org) and structured as an
+The source of the public website of the UNM Center for Advanced Research
+Computing, **<https://carc.unm.edu/>**. Every page is a Markdown file in
+`docs/`, structured as an
 [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-knowledge bundle, sharing its design system and agent surface with the
-[user documentation](https://github.com/UNM-CARC/docs) served at
+knowledge bundle and rendered by `scripts/build_cascade_site.py` in the UNM
+Cascade webcore standard. The site shares its design system and agent surface
+with the [user documentation](https://github.com/UNM-CARC/docs) served at
 [carc.unm.edu/docs/](https://carc.unm.edu/docs/).
 
-Because this site owns the host root, it owns the origin-wide `robots.txt`,
-which advertises the llms.txt indexes and sitemaps of both this site and
-`/docs/` — a `robots.txt` under `/docs/` is ignored by crawlers.
+This repository is also the GitHub organization's root Pages site, so the
+same build is mirrored at <https://unm-carc.github.io/> — a staging copy
+whose canonicals point at `carc.unm.edu`.
 
-## Quick start
+## How publishing works
+
+```
+push to main
+  └─ GitHub Actions (.github/workflows/docs.yml)
+       ├─ okf-conformance   OKF validation + no hotlinked legacy assets
+       ├─ build             render, agent surface, .htaccess  -> site/
+       ├─ deploy-pages      staging mirror at unm-carc.github.io
+       └─ publish-cascade   scripts/cascade_sync.py -> Cascade CMS -> SFTP -> carc.unm.edu
+```
+
+The UNM web host that serves `carc.unm.edu` accepts SFTP only from campus,
+so GitHub's runners cannot reach it. Cascade CMS can, and its REST API is
+public: `scripts/cascade_sync.py` pushes the built tree into the Cascade site
+`carc.unm.edu V2` and Cascade publishes it. **Cascade is a conduit, not an
+editing surface — anything changed there by hand is overwritten by the next
+publish.**
+
+- `publish-cascade` runs on every push to `main` while the repository
+  variable `CASCADE_SYNC_ENABLED` is `true`, and on demand from the Actions
+  tab (`mode: plan` is a dry run). It uses the `CASCADE_API_KEY` secret in
+  the `unm-production` environment.
+- Ownership is a manifest stored in Cascade (`/_carc-sync/manifest-root.json`,
+  unpublished). The tool creates and edits what the build produces, deletes
+  only assets it owns that the build no longer produces, never writes under
+  the legacy folders, never folder-publishes a folder it did not create, and
+  verifies every published file against the build by SHA-256.
+- Everything the rebuilt site does not own lives under `archive/` in
+  Cascade; `_internal/` (site machinery) and `_carc-sync/` (the manifests)
+  stay at the root. Legacy pages that were never migrated keep serving at
+  their old URLs from files already on the host.
+
+## Building locally
 
 ```bash
 pip install pyyaml markdown
-python3 scripts/build_cascade_site.py       # render all pages (UNM Cascade standard)
-python3 scripts/postbuild_agent_surface.py  # md mirror + meta + robots.txt
-python3 -m http.server 8080 -d site         # preview at localhost:8080
-python3 scripts/okf_validate.py docs        # OKF conformance (CI-enforced)
-python3 scripts/gen_llms_txt.py             # regenerate llms.txt indexes
+python3 scripts/okf_validate.py docs          # OKF conformance (CI-enforced)
+python3 scripts/check_legacy_links.py docs    # no hotlinks, every /assets/ path exists
+python3 scripts/gen_llms_txt.py               # llms.txt + llms-full.txt
+python3 scripts/build_cascade_site.py         # render -> site/
+python3 scripts/postbuild_agent_surface.py site  # Markdown mirror, OKF meta, robots.txt
+python3 scripts/gen_htaccess.py site          # 301s for superseded legacy URLs
+python3 -m http.server 8080 -d site           # preview at localhost:8080
 ```
 
-## Rendering: UNM Cascade standard
+`CARC_SITE_URL=https://example.test/` overrides `site_url` in `zensical.toml`
+for a build without a commit (`zensical.toml` is only the `site_url` source;
+Zensical does not render this site).
 
-Every page uses the UNM Cascade webcore standard — the exact header, section
-navigation, breadcrumbs, footer, and Quick Links panel from carc.unm.edu
-(webcore.unm.edu assets) around a plain Bootstrap content column. Markdown in
-`docs/` (the OKF bundle) is rendered by `scripts/build_cascade_site.py`; the
-homepage is hand-authored standard HTML (`web/index.html`) with the Googie/D3
-hero. Zensical is no longer used to render this site (`zensical.toml` remains
-only as the `site_url` config source). The machine-readable OKF index stays
-at `/index.md`.
+Publishing from a laptop instead of CI: `python3 scripts/cascade_sync.py plan`
+shows what would change; `sync --publish changed --verify-live` applies it.
+The key is read from `$CASCADE_API_KEY` or `~/.cascade/api_key`.
 
-## Notes
+## Rendering
 
-- Content migrated from carc.unm.edu with provenance frontmatter. All images
-  and documents are localized into `docs/assets/` — nothing hotlinks the old
-  host any more, and `scripts/check_legacy_links.py` fails the build if a page
-  reintroduces one. The mapping from legacy URL to local filename lives in
-  `migration/assets.yml`.
-- Legacy Cascade URLs that were superseded get real Apache 301s, generated into
-  `.htaccess` by `scripts/gen_htaccess.py` from each page's OKF
-  `sources[].resource` provenance. Legacy pages whose content never moved get no
-  redirect: their files stay in the document root and keep serving.
-- The repository must be named `unm-carc.github.io` to serve at the org
-  root. GitHub Pages (`unm-carc.github.io`) is the staging mirror; the
-  public site is `carc.unm.edu`, published by the `publish-cascade` job in
-  `.github/workflows/docs.yml`: `scripts/cascade_sync.py` pushes the built
-  tree into Cascade CMS through its REST API and Cascade publishes it to
-  the UNM web host by SFTP. Cascade is a conduit, not an editor — **anything
-  edited in Cascade is overwritten by the next sync.** The tool owns only
-  the assets recorded in its manifest and never touches the legacy folders.
-- The user documentation (`UNM-CARC/docs`) is published the same way into
-  `/docs/` on the same host, so it shares this site's root `robots.txt` —
-  a `robots.txt` at `/docs/robots.txt` is ignored by crawlers.
+Every page gets the UNM webcore chrome — header, section navigation,
+breadcrumbs, footer and Quick Links panel (assets from `webcore.unm.edu`) —
+around a plain content column. The homepage is hand-authored
+(`web/index.html`; its self-links follow `site_url` at build time). A page
+whose frontmatter says `layout: cards` renders its `#### [Title](url)` +
+image + summary list as a card grid (`research/featured-projects`). The
+Google Tag Manager container from the original site is carried into every
+page.
+
+## Content conventions
+
+- Every page has OKF frontmatter with a non-empty `type`; section `index.md`
+  files carry none; `docs/log.md` is the dated changelog.
+- Images and documents live in `docs/assets/` and are referenced as
+  `/assets/<name>`; nothing hotlinks the old host, and
+  `scripts/check_legacy_links.py` fails the build if a page reintroduces one.
+  `migration/assets.yml` records where each migrated file came from.
+- **Provenance is the redirect map.** A page that records a
+  `https://carc.unm.edu/...` URL in `sources[].resource` gets a real Apache
+  301 from that URL, generated by `scripts/gen_htaccess.py`; hand-written
+  cases go in `migration/redirects-extra.yml`. The legacy `.htaccess` is kept
+  for the record in `migration/htaccess-legacy.conf`.
 - Editing conventions match the docs repo — see its
   [AGENTS.md](https://github.com/UNM-CARC/docs/blob/main/AGENTS.md).
