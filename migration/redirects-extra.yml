@@ -27,3 +27,11 @@ redirects:
 # Never add /index.html here. On a static host that path IS the site root, and a
 # rule for it would fight the homepage the build installs from web/index.html.
 # gen_htaccess.py refuses to emit one regardless.
+
+  # Ported from the legacy Cascade .htaccess (see migration/htaccess-legacy.conf):
+  # it sent /getting-started/ to a host that is now dead. The user documentation
+  # has a real Getting Started section. Off-build target, so not verified.
+  - from: /getting-started/
+    to: /docs/getting-started/
+    verify: false
+    note: legacy .htaccess rule, retargeted; prefix match covers /getting-started/*

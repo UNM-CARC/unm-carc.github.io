@@ -4,8 +4,14 @@ How to add news articles, edit pages, and keep this site current — **no
 Cascade CMS, no local software required**. Everything on the site is a plain
 Markdown text file in the `docs/` folder of this repository. When a change is
 committed to the `main` branch, GitHub Actions checks it, rebuilds every page
-in the UNM Cascade standard (header, footer, navigation), and publishes to
-<https://unm-carc.github.io/> — live in about two minutes.
+in the UNM Cascade standard (header, footer, navigation), and publishes it
+to <https://carc.unm.edu/> — live in a few minutes. (A staging copy also
+lands at <https://unm-carc.github.io/>.)
+
+**Do not edit the site in Cascade CMS any more.** The publishing pipeline
+pushes every page through Cascade automatically, and anything changed there
+by hand is overwritten on the next publish. This repository is the only place
+to edit.
 
 You can do all of this in the GitHub web interface in your browser. The
 optional [local preview](#working-locally-optional) is for bigger changes.
@@ -181,6 +187,7 @@ checks.
   automatically at deploy time.
 * The site chrome (UNM header, footer, Quick Links) — it's generated from
   the official UNM webcore standard inside `scripts/build_cascade_site.py`.
+* Anything in Cascade CMS — see above; it is no longer an editing surface.
 
 Questions or something beyond this guide (new sections, homepage changes,
 design work): open an issue on this repository or ask a maintainer. The

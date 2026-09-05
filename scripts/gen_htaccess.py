@@ -85,7 +85,8 @@ def from_extra() -> list[tuple[str, str, str]]:
     out = []
     for entry in data.get("redirects") or []:
         if isinstance(entry, dict) and entry.get("from") and entry.get("to"):
-            out.append((str(entry["from"]), str(entry["to"]), "redirects-extra.yml"))
+            src = "redirects-extra.yml" + (" (unverified)" if entry.get("verify") is False else "")
+            out.append((str(entry["from"]), str(entry["to"]), src))
     return out
 
 
@@ -127,7 +128,7 @@ def main() -> int:
                   file=sys.stderr)
         if known and old not in known:
             unknown.append(f"{old}  ({source})")
-        if not target_exists(new):
+        if not target_exists(new) and "(unverified)" not in source:
             dangling.append(f"{old} -> {new}  ({source})")
         rules[old] = (new, source)
 

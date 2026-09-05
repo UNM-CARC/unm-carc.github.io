@@ -8,6 +8,12 @@ on:
   # legacy redirect fails BEFORE it reaches main rather than after.
   pull_request:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'plan (dry run) or sync'
+        type: choice
+        options: [plan, sync]
+        default: plan
 
 permissions:
   contents: read
@@ -82,79 +88,66 @@ jobs:
       - uses: actions/deploy-pages@v5
         id: deployment
 
-  # Publish to UNM's Apache document root for carc.unm.edu.
+  # Publish into Cascade CMS, which then publishes to carc.unm.edu by SFTP.
   #
-  # Inert until the repository has CARC_DEPLOY_KEY / CARC_DEPLOY_HOST /
-  # CARC_DEPLOY_USER / CARC_DOCROOT secrets, so it is safe to merge before the
-  # hosting details are settled.
+  # GitHub's runners cannot reach the web server directly (port 22 on
+  # cpanel01.unm.edu is firewalled from off-campus), but Cascade's REST API is
+  # public, so the built site is pushed into Cascade's asset tree and Cascade
+  # does the SFTP. See scripts/cascade_sync.py for the ownership rules.
   #
-  # NOTE: intentionally no --delete. The document root may be shared with other
-  # UNM sites, and the migration deliberately leaves legacy Cascade files in
-  # place so old URLs keep serving. Do not add --delete until the docroot is
-  # confirmed to belong to CARC alone, and then only after a --dry-run.
-  publish-unm:
+  # Manual-only (workflow_dispatch) until the cutover is complete, then gated
+  # on the CASCADE_SYNC_ENABLED repository variable. The environment holds
+  # CASCADE_API_KEY — a dedicated service user's key, never a personal one —
+  # and should require a reviewer until the pipeline is boring.
+  publish-cascade:
     needs: build
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.CASCADE_SYNC_ENABLED == 'true')
     environment: unm-production
     runs-on: ubuntu-latest
-    # Deliberately NOT the shared `pages` concurrency group: cancelling this
-    # job mid-rsync would leave the live document root half-written.
+    # Not the shared `pages` group: cancelling mid-sync would leave a
+    # half-published tree in Cascade.
     concurrency:
-      group: publish-unm
+      group: publish-cascade
       cancel-in-progress: false
     steps:
+      - uses: actions/checkout@v7
       - uses: actions/download-artifact@v4
         with:
           name: site
           path: site
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
 
-      - name: Check deploy secrets are configured
+      - name: Check the Cascade key is configured
         id: check
         env:
-          KEY: ${{ secrets.CARC_DEPLOY_KEY }}
-          KNOWN_HOSTS: ${{ secrets.CARC_DEPLOY_KNOWN_HOSTS }}
-          HOST: ${{ secrets.CARC_DEPLOY_HOST }}
-          USER: ${{ secrets.CARC_DEPLOY_USER }}
-          DOCROOT: ${{ secrets.CARC_DOCROOT }}
+          KEY: ${{ secrets.CASCADE_API_KEY }}
         run: |
-          if [ -z "$KEY" ] && [ -z "$HOST" ]; then
+          if [ -z "$KEY" ]; then
             echo "configured=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::UNM deploy secrets not set; skipping publish to carc.unm.edu"
-            exit 0
+            echo "::notice::CASCADE_API_KEY not set; skipping publish to carc.unm.edu"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
           fi
-          missing=
-          for v in KEY KNOWN_HOSTS HOST USER DOCROOT; do
-            [ -n "$(eval echo \"\$$v\")" ] || missing="$missing $v"
-          done
-          if [ -n "$missing" ]; then
-            echo "::error::UNM deploy partially configured; missing:$missing"
-            exit 1
-          fi
-          echo "configured=true" >> "$GITHUB_OUTPUT"
 
-      - name: Publish over rsync/SSH
+      - name: Sync the built site into Cascade
         if: steps.check.outputs.configured == 'true'
         env:
-          KEY: ${{ secrets.CARC_DEPLOY_KEY }}
-          HOST: ${{ secrets.CARC_DEPLOY_HOST }}
-          USER: ${{ secrets.CARC_DEPLOY_USER }}
-          DOCROOT: ${{ secrets.CARC_DOCROOT }}
-          # Pinned host key. Capture once with `ssh-keyscan -H <host>` from a
-          # trusted network and store the output as this secret. Running
-          # ssh-keyscan here instead would trust whatever answers at deploy
-          # time, which cancels out StrictHostKeyChecking entirely.
-          KNOWN_HOSTS: ${{ secrets.CARC_DEPLOY_KNOWN_HOSTS }}
+          CASCADE_API_KEY: ${{ secrets.CASCADE_API_KEY }}
+          MODE: ${{ inputs.mode || 'sync' }}
         run: |
           set -euo pipefail
-          install -m 700 -d ~/.ssh
-          printf '%s\n' "$KEY" > ~/.ssh/id_deploy
-          chmod 600 ~/.ssh/id_deploy
-          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
-          # --chmod is not optional: with --no-perms, new files otherwise
-          # inherit the session umask, and a restrictive one makes Apache 403
-          # the whole site.
-          rsync -avz --checksum --no-perms --no-owner --no-group \
-                --chmod=D755,F644 \
-                -e "ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes" \
-                site/ "$USER@$HOST:$DOCROOT/"
+          # `plan` is a dry run; `sync` creates/edits, publishes changed
+          # assets individually, and verifies every one live by SHA-256.
+          python scripts/cascade_sync.py "$MODE" --site site --publish changed --verify-live
+
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.check.outputs.configured == 'true'
+        with:
+          name: cascade-sync-journal
+          path: .cascade-sync/
+          if-no-files-found: ignore
+          retention-days: 30

@@ -248,6 +248,14 @@ class Manifest:
         cands = [m for m in (remote, local) if m]
         if cands:
             self.data = max(cands, key=lambda m: m.get("updated") or "")
+        # The probe's findings (encoding, body ceiling, API user) describe the
+        # Cascade site, not one prefix: a prefixed manifest inherits them from
+        # the root manifest rather than requiring its own probe run.
+        if self.prefix and not self.data["meta"].get("encoding"):
+            root = Manifest(self.cx, "", store=self.store)
+            root.load()
+            if root.meta.get("encoding"):
+                self.data["meta"] = dict(root.meta)
 
     def save(self, force_remote: bool = False) -> None:
         self.data["updated"] = now()
@@ -404,7 +412,7 @@ def build_plan(cx: Cascade, man: Manifest, site: Path, prefix: str, scopes: list
     selected.sort()
 
     plan = {"create_folders": [], "create": [], "edit": [], "skip": [], "delete": [],
-            "collisions": [], "refused": []}
+            "republish": [], "collisions": [], "refused": []}
     seen_folders = set()
 
     for rel in selected:
@@ -432,16 +440,18 @@ def build_plan(cx: Cascade, man: Manifest, site: Path, prefix: str, scopes: list
             else:
                 plan["create_folders"].append(f)
         if entry:
-            if entry.get("sha256") == digest and entry.get("published", True):
+            if entry.get("sha256") != digest:
+                plan["edit"].append((rel, digest))
+            elif entry.get("published", True):
                 plan["skip"].append(rel)
             else:
-                plan["edit"].append((rel, digest))
+                plan["republish"].append((rel, entry["id"]))
             continue
-        if rel in PROTECTED or cpath in PROTECTED:
+        if cpath in PROTECTED:
             if rel in allow_edit or cpath in allow_edit:
                 plan["edit"].append((rel, digest))
             else:
-                plan["collisions"].append((cpath, f"protected file {PROTECTED.get(rel) or PROTECTED.get(cpath)}; use adopt / --allow-edit"))
+                plan["collisions"].append((cpath, f"protected file {PROTECTED[cpath]}; use adopt / --allow-edit"))
             continue
         # A file inside a folder we are about to create cannot collide with
         # anything; skip the four reads per path that check would cost.
@@ -449,6 +459,15 @@ def build_plan(cx: Cascade, man: Manifest, site: Path, prefix: str, scopes: list
         if not parent_new:
             hit = cx.exists_any(cpath)
             if hit:
+                # A file with our exact content is ours from an interrupted run
+                # whose manifest write was lost; take it back rather than refuse.
+                if hit[0] == "file":
+                    a = cx.read("file", hit[1])
+                    if a and sha256(asset_bytes(a["file"])) == digest:
+                        man.files[rel] = {"id": hit[1], "sha256": digest, "published": False,
+                                          "size": files[rel].stat().st_size, "synced": now()}
+                        plan["republish"].append((rel, hit[1]))
+                        continue
                 plan["collisions"].append((cpath, f"{hit[0]} {hit[1]} already exists (not in manifest)"))
                 continue
             if cpath.endswith(".html"):
@@ -471,6 +490,8 @@ def print_plan(plan: dict, prefix: str) -> None:
         log(f"  CREATE file    {cascade_path(prefix, rel)}")
     for rel, _ in plan["edit"]:
         log(f"  EDIT   file    {cascade_path(prefix, rel)}")
+    for rel, _ in plan["republish"]:
+        log(f"  PUBLISH file   {cascade_path(prefix, rel)}  (created earlier, never published)")
     for rel in plan["delete"]:
         log(f"  DELETE file    {cascade_path(prefix, rel)}")
     for p, why in plan["refused"]:
@@ -478,7 +499,7 @@ def print_plan(plan: dict, prefix: str) -> None:
     for p, why in plan["collisions"]:
         log(f"  COLLISION      {p}  ({why})")
     log(f"  -- {len(plan['create_folders'])} folders, {len(plan['create'])} create, "
-        f"{len(plan['edit'])} edit, {len(plan['skip'])} skip, {len(plan['delete'])} delete, "
+        f"{len(plan['edit'])} edit, {len(plan['republish'])} republish, {len(plan['skip'])} skip, {len(plan['delete'])} delete, "
         f"{len(plan['collisions'])} collision(s), {len(plan['refused'])} refused")
 
 
@@ -536,8 +557,17 @@ def do_sync(cx: Cascade, man: Manifest, site: Path, prefix: str, plan: dict,
         cpath = cascade_path(prefix, rel)
         b = files[rel].read_bytes()
         fid = cx.create("file", file_spec(man, cpath, b))
-        back = cx.read("file", fid)["file"]
-        if sha256(asset_bytes(back)) != digest:
+        back = None
+        for _ in range(5):  # a just-created asset can lag the read path by a moment
+            a = cx.read("file", fid)
+            if a:
+                back = a["file"]
+                break
+            time.sleep(1)
+        if back is None:
+            log(f"  ?? created {cpath} (id {fid}) but could not read it back; "
+                f"recording it — live verification will judge it")
+        elif sha256(asset_bytes(back)) != digest:
             log(f"  !! read-back mismatch for {cpath}; stopping")
             man.files[rel] = {"id": fid, "sha256": None, "size": len(b), "published": False}
             man.save(force_remote=True)
@@ -551,7 +581,7 @@ def do_sync(cx: Cascade, man: Manifest, site: Path, prefix: str, plan: dict,
 
     for rel, digest in plan["edit"]:
         cpath = cascade_path(prefix, rel)
-        entry = man.files.get(rel) or {"id": PROTECTED.get(rel) or PROTECTED.get(cpath)}
+        entry = man.files.get(rel) or {"id": PROTECTED.get(cpath)}
         a = cx.read("file", entry["id"])
         inner = a["file"]
         who = inner.get("lastModifiedBy")
@@ -559,7 +589,7 @@ def do_sync(cx: Cascade, man: Manifest, site: Path, prefix: str, plan: dict,
                 and rel in man.files and not force):
             log(f"  !! {cpath} was last modified by {who!r} in Cascade; refusing (use --force)")
             return 1
-        if entry.get("sha256") is None and rel in PROTECTED and "backup" not in entry:
+        if entry.get("sha256") is None and cpath in PROTECTED and "backup" not in entry:
             entry["backup"] = {k: v for k, v in inner.items() if k in ("text", "data")}
         b = files[rel].read_bytes()
         ext = Path(rel).suffix.lower()
@@ -579,6 +609,9 @@ def do_sync(cx: Cascade, man: Manifest, site: Path, prefix: str, plan: dict,
         jot(op="edit_file", path=cpath, id=entry["id"], sha256=digest, bytes=len(b))
         log(f"  edited  {cpath}  ({len(b):,} B)")
         man.save()
+
+    for rel, fid in plan["republish"]:
+        to_publish.append((rel, fid))
 
     # 3. publish
     if publish_mode != "none":
@@ -954,7 +987,7 @@ def cmd_adopt(cx: Cascade, man: Manifest, args) -> int:
             log(f"  {cpath}: no such file"); continue
         inner = a["file"]
         man.files[rel] = {"id": inner["id"], "sha256": None, "adopted": True,
-                          "protected": rel in PROTECTED}
+                          "protected": cpath in PROTECTED}
         log(f"  adopted {cpath} -> {inner['id']}")
     man.save(force_remote=True)
     return 0
