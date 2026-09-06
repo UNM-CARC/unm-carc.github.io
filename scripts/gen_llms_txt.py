@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
 SECTION_ORDER = [
-    "about", "research", "education", "education/cse", "news", "contact",
+    "about", "research", "education", "education/cse", "news", "jobs", "contact",
 ]
 
 
@@ -78,7 +78,8 @@ def main():
         "# UNM Center for Advanced Research Computing",
         "",
         "> The UNM Center for Advanced Research Computing (CARC): mission, "
-        "research, the CSE certificate program, news, and contact information. "
+        "research, the CSE certificate program, news, open positions, and contact "
+        "information. "
         "User documentation for CARC systems lives at "
         f"{base}docs/ (with its own llms.txt). The source "
         "repository is an Open Knowledge Format (OKF v0.2) bundle: every page "

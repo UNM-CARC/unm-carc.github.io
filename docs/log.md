@@ -2,6 +2,7 @@
 
 ## 2026-09-05
 
+* **New**: A [Jobs](jobs/index.md) section and navigation tab listing CARC's open positions — the MESA project's Postdoctoral Researcher (Agentic AI) and Program Manager, and the Research Computing Facilitator — one page per opening, each with its UNM Jobs application link.
 * **Homepage**: An *Open OnDemand* button sits beside *User Documentation* in the section navigation, linking to the CARC portal.
 * **Analytics**: Every page now carries CARC's own Google Analytics 4 tag (`ga4_id` in `zensical.toml`), alongside UNM's central Tag Manager container. The site had reported nothing since its Universal Analytics property was retired.
 * **Housekeeping**: The Cascade site tree was tidied — every folder, page and file the rebuilt site does not own now lives under `archive/` in Cascade (moved without unpublishing, so no address changed); `research/` and `assets/` hold only what this repository publishes. Automatic publishing on push to `main` is on. README, AGENTS/CLAUDE and SITE_INSTRUCTIONS describe the pipeline as it actually is.

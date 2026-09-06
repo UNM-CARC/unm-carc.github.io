@@ -37,6 +37,7 @@ SECTIONS = [
     ("research", "Research"),
     ("education", "Education"),
     ("news", "News"),
+    ("jobs", "Jobs"),
     ("contact", "Contact"),
 ]
 

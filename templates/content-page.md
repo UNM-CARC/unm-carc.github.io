@@ -14,7 +14,7 @@ HOW TO USE THIS TEMPLATE (delete this comment block when done — but nothing
 breaks if you forget: it stays invisible on the published page)
 
 1. Copy this file into the right section folder — docs/about/, docs/research/,
-   docs/education/, or docs/contact/ — and rename it kebab-case,
+   docs/education/, docs/jobs/, or docs/contact/ — and rename it kebab-case,
    e.g.  docs/research/data-services.md  →  published at  /research/data-services/
 2. Fill in every UPPERCASE placeholder, above and below. Keep the quotes.
    "human:YOURNETID" marks you as the author, e.g. "human:mrosales".
