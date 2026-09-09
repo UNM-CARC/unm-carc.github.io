@@ -305,6 +305,7 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+#nav ul.carc-primary { text-align: center; }
 #nav ul.carc-utilities { border-top: 1px solid var(--pg-border); text-align: center; }
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
 /* card grid for `layout: cards` pages (research/featured-projects) */
@@ -397,6 +398,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
     utilities = [
         f'<li><a class="carc-ext-btn" href="{rel_root}docs/">User Documentation <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
+        '<li><a class="carc-ext-btn" href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">ColdFront <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://carc.unm.edu/user-support-2/office-and-consultation-hours.html">Office Hours</a></li>',
         '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',

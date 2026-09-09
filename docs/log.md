@@ -2,7 +2,7 @@
 
 ## 2026-09-08
 
-* **Navigation**: The header now separates CARC sections from a centered user-actions row: [User Documentation](/docs/), [Open OnDemand](https://ood.alliance.unm.edu/){target=_blank}, [Help Desk](https://support.alliance.unm.edu/){target=_blank}, and [Office Hours](https://carc.unm.edu/user-support-2/office-and-consultation-hours.html).
+* **Navigation**: The header now separates CARC sections from a centered user-actions row: [User Documentation](/docs/), [Open OnDemand](https://ood.alliance.unm.edu/){target=_blank}, [ColdFront](https://coldfront.alliance.unm.edu/){target=_blank}, [Help Desk](https://support.alliance.unm.edu/){target=_blank}, and [Office Hours](https://carc.unm.edu/user-support-2/office-and-consultation-hours.html).
 
 ## 2026-09-05
 
