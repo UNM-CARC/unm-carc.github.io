@@ -26,11 +26,7 @@ high-performance computing (HPC), who died on May 20, 2026, at the age of
 
 ![Cover of the EISPACK Guide, second edition — Matrix Eigensystem Routines, by Smith, Boyle, Dongarra, Garbow, Ikebe, Klema and Moler — stamped "Cleve Moler, Department of Mathematics, University of New Mexico"](/assets/cleve-moler-eispack-guide.jpg)
 
-It is difficult to write an article in memoriam without feeling that it is
-insufficient under any circumstances. But that is especially true when
-writing about someone who was a towering figure in his field, a beloved
-elder statesman of the community, and who was a joy to be around. Few
-individuals have had a greater impact on modern scientific and
+It is difficult to write an article in memoriam without feeling that it is insufficient under any circumstances. That is especially true when writing about someone who was an elder statesman of his field but who had an endearing, puckish sense of humour. Few individuals have had a greater impact on modern scientific and
 high-performance computing, and few are remembered with such affection by
 their colleagues. Moler's work enabled a revolution in computational
 solutions to linear algebra problems and made it possible to scale those
