@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-09-08
+
+* **Navigation**: The Help Desk menu now provides both [Open a Help Ticket](https://support.alliance.unm.edu/){target=_blank} and [Office Hours](https://carc.unm.edu/user-support-2/office-and-consultation-hours.html), avoiding an additional top-level navigation item.
+
 ## 2026-09-05
 
 * **New**: A [Jobs](jobs/index.md) section and navigation tab listing CARC's open positions — the MESA project's Postdoctoral Researcher (Agentic AI) and Program Manager, and the Research Computing Facilitator — one page per opening, each with its UNM Jobs application link.

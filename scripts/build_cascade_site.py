@@ -305,6 +305,10 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+#nav ul.carc-sections li.carc-help-menu { position: relative; }
+#nav ul.carc-sections li.carc-help-menu .dropdown-menu { min-width: 13em; padding: .35em 0; }
+#nav ul.carc-sections li.carc-help-menu .dropdown-menu li { display: block; }
+#nav ul.carc-sections li.carc-help-menu .dropdown-menu a { display: block; white-space: nowrap; }
 /* card grid for `layout: cards` pages (research/featured-projects) */
 .carc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
 .carc-card { display: flex; flex-direction: column; background: var(--pg-card); border: 1px solid var(--pg-border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s ease, transform .15s ease; }
@@ -390,11 +394,15 @@ def nav_items(rel_root: str, active: str) -> str:
     for slug, label in SECTIONS:
         cls = ' class="active"' if slug == active else ""
         items.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
-    items.append(f'<li><a href="{rel_root}docs/support/help/">Office Hours</a></li>')
     items.append(f'<li><a class="carc-ext-btn" href="{rel_root}docs/">'
                  'User Documentation <span aria-hidden="true">↗</span></a></li>')
-    items.append('<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" '
-                 'target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>')
+    items.append('<li class="dropdown carc-help-menu"><a class="carc-ext-btn dropdown-toggle" '
+                 'data-toggle="dropdown" href="#" role="button" aria-haspopup="true" '
+                 'aria-expanded="false">Help Desk <span class="caret"></span></a><ul class="dropdown-menu">'
+                 '<li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">'
+                 'Open a Help Ticket <span aria-hidden="true">↗</span></a></li>'
+                 '<li><a href="https://carc.unm.edu/user-support-2/office-and-consultation-hours.html">'
+                 'Office Hours</a></li></ul></li>')
     items.append('<li class="carc-theme-li"><button id="carc-theme-btn" type="button" '
                  'aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>')
     return "\n".join(items)
