@@ -390,6 +390,7 @@ def nav_items(rel_root: str, active: str) -> str:
     for slug, label in SECTIONS:
         cls = ' class="active"' if slug == active else ""
         items.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
+    items.append(f'<li><a href="{rel_root}docs/support/help/">Office Hours</a></li>')
     items.append(f'<li><a class="carc-ext-btn" href="{rel_root}docs/">'
                  'User Documentation <span aria-hidden="true">↗</span></a></li>')
     items.append('<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" '
