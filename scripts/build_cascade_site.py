@@ -305,10 +305,8 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
-#nav ul.carc-sections li.carc-help-menu { position: relative; }
-#nav ul.carc-sections li.carc-help-menu .dropdown-menu { min-width: 13em; padding: .35em 0; }
-#nav ul.carc-sections li.carc-help-menu .dropdown-menu li { display: block; }
-#nav ul.carc-sections li.carc-help-menu .dropdown-menu a { display: block; white-space: nowrap; }
+#nav ul.carc-utilities { border-top: 1px solid var(--pg-border); text-align: center; }
+#nav ul.carc-utilities li.carc-theme-li { float: none; }
 /* card grid for `layout: cards` pages (research/featured-projects) */
 .carc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
 .carc-card { display: flex; flex-direction: column; background: var(--pg-card); border: 1px solid var(--pg-border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s ease, transform .15s ease; }
@@ -347,8 +345,10 @@ TEMPLATE = """<!DOCTYPE html>
 <div id="page">
 {navbar}
 <div aria-label="Center for Advanced Research Computing" id="carc-masthead" role="banner"><div class="container"><a href="{rel_root}"><h1 class="carc-lockup"><img class="carc-lockup-day" src="{rel_root}assets/carc-lockup.png" alt="UNM Center for Advanced Research Computing"><img class="carc-lockup-night" src="{rel_root}assets/carc-lockup-dark.png" alt="" aria-hidden="true"></h1></a></div></div>
-<div id="nav"><div class="container"><ul class="carc-sections">
-{navitems}
+<div id="nav"><div class="container"><ul aria-label="Primary navigation" class="carc-sections carc-primary">
+{primary_navitems}
+</ul><ul aria-label="User actions" class="carc-sections carc-utilities">
+{utility_navitems}
 </ul></div></div>
 <div aria-label="breadcrumbs" id="breadcrumbs" role="navigation"><div class="container"><ol class="breadcrumb">
 {crumbs}
@@ -389,23 +389,19 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
-def nav_items(rel_root: str, active: str) -> str:
-    items = []
+def nav_items(rel_root: str, active: str) -> tuple[str, str]:
+    primary = []
     for slug, label in SECTIONS:
         cls = ' class="active"' if slug == active else ""
-        items.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
-    items.append(f'<li><a class="carc-ext-btn" href="{rel_root}docs/">'
-                 'User Documentation <span aria-hidden="true">↗</span></a></li>')
-    items.append('<li class="dropdown carc-help-menu"><a class="carc-ext-btn dropdown-toggle" '
-                 'data-toggle="dropdown" href="#" role="button" aria-haspopup="true" '
-                 'aria-expanded="false">Help Desk <span class="caret"></span></a><ul class="dropdown-menu">'
-                 '<li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">'
-                 'Open a Help Ticket <span aria-hidden="true">↗</span></a></li>'
-                 '<li><a href="https://carc.unm.edu/user-support-2/office-and-consultation-hours.html">'
-                 'Office Hours</a></li></ul></li>')
-    items.append('<li class="carc-theme-li"><button id="carc-theme-btn" type="button" '
-                 'aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>')
-    return "\n".join(items)
+        primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
+    utilities = [
+        f'<li><a class="carc-ext-btn" href="{rel_root}docs/">User Documentation <span aria-hidden="true">↗</span></a></li>',
+        '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
+        '<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>',
+        '<li><a class="carc-ext-btn" href="https://carc.unm.edu/user-support-2/office-and-consultation-hours.html">Office Hours</a></li>',
+        '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',
+    ]
+    return "\n".join(primary), "\n".join(utilities)
 
 
 def crumbs_for(rel: Path, title: str, rel_root: str) -> str:
@@ -453,6 +449,8 @@ def main():
             content = cards_html(content)
         depth = 0 if root_html else (len(pdir.rstrip("/").split("/")) if pdir else 0)
         rel_root = "../" * depth if depth else "./"
+        primary_navitems, utility_navitems = nav_items(
+            rel_root, rel.parts[0] if len(rel.parts) > 1 or rel.name != "index.md" else "")
         page = TEMPLATE.format(
             gtm_head=GTM_HEAD,
             ga4_head=ga4_head(ga4_id()),
@@ -464,7 +462,8 @@ def main():
             okf=okf_meta(fm),
             css=PAGE_CSS,
             navbar=NAVBAR,
-            navitems=nav_items(rel_root, rel.parts[0] if len(rel.parts) > 1 or rel.name != "index.md" else ""),
+            primary_navitems=primary_navitems,
+            utility_navitems=utility_navitems,
             crumbs=crumbs_for(rel, title, rel_root),
             content=content,
             footer=FOOTER.format(base=base),

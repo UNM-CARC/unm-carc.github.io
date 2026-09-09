@@ -2258,7 +2258,7 @@ Albuquerque NM 87106
 
 ## 2026-09-08
 
-* **Navigation**: The Help Desk menu now provides both [Open a Help Ticket](https://support.alliance.unm.edu/){target=_blank} and [Office Hours](https://carc.unm.edu/user-support-2/office-and-consultation-hours.html), avoiding an additional top-level navigation item.
+* **Navigation**: The header now separates CARC sections from a centered user-actions row: [User Documentation](/docs/), [Open OnDemand](https://ood.alliance.unm.edu/){target=_blank}, [Help Desk](https://support.alliance.unm.edu/){target=_blank}, and [Office Hours](https://carc.unm.edu/user-support-2/office-and-consultation-hours.html).
 
 ## 2026-09-05
 
