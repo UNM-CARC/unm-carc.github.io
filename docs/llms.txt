@@ -19,7 +19,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 - [Free research computing](https://carc.unm.edu/research/free-services/): A description of the free baseline research computing service CARC provides to UNM main campus users, including the core-hour and storage limits.
 - [Grant writing resources](https://carc.unm.edu/research/grant-resources/): Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals, plus the CARC facilities description for proposals.
 - [Premium services](https://carc.unm.edu/research/premium-services/): CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service.
-- [Publications and acknowledgement](https://carc.unm.edu/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center.
+- [Publications and acknowledgement](https://carc.unm.edu/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources — ready to copy and paste — plus how to register your publication and a link to publications that feature the center.
 
 ## Education & training
 

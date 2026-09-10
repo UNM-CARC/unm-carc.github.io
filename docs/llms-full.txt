@@ -683,14 +683,14 @@ The below cost model calculator worksheet will allow you to determine the cost o
 
 ---
 title: "Publications and acknowledgement"
-description: "The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center."
+description: "The acknowledgement statement to use in publications that made use of CARC resources — ready to copy and paste — plus how to register your publication and a link to publications that feature the center."
 type: Policy
 tags:
   - Research
   - Publications
 generated:
   by: "claude/fable-5"
-  at: "2026-08-29T00:00:00Z"
+  at: "2026-09-10T00:00:00Z"
 sources:
   - id: carc-web
     resource: "https://carc.unm.edu/research/publications.html"
@@ -704,19 +704,54 @@ sources:
 
 # Publications and acknowledgement
 
-**CARC acknowledgement**
+## CARC acknowledgement
 
-Please use the following statement when acknowledging use of Center for Advanced Research Computing resources. Select one or more of the items within the braces { }:
+Please use the following statement when acknowledging use of Center for
+Advanced Research Computing resources in publications, dissertations, theses,
+posters, and talks. Choose one or more of the items in the braces `{ }`, or
+copy one of the ready-made versions below — the **Copy** button puts the text
+on your clipboard.
 
-!!! quote
+```text
+We would like to thank the UNM Center for Advanced Research Computing, supported in part by the National Science Foundation, for providing the {high performance computing, large-scale storage, visualization} resources used in this work.
+```
 
-    *We would like to thank the UNM Center for Advanced Research Computing, supported in part by the National Science Foundation, for providing the {high performance computing, large-scale storage, visualization} resources used in this work.*
+### Ready to paste
 
-**Publications**
+High-performance computing only:
 
-Please use the following link to view a list of publications that mentions the Center for Advanced Research Computing. The list reflects the broad spectrum of computational research at the University of New Mexico. All publications have made use of CARC resources including computation, storage, machine hosting, or resident research space at the Center.
+```text
+We would like to thank the UNM Center for Advanced Research Computing, supported in part by the National Science Foundation, for providing the high performance computing resources used in this work.
+```
 
-**[Click here to view publications that feature the Center for Advanced Research Computing](https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29){target=_blank}**
+Computing and storage:
+
+```text
+We would like to thank the UNM Center for Advanced Research Computing, supported in part by the National Science Foundation, for providing the high performance computing and large-scale storage resources used in this work.
+```
+
+Computing, storage, and visualization:
+
+```text
+We would like to thank the UNM Center for Advanced Research Computing, supported in part by the National Science Foundation, for providing the high performance computing, large-scale storage, and visualization resources used in this work.
+```
+
+## Register your publication
+
+Please add publications that used CARC resources to your project's
+publication list in [ColdFront](https://coldfront.alliance.unm.edu){target=_blank}.
+Tracking publications is an important way the center demonstrates its value
+to UNM and its funders.
+
+## Publications that feature CARC
+
+The following link lists publications that mention the Center for Advanced
+Research Computing. The list reflects the broad spectrum of computational
+research at the University of New Mexico; all of these publications made use
+of CARC resources, including computation, storage, machine hosting, or
+resident research space at the center.
+
+[View publications that feature CARC on Google Scholar](https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29){ .md-button .md-button--primary target=_blank }
 
 ---8<--- https://carc.unm.edu/education/workshops/
 
@@ -6562,7 +6597,7 @@ sources:
 | Crowley, JJ | Systems/Network Analyst II | jcrowley1 [at] unm [dot] edu |
 | Redfearn, Troy | HPC Systems Specialist III | tredfearn [at] unm [dot] edu |
 | Sanchez, Jose | Systems Analyst I | josesanc [at] unm [dot] edu |
-| Houssini, Sumaya | Systems/Network Analyst II | shoussini [at] unm [dot] edu |
+| Mohamed, Sumaya | HPC Systems Specialist I | shoussini [at] unm [dot] edu |
 | Rosales, Mariah | Administrative Coordinator | marosales [at] unm [dot] edu |
 
 Email addresses are written out to deter scrapers — replace *[at]* with `@`
@@ -6636,6 +6671,8 @@ Albuquerque NM 87106
 
 ## 2026-09-10
 
+* **Update**: The CARC acknowledgement on [Publications and acknowledgement](research/publications.md) is now a plain-text box with a **Copy** button, alongside three ready-to-paste versions (computing; computing and storage; computing, storage, and visualization), so nothing has to be retyped or edited out of braces. The page also says where to register a publication (ColdFront). Every fenced text block on the site now gets the same Copy button.
+* **News archive**: 45 stories from the old website (2016–2024) — conference trips from SC17 to SC23, the annual user meetings, staff and student arrivals, the Hopper launch, ColdFront adoption, the $1.5M workforce-development award, the Vis Lab and gallery stories, and the COVID-19 research pieces — now live under [News](news/index.md), grouped by year in a generated Archive, with their photographs localized. They were converted by a new one-shot tool, `scripts/port_legacy_pages.py`, from `migration/pages.yml`, which also records the eight old stories deliberately left behind (expired event notices, a duplicate, and undated orphans). Each ported page records its old address, so the old URLs redirect. Links to the ported stories from [Featured projects](research/featured-projects.md) and [History](about/history.md) now stay on this site.
 * **New**: [Office and consultation hours](contact/office-hours.md) — the weekly Zoom office hours (Tuesdays and Thursdays, 11:00–12:00 MT) and how to book a consultation, ported from the last remaining support page on the old site. The site-wide *Office Hours* button now lands here instead of on the legacy page, whose address redirects.
 * **Redirects**: A sweep of the old site found 151 pages still serving at their original addresses (plus five outside the old sitemap: four PBS/Torque job-submission pages and an empty workshop-registration stub). The ones whose content now lives in the [user documentation](/docs/) — getting started, requesting accounts and projects, the Good Neighbor policy, storage and backup, the facilities description, CARC infrastructure, system status, and the PBS pages — now redirect there; the CSE "About" landing, the orphan draft HPC-systems specialization, the empty Events and Calendar pages, the social-media placeholder, a 2021 coronavirus notice, and two published test stubs redirect to their successors here. The old acknowledgement, find-funding, and duplicate grant-writing pages redirect to [Publications](research/publications.md) and [Grant writing resources](research/grant-resources.md).
 * **Fix**: The News archive no longer points at `/news--events/News/index.html` as "the old news archive": that page is the SC18 research posters gallery. The old stories were listed only by the legacy sidebar; they are being ported into the archive here.
