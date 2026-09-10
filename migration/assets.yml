@@ -320,3 +320,54 @@ assets:
     to: wheeler-named-wheeler-system.jpg
   - from: /images/carc-lights.jpg
     to: carc-lights.jpg
+
+  # --- SC18 and LANL 2018 research posters (docs/research/sc18-research-posters.md) ---
+  # 1080x1920 lobby-display graphics; re-encoded as JPEG (under the 1600 px cap, so not resized).
+  - from: /research/genetic-past-of-viruses.png
+    to: sc18-poster-virus-genetics.jpg
+    alt: "SC18 poster: genetic past of viruses"
+  - from: /research/sc18-research-posters-/diabetic-retinopathy.png
+    to: sc18-poster-diabetic-retinopathy.jpg
+    alt: "SC18 poster: diabetic retinopathy screening"
+  - from: /research/sc18-research-posters-/dance-sensor-engineering.png
+    to: sc18-poster-dance-sensors.jpg
+    alt: "SC18 poster: dance and sensor engineering"
+  - from: /research/sc18-research-posters-/director-network-credit-ratings.png
+    to: sc18-poster-director-networks.jpg
+    alt: "SC18 poster: director networks and credit ratings"
+  - from: /research/sc18-research-posters-/navajo-nation-water-contamination.png
+    to: sc18-poster-navajo-nation-water.jpg
+    alt: "SC18 poster: metal mixtures in unregulated water sources on the Navajo Nation"
+  - from: /research/sc18-research-posters-/candida-albicans.png
+    to: sc18-poster-candida-albicans.jpg
+    alt: "SC18 poster: glucan exposure in Candida albicans"
+  - from: /research/sc18-research-posters-/deceased-body-database.png
+    to: sc18-poster-decedent-database.jpg
+    alt: "SC18 poster: New Mexico Decedent Image Database"
+  - from: /research/sc18-research-posters-/wildfire-collaboration.png
+    to: sc18-poster-wildfire-collaboration.jpg
+    alt: "SC18 poster: LANL-CARC wildfire simulation collaboration"
+  - from: /research/sc18-research-posters-/libraries-data-preservation.png
+    to: sc18-poster-libraries-data-preservation.jpg
+    alt: "SC18 poster: Libraries and CARC research data preservation"
+  - from: /research/sc18-research-posters-/railroad-overpass-damage.png
+    to: sc18-poster-railroad-overpass.jpg
+    alt: "SC18 poster: preventing railroad overpass damage"
+  - from: /research/sc18-research-posters-/mars-robot-swarms.png
+    to: sc18-poster-mars-robot-swarms.jpg
+    alt: "SC18 poster: robot swarms for the NASA Mars journey"
+  - from: /research/sc18-research-posters-/wind-farms.png
+    to: sc18-poster-wind-farms.jpg
+    alt: "SC18 poster: meeting wind power goals"
+  - from: /research/sc18-research-posters-/sc18-hussein-hpc-poster.pdf
+    to: sc18-poster-hpc-storage-framework.pdf
+  - from: /research/LANL-symposium-student-research-posters/raspberry-pi-clusters.pdf
+    to: lanl-2018-raspberry-pi-clusters.pdf
+  - from: /research/LANL-symposium-student-research-posters/link-state-routing.pdf
+    to: lanl-2018-link-state-routing.pdf
+  - from: /research/LANL-symposium-student-research-posters/versatile-software-build.pdf
+    to: lanl-2018-software-build-cluster.pdf
+  - from: /research/LANL-symposium-student-research-posters/using-cicd.pdf
+    to: lanl-2018-cicd-cluster-setup.pdf
+  - from: /research/LANL-symposium-student-research-posters/neutron-scattering-models.pdf
+    to: lanl-2018-neutron-scattering-models.pdf
