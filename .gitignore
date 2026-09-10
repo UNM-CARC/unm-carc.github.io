@@ -226,3 +226,6 @@ __pycache__/
 
 # local cache of the Cascade sync manifest + journals (authoritative copy lives in Cascade)
 .cascade-sync/
+
+# raw HTML fetched by scripts/port_legacy_pages.py (shared with migrate_assets.py --cache)
+.legacy-cache/

@@ -4,6 +4,7 @@ description: "A message to the CARC community from then-Director Patrick G. Brid
 type: News
 tags:
   - News
+date: "2025-02"
 generated:
   by: "claude/fable-5"
   at: "2026-08-29T00:00:00Z"
