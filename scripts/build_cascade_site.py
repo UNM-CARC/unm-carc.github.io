@@ -411,7 +411,7 @@ TEMPLATE = """<!DOCTYPE html>
     btn.type = "button"; btn.className = "carc-copy-btn"; btn.textContent = "Copy";
     btn.setAttribute("aria-label", "Copy this text to the clipboard");
     btn.addEventListener("click", function () {{
-      var code = pre.querySelector("code"), text = (code || pre).innerText.replace(/\s+$/, "");
+      var code = pre.querySelector("code"), text = (code || pre).innerText.replace(/\\s+$/, "");
       function done() {{
         btn.textContent = "Copied"; btn.classList.add("is-done");
         setTimeout(function () {{ btn.textContent = "Copy"; btn.classList.remove("is-done"); }}, 1800);
