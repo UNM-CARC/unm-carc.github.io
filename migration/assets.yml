@@ -154,3 +154,169 @@ assets:
     to: cse-application-instructions.pdf
   - from: /assets/carc-cost-model-tool.xlsx
     to: carc-cost-model-tool.xlsx
+
+  # --- Ported legacy pages (appended by scripts/port_legacy_pages.py) ---
+  - from: /images/2024-user-meeting.png
+    to: 2024-user-meeting.jpg
+  - from: /images/unm-hpc-competition-team-photo-2.png
+    to: sc23-team-unm-hpc-competition-team-photo.jpg
+  - from: /images/anneliese-ward-participating-in-scinet-photo-1.png
+    to: sc23-team-anneliese-ward-participating-in-scinet-photo.jpg
+  - from: /images/unm-carc-sc23-booth-display-photo-1.png
+    to: sc23-team-unm-carc-sc23-booth-display-photo.jpg
+  - from: /news--events/News/article-image-w-caption-updated.png
+    to: fall-23-undergrads-article-image-w-caption-updated.jpg
+  - from: /images/matthew-fricke-caption1.png
+    to: fall-23-workshops-matthew-fricke-caption.png
+    alt: "matthew-fricke-caption.png"
+  - from: /images/workshop-photo-edited-caption1.png
+    to: fall-23-workshops-workshop-photo-edited-caption.jpg
+    alt: "workshop-photo-edited-caption.png"
+  - from: /images/thumbnail_image006.png
+    to: libraries-workshops-2023-thumbnail-image.png
+  - from: /images/biodesign_challenge_nmteamphoto-caption1.png
+    to: bioart-design-challenge-biodesign-challenge-nmteamphoto-caption.jpg
+    alt: "biodesign_challenge_nmteamphoto-caption.png"
+  - from: /news--events/News/eric-olaguir-hero-captions.jpg
+    to: safer-roads-student-research-eric-olaguir-hero-captions.jpg
+  - from: /news--events/News/smilab-group-captions.jpg
+    to: safer-roads-student-research-smilab-group-captions.jpg
+  - from: /images/hpc-team-corrected-captions1.jpg
+    to: hpc-competitions-2023-hpc-team-corrected-captions.jpg
+    alt: "hpc-team-corrected-captions.jpg"
+  - from: /news--events/News/abigail-pribisova-caption.png
+    to: hpc-competitions-2023-abigail-pribisova-caption.png
+  - from: /news--events/News/alex-knigge-caption.png
+    to: hpc-competitions-2023-alex-knigge-caption.png
+  - from: /news--events/News/carter-frost-caption.png
+    to: hpc-competitions-2023-carter-frost-caption.png
+  - from: /news--events/News/ellie-larence-caption.png
+    to: hpc-competitions-2023-ellie-larence-caption.png
+  - from: /news--events/News/ryan-scherbarth-caption.png
+    to: hpc-competitions-2023-ryan-scherbarth-caption.png
+  - from: /news--events/News/sachi-barnaby-caption.png
+    to: hpc-competitions-2023-sachi-barnaby-caption.png
+  - from: /news--events/News/matthew-fricke-caption.png
+    to: hpc-competitions-2023-matthew-fricke-caption.png
+  - from: /news--events/News/nicholas-bacon-caption.png
+    to: hpc-competitions-2023-nicholas-bacon-caption.png
+  - from: /images/user-meeting-2022-captions.png
+    to: 2023-user-meeting-user-meeting-2022-captions.jpg
+  - from: /images/article-image-w-caption.png
+    to: coldfront-allocations-article-image-w-caption.jpg
+  - from: /images/dsc03255-caption-border.jpg
+    to: in-place-exhibition-dsc03255-caption-border.jpg
+  - from: /images/dsc03299-caption-border1.jpg
+    to: in-place-exhibition-dsc03299-caption-border.jpg
+    alt: "dsc03299-caption-border.jpg"
+  - from: /images/dsc03278-caption-border.jpg
+    to: in-place-exhibition-dsc03278-caption-border.jpg
+  - from: /images/unm_taos_stem_hyunjublemel-w-caption.png
+    to: workforce-development-award-unm-taos-stem-hyunjublemel-w-caption.jpg
+  - from: /images/photo-patrick-bridges-w-caption4.jpg
+    to: workforce-development-award-photo-patrick-bridges-w-caption.jpg
+    alt: "photo-patrick-bridges-w-caption.jpg"
+  - from: /images/photo-amanda-bienz-w-caption.jpg
+    to: workforce-development-award-photo-amanda-bienz-w-caption.jpg
+  - from: /images/photo-jacob-schroder-w-caption.jpg
+    to: workforce-development-award-photo-jacob-schroder-w-caption.jpg
+  - from: /images/photo-tracy-wenzl-w-caption.jpg
+    to: workforce-development-award-photo-tracy-wenzl-w-caption.jpg
+  - from: /images/photo-matthew-fricke-w-caption.jpg
+    to: workforce-development-award-photo-matthew-fricke-w-caption.jpg
+  - from: /images/sc22-early-career.png
+    to: sc22-team-sc22-early-career.png
+    alt: "Panelists discuss their career history during the Perfecting Your Interview Skills session of the Early Career program at SC22. Photo courtesy of SC22."
+  - from: /images/sc22-dongarra.png
+    to: sc22-team-sc22-dongarra.png
+    alt: "UNM Alumnus Jack Dongarra gives the ACM A.M. Turing Award Lecture at SC22. Photo courtesy of SC22."
+  - from: /images/galewsky-image.jpg
+    to: greenhouse-gas-field-trip-galewsky-image.jpg
+  - from: /images/kevin-fotso-and-tannor-brown.png
+    to: research-computing-facilitation-specialists-kevin-fotso-and-tannor-brown.png
+  - from: /images/grace-hopper.jpg
+    to: hopper-launch-grace-hopper.jpg
+  - from: /images/variant-pelican-lineage.jpg
+    to: covid-19-variant-new-mexico-variant-pelican-lineage.jpg
+    alt: "Researcher examining a slide in a lab setting"
+  - from: /images/katherine.PNG
+    to: graduate-assistants-spring-2021-katherine.png
+  - from: /images/ethan.JPG
+    to: graduate-assistants-spring-2021-ethan.jpg
+  - from: /images/seth.jpeg
+    to: graduate-assistants-spring-2021-seth.jpeg
+  - from: /images/ylva.jpeg
+    to: associate-director-pihlstrom-ylva.jpeg
+    alt: "Ylva Pihlström is CARC's new Associate Director"
+  - from: /images/kevin.png
+    to: research-assistants-fotso-tagne-gupta-kevin.png
+    alt: "Kevin Fotso Tagne"
+  - from: /images/aayush.png
+    to: research-assistants-fotso-tagne-gupta-aayush.png
+    alt: "Aayush Gupta"
+  - from: /images/cybersecurity-1.jpg
+    to: smilab-naval-rotc-cybersecurity.jpg
+  - from: /images/julie.jpg
+    to: julie-harris-retires-julie.jpg
+    alt: "image of Julie Harris"
+  - from: /images/roya-award.jpeg
+    to: smilab-nasimi-national-recognition-roya-award.jpeg
+  - from: /images/cupecs-logo.png
+    to: doe-predictive-science-center-cupecs-logo.png
+  - from: /images/bioart-group.png
+    to: vis-lab-stem-students-bioart-group.jpg
+  - from: /images/bioart-ornament.jpg
+    to: vis-lab-stem-students-bioart-ornament.jpg
+  - from: /images/sc19-booth.png
+    to: sc19-team-sc19-booth.jpg
+  - from: /images/troy-for-story.jpg
+    to: wheelie-test-cluster-troy-for-story.jpg
+  - from: /news--events/News/ups-upgrades.jpg
+    to: carc-upgrades-ups-upgrades.jpg
+    alt: "a view inside of the UPS during maintenance"
+  - from: /images/vanessa-aurora.jpg
+    to: computational-biology-grad-students-vanessa-aurora.jpg
+  - from: /news--events/News/cluster-comp.jpg
+    to: ieee-cluster-2019-cluster-comp.jpg
+    alt: "balloon fiesta albuquerque, NM Photo by Crawford Brian via photopin (CC license)"
+  - from: /news--events/News/life-in-space.jpg
+    to: life-in-space.jpg
+    alt: "man looking into microscope"
+  - from: /images/vis-lab-circuit.jpg
+    to: americorps-vis-lab-vis-lab-circuit.jpg
+  - from: /news--events/News/carc-sc-booth.jpg
+    to: sc18-team-carc-sc-booth.jpg
+  - from: /news--events/News/pod-team.png
+    to: glowpod-pod-team.jpg
+  - from: /images/glowpod-lights.jpg
+    to: glowpod-lights.jpg
+  - from: /images/swarm-robot.jpg
+    to: swarmathon-swarm-robot.jpg
+  - from: /images/2018-swarm-robots.jpg
+    to: swarmathon-2018-swarm-robots.jpg
+  - from: /images/hussein-horse.jpg
+    to: al-azzawi-research-resources-hussein-horse.jpg
+  - from: /images/hussein-wheeler.jpg
+    to: al-azzawi-research-resources-hussein-wheeler.jpg
+  - from: /news--events/News/smart-grid-grants.jpg
+    to: three-grants-2018-smart-grid-grants.jpg
+  - from: /images/libraries-logo.png
+    to: libraries-research-data-preservation-libraries-logo.png
+  - from: /images/sc17-logo.png
+    to: sc17-denver-sc17-logo.png
+  - from: /images/unm-race-car.png
+    to: sc17-research-posters-unm-race-car.png
+  - from: /images/mountain-lion.jpg
+    to: sc17-research-posters-mountain-lion.jpg
+  - from: /images/nanotherapy.jpg
+    to: sc17-research-posters-nanotherapy.jpg
+  - from: /images/leucaena.png
+    to: sc17-research-posters-leucaena.png
+  - from: /images/deleon-image.png
+    to: sc17-research-posters-deleon-image.png
+  - from: /images/technicolor-dawn.png
+    to: sc17-research-posters-technicolor-dawn.png
+  - from: /images/wheeler-system.JPG
+    to: wheeler-named-wheeler-system.jpg
+  - from: /images/carc-lights.jpg
+    to: carc-lights.jpg

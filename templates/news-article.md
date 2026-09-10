@@ -4,6 +4,7 @@ description: "ONE-SENTENCE SUMMARY — shown in the news index, search results, 
 type: News
 tags:
   - News
+date: "YYYY-MM-DD"                       # story date (YYYY, YYYY-MM or YYYY-MM-DD); groups the Archive by year
 generated:
   by: "human:YOURNETID"
   at: "YYYY-MM-DDT00:00:00Z"

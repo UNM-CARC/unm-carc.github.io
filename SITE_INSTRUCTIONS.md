@@ -46,6 +46,14 @@ column. Filenames are lowercase-with-hyphens (`kebab-case.md`).
 
 5. Commit both changes (green **Commit changes** button; a short message like
    "news: fall workshops announcement" is perfect).
+
+   The `date:` line in the frontmatter is what files the article under the
+   right year once it moves down into the **Archive** list at the bottom of
+   `docs/news/index.md`. That list, between the `<!-- archive:start -->` and
+   `<!-- archive:end -->` markers, is generated from every article's `date`
+   and `description` — do not edit inside the markers by hand (it is
+   rewritten by `scripts/port_legacy_pages.py --offline --no-rewrite`); the
+   hand-written list above the markers is yours to curate.
 6. Watch the **Actions** tab if you like — when the `publish-cascade` job
    goes green, the article is live at carc.unm.edu (the `deploy-pages` job
    updates the staging copy).
@@ -198,6 +206,17 @@ Edit, rebuild, refresh. Commit and push when happy — CI still runs the same
 checks and does the publishing. (Publishing from a laptop is possible with
 `scripts/cascade_sync.py` and a Cascade API key, but the normal route is
 simply pushing to `main`.)
+
+## Stories from the old website
+
+The pre-2026 stories from the old Cascade site were brought over by a one-shot
+tool, `scripts/port_legacy_pages.py`, driven by `migration/pages.yml` (one row
+per old page: where it came from, where it lives now, its date and byline).
+The ported pages carry `generated.by: "process:scripts/port_legacy_pages.py"`
+and are ordinary Markdown from then on — edit them like any other page. If you
+polish one, add a `verified` block; the tool will never overwrite a page that
+has one. Old stories that were deliberately not ported are listed in the same
+file with `action: skip` and the reason.
 
 ## What not to touch
 

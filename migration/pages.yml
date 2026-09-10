@@ -1,0 +1,336 @@
+# Legacy carc.unm.edu pages -> pages under docs/. Applied by scripts/port_legacy_pages.py.
+#
+# Seeded from the September 2026 sweep of the old site. `to` is docs/-relative and
+# IS the published URL. `date` is the story date at the precision the text
+# supports (YYYY | YYYY-MM | YYYY-MM-DD); blank = undated. `author` is the byline,
+# if any. `action: port` fetches and converts the page; `skip` leaves the old page
+# serving. The script never rewrites this file; edit rows by hand.
+
+pages:
+  - from: /news--events/News/2024-user-meeting.html
+    to: news/2024-user-meeting.md
+    title: "Registration is open for the 2024 CARC user meeting"
+    date: "2024-03"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/sc23-conference.html
+    to: news/sc23-team.md
+    title: "CARC team travels to Denver for supercomputing conference"
+    date: "2023-12"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/fall-23-undergrads.html
+    to: news/fall-23-undergrads.md
+    title: "Three undergraduate students help support CARC systems and users"
+    date: "2023-10"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/fall-23-workshops.html
+    to: news/fall-23-workshops.md
+    title: "CARC workshops being offered for the Fall 2023 semester"
+    date: "2023-08"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/libraries-workshops-2023.html
+    to: news/libraries-workshops-2023.md
+    title: "Research Data Services program enhances university research capabilities with technical workshops"
+    date: "2023-09"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/bioart-design-challenge.html
+    to: news/bioart-design-challenge.md
+    title: "UNM students pushing boundaries in biodesign for a sustainable future"
+    date: "2023-06"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/engineering-student-research.html
+    to: news/safer-roads-student-research.md
+    title: "UNM engineering student uses research to make safer roads"
+    date: "2023-05"
+    author: "Mary Beth King"
+    action: port
+  - from: /news--events/News/hpc-competitions-2023.html
+    to: news/hpc-competitions-2023.md
+    title: "Computer Science students take part in HPC competition"
+    date: "2023-04"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/2023-user-meeting.html
+    to: news/2023-user-meeting.md
+    title: "Registration is open for the 2023 CARC user meeting"
+    date: "2023-03"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/carc-cold-front.html
+    to: news/coldfront-allocations.md
+    title: "CARC implements new resource and allocation management system"
+    date: "2023"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/carc-gallery-hosts-inplace-exhibition.html
+    to: news/in-place-exhibition.md
+    title: "STEAM NM brings new exhibition to CARC Gallery"
+    date: "2023"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/dept-ed-earmarked-funds.html
+    to: news/workforce-development-award.md
+    title: "UNM receives $1.5 million to support computational workforce development"
+    date: "2023"
+    author: "Mariah Rosales"
+    action: port
+  - from: /news--events/News/carc-team-sc22.html
+    to: news/sc22-team.md
+    title: "CARC team travels to Dallas for supercomputing conference"
+    date: "2022-11"
+    author: "Elliott Robinson"
+    action: port
+  - from: /news--events/News/students-learn-about-greenhouse-gas-emissions.html
+    to: news/greenhouse-gas-field-trip.md
+    title: "Students go on-site to learn about greenhouse gas emissions"
+    date: "2022-05"
+    author: "Mary Beth King"
+    action: port
+  - from: /news--events/News/carc-adds-two-new-research-computing-facilitation-specialists.html
+    to: news/research-computing-facilitation-specialists.md
+    title: "CARC adds two new Research Computing Facilitation Specialists"
+    date: "2022"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-launches-hopper.html
+    to: news/hopper-launch.md
+    title: "CARC launches new condo cluster"
+    date: "2022"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-coronavirus-information.html
+    to: news/carc-coronavirus-information.md
+    title: "CARC Coronavirus (COVID-19) information"
+    date: "2021-10-07"
+    author: ""
+    action: skip
+    note: "stale 2021 notice; redirected to /contact/ in redirects-extra.yml"
+  - from: /news--events/News/unm-researchers-discover-new-covid-19-variation-in-new-mexico-population.html
+    to: news/covid-19-variant-new-mexico.md
+    title: "UNM researchers discover new COVID-19 variation in New Mexico population"
+    date: "2021-02"
+    author: ""
+    action: port
+  - from: /news--events/News/three-graduate-assistants-join-carc-team-spring-2021.html
+    to: news/graduate-assistants-spring-2021.md
+    title: "Katherine Cosburn, Ethan Gyllenhaal, and Seth Bruzewski join the CARC team"
+    date: "2021-01"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-announces-associate-director.html
+    to: news/associate-director-pihlstrom.md
+    title: "CARC announces new Associate Director Ylva Pihlström"
+    date: "2021"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-welcomes-new-research-assistants.html
+    to: news/research-assistants-fotso-tagne-gupta.md
+    title: "CARC welcomes new graduate research assistants Kevin Fotso Tagne and Aayush Gupta"
+    date: "2021-09"
+    author: ""
+    action: port
+  - from: /news--events/News/smilab-naval-rotc-cybersecurity-training.html
+    to: news/smilab-naval-rotc.md
+    title: "SMILab works with Naval ROTC to train cadets in cybersecurity"
+    date: "2021"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-administrative-assistant-harris-retires.html
+    to: news/julie-harris-retires.md
+    title: "CARC Administrative Assistant III Julie Harris retires"
+    date: "2020-07"
+    author: ""
+    action: port
+  - from: /news--events/News/smilab-webinar-on-smart-structures-technologies.html
+    to: news/smilab-webinar-on-smart-structures-technologies.md
+    title: "SMILab hosts webinar on smart structures technologies"
+    date: "2020-07"
+    author: ""
+    action: skip
+    note: "expired one-off Zoom webinar"
+  - from: /news--events/News/smilab-research-assistant-receives-national-recognition.html
+    to: news/smilab-nasimi-national-recognition.md
+    title: "SMILab research assistant receives national recognition"
+    date: "2020-06"
+    author: ""
+    action: port
+  - from: /news--events/News/researchers-study-covid-19.html
+    to: news/researchers-study-covid-19.md
+    title: "UNM researchers use advanced computing to study COVID-19"
+    date: "2020-05"
+    author: ""
+    action: port
+  - from: /news--events/News/unm-receives-4-million-research-center-award.html
+    to: news/doe-predictive-science-center.md
+    title: "UNM, UTC, and UAB receive $4 million DOE predictive science research center award"
+    date: "2020"
+    author: ""
+    action: port
+  - from: /news--events/News/vis-lab-inspires-stem-students.html
+    to: news/vis-lab-stem-students.md
+    title: "CARC's Vis Lab inspires students' STEM interest"
+    date: "2019-12"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-team-travels-to-sc19.html
+    to: news/sc19-team.md
+    title: "CARC team travels to Denver for SC19"
+    date: "2019-11"
+    author: ""
+    action: port
+  - from: /news--events/News/redfearn-wheelie.html
+    to: news/wheelie-test-cluster.md
+    title: "Troy Redfearn pursues better user experience with new test cluster"
+    date: "2019-08"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-upgrades.html
+    to: news/carc-upgrades.md
+    title: "Upgrades at CARC support UNM research"
+    date: "2019-06"
+    author: ""
+    action: port
+  - from: /news--events/News/software-carpentry-workshop.html
+    to: news/software-carpentry-workshop.md
+    title: "Software Carpentry workshop to be offered in May"
+    date: "2019-05"
+    author: ""
+    action: skip
+    note: "expired 2019 registration call"
+  - from: /news--events/News/lobby-monitor-carc-systems.html
+    to: news/lobby-monitor-carc-systems.md
+    title: "Lobby monitor a dynamic way to watch CARC systems at work"
+    date: "2019-01"
+    author: ""
+    action: skip
+    note: "facts no longer true (2018 lobby monitor)"
+  - from: /news--events/News/carc-welcomes-computational-bio-grad-students.html
+    to: news/computational-biology-grad-students.md
+    title: "CARC welcomes new computational biology graduate students"
+    date: "2019"
+    author: ""
+    action: port
+  - from: /news--events/News/ieee-cluster-conference-albuquerque.html
+    to: news/ieee-cluster-2019.md
+    title: "IEEE Cluster Conference comes to Albuquerque"
+    date: "2019"
+    author: ""
+    action: port
+  - from: /news--events/News/life-in-space.html
+    to: news/life-in-space.md
+    title: "Research team developing software to distinguish life from non-life"
+    date: "2019"
+    author: ""
+    action: port
+  - from: /news--events/News/rmacc-symposium-may-21-23.html
+    to: news/rmacc-symposium-may-21-23.md
+    title: "RMACC Symposium May 21-23"
+    date: "2019"
+    author: ""
+    action: skip
+    note: "expired 2019 registration call with prices"
+  - from: /news--events/News/volunteers-facilitate-research-in-vis-lab.html
+    to: news/americorps-vis-lab.md
+    title: "AmeriCorps volunteers facilitate research in Vis Lab"
+    date: "2019"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-at-sc18.html
+    to: news/sc18-team.md
+    title: "CARC team attending premier supercomputing event"
+    date: "2018-11"
+    author: ""
+    action: port
+  - from: /news--events/News/smw-glowpod.html
+    to: news/glowpod.md
+    title: "Social Media Workshop pod project looks toward futuristic farming"
+    date: "2018-10"
+    author: ""
+    action: port
+  - from: /news--events/News/swarmathon-paves-way-to-robot-mission-on-mars.html
+    to: news/swarmathon.md
+    title: "Swarmathon paves way to robot mission on Mars"
+    date: "2018-04"
+    author: ""
+    action: port
+  - from: /news--events/News/al-azzawi-working-to-expand-research-resources.html
+    to: news/al-azzawi-research-resources.md
+    title: "Hussein Al-Azzawi working to expand research resources"
+    date: "2018"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-receives-three-grants.html
+    to: news/three-grants-2018.md
+    title: "CARC recipient of grants for cyberinfrastructure optimization, protecting sensitive data, SMART Grid projects"
+    date: "2018"
+    author: ""
+    action: port
+  - from: /news--events/News/grad-student-helping-out-at-carc-this-summer.html
+    to: news/grad-student-helping-out-at-carc-this-summer.md
+    title: "Grad student helping out at CARC this summer"
+    date: "2018"
+    author: ""
+    action: skip
+    note: "undated orphan profile, not in the legacy nav"
+  - from: /news--events/News/libraries-and-carc-join-to-preserve-research-data.html
+    to: news/libraries-research-data-preservation.md
+    title: "Libraries and CARC join to preserve research data"
+    date: "2018"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-staffers-attend-denver-supercomputing-conference.html
+    to: news/sc17-denver.md
+    title: "CARC group attends Denver supercomputing conference"
+    date: "2017-11"
+    author: ""
+    action: port
+  - from: /news--events/News/unm-research-at-sc17.html
+    to: news/sc17-research-posters.md
+    title: "UNM research at SC17"
+    date: "2017-11"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-helps-unm-race-car-teams-need-for-speed.html
+    to: news/formula-sae-race-car.md
+    title: "CARC helps UNM race car team's need for speed"
+    date: "2017"
+    author: ""
+    action: port
+  - from: /news--events/News/carc-system-gets-a-name.html
+    to: news/wheeler-named.md
+    title: "Powerful CARC system gets a name"
+    date: "2017"
+    author: ""
+    action: port
+  - from: /news--events/News/lanl-carc-machine.html
+    to: news/lanl-donated-system.md
+    title: "LANL donation adds to UNM supercomputing power"
+    date: "2017"
+    author: ""
+    action: port
+    drop_images: [/images/lanl-logo.png]   # gone from the old host (404)
+  - from: "/news--events/News/CARC lights.html"
+    to: news/carc-lights.md
+    title: "STEAM project on CARC lights up the night on Route 66"
+    date: "2016"
+    author: ""
+    action: port
+  - from: /news--events/News/gallery-show-features-stem-themed-artwork.html
+    to: news/gallery-show-features-stem-themed-artwork.md
+    title: "Gallery show"
+    date: ""
+    author: ""
+    action: skip
+    note: "duplicate of the gallery page"
+  - from: /news--events/News/lobo-gardens.html
+    to: news/lobo-gardens.md
+    title: "CARC Gallery show tells history of Lobo Gardens"
+    date: ""
+    author: ""
+    action: skip
+    note: "undated orphan; third-party marks in images"

@@ -4,6 +4,7 @@ description: "The University seeks a strategic and operational leader for the Ce
 type: News
 tags:
   - News
+date: "2026"
 generated:
   by: "claude/fable-5"
   at: "2026-08-29T00:00:00Z"

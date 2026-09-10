@@ -5,6 +5,7 @@ type: News
 tags:
   - News
 status: draft
+date: "2026-08"
 generated:
   by: "claude/fable-5"
   at: "2026-08-30T00:00:00Z"
