@@ -23,7 +23,7 @@ HTML page.
 * [Education](education/index.md) - Workshops and the CSE graduate certificate program.
 * [News](news/index.md) - Announcements and stories from the CARC community.
 * [Jobs](jobs/index.md) - Open positions at CARC, with links to apply through UNM Jobs.
-* [Contact](contact/index.md) - Personnel directory and visitor information.
+* [Contact](contact/index.md) - Personnel directory, visitor information, and office hours.
 * [Website update log](log.md) - Dated history of changes to this bundle.
 
 ## Related bundles

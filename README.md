@@ -48,7 +48,11 @@ publish.**
 - Everything the rebuilt site does not own lives under `archive/` in
   Cascade; `_internal/` (site machinery) and `_carc-sync/` (the manifests)
   stay at the root. Legacy pages that were never migrated keep serving at
-  their old URLs from files already on the host.
+  their old URLs from files already on the host — which means **`archive/`
+  must not be unpublished or deleted in Cascade** until every page and image
+  still worth keeping has been ported into this repository (see
+  `migration/legacy-paths.txt` for the inventory and `docs/log.md` for
+  progress). Unpublishing it would remove ~150 pages and ~400 images at once.
 
 ## Building locally
 

@@ -11,9 +11,9 @@ Announcements and stories from the CARC community.
 
 ## Archive
 
-Older stories, by year. Stories from the previous website remain on the
-[news archive](https://carc.unm.edu/news--events/News/index.html) of
-carc.unm.edu.
+Older stories, by year. Stories from the previous website that have not yet
+been moved here still serve at their original carc.unm.edu addresses; they
+are being brought into this archive as they are ported.
 
 ### 2026
 
