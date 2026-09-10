@@ -17,6 +17,7 @@
 /education--training/cse-program1/data-science-specialization.html
 /education--training/cse-program1/hpc-systems-specialization.html
 /education--training/cse-program1/program-specialization.html
+/education--training/intro-to-carc-workshop.html
 /education--training/workshops-and-seminars.html
 /index.html
 /new-users/getting-started-at-carc1.html
@@ -49,6 +50,7 @@
 /news--events/News/carc-upgrades.html
 /news--events/News/carc-welcomes-computational-bio-grad-students.html
 /news--events/News/carc-welcomes-new-research-assistants.html
+/news--events/News/cleve-moler.html
 /news--events/News/dept-ed-earmarked-funds.html
 /news--events/News/director-message.html
 /news--events/News/director-search-story.html
@@ -175,3 +177,7 @@
 /systems/downtime-notices.html
 /systems/export-control.html
 /user-support-2/office-and-consultation-hours.html
+/user-support-2/running-jobs/checking-on-running-jobs.html
+/user-support-2/running-jobs/pbstorque.html
+/user-support-2/running-jobs/sample-pbs-scripts.html
+/user-support-2/running-jobs/submitting-jobs.html

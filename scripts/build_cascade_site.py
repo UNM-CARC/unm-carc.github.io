@@ -400,7 +400,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">ColdFront <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>',
-        '<li><a class="carc-ext-btn" href="https://carc.unm.edu/user-support-2/office-and-consultation-hours.html">Office Hours</a></li>',
+        f'<li><a class="carc-ext-btn" href="{rel_root}contact/office-hours/">Office Hours</a></li>',
         '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',
     ]
     return "\n".join(primary), "\n".join(utilities)

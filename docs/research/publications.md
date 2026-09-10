@@ -13,6 +13,10 @@ sources:
     resource: "https://carc.unm.edu/research/publications.html"
     title: "Publications and acknowledgement (carc.unm.edu)"
     author: "team:unm-carc"
+  - id: carc-web-acknowledgement
+    resource: "https://carc.unm.edu/research/carc-acknowledgement.html"
+    title: "CARC acknowledgement (carc.unm.edu)"
+    author: "team:unm-carc"
 ---
 
 # Publications and acknowledgement

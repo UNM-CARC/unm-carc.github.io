@@ -1,5 +1,13 @@
 # Website update log
 
+## 2026-09-10
+
+* **New**: [Office and consultation hours](contact/office-hours.md) — the weekly Zoom office hours (Tuesdays and Thursdays, 11:00–12:00 MT) and how to book a consultation, ported from the last remaining support page on the old site. The site-wide *Office Hours* button now lands here instead of on the legacy page, whose address redirects.
+* **Redirects**: A sweep of the old site found 151 pages still serving at their original addresses (plus five outside the old sitemap: four PBS/Torque job-submission pages and an empty workshop-registration stub). The ones whose content now lives in the [user documentation](/docs/) — getting started, requesting accounts and projects, the Good Neighbor policy, storage and backup, the facilities description, CARC infrastructure, system status, and the PBS pages — now redirect there; the CSE "About" landing, the orphan draft HPC-systems specialization, the empty Events and Calendar pages, the social-media placeholder, a 2021 coronavirus notice, and two published test stubs redirect to their successors here. The old acknowledgement, find-funding, and duplicate grant-writing pages redirect to [Publications](research/publications.md) and [Grant writing resources](research/grant-resources.md).
+* **Fix**: The News archive no longer points at `/news--events/News/index.html` as "the old news archive": that page is the SC18 research posters gallery. The old stories were listed only by the legacy sidebar; they are being ported into the archive here.
+* **Fix**: [Grant writing resources](research/grant-resources.md) had seven dead links (the OVPR and OSP pages moved); they now point at the current FRDO, OSP, Research Compliance, and NSF PAPPG pages, and the page links the [facilities description](/docs/about/facilities/) proposal writers need.
+* **Housekeeping**: `migration/legacy-paths.txt` now lists the Cleve Moler story and the five pages found outside the old sitemap, so the build's inventory check is accurate again. README warns that the Cascade `archive/` folder must stay published until the port is complete. `/images/lanl-logo.png` on the old host is already gone (404).
+
 ## 2026-09-08
 
 * **Navigation**: The header now separates CARC sections from a centered user-actions row: [User Documentation](/docs/), [Open OnDemand](https://ood.alliance.unm.edu/){target=_blank}, [ColdFront](https://coldfront.alliance.unm.edu/){target=_blank}, [Help Desk](https://support.alliance.unm.edu/){target=_blank}, and [Office Hours](https://carc.unm.edu/user-support-2/office-and-consultation-hours.html).

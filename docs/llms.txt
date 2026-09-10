@@ -17,7 +17,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 
 - [Featured projects](https://carc.unm.edu/research/featured-projects/): Feature articles highlighting research projects done using computing, storage, and support resources at the Center for Advanced Research Computing.
 - [Free research computing](https://carc.unm.edu/research/free-services/): A description of the free baseline research computing service CARC provides to UNM main campus users, including the core-hour and storage limits.
-- [Grant writing resources](https://carc.unm.edu/research/grant-resources/): Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals.
+- [Grant writing resources](https://carc.unm.edu/research/grant-resources/): Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals, plus the CARC facilities description for proposals.
 - [Premium services](https://carc.unm.edu/research/premium-services/): CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service.
 - [Publications and acknowledgement](https://carc.unm.edu/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center.
 
@@ -59,6 +59,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 
 ## Contact
 
+- [Office and consultation hours](https://carc.unm.edu/contact/office-hours/): Weekly open office hours with CARC staff on Zoom (Tuesdays and Thursdays, 11:00–12:00 MT) and how to book a longer consultation.
 - [Personnel](https://carc.unm.edu/contact/personnel/): The CARC team: leadership, systems staff, and administration.
 - [Visiting CARC](https://carc.unm.edu/contact/visiting/): Location, directions, and parking for the CARC building at 1601 Central Avenue NE.
 
