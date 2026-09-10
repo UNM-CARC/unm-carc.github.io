@@ -22,4 +22,5 @@ published here.
 
 !!! alert "Notice"
 
-  [tyson's blog](https://tysonswetnam.com/blog/posts/2026-07-01-data-center-on-route-66/){_target=blank}
+
+   [tyson's blog](https://tysonswetnam.com/blog/posts/2026-07-01-data-center-on-route-66/){_target=blank}
