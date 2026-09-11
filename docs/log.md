@@ -2,6 +2,7 @@
 
 ## 2026-09-10
 
+* **Update**: The CARC acknowledgement on [Publications and acknowledgement](research/publications.md) is now a plain-text box with a **Copy** button, alongside three ready-to-paste versions (computing; computing and storage; computing, storage, and visualization), so nothing has to be retyped or edited out of braces. The page also says where to register a publication (ColdFront). Every fenced text block on the site now gets the same Copy button.
 * **New**: [Export control](about/export-control.md) — the U.S. export-regulation rules for software on CARC systems, which lived at two identical addresses on the old site; both now redirect here.
 * **Update**: [Program specializations](education/cse/specializations.md) now carries the Computational Fluid Dynamics and Data Science course plans (transcribed from the old site's table images, with the credit-hour reconciliation against the certificate requirements) instead of linking out to the old pages. The specialization-specific course numbers have not been re-validated against the current schedule; the page says so and points at the Program Advisor.
 * **New**: [Research posters: SC18 and the 2018 LANL summer symposium](research/sc18-research-posters.md) — the twelve digital posters CARC took to SC18, plus the LANL UltraScale Systems Research Center 2018 student posters, all localized (13 images, 6 PDFs). This is the page that sat at the old site's `/news--events/News/index.html` address.

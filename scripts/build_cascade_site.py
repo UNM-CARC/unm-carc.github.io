@@ -295,6 +295,18 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #carc-content .admonition.success .admonition-title { color: #4a7729; }
 #carc-content .admonition.quote { border-left-color: #a7a8aa; font-style: italic; }
 #carc-content .admonition.quote .admonition-title { color: #63666a; font-style: normal; }
+/* copyable text blocks (fenced ``` blocks): wrap long lines, add a Copy button */
+#carc-content pre { position: relative; background: var(--pg-card); border: 1px solid var(--pg-border);
+  border-left: 5px solid #007a86; border-radius: 0 4px 4px 0; padding: .9em 5.5em .9em 1em; margin: 1em 0 1.4em;
+  white-space: pre-wrap; word-wrap: break-word; font-size: .95em; line-height: 1.5; }
+#carc-content pre code { background: transparent; padding: 0; border: 0; color: inherit; white-space: inherit;
+  font-family: Menlo, Consolas, "Liberation Mono", monospace; }
+#carc-content pre code.language-text { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.05em; }
+#carc-content .carc-copy-btn { position: absolute; top: .55em; right: .6em; border: 1px solid #007a86;
+  background: var(--pg-bg); color: #007a86; border-radius: 999px; padding: .2em .8em; font: inherit;
+  font-size: .8em; cursor: pointer; }
+#carc-content .carc-copy-btn:hover, #carc-content .carc-copy-btn:focus { background: #007a86; color: #fff; }
+#carc-content .carc-copy-btn.is-done { background: #4a7729; border-color: #4a7729; color: #fff; }
 #carc-content .carc-byline { text-transform: uppercase; letter-spacing: .08em;
   font-size: .85em; color: var(--pg-muted); margin-top: -0.5em; }
 #carc-content .md-button { display: inline-block; background: #ba0c2f; color: #fff;
@@ -383,6 +395,33 @@ TEMPLATE = """<!DOCTYPE html>
       label();
     }});
   }}
+}})();
+(function () {{
+  var blocks = document.querySelectorAll("#carc-content pre");
+  if (!blocks.length) return;
+  function fallback(text) {{
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.left = "-9999px";
+    document.body.appendChild(ta); ta.select();
+    try {{ document.execCommand("copy"); }} catch (e) {{}}
+    document.body.removeChild(ta);
+  }}
+  Array.prototype.forEach.call(blocks, function (pre) {{
+    var btn = document.createElement("button");
+    btn.type = "button"; btn.className = "carc-copy-btn"; btn.textContent = "Copy";
+    btn.setAttribute("aria-label", "Copy this text to the clipboard");
+    btn.addEventListener("click", function () {{
+      var code = pre.querySelector("code"), text = (code || pre).innerText.replace(/\\s+$/, "");
+      function done() {{
+        btn.textContent = "Copied"; btn.classList.add("is-done");
+        setTimeout(function () {{ btn.textContent = "Copy"; btn.classList.remove("is-done"); }}, 1800);
+      }}
+      if (navigator.clipboard && window.isSecureContext) {{
+        navigator.clipboard.writeText(text).then(done, function () {{ fallback(text); done(); }});
+      }} else {{ fallback(text); done(); }}
+    }});
+    pre.appendChild(btn);
+  }});
 }})();
 </script>
 </body>
