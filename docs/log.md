@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-09-11
+
+* **Update**: `robots.txt` is now an allowlist. The AI agents named in the [user documentation's](/docs/) robots file (Google, OpenAI, Anthropic, Perplexity, Cohere, Apple, Common Crawl, Meta, Amazon, DuckDuckGo, and Mistral agents) plus the Bingbot, DuckDuckBot, and Applebot search crawlers may crawl the site; every other crawler is disallowed. The file also lists the sitemaps of the project sites served under unm-carc.github.io — [/docs/](https://unm-carc.github.io/docs/), [/foss/](https://unm-carc.github.io/foss/), [/container-camp/](https://unm-carc.github.io/container-camp/), and [/cyverse/](https://unm-carc.github.io/cyverse/) — because crawlers only read robots.txt at the host root.
+
 ## 2026-09-10
 
 * **Update**: The CARC acknowledgement on [Publications and acknowledgement](research/publications.md) is now a plain-text box with a **Copy** button, alongside three ready-to-paste versions (computing; computing and storage; computing, storage, and visualization), so nothing has to be retyped or edited out of braces. The page also says where to register a publication (ColdFront). Every fenced text block on the site now gets the same Copy button.
