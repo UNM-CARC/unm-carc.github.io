@@ -18,7 +18,7 @@ HTML page.
 
 ## Sections
 
-* [About](about/index.md) - Mission, strategic plan, history, and the Internal Advisory Board.
+* [About](about/index.md) - Mission, strategic plan, history, the Internal Advisory Board, and export control.
 * [Research](research/index.md) - Featured projects, publications, services, and grant resources.
 * [Education](education/index.md) - Workshops and the CSE graduate certificate program.
 * [News](news/index.md) - Announcements and stories from the CARC community.

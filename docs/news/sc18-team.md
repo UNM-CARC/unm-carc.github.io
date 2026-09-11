@@ -42,7 +42,7 @@ Al-Azzawi, systems analyst Jose Sanchez, and research assistants Keira Haskins
 and William “Pepper” Marts.
 
 The CARC booth featured [digital
-posters](http://carc.unm.edu/news--events/News/index.html){target=_blank} that
+posters](../research/sc18-research-posters.md) that
 highlighted research done using CARC resources. Projects ranged from an
 examination of the genetics of viruses to Martian robot swarms to a consortium
 effort that will revolutionize New Mexico’s electrical grid to incorporate

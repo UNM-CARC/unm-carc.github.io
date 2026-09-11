@@ -8,6 +8,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 
 ## About CARC
 
+- [Export control](https://carc.unm.edu/about/export-control/): How U.S. export regulations apply to software on CARC systems: export-controlled software may be installed only with prior written approval or a written exception from UNM Export Control.
 - [History](https://carc.unm.edu/about/history/): A timeline of CARC milestones from the founding of the Maui and Albuquerque high performance computing centers in the 1990s through recent system donations and retirements.
 - [Internal Advisory Board](https://carc.unm.edu/about/iab/): Membership roster and meeting minutes of the CARC Internal Advisory Board, which meets regularly to make decisions regarding the center's operations and goals.
 - [Mission and vision](https://carc.unm.edu/about/mission/): CARC's vision and mission: leading and growing the computational research community at UNM.
@@ -19,7 +20,8 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 - [Free research computing](https://carc.unm.edu/research/free-services/): A description of the free baseline research computing service CARC provides to UNM main campus users, including the core-hour and storage limits.
 - [Grant writing resources](https://carc.unm.edu/research/grant-resources/): Links to UNM training, funding search, proposal development, compliance, and submission resources for researchers writing grant proposals, plus the CARC facilities description for proposals.
 - [Premium services](https://carc.unm.edu/research/premium-services/): CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service.
-- [Publications and acknowledgement](https://carc.unm.edu/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources — ready to copy and paste — plus how to register your publication and a link to publications that feature the center.
+- [Publications and acknowledgement](https://carc.unm.edu/research/publications/): The acknowledgement statement to use in publications that made use of CARC resources, and a link to view publications that feature the center.
+- [Research posters: SC18 and the 2018 LANL summer symposium](https://carc.unm.edu/research/sc18-research-posters/): Digital posters of UNM computational research that CARC took to SC18 in Dallas, and student posters from the Los Alamos UltraScale Systems Research Center 2018 Summer Research Symposium.
 
 ## Education & training
 
@@ -30,7 +32,7 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 - [CSE application](https://carc.unm.edu/education/cse/application/): How to apply to the CSE Certificate Program through the UNM ApplyYourself portal.
 - [Electives and participating departments](https://carc.unm.edu/education/cse/electives/): Approved CSE elective courses by department — with live schedule links and Fall 2026 offering status — and the departments participating in the certificate program.
 - [CSE program requirements](https://carc.unm.edu/education/cse/requirements/): Admission prerequisites, core courses, elective hours, and the research project requirement for the CSE certificate.
-- [Program specializations](https://carc.unm.edu/education/cse/specializations/): Optional, non-transcripted CSE specializations: Computational Fluid Dynamics and Data Science.
+- [Program specializations](https://carc.unm.edu/education/cse/specializations/): Optional, non-transcripted CSE specializations — Computational Fluid Dynamics and Data Science — with course plans for M.S., post-degree, and Ph.D. students.
 
 ## News
 
