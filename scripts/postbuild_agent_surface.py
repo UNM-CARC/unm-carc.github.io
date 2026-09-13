@@ -14,8 +14,10 @@ Run AFTER `zensical build`. It:
        <link rel="alternate" type="text/markdown" href="index.md">
        <meta name="okf:type" | okf:status | okf:trust-tier | okf:generated-at
              | okf:stale-after>
-3. Writes robots.txt advertising sitemap.xml, /llms.txt, /llms-full.txt, and
-   the Markdown mirror convention.
+3. Writes robots.txt: an allowlist of named AI agents and search engines
+   (every other crawler is disallowed), the sitemaps of this site and the
+   unm-carc.github.io project sites, /llms.txt, /llms-full.txt, and the
+   Markdown mirror convention.
 
 Usage: python3 scripts/postbuild_agent_surface.py [site_dir]
 """
@@ -33,6 +35,28 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
+
+# robots.txt allowlist: the AI agents the CARC documentation names
+# (UNM-CARC/docs postbuild_agent_surface.py) plus the major search engines.
+# Every crawler not listed here is disallowed.
+ALLOWED_AGENTS = [
+    "Googlebot", "Google-Extended", "GoogleOther", "Google-CloudVertexBot",
+    "GPTBot", "OAI-SearchBot", "ChatGPT-User",
+    "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot",
+    "cohere-ai", "Applebot-Extended", "CCBot", "meta-externalagent",
+    "Amazonbot", "DuckAssistBot", "MistralAI-User",
+    # search engines
+    "Bingbot", "DuckDuckBot", "Applebot",
+]
+
+# Project sites served under unm-carc.github.io. Only the host-root
+# robots.txt is honoured by crawlers, so their sitemaps are listed here.
+PROJECT_SITEMAPS = [
+    "https://unm-carc.github.io/docs/sitemap.xml",
+    "https://unm-carc.github.io/foss/sitemap.xml",
+    "https://unm-carc.github.io/container-camp/sitemap.xml",
+    "https://unm-carc.github.io/cyverse/sitemap.xml",
+]
 
 
 def site_url() -> str:
@@ -129,22 +153,37 @@ def main():
         htmlfile.write_text(text, encoding="utf-8")
         injected += 1
 
-    # 3. robots.txt — one wildcard group and nothing else. Under RFC 9309 a
-    # crawler obeys only its most specific matching group, so naming AI agents
-    # here would *replace* these rules for them rather than add to them; every
-    # crawler is welcome, named or not. The two Disallows are the host's
-    # legacy ones (cPanel serves /cgi-bin/).
+    # 3. robots.txt — an allowlist. Under RFC 9309 a crawler obeys only its
+    # most specific matching group, so the named agents below get their own
+    # group (full access minus the host's legacy /cgi-bin/ and /tmp/, which
+    # must be repeated because the wildcard group no longer applies to them)
+    # and every other crawler falls through to `User-agent: *` and is denied.
+    # The list is the AI agents CARC documentation welcomes plus the major
+    # search engines, so carc.unm.edu stays in Google, Bing, DuckDuckGo, and
+    # Apple search. This file is served at the host root of both
+    # unm-carc.github.io and carc.unm.edu, so it also governs the project
+    # sites under unm-carc.github.io (/docs/, /foss/, /container-camp/,
+    # /cyverse/) — their sitemaps are listed here for the same reason.
+    allowed = "".join(f"User-agent: {a}\n" for a in ALLOWED_AGENTS)
+    sitemaps = "".join(f"Sitemap: {u}\n" for u in
+                       [f"{base}sitemap.xml", f"{base}docs/sitemap.xml", *PROJECT_SITEMAPS])
     (site / "robots.txt").write_text(
         "# UNM Center for Advanced Research Computing\n"
-        "# This site is published for people and for AI agents alike: crawling,\n"
-        "# indexing, snippeting, and AI grounding of this content are all welcome.\n"
+        "# Published for people and for the AI agents and search engines named\n"
+        "# below; other crawlers are not permitted.\n"
         "\n"
-        "User-agent: *\n"
+        + allowed +
+        # Disallows first: RFC 9309 parsers pick the longest match, but
+        # first-match parsers (e.g. Python's urllib.robotparser) stop at the
+        # first rule, so this order is correct under both.
         "Disallow: /cgi-bin/\n"
         "Disallow: /tmp/\n"
+        "Allow: /\n"
         "\n"
-        f"Sitemap: {base}sitemap.xml\n"
-        f"Sitemap: {base}docs/sitemap.xml\n"
+        "User-agent: *\n"
+        "Disallow: /\n"
+        "\n"
+        + sitemaps +
         "\n"
         "# AI agents and harnesses:\n"
         f"#   Machine-readable outline:  {base}llms.txt\n"
@@ -152,7 +191,10 @@ def main():
         "#   Markdown source of any page (OKF v0.2 frontmatter: type, provenance,\n"
         "#   trust, lifecycle): append `index.md` to the page URL.\n"
         f"#   Agent guide:               {base}docs/about/ai-agents/\n"
-        f"#   User documentation bundle: {base}docs/llms.txt\n",
+        f"#   User documentation bundle: {base}docs/llms.txt\n"
+        "#   Course and guide bundles:  https://unm-carc.github.io/foss/llms.txt\n"
+        "#                              https://unm-carc.github.io/container-camp/llms.txt\n"
+        "#                              https://unm-carc.github.io/cyverse/llms.txt\n",
         encoding="utf-8")
 
     print(f"agent surface: mirrored {mirrored} markdown files, "

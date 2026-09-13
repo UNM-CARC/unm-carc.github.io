@@ -5,6 +5,7 @@ type: News
 tags:
   - News
   - Students
+date: "2024-10"
 generated:
   by: "claude/fable-5"
   at: "2026-08-29T00:00:00Z"

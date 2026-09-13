@@ -5,6 +5,7 @@ type: News
 tags:
   - News
   - Events
+date: "2025-03"
 generated:
   by: "claude/fable-5"
   at: "2026-08-29T00:00:00Z"

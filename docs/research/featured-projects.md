@@ -147,7 +147,7 @@ Researchers from the Smart Management of Infrastructure Laboratory (SMILab), loc
 
 Department of Electrical & Computer Engineering Ph.D. candidate Guillermo Terrén-Serrano and Professor Manel Martínez-Ramón, in association with [New Mexico EPSCoR](https://www.nmepscor.org/){target=_blank}, have developed an artificial intelligence algorithm that optimizes the performance of solar power by predicting cloud cover.
 
-#### [Domman and Dinwiddie discover new COVID variation in New Mexico population](https://carc.unm.edu/news--events/News/unm-researchers-discover-new-covid-19-variation-in-new-mexico-population.html){target=_blank}
+#### [Domman and Dinwiddie discover new COVID variation in New Mexico population](../news/covid-19-variant-new-mexico.md)
 
 Daryl Domman, Assistant Professor at the UNM Center for Global Health, and Darrell Dinwiddie, Assistant Professor in the UNM Department of Pediatrics, have discovered a novel variant of the SARS-CoV-2 virus among COVID-positive samples in New Mexico. The two have been working with the New Mexico Department of Health and other health officials to sequence the genomes of Coronavirus samples from across the state, as well as those from other regions of the Rocky Mountains. A new variant has been observed in New Mexican samples dating back to December 2020.
 
@@ -183,7 +183,7 @@ A research team led by UNM Professor Manel Martínez-Ramón of the Department of
 
 ![NASA space robotics challenge](/assets/space-robotics-challenge.png)A team of University of New Mexico computer scientists led by Research Assistant Professor Matthew Fricke is competing with diverse computer research groups to develop an algorithm that would instruct robots to autonomously find, collect, and stockpile resources on the Moon. [The competition](https://spacecenter.org/space-robotics-challenge/space-robotics-challenge-phase-2/){target=_blank}, presented by Space Center Houston and NASA's Centennial Challenges Program, offers a variety of cash prizes to the top twenty-five teams.
 
-#### [SMILab research assistant receives national recognition](https://carc.unm.edu/news--events/News/smilab-research-assistant-receives-national-recognition.html){target=_blank}
+#### [SMILab research assistant receives national recognition](../news/smilab-nasimi-national-recognition.md)
 
 UNM Civil Engineering Ph.D. student and Graduate Research Assistant at the [Smart Management of Infrastructure Laboratory](http://smilab.unm.edu/){target=_blank} (SMILab) Roya Nasimi has been awarded second place in the American Society of Civil Engineers (ASCE) EMI-Structural Health Monitoring and Control (SHMC) Committee's annual [Student Paper Competition](https://www.asce.org/engineering-mechanics/news/20200610-emi-shmc-student-paper-competition/){target=_blank}.
 
@@ -195,7 +195,7 @@ A large and highly collaborative new project created by Postdoctoral Researcher 
 
 UNM Assistant Professor of Chemistry and Chemical Biology Yi He is leading a research project that investigates a potentially groundbreaking way to treat drug addiction. The study uses computational modeling to understand the role of the PICK1 protein, shown in Figure 1, in the brain of an individual suffering from drug addiction.
 
-#### [UNM researchers use advanced computing to study COVID-19](https://carc.unm.edu/news--events/News/researchers-study-covid-19.html){target=_blank}
+#### [UNM researchers use advanced computing to study COVID-19](../news/researchers-study-covid-19.md)
 
 ![MinION genome sequencer](/assets/minion-sequencer.jpg)A wide range of University of New Mexico researchers from across main and north campuses are utilizing UNM Center for Advanced Research Computing resources to study COVID-19. Researchers from several departments at UNM, including Anthropology, Biology, Computer Science, Pediatrics, Internal Medicine, and various Health Sciences research centers are studying different aspects of the coronavirus pandemic.
 
@@ -297,7 +297,7 @@ Diabetic retinopathy (DR) is one of the leading causes of blindness in the world
 
 A collaboration between Los Alamos National Laboratories and CARC is helping the lab improve a wildfire simulation program, as well as preparing students for careers in scientific research.
 
-#### [CARC helps UNM race car team's need for speed](https://carc.unm.edu/news--events/News/carc-helps-unm-race-car-teams-need-for-speed.html){target=_blank}
+#### [CARC helps UNM race car team's need for speed](../news/formula-sae-race-car.md)
 
 The University of New Mexico [Formula SAE](http://www.fsae.unm.edu/){target=_blank} is making race cars go faster with CARC's help.
 

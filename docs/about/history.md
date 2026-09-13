@@ -69,7 +69,7 @@ sources:
 
 **2016** Professor Patrick Bridges (Computer Science) is named [Interim Director](http://news.unm.edu/news/bridges-appointed-interim-director-of-the-center-for-advanced-research-computing){target=_blank}.
 
-**2017** A [new computing system](https://carc.unm.edu/news--events/News/lanl-carc-machine.html){target=_blank} is donated to CARC by LANL. The new system is nine times more powerful than the combined computing power of the four machines it replaces.
+**2017** A [new computing system](../news/lanl-donated-system.md) is donated to CARC by LANL. The new system is nine times more powerful than the combined computing power of the four machines it replaces.
 
 **2018** Patrick Bridges is named CARC Director.
 

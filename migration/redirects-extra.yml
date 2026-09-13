@@ -17,12 +17,10 @@ redirects:
     to: /contact/
     note: section landing page
 
-# Deliberately NOT redirected: /news--events/News/index.html
-#
-# The old news archive index still serves from the document root and still
-# lists the ~53 stories from before the rebuild that were never migrated. The
-# News section carries 16, so redirecting the archive would destroy the only
-# listing of the rest — and docs/news/index.md links to it on purpose.
+# Note on /news--events/News/index.html: despite its path it is NOT a news
+# archive — it is the SC18 research posters page (the old stories were listed
+# only by the legacy sidebar). It is superseded by provenance on
+# docs/research/sc18-research-posters.md, not by a rule here.
 
 # Never add /index.html here. On a static host that path IS the site root, and a
 # rule for it would fight the homepage the build installs from web/index.html.
@@ -35,3 +33,86 @@ redirects:
     to: /docs/getting-started/
     verify: false
     note: legacy .htaccess rule, retargeted; prefix match covers /getting-started/*
+
+  # --- Legacy pages whose content lives in the user documentation (a separate
+  # bundle at /docs/, so gen_htaccess.py cannot verify these targets). Page-level
+  # paths only: `Redirect` is prefix-based and the rules are emitted sorted.
+  - from: /new-users/getting-started-at-carc1.html
+    to: /docs/getting-started/overview/
+    verify: false
+    note: user documentation cites this page as its source
+  - from: /new-users/request-an-account1.html
+    to: /docs/getting-started/overview/
+    verify: false
+    note: legacy stub that already pointed at getting-started
+  - from: /new-users/request-a-project1.html
+    to: /docs/getting-started/overview/
+    verify: false
+    note: obsolete email-based project request (Wheeler era); ColdFront now
+  - from: /new-users/good-neighbor-policy.html
+    to: /docs/getting-started/good-neighbor-policy/
+    verify: false
+    note: user documentation cites this page as its source
+  - from: /about-carc/storage--backup.html
+    to: /docs/systems/storage/
+    verify: false
+    note: 50 GB quota / twice-weekly backups were stale; docs carry current limits
+  - from: /about-carc/facilities-description.html
+    to: /docs/about/facilities/
+    verify: false
+    note: user documentation cites this page as its source
+  - from: /systems/carc-infrastructure.html
+    to: /docs/systems/overview/
+    verify: false
+    note: listed Xena as current; the HPC-concepts explainer has no successor yet
+  - from: /systems/downtime-notices.html
+    to: /docs/systems/overview/
+    verify: false
+    note: status monitors are on the docs page; the maintenance notices had expired
+  - from: /user-support-2/running-jobs/submitting-jobs.html
+    to: /docs/running-jobs/pbs-to-slurm/
+    verify: false
+    note: PBS/Torque qsub instructions (Wheeler); not in the old sitemap
+  - from: /user-support-2/running-jobs/pbstorque.html
+    to: /docs/running-jobs/pbs-to-slurm/
+    verify: false
+    note: PBS/Torque overview; not in the old sitemap
+  - from: /user-support-2/running-jobs/sample-pbs-scripts.html
+    to: /docs/running-jobs/pbs-to-slurm/
+    verify: false
+    note: PBS sample scripts; not in the old sitemap
+  - from: /user-support-2/running-jobs/checking-on-running-jobs.html
+    to: /docs/running-jobs/pbs-to-slurm/
+    verify: false
+    note: qstat instructions; not in the old sitemap
+
+  # --- Legacy pages superseded by pages on this site that cannot record
+  # provenance themselves (section index.md files carry no frontmatter) or
+  # whose content was retired rather than ported.
+  - from: "/education--training/cse-program1/About the CSE Program.html"
+    to: /education/cse/
+    note: section landing page
+  - from: /education--training/cse-program1/hpc-systems-specialization.html
+    to: /education/cse/specializations/
+    note: orphan DRAFT track, never approved; nothing ported
+  - from: /education--training/intro-to-carc-workshop.html
+    to: /education/workshops/
+    note: empty registration stub; not in the old sitemap
+  - from: /news--events/Index.html
+    to: /education/workshops/
+    note: Events placeholder ("None at this time"); calendar lives on the workshops page
+  - from: /news--events/calendar.html
+    to: /education/workshops/
+    note: embedded a Google Calendar whose last event was 2024-06-04
+  - from: /contact-us/carc-on-social-media.html
+    to: /contact/
+    note: placeholder; CARC's X/Facebook accounts no longer exist
+  - from: /news--events/News/carc-coronavirus-information.html
+    to: /contact/
+    note: 2021 operational notice still claiming to post updates
+  - from: "/news--events/News Story.html"
+    to: /news/
+    note: published Cascade test stub
+  - from: /news--events/News/temp-test.html
+    to: /news/
+    note: published Cascade test stub

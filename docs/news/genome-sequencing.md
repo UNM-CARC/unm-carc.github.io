@@ -5,6 +5,7 @@ type: News
 tags:
   - News
   - Research
+date: "2025"
 generated:
   by: "claude/fable-5"
   at: "2026-08-29T00:00:00Z"

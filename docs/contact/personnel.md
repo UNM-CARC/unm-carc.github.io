@@ -25,7 +25,7 @@ sources:
 | Crowley, JJ | Systems/Network Analyst II | jcrowley1 [at] unm [dot] edu |
 | Redfearn, Troy | HPC Systems Specialist III | tredfearn [at] unm [dot] edu |
 | Sanchez, Jose | Systems Analyst I | josesanc [at] unm [dot] edu |
-| Houssini, Sumaya | Systems/Network Analyst II | shoussini [at] unm [dot] edu |
+| Mohamed, Sumaya | HPC Systems Specialist I | shoussini [at] unm [dot] edu |
 | Rosales, Mariah | Administrative Coordinator | marosales [at] unm [dot] edu |
 
 Email addresses are written out to deter scrapers — replace *[at]* with `@`

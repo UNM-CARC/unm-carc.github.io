@@ -5,6 +5,7 @@ type: News
 tags:
   - News
 status: draft
+date: "2026-08"
 generated:
   by: "claude/fable-5"
   at: "2026-08-30T00:00:00Z"
@@ -15,11 +16,10 @@ generated:
 <p class="carc-byline">By CARC staff</p>
 
 The Center for Advanced Research Computing is pleased to welcome **Tyson
-Swetnam** as its new Director. A full introduction — including Dr. Swetnam's
+L. Swetnam** as its new Director. A full introduction — including Dr. Swetnam's
 background in research cyberinfrastructure and his vision for CARC — will be
 published here.
 
-!!! note "Placeholder"
+!!! alert "Notice"
 
-    This is a placeholder announcement. The full text is being prepared by
-    CARC administration and will replace this page shortly.
+    [tyson's blog](https://tysonswetnam.com/blog/posts/2026-07-01-data-center-on-route-66/){_target=blank}

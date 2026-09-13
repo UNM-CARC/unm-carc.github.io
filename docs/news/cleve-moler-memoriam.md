@@ -4,6 +4,7 @@ description: "Matthew Fricke remembers Cleve Moler — creator of MATLAB, former
 type: News
 tags:
   - News
+date: "2026-09"
 generated:
   by: "claude/fable-5"
   at: "2026-09-05T00:00:00Z"

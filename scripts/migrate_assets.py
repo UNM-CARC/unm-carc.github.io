@@ -24,6 +24,7 @@ import argparse
 import re
 import shutil
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -111,6 +112,8 @@ def main() -> int:
     ap.add_argument("--cache", type=Path,
                     help="directory holding a prior capture, laid out by legacy path")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only-missing", action="store_true",
+                    help="skip entries whose target already exists in docs/assets/")
     args = ap.parse_args()
 
     spec = yaml.safe_load((ROOT / "migration" / "assets.yml").read_text(encoding="utf-8"))
@@ -122,12 +125,19 @@ def main() -> int:
     tmp.mkdir(exist_ok=True)
     written: dict[str, int] = {}
     before = after = 0
-    oversize, review = [], []
+    oversize, review, missing = [], [], []
 
     try:
         for e in entries:
             dest = ASSETS / e["to"]
-            raw = fetch(e["from"], args.cache)
+            if args.only_missing and dest.is_file():
+                continue
+            try:
+                raw = fetch(e["from"], args.cache)
+            except urllib.error.HTTPError as err:
+                print(f"WARN  {e['from']}: HTTP {err.code} — skipped", file=sys.stderr)
+                missing.append((e["from"], err.code))
+                continue
             before += len(raw)
 
             if e["to"] in written:  # deduped target (byte-identical sources)
@@ -162,6 +172,11 @@ def main() -> int:
               f"target in migration/assets.yml:", file=sys.stderr)
         for name, n in sorted(oversize, key=lambda x: -x[1]):
             print(f"        {n/1048576:6.2f} MB  {name}", file=sys.stderr)
+    if missing:
+        print("\nNOT FETCHED (gone from the old host — remove the reference or find another copy):",
+              file=sys.stderr)
+        for name, code in missing:
+            print(f"  {name}  (HTTP {code})", file=sys.stderr)
     if review:
         print("\nNEEDS HUMAN REVIEW before shipping:", file=sys.stderr)
         for name, why in review:

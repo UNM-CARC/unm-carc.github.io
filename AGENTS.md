@@ -2,7 +2,7 @@
 
 Follow the editing conventions of the UNM-CARC docs repository: https://github.com/UNM-CARC/docs/blob/main/AGENTS.md
 
-This repo is the source of https://carc.unm.edu/ and, as the org ROOT Pages site (it must stay named unm-carc.github.io), its staging mirror at https://unm-carc.github.io/. Every content page needs OKF v0.2 frontmatter with a non-empty type; section index.md files carry no frontmatter; log.md is the dated change log.
+This repo is the source of https://carc.unm.edu/ and, as the org ROOT Pages site (it must stay named unm-carc.github.io), its staging mirror at https://unm-carc.github.io/. Every content page needs OKF v0.2 frontmatter with a non-empty type; section index.md files carry no frontmatter; log.md is the dated change log. News pages also carry `date:` (YYYY, YYYY-MM or YYYY-MM-DD); the Archive in docs/news/index.md between the `archive:start`/`archive:end` markers is generated from it by scripts/port_legacy_pages.py (`--offline --no-rewrite`), never edited by hand. Stories ported from the old site are described in migration/pages.yml.
 
 Build order: scripts/okf_validate.py docs, scripts/check_legacy_links.py docs, scripts/gen_llms_txt.py, scripts/build_cascade_site.py, scripts/postbuild_agent_surface.py site, scripts/gen_htaccess.py site. Zensical does not render this site; zensical.toml only supplies site_url (CARC_SITE_URL overrides it).
 
