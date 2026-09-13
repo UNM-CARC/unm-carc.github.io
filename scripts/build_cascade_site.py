@@ -398,6 +398,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
     utilities = [
         f'<li><a class="carc-ext-btn" href="{rel_root}docs/">User Documentation <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
+        '<li><a class="carc-ext-btn" href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">ColdFront <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://carc.unm.edu/user-support-2/office-and-consultation-hours.html">Office Hours</a></li>',
