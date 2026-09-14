@@ -40,9 +40,9 @@ accommodate special appointment times outside these slots.
 
 Consultations are for longer discussions with a single user or research group:
 debugging a workflow, planning a computation, or scoping the computing section
-of a proposal. They must be booked in advance — email Associate Director
-[Matthew Fricke](mailto:mfricke@unm.edu) with a short description of what you
-would like to cover.
+of a proposal. Consultation hours are held at 2:00 p.m. on Thursdays by
+appointment. Email Associate Director [Matthew Fricke](mailto:mfricke@unm.edu)
+with a short description of what you would like to cover.
 
 ## Other ways to get help
 
