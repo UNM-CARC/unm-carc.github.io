@@ -30,5 +30,3 @@ CARC will upgrade its firewall. Expect frequent and prolonged interruptions to
 network traffic to and from CARC throughout the maintenance period. This may
 affect SSH logins, Open OnDemand, the CARC Help Desk ticket system, ColdFront,
 and other network-dependent services.
-
-No other planned maintenance is currently listed.
