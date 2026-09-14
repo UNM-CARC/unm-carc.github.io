@@ -435,6 +435,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         cls = ' class="active"' if slug == active else ""
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
     utilities = [
+        '<li><a class="carc-ext-btn" href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li>',
         f'<li><a class="carc-ext-btn" href="{rel_root}docs/">User Documentation <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>',
