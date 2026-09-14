@@ -318,7 +318,10 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 #nav ul.carc-primary { text-align: center; }
-#nav ul.carc-utilities { border-top: 1px solid var(--pg-border); text-align: center; }
+#nav ul.carc-utilities { border-top: 1px solid var(--pg-border); text-align: center; font-size: .85em; white-space: nowrap; }
+#nav ul.carc-utilities li a { padding: .5em .7em; }
+#nav ul.carc-utilities .carc-ext-btn { margin: .18em .06em; padding: .22em .65em !important; }
+@media (max-width: 767px) { #nav ul.carc-utilities { white-space: normal; } }
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
 #nav ul.carc-sections li.carc-status-menu { position: relative; }
 #nav ul.carc-sections li.carc-status-menu .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
