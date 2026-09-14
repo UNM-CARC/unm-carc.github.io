@@ -320,6 +320,10 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-primary { text-align: center; }
 #nav ul.carc-utilities { border-top: 1px solid var(--pg-border); text-align: center; }
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
+#nav ul.carc-sections li.carc-status-menu { position: relative; }
+#nav ul.carc-sections li.carc-status-menu .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
+#nav ul.carc-sections li.carc-status-menu .dropdown-menu li { display: block; }
+#nav ul.carc-sections li.carc-status-menu .dropdown-menu a { display: block; white-space: nowrap; }
 /* card grid for `layout: cards` pages (research/featured-projects) */
 .carc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
 .carc-card { display: flex; flex-direction: column; background: var(--pg-card); border: 1px solid var(--pg-border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s ease, transform .15s ease; }
@@ -438,7 +442,11 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li><a class="carc-ext-btn" href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li>',
         f'<li><a class="carc-ext-btn" href="{rel_root}docs/">User Documentation <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
-        '<li><a class="carc-ext-btn" href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>',
+        '<li class="dropdown carc-status-menu"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Systems Status <span class="caret"></span></a><ul class="dropdown-menu">'
+        '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://perfsonar.alliance.unm.edu/" target="_blank" rel="noopener">Network Performance <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://stats.uptimerobot.com/kqt0LYLwFd" target="_blank" rel="noopener">Cluster &amp; Website Status <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://carc.unm.edu/systems/downtime-notices.html">Downtime Notices</a></li></ul></li>',
         '<li><a class="carc-ext-btn" href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">ColdFront <span aria-hidden="true">↗</span></a></li>',
         '<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>',
         f'<li><a class="carc-ext-btn" href="{rel_root}contact/office-hours/">Office Hours</a></li>',
