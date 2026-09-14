@@ -26,7 +26,7 @@ maintenance window.
 
 **September 29–30, 2026**
 
-CARC will upgrade its firewall. Expect frequent and prolonged interruptions to
-network traffic to and from CARC throughout the maintenance period. This may
-affect SSH logins, Open OnDemand, the CARC Help Desk ticket system, ColdFront,
-and other network-dependent services.
+Expect frequent and prolonged interruptions to network traffic to and from
+CARC throughout the maintenance period. This will affect SSH logins, Open
+OnDemand, the CARC Help Desk ticket system, ColdFront, and other
+network-dependent services.
