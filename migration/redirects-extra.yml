@@ -65,10 +65,6 @@ redirects:
     to: /docs/systems/overview/
     verify: false
     note: listed Xena as current; the HPC-concepts explainer has no successor yet
-  - from: /systems/downtime-notices.html
-    to: /docs/systems/overview/
-    verify: false
-    note: status monitors are on the docs page; the maintenance notices had expired
   - from: /user-support-2/running-jobs/submitting-jobs.html
     to: /docs/running-jobs/pbs-to-slurm/
     verify: false

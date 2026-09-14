@@ -2,6 +2,8 @@
 
 ## 2026-09-11
 
+* **New**: [Downtime notices](downtime-notices.md) is now a maintained page for planned CARC maintenance. It currently records the September 29–30 firewall upgrade, which is expected to cause frequent and prolonged interruptions to network traffic, including SSH, Open OnDemand, the Help Desk, and ColdFront.
+
 * **Update**: `robots.txt` is now an allowlist. The AI agents named in the [user documentation's](/docs/) robots file (Google, OpenAI, Anthropic, Perplexity, Cohere, Apple, Common Crawl, Meta, Amazon, DuckDuckGo, and Mistral agents) plus the Bingbot, DuckDuckBot, and Applebot search crawlers may crawl the site; every other crawler is disallowed. The file also lists the sitemaps of the project sites served under unm-carc.github.io — [/docs/](https://unm-carc.github.io/docs/), [/foss/](https://unm-carc.github.io/foss/), [/container-camp/](https://unm-carc.github.io/container-camp/), and [/cyverse/](https://unm-carc.github.io/cyverse/) — because crawlers only read robots.txt at the host root.
 
 ## 2026-09-10
