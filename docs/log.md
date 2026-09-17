@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-09-17
+
+* **Navigation**: Replaced the User Documentation button with a **Docs & Training** menu linking to User Documentation, the [CARC Video Tutorials playlist](https://www.youtube.com/watch?v=98lCb6A5uu4&list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ){target=_blank}, and the [Workshop Schedule](https://libcal.unm.edu/calendar?cid=16135&t=m){target=_blank}.
+
 ## 2026-09-11
 
 * **New**: [Downtime notices](downtime-notices.md) is now a maintained page for planned CARC maintenance. It currently records the September 29–30 firewall upgrade, which is expected to cause frequent and prolonged interruptions to network traffic, including SSH, Open OnDemand, the Help Desk, and ColdFront.

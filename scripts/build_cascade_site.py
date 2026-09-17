@@ -323,10 +323,10 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-utilities .carc-ext-btn { margin: .18em .06em; padding: .22em .65em !important; }
 @media (max-width: 767px) { #nav ul.carc-utilities { white-space: normal; } }
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
-#nav ul.carc-sections li.carc-status-menu { position: relative; }
-#nav ul.carc-sections li.carc-status-menu .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
-#nav ul.carc-sections li.carc-status-menu .dropdown-menu li { display: block; }
-#nav ul.carc-sections li.carc-status-menu .dropdown-menu a { display: block; white-space: nowrap; }
+#nav ul.carc-sections li.carc-dropdown { position: relative; }
+#nav ul.carc-sections li.carc-dropdown .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
+#nav ul.carc-sections li.carc-dropdown .dropdown-menu li { display: block; }
+#nav ul.carc-sections li.carc-dropdown .dropdown-menu a { display: block; white-space: nowrap; }
 /* card grid for `layout: cards` pages (research/featured-projects) */
 .carc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
 .carc-card { display: flex; flex-direction: column; background: var(--pg-card); border: 1px solid var(--pg-border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s ease, transform .15s ease; }
@@ -443,9 +443,12 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
     utilities = [
         '<li><a class="carc-ext-btn" href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li>',
-        f'<li><a class="carc-ext-btn" href="{rel_root}docs/">User Documentation <span aria-hidden="true">↗</span></a></li>',
+        f'<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu">'
+        f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
+        '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://libcal.unm.edu/calendar?cid=16135&amp;t=m" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>',
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
-        '<li class="dropdown carc-status-menu"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Systems Status <span class="caret"></span></a><ul class="dropdown-menu">'
+        '<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Systems Status <span class="caret"></span></a><ul class="dropdown-menu">'
         '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://stats.uptimerobot.com/kqt0LYLwFd" target="_blank" rel="noopener">Service Uptime <span aria-hidden="true">↗</span></a></li>'
         f'<li><a href="{rel_root}downtime-notices/">Downtime Notices</a></li></ul></li>',
