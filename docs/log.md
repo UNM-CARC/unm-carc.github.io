@@ -2,7 +2,7 @@
 
 ## 2026-09-17
 
-* **Navigation**: Replaced the User Documentation button with a **Docs & Training** menu linking to User Documentation, the [CARC Video Tutorials playlist](https://www.youtube.com/watch?v=98lCb6A5uu4&list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ){target=_blank}, and the [Workshop Schedule](https://libcal.unm.edu/calendar?cid=16135&t=m){target=_blank}.
+* **Navigation**: Replaced the User Documentation button with a **Docs & Training** menu linking to User Documentation, the [CARC Video Tutorials playlist](https://www.youtube.com/watch?v=98lCb6A5uu4&list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ){target=_blank}, and the [Workshop Schedule](education/workshops.md). The Workshop Schedule page carries the live LibCal events widget.
 
 ## 2026-09-11
 
