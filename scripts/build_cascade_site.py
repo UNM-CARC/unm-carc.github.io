@@ -327,6 +327,8 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li.carc-dropdown .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
 #nav ul.carc-sections li.carc-dropdown .dropdown-menu li { display: block; }
 #nav ul.carc-sections li.carc-dropdown .dropdown-menu a { display: block; white-space: nowrap; }
+html[data-theme="dark"] #nav ul.carc-sections li.carc-dropdown .dropdown-menu { background: #10131a; border-color: #27313c; }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) #nav ul.carc-sections li.carc-dropdown .dropdown-menu { background: #10131a; border-color: #27313c; } }
 /* card grid for `layout: cards` pages (research/featured-projects) */
 .carc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
 .carc-card { display: flex; flex-direction: column; background: var(--pg-card); border: 1px solid var(--pg-border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s ease, transform .15s ease; }
