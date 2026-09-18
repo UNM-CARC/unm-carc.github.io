@@ -448,7 +448,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         f'<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu">'
         f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
         '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
-        f'<li><a href="{rel_root}education/workshops/">Workshop Schedule</a></li></ul></li>',
+        '<li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>',
         '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
         '<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Systems Status <span class="caret"></span></a><ul class="dropdown-menu">'
         '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>'

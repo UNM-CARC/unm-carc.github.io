@@ -26,8 +26,7 @@ Ave NE — from first-login basics to domain-specific computing.
 
 ## Upcoming events
 
-<div id="api_month_cid16135_iid3482"></div>
-<script src="https://libcal.unm.edu/api_events.php?&amp;m=month&amp;cid=16135&amp;audience=&amp;c=&amp;d=&amp;target=_blank&amp;context=object&amp;format=js"></script>
+[📅 View the workshop schedule](https://libcal.unm.edu/calendar/){ .md-button .md-button--primary target=_blank }
 
 !!! tip "Can't attend in person?"
 
