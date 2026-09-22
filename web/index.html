@@ -198,11 +198,12 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: #ba0c2f; text-decoration: none; }
 #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
-#nav ul.carc-primary { text-align: center; }
-#nav ul.carc-utilities { border-top: 1px solid rgba(0, 0, 0, .12); text-align: center; font-size: .85em; white-space: nowrap; }
+#nav .container { text-align: center; }
+#nav ul.carc-primary, #nav ul.carc-utilities { display: inline-block; vertical-align: middle; text-align: center; }
+#nav ul.carc-utilities { font-size: .85em; white-space: nowrap; }
 #nav ul.carc-utilities li a { padding: .5em .7em; }
 #nav ul.carc-utilities .carc-ext-btn { margin: .18em .06em; padding: .22em .65em !important; }
-@media (max-width: 767px) { #nav ul.carc-utilities { white-space: normal; } }
+@media (max-width: 767px) { #nav ul.carc-primary, #nav ul.carc-utilities { display: block; } #nav ul.carc-utilities { white-space: normal; } }
 #nav ul.carc-utilities #gg-theme-li { float: none; }
 #nav ul.carc-sections li.carc-dropdown { position: relative; }
 #nav ul.carc-sections li.carc-dropdown .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
@@ -255,6 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li><a href="research/">Research</a></li>
   <li><a href="news/">News</a></li>
   <li><a href="jobs/">Jobs</a></li>
+  <li><a href="contact/">Contact</a></li>
 </ul><ul aria-label="User actions" class="carc-sections carc-utilities">
   <li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="docs/getting-started/">Getting Started</a></li><li><a href="docs/">User Documentation</a></li><li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li><li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>
   <li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk (Zammad) <span aria-hidden="true">↗</span></a></li><li><a href="contact/office-hours/">Office Hours</a></li><li><a href="contact/">Contact CARC</a></li><li><a href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li></ul></li>
