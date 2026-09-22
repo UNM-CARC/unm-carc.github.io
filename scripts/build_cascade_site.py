@@ -316,7 +316,7 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections { margin: 0; padding: 0; list-style: none; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
-#nav ul.carc-sections li.active a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+#nav ul.carc-sections li.active > a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 #nav ul.carc-primary { text-align: center; }
 #nav ul.carc-utilities { border-top: 1px solid var(--pg-border); text-align: center; font-size: .85em; white-space: nowrap; }
 #nav ul.carc-utilities li a { padding: .5em .7em; }
@@ -441,22 +441,37 @@ TEMPLATE = """<!DOCTYPE html>
 def nav_items(rel_root: str, active: str) -> tuple[str, str]:
     primary = []
     for slug, label in SECTIONS:
+        if slug == "education":
+            cls = " active" if active == slug else ""
+            primary.append(
+                f'<li class="dropdown carc-dropdown{cls}"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a><ul class="dropdown-menu">'
+                f'<li><a href="{rel_root}education/">Education Overview</a></li>'
+                f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
+                '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
+                '<li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>'
+            )
+            continue
+        if slug == "contact":
+            cls = " active" if active == slug else ""
+            primary.append(
+                f'<li class="dropdown carc-dropdown{cls}"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a><ul class="dropdown-menu">'
+                '<li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>'
+                f'<li><a href="{rel_root}contact/office-hours/">Office Hours</a></li>'
+                f'<li><a href="{rel_root}contact/">Contact CARC</a></li>'
+                '<li><a href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li></ul></li>'
+            )
+            continue
         cls = ' class="active"' if slug == active else ""
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
     utilities = [
-        '<li><a class="carc-ext-btn" href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li>',
-        f'<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu">'
-        f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
-        '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
-        '<li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>',
-        '<li><a class="carc-ext-btn" href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Open OnDemand <span aria-hidden="true">↗</span></a></li>',
-        '<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Systems Status <span class="caret"></span></a><ul class="dropdown-menu">'
-        '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">HPC Status <span aria-hidden="true">↗</span></a></li>'
+        '<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HPC Resources <span class="caret"></span></a><ul class="dropdown-menu">'
+        '<li class="dropdown-header">Launch</li>'
+        '<li><a href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Web Portal (Open OnDemand) <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">Allocations &amp; Projects (ColdFront) <span aria-hidden="true">↗</span></a></li>'
+        '<li class="divider" role="presentation"></li><li class="dropdown-header">Status</li>'
+        '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">Cluster Status <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://stats.uptimerobot.com/kqt0LYLwFd" target="_blank" rel="noopener">Service Uptime <span aria-hidden="true">↗</span></a></li>'
         f'<li><a href="{rel_root}downtime-notices/">Downtime Notices</a></li></ul></li>',
-        '<li><a class="carc-ext-btn" href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">ColdFront <span aria-hidden="true">↗</span></a></li>',
-        '<li><a class="carc-ext-btn" href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>',
-        f'<li><a class="carc-ext-btn" href="{rel_root}contact/office-hours/">Office Hours</a></li>',
         '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',
     ]
     return "\n".join(primary), "\n".join(utilities)
