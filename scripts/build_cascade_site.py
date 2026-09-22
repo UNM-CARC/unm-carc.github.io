@@ -269,9 +269,6 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav { background: var(--pg-strip); }
 #breadcrumbs .breadcrumb a { color: var(--pg-link); }
 #breadcrumbs .breadcrumb .active { color: var(--pg-muted); }
-.carc-ext-btn { border: 2px solid #ba0c2f; border-radius: 999px; padding: .3em 1em !important;
-  margin: .25em .15em; font-weight: 700; }
-.carc-ext-btn:hover { background: #ba0c2f; color: #fff !important; }
 .carc-theme-li { float: right; }
 #carc-theme-btn { border: none; background: transparent; color: var(--pg-link);
   font-size: 1.35em; line-height: 1; padding: .15em .35em; margin: .3em 0;
@@ -319,9 +316,7 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li.active > a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 #nav .container { text-align: center; }
 #nav ul.carc-primary, #nav ul.carc-utilities { display: inline-block; vertical-align: middle; text-align: center; }
-#nav ul.carc-utilities { font-size: .85em; white-space: nowrap; }
-#nav ul.carc-utilities li a { padding: .5em .7em; }
-#nav ul.carc-utilities .carc-ext-btn { margin: .18em .06em; padding: .22em .65em !important; }
+#nav ul.carc-utilities { font-size: 1em; white-space: nowrap; }
 @media (max-width: 767px) { #nav ul.carc-primary, #nav ul.carc-utilities { display: block; } #nav ul.carc-utilities { white-space: normal; } }
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
 #nav ul.carc-sections li.carc-dropdown { position: relative; }
@@ -447,17 +442,17 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         cls = ' class="active"' if slug == active else ""
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
     utilities = [
-        f'<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu">'
+        f'<li class="dropdown carc-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu">'
         f'<li><a href="{rel_root}docs/getting-started/">Getting Started</a></li>'
         f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
         '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>',
-        f'<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a><ul class="dropdown-menu">'
+        f'<li class="dropdown carc-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a><ul class="dropdown-menu">'
         '<li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk (Zammad) <span aria-hidden="true">↗</span></a></li>'
         f'<li><a href="{rel_root}contact/office-hours/">Office Hours</a></li>'
         f'<li><a href="{rel_root}contact/">Contact CARC</a></li>'
         '<li><a href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li></ul></li>',
-        '<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HPC Resources <span class="caret"></span></a><ul class="dropdown-menu">'
+        '<li class="dropdown carc-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HPC Resources <span class="caret"></span></a><ul class="dropdown-menu">'
         '<li class="dropdown-header">Launch</li>'
         '<li><a href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Web Portal (Open OnDemand) <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">Allocations &amp; Projects (ColdFront) <span aria-hidden="true">↗</span></a></li>'
