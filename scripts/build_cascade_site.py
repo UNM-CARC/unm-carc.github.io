@@ -437,7 +437,7 @@ TEMPLATE = """<!DOCTYPE html>
 def nav_items(rel_root: str, active: str) -> tuple[str, str]:
     primary = []
     for slug, label in SECTIONS:
-        if slug == "education":
+        if slug in {"education", "contact"}:
             continue
         cls = ' class="active"' if slug == active else ""
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
