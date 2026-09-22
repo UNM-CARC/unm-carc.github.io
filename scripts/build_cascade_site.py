@@ -441,21 +441,11 @@ TEMPLATE = """<!DOCTYPE html>
 def nav_items(rel_root: str, active: str) -> tuple[str, str]:
     primary = []
     for slug, label in SECTIONS:
-        if slug == "education":
-            cls = " active" if active == slug else ""
-            primary.append(
-                f'<li class="dropdown carc-dropdown{cls}"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a><ul class="dropdown-menu">'
-                f'<li><a href="{rel_root}education/">Education Overview</a></li>'
-                f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
-                '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
-                '<li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>'
-            )
-            continue
         if slug == "contact":
             cls = " active" if active == slug else ""
             primary.append(
                 f'<li class="dropdown carc-dropdown{cls}"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a><ul class="dropdown-menu">'
-                '<li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk <span aria-hidden="true">↗</span></a></li>'
+                '<li><a href="https://support.alliance.unm.edu/" target="_blank" rel="noopener">Help Desk (Zammad) <span aria-hidden="true">↗</span></a></li>'
                 f'<li><a href="{rel_root}contact/office-hours/">Office Hours</a></li>'
                 f'<li><a href="{rel_root}contact/">Contact CARC</a></li>'
                 '<li><a href="https://github.com/UNM-CARC/unm-carc.github.io/issues" target="_blank" rel="noopener">Site Feedback <span aria-hidden="true">↗</span></a></li></ul></li>'
@@ -463,6 +453,14 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
             continue
         cls = ' class="active"' if slug == active else ""
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
+        if slug == "jobs":
+            primary.append(
+                f'<li class="dropdown carc-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs &amp; Training <span class="caret"></span></a><ul class="dropdown-menu">'
+                f'<li><a href="{rel_root}docs/getting-started/">Getting Started</a></li>'
+                f'<li><a href="{rel_root}docs/">User Documentation</a></li>'
+                '<li><a href="https://www.youtube.com/watch?v=98lCb6A5uu4&amp;list=PLvr5gRBLi7VAzEB_t5aXOLHLfdIu2s1hZ" target="_blank" rel="noopener">Tutorial Videos <span aria-hidden="true">↗</span></a></li>'
+                '<li><a href="https://libcal.unm.edu/calendar/" target="_blank" rel="noopener">Workshop Schedule <span aria-hidden="true">↗</span></a></li></ul></li>'
+            )
     utilities = [
         '<li class="dropdown carc-dropdown"><a class="carc-ext-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HPC Resources <span class="caret"></span></a><ul class="dropdown-menu">'
         '<li class="dropdown-header">Launch</li>'
