@@ -24,7 +24,7 @@ maintenance window.
 
 ### Firewall upgrade
 
-**September 29–30, 2026**
+**September 28th Starting at 3:00pm – September 30th, 2026**
 
 Expect frequent and prolonged interruptions to network traffic to and from
 CARC throughout the maintenance period. This will affect SSH logins, Open
