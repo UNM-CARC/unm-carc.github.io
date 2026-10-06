@@ -459,6 +459,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li class="divider" role="presentation"></li><li class="dropdown-header">Status</li>'
         '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">Cluster Status <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://stats.uptimerobot.com/kqt0LYLwFd" target="_blank" rel="noopener">Service Uptime <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://xdmod.alliance.unm.edu/#tg_usage?node=statistic&amp;realm=Jobs&amp;group_by=nsfdirectorate&amp;statistic=total_cpu_hours" target="_blank" rel="noopener">Center Utilization <span aria-hidden="true">↗</span></a></li>'
         f'<li><a href="{rel_root}downtime-notices/">Downtime Notices</a></li></ul></li>',
         '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',
     ]
