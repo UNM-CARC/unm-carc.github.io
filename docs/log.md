@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-07
+
+* **New**: Added [A&S Support](as-support.md), describing School of Arts & Sciences research-computing support and the departments currently supported. The page is linked beside HPC Resources in the header navigation.
+
 ## 2026-10-06
 
 * **Navigation**: Added [Center Utilization](https://xdmod.alliance.unm.edu/#tg_usage?node=statistic&realm=Jobs&group_by=nsfdirectorate&statistic=total_cpu_hours){target=_blank} to the HPC Resources status menu.

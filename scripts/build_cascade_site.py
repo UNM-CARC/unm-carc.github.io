@@ -461,6 +461,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li><a href="https://stats.uptimerobot.com/kqt0LYLwFd" target="_blank" rel="noopener">Service Uptime <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://xdmod.alliance.unm.edu/#tg_usage?node=statistic&amp;realm=Jobs&amp;group_by=nsfdirectorate&amp;statistic=total_cpu_hours" target="_blank" rel="noopener">Center Utilization <span aria-hidden="true">↗</span></a></li>'
         f'<li><a href="{rel_root}downtime-notices/">Downtime Notices</a></li></ul></li>',
+        f'<li><a href="{rel_root}as-support/">A&amp;S Support</a></li>',
         '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',
     ]
     return "\n".join(primary), "\n".join(utilities)
