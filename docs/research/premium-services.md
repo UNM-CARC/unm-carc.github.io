@@ -1,6 +1,6 @@
 ---
 title: "Premium services"
-description: "CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service."
+description: "CARC's UNM-approved cost model for condo cluster nodes, dedicated storage, and custom support for users whose needs exceed the free baseline service."
 type: Reference
 tags:
   - Research
@@ -17,7 +17,7 @@ sources:
 
 # Premium services
 
-To support users with needs consistently above the free baseline service, CARC has a UNM-approved cost model for charging for condo cluster nodes, VM hosting, dedicated storage, and custom system administration and application support. If you are not sure if you need to use the cost model, please **[contact us](mailto:unitadmin@carc.unm.edu)** for assistance.
+To support users with needs consistently above the free baseline service, CARC has a UNM-approved cost model for charging for condo cluster nodes, dedicated storage, and custom system administration and application support. If you are not sure if you need to use the cost model, please **[contact us](mailto:unitadmin@carc.unm.edu)** for assistance.
 
 Costs in this model are broken into three components:
 

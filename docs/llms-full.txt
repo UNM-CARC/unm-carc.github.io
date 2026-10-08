@@ -715,7 +715,7 @@ Faculty can seek additional support through the [Faculty Research Development Of
 
 ---
 title: "Premium services"
-description: "CARC's UNM-approved cost model for condo cluster nodes, VM hosting, dedicated storage, and custom support for users whose needs exceed the free baseline service."
+description: "CARC's UNM-approved cost model for condo cluster nodes, dedicated storage, and custom support for users whose needs exceed the free baseline service."
 type: Reference
 tags:
   - Research
@@ -732,7 +732,7 @@ sources:
 
 # Premium services
 
-To support users with needs consistently above the free baseline service, CARC has a UNM-approved cost model for charging for condo cluster nodes, VM hosting, dedicated storage, and custom system administration and application support. If you are not sure if you need to use the cost model, please **[contact us](mailto:unitadmin@carc.unm.edu)** for assistance.
+To support users with needs consistently above the free baseline service, CARC has a UNM-approved cost model for charging for condo cluster nodes, dedicated storage, and custom system administration and application support. If you are not sure if you need to use the cost model, please **[contact us](mailto:unitadmin@carc.unm.edu)** for assistance.
 
 Costs in this model are broken into three components:
 
@@ -6930,6 +6930,10 @@ Albuquerque NM 87106
 ---8<--- https://carc.unm.edu/log/
 
 # Website update log
+
+## 2026-10-08
+
+* **Correction**: Removed VM hosting from the [Premium services](research/premium-services.md) cost model. CARC does not offer VM hosting under that model.
 
 ## 2026-10-07
 

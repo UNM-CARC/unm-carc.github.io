@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-08
+
+* **Correction**: Removed VM hosting from the [Premium services](research/premium-services.md) cost model. CARC does not offer VM hosting under that model.
+
 ## 2026-10-07
 
 * **New**: Added [A&S Support](as-support.md), describing School of Arts & Sciences research-computing support and the departments currently supported. The page is linked beside HPC Resources in the header navigation.
