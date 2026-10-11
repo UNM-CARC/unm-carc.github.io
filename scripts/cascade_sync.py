@@ -633,14 +633,17 @@ def do_sync(cx: Cascade, man: Manifest, site: Path, prefix: str, plan: dict,
     # 4. verify live
     if verify_base and to_publish:
         bad = []
-        # the last-queued item gates the whole queue; wait long for it
+        # The last-queued item gates the whole queue, so wait long for it.
+        # Cascade drains about one publish every two seconds, so a full-site run
+        # (1,437 files on 2026-10-10) needs far more than ten minutes.
+        first_wait = max(600, 4 * len(to_publish))
         for i, (rel, fid) in enumerate(reversed(to_publish)):
             cpath = cascade_path(prefix, rel)
             if Path(rel).name.startswith("."):
                 man.files[rel]["published"] = True
                 continue
             ok = poll_live(live_url(verify_base, cpath), want_sha=man.files[rel]["sha256"],
-                           timeout=600 if i == 0 else 120)
+                           timeout=first_wait if i == 0 else 120)
             man.files[rel]["published"] = ok
             man.files[rel]["live_ok"] = ok
             if not ok:
