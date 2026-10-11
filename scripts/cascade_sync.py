@@ -632,19 +632,34 @@ def do_sync(cx: Cascade, man: Manifest, site: Path, prefix: str, plan: dict,
 
     # 4. verify live
     if verify_base and to_publish:
-        bad = []
-        # the last-queued item gates the whole queue; wait long for it
-        for i, (rel, fid) in enumerate(reversed(to_publish)):
-            cpath = cascade_path(prefix, rel)
+        pending = []
+        for rel, fid in to_publish:
             if Path(rel).name.startswith("."):
                 man.files[rel]["published"] = True
-                continue
-            ok = poll_live(live_url(verify_base, cpath), want_sha=man.files[rel]["sha256"],
-                           timeout=600 if i == 0 else 120)
-            man.files[rel]["published"] = ok
-            man.files[rel]["live_ok"] = ok
-            if not ok:
-                bad.append(cpath)
+            else:
+                pending.append(rel)
+        # Cascade works through its publish queue in the background at a few
+        # seconds per file, so the wait scales with what was queued. Each pass
+        # checks every file still outstanding once.
+        deadline = time.time() + max(600, 5 * len(to_publish))
+        while pending:
+            waiting = []
+            for rel in pending:
+                status, body, _ = fetch_live(live_url(verify_base, cascade_path(prefix, rel)))
+                if not (status == 200 and sha256(body) == man.files[rel]["sha256"]):
+                    waiting.append(rel)
+            if len(waiting) < len(pending):
+                log(f"  {len(to_publish) - len(waiting)} of {len(to_publish)} file(s) live")
+            pending = waiting
+            if not pending or time.time() > deadline:
+                break
+            time.sleep(15)
+        for rel, fid in to_publish:
+            if not Path(rel).name.startswith("."):
+                ok = rel not in pending
+                man.files[rel]["published"] = ok
+                man.files[rel]["live_ok"] = ok
+        bad = [cascade_path(prefix, rel) for rel in pending]
         man.save(force_remote=True)
         if bad:
             log(f"  !! {len(bad)} file(s) not live/identical after publish:")
