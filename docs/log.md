@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-13
+
+* **New**: Added [AI research resources](ai-research-resources.md), a short A&S Support page pointing researchers to external AI, LLM, and agent resources including NAIRR Pilot allocations, ACCESS registration, and AI-VERDE API documentation.
+
 ## 2026-10-10
 
 * **Update**: [Jobs](jobs/index.md) no longer lists the MESA Program Manager position, and its page is removed. A new **Research Assistants** section at the bottom of the page describes the graduate and undergraduate research assistant positions, lists the current research areas, and gives the regular application due dates (July 1 for Fall, November 20 for Spring, April 20 for Summer) and what a complete application packet includes.

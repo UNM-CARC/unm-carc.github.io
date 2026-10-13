@@ -6,6 +6,12 @@ Full corpus for ingestion: https://carc.unm.edu/llms-full.txt
 
 Every page's Markdown source (OKF frontmatter included) is served at its URL plus `index.md` — for example https://carc.unm.edu/about/mission/index.md. Agent guide: https://carc.unm.edu/docs/about/ai-agents/
 
+## Campus research support
+
+- [AI research resources](https://carc.unm.edu/ai-research-resources/): External AI, LLM, and agent resources for UNM researchers whose projects need access to research-oriented AI services.
+- [A&S Support](https://carc.unm.edu/as-support/): Research-computing support for the UNM School of Arts & Sciences.
+- [Downtime notices](https://carc.unm.edu/downtime-notices/): Planned maintenance and service interruptions affecting UNM CARC systems.
+
 ## About CARC
 
 - [Export control](https://carc.unm.edu/about/export-control/): How U.S. export regulations apply to software on CARC systems: export-controlled software may be installed only with prior written approval or a written exception from UNM Export Control.

@@ -34,3 +34,9 @@ We currently support research-computing needs in:
 
 We hold regular office hours in the departments we support. To submit a support
 ticket, email [researchtech@unm.edu](mailto:researchtech@unm.edu).
+
+## Related resources
+
+* [AI research resources](ai-research-resources.md) - External AI, LLM, and
+  agent resources for researchers whose projects require AI services that CARC
+  does not currently provide directly.

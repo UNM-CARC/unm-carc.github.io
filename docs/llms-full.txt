@@ -2,6 +2,181 @@
 
 Each page below begins with its canonical URL followed by its original Markdown, OKF frontmatter included.
 
+---8<--- https://carc.unm.edu/ai-research-resources/
+
+---
+okf_version: "0.2"
+title: "AI research resources"
+description: "External AI, LLM, and agent resources for UNM researchers whose projects need access to research-oriented AI services."
+type: Reference
+tags:
+  - Research computing
+  - Arts and Sciences
+  - AI
+  - LLMs
+  - Research support
+generated:
+  by: "human:jcrowley"
+  at: "2026-10-13T00:00:00Z"
+sources:
+  - id: nairr-pilot-allocations
+    resource: "https://nairrpilot.org/opportunities/allocations"
+    title: "NAIRR Pilot allocation opportunities"
+    author: "org:NAIRR Pilot"
+  - id: access-ci-account
+    resource: "https://account.access-ci.org/register"
+    title: "ACCESS account registration"
+    author: "org:ACCESS"
+  - id: cyverse-ai-verde-api
+    resource: "https://aiverde-docs.cyverse.ai/api/"
+    title: "AI-VERDE API documentation"
+    author: "org:CyVerse"
+---
+
+# AI research resources
+
+CARC does not currently provide hosted AI, large language model (LLM), or
+agent services as a production service. Researchers whose projects require
+AI models, API access, or agent-oriented workflows can request or explore
+research-focused services through the external programs below.
+
+These resources may be useful for faculty principal investigators, postdoctoral
+researchers, graduate students, undergraduate students working on mentored
+research, and research staff. Each service has its own eligibility rules,
+allocation process, acceptable-use requirements, and account-review workflow.
+
+## External resources
+
+### NAIRR Pilot
+
+The [NAIRR Pilot allocation opportunities](https://nairrpilot.org/opportunities/allocations){target=_blank}
+page is a starting point for researchers seeking access to national AI
+research resources. It is intended for research and education projects that
+need AI-related computing, model, data, or platform access beyond what a local
+department or campus service can provide.
+
+### ACCESS
+
+[ACCESS account registration](https://account.access-ci.org/register){target=_blank}
+is the entry point for researchers who want to use NSF-funded advanced
+cyberinfrastructure. ACCESS can be appropriate when a project needs national
+research computing resources, allocations, or services that support larger
+computational workflows.
+
+### AI-VERDE
+
+[AI-VERDE](https://aiverde-docs.cyverse.ai/api/){target=_blank} provides
+documentation for using CyVerse's AI-VERDE services, including an
+OpenAI-compatible API for connecting tools and code to available models.
+Researchers who need API-based access for scripts, notebooks, or agent
+workflows may find this a useful place to start.
+
+## Who can use these resources
+
+Access usually depends on the service and the research context. In general,
+these programs are aimed at academic research and education users such as PIs,
+postdocs, graduate students, students working under faculty supervision, and
+research staff. Some requests may need a project description, sponsoring PI,
+institutional affiliation, or explanation of the computational and AI
+requirements.
+
+Before applying, be ready to describe:
+
+* the research goal or education use case;
+* why AI, LLM, API, or agent access is needed;
+* expected data sensitivity and privacy considerations;
+* the scale of the requested work, such as model access, computing time, or
+  workflow requirements;
+* the people who need access and their roles on the project.
+
+## Get help
+
+The CARC Research Facilitation team is happy to talk through options, help
+scope the technical requirements, and point researchers toward the most
+appropriate external service. For questions, email
+[researchtech@unm.edu](mailto:researchtech@unm.edu) or visit
+[office and consultation hours](contact/office-hours.md).
+
+---8<--- https://carc.unm.edu/as-support/
+
+---
+okf_version: "0.2"
+title: "A&S Support"
+description: "Research-computing support for the UNM School of Arts & Sciences."
+type: Reference
+tags:
+  - Research computing
+  - Arts and Sciences
+  - Linux
+  - AI
+  - Cloud computing
+---
+
+# A&S Support
+
+## Mission
+
+A&S Support advances research computing for the UNM School of Arts & Sciences.
+Its work includes Linux system support and administration, along with
+scientific and research computing involving AI, cloud services, and
+departmental computational resources.
+
+## Current departmental support
+
+We currently support research-computing needs in:
+
+* Chemistry
+* Mathematics and Statistics
+* Earth and Planetary Sciences
+* Physics and Astronomy
+* Biology
+
+## Get support
+
+We hold regular office hours in the departments we support. To submit a support
+ticket, email [researchtech@unm.edu](mailto:researchtech@unm.edu).
+
+## Related resources
+
+* [AI research resources](ai-research-resources.md) - External AI, LLM, and
+  agent resources for researchers whose projects require AI services that CARC
+  does not currently provide directly.
+
+---8<--- https://carc.unm.edu/downtime-notices/
+
+---
+okf_version: "0.2"
+title: "Downtime notices"
+description: "Planned maintenance and service interruptions affecting UNM CARC systems."
+type: Reference
+tags:
+  - Systems
+  - Status
+  - Maintenance
+sources:
+  - id: carc-web
+    resource: "https://carc.unm.edu/systems/downtime-notices.html"
+    title: "Downtime notices (CARC legacy website)"
+    author: "team:unm-carc"
+---
+
+# Downtime notices
+
+This page lists planned maintenance and service interruptions that may affect
+CARC users. Details may change as work progresses; check back before a planned
+maintenance window.
+
+## Scheduled maintenance
+
+### Firewall upgrade
+
+**September 28th Starting at 3:00pm – September 30th, 2026**
+
+Expect frequent and prolonged interruptions to network traffic to and from
+CARC throughout the maintenance period. This will affect SSH logins, Open
+OnDemand, the CARC Help Desk ticket system, ColdFront, and other
+network-dependent services.
+
 ---8<--- https://carc.unm.edu/about/export-control/
 
 ---
@@ -6882,6 +7057,10 @@ Albuquerque NM 87106
 ---8<--- https://carc.unm.edu/log/
 
 # Website update log
+
+## 2026-10-13
+
+* **New**: Added [AI research resources](ai-research-resources.md), a short A&S Support page pointing researchers to external AI, LLM, and agent resources including NAIRR Pilot allocations, ACCESS registration, and AI-VERDE API documentation.
 
 ## 2026-10-10
 
