@@ -4,6 +4,10 @@
 
 * **Update**: Added an [Easley cooling-system repair notice](downtime-notices.md): half of Easley's compute nodes will be unavailable October 14-15.
 
+## 2026-10-10
+
+* **Update**: [Jobs](jobs/index.md) no longer lists the MESA Program Manager position, and its page is removed. A new **Research Assistants** section at the bottom of the page describes the graduate and undergraduate research assistant positions, lists the current research areas, and gives the regular application due dates (July 1 for Fall, November 20 for Spring, April 20 for Summer) and what a complete application packet includes.
+
 ## 2026-10-08
 
 * **Correction**: Removed VM hosting from the [Premium services](research/premium-services.md) cost model. CARC does not offer VM hosting under that model.

@@ -101,7 +101,6 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 ## Jobs
 
 - [Postdoctoral Researcher — Agentic AI](https://carc.unm.edu/jobs/postdoc-agentic-ai/): Lead the agentic AI orchestration prototype for the NSF MESA project at CARC: self-hosted LLM serving, retrieval over scientific metadata, and the MCP server framework. 1.0 FTE.
-- [Program Manager](https://carc.unm.edu/jobs/program-manager/): Manage the $4.6M NSF MESA cooperative agreement at CARC: execution plan, schedule and budget tracking, risk register, and coordination across three institutions. 1.0 FTE.
 - [Research Computing Facilitator](https://carc.unm.edu/jobs/research-computing-facilitator/): Consult with UNM research groups, build and maintain Linux systems, install scientific software, and bring labs onto CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2.
 
 ## Contact
