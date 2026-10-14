@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-14
+
+* **Update**: Added an [Easley cooling-system repair notice](downtime-notices.md): half of Easley's compute nodes will be unavailable October 14-15.
+
 ## 2026-10-08
 
 * **Correction**: Removed VM hosting from the [Premium services](research/premium-services.md) cost model. CARC does not offer VM hosting under that model.
