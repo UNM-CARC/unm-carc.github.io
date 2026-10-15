@@ -22,6 +22,13 @@ maintenance window.
 
 ## Scheduled maintenance
 
+### Easley cooling-system repairs
+
+**October 14-15, 2026**
+
+Half of the Easley compute nodes will be unavailable while we perform repairs
+on the cooling system.
+
 ### Firewall upgrade
 
 **September 28th Starting at 3:00pm – September 30th, 2026**
