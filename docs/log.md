@@ -1,5 +1,8 @@
 # Website update log
 
+## 2026-10-13
+
+* **New**: Added [AI research resources](ai-research-resources.md), a short A&S Support page pointing researchers to external AI, LLM, and agent resources including NAIRR Pilot allocations, ACCESS registration, and AI-VERDE API documentation.
 ## 2026-10-14
 
 * **Update**: Added an [Easley cooling-system repair notice](downtime-notices.md): half of Easley's compute nodes will be unavailable October 14-15.

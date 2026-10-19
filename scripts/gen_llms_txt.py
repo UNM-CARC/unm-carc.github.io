@@ -28,6 +28,14 @@ SECTION_ORDER = [
     "about", "research", "education", "education/cse", "news", "jobs", "contact",
 ]
 
+ROOT_PAGE_EXCLUDES = {
+    "404.md",
+    "index.md",
+    "llms-full.txt",
+    "llms.txt",
+    "log.md",
+}
+
 
 def site_url() -> str:
     """Canonical site origin. CARC_SITE_URL overrides zensical.toml so a build can
@@ -102,6 +110,27 @@ def main():
     ]
 
     n = 0
+    root_pages = []
+    for path in sorted(DOCS.glob("*.md")):
+        if path.name in ROOT_PAGE_EXCLUDES:
+            continue
+        fm, _ = frontmatter(path)
+        if not fm.get("type"):
+            continue
+        root_pages.append((path, fm))
+
+    if root_pages:
+        lines += ["## Campus research support", ""]
+        for path, fm in root_pages:
+            rel = path.relative_to(DOCS)
+            url = page_url(base, rel)
+            title = fm.get("title") or path.stem.replace("-", " ").title()
+            desc = fm.get("description", "").strip()
+            lines.append(f"- [{title}]({url}): {desc}")
+            full += [f"---8<--- {url}", "", path.read_text(encoding="utf-8").rstrip(), ""]
+            n += 1
+        lines.append("")
+
     for section in SECTION_ORDER:
         sdir = DOCS / section
         if not sdir.is_dir():
