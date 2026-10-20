@@ -476,6 +476,8 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li class="dropdown-header">Launch</li>'
         '<li><a href="https://ood.alliance.unm.edu/" target="_blank" rel="noopener">Web Portal (Open OnDemand) <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://coldfront.alliance.unm.edu/" target="_blank" rel="noopener">Allocations &amp; Projects (ColdFront) <span aria-hidden="true">↗</span></a></li>'
+        '<li class="divider" role="presentation"></li><li class="dropdown-header">Documentation</li>'
+        f'<li><a href="{rel_root}docs/systems/storage/">Storage &amp; Backups</a></li>'
         '<li class="divider" role="presentation"></li><li class="dropdown-header">Status</li>'
         '<li><a href="https://vortex.alliance.unm.edu/public-dashboards/d1573fdbc5164b2dbf3cdfdcfe437f63" target="_blank" rel="noopener">Cluster Status <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://stats.uptimerobot.com/kqt0LYLwFd" target="_blank" rel="noopener">Service Uptime <span aria-hidden="true">↗</span></a></li>'
