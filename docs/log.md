@@ -2,7 +2,7 @@
 
 ## 2026-10-20
 
-* **Navigation**: Added a compact, site-scoped **Search CARC** field to the menu bar using UNM's supported departmental search service.
+* **Navigation**: Added a compact, theme-aware, site-scoped **Search CARC** field to the menu bar using UNM's supported departmental search service.
 * **Navigation**: Kept the primary sections and user actions on one desktop menu row in Safari as well as Chrome by replacing the two adjacent inline navigation groups with a non-wrapping flex layout at desktop widths.
 
 ## 2026-10-14

@@ -315,12 +315,17 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active > a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 #nav li.carc-search-li { display: inline-flex; align-items: center; padding: .3em .25em; vertical-align: middle; }
-#nav .carc-search-form { display: flex; align-items: stretch; margin: 0; }
+#nav .carc-search-form { display: flex; align-items: stretch; margin: 0; overflow: hidden;
+  border: 1px solid var(--pg-link); border-radius: 999px; background: var(--pg-card); }
+#nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(186,12,47,.22); }
 #nav .carc-search-input { width: 10em; min-width: 0; height: 2.2em; padding: .25em .55em;
-  border: 1px solid #a7a8aa; border-right: 0; border-radius: 3px 0 0 3px; color: #201c18; background: #fff; }
-#nav .carc-search-submit { width: 2.3em; height: 2.2em; padding: 0; border: 1px solid #ba0c2f;
-  border-radius: 0 3px 3px 0; background: #ba0c2f; color: #fff; }
-#nav .carc-search-submit:hover, #nav .carc-search-submit:focus { background: #8a0923; }
+  border: 0; outline: 0; color: var(--pg-fg); background: transparent; }
+#nav .carc-search-input::placeholder { color: var(--pg-muted); opacity: 1; }
+#nav .carc-search-submit { width: 2.3em; height: 2.2em; padding: 0; border: 0;
+  border-radius: 50%; background: transparent; color: var(--pg-link); }
+#nav .carc-search-submit:hover, #nav .carc-search-submit:focus { background: var(--pg-link); color: var(--pg-bg); outline: 0; }
+html[data-theme="dark"] #nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(79,211,224,.25); }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) #nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(79,211,224,.25); } }
 #nav .container { text-align: center; }
 #nav ul.carc-primary, #nav ul.carc-utilities { display: inline-block; vertical-align: middle; text-align: center; }
 #nav ul.carc-utilities { font-size: 1em; white-space: nowrap; }

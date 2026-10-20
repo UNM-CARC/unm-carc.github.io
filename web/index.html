@@ -199,12 +199,15 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: #ba0c2f; text-decoration: none; }
 #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 #nav li.carc-search-li { display: inline-flex; align-items: center; padding: .3em .25em; vertical-align: middle; }
-#nav .carc-search-form { display: flex; align-items: stretch; margin: 0; }
+#nav .carc-search-form { display: flex; align-items: stretch; margin: 0; overflow: hidden;
+  border: 1px solid #ba0c2f; border-radius: 999px; background: rgba(255,255,255,.45); }
+#nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(186,12,47,.22); }
 #nav .carc-search-input { width: 10em; min-width: 0; height: 2.2em; padding: .25em .55em;
-  border: 1px solid #a7a8aa; border-right: 0; border-radius: 3px 0 0 3px; color: #201c18; background: #fff; }
-#nav .carc-search-submit { width: 2.3em; height: 2.2em; padding: 0; border: 1px solid #ba0c2f;
-  border-radius: 0 3px 3px 0; background: #ba0c2f; color: #fff; }
-#nav .carc-search-submit:hover, #nav .carc-search-submit:focus { background: #8a0923; }
+  border: 0; outline: 0; color: #201c18; background: transparent; }
+#nav .carc-search-input::placeholder { color: #6b6660; opacity: 1; }
+#nav .carc-search-submit { width: 2.3em; height: 2.2em; padding: 0; border: 0;
+  border-radius: 50%; background: transparent; color: #ba0c2f; }
+#nav .carc-search-submit:hover, #nav .carc-search-submit:focus { background: #ba0c2f; color: #fff; outline: 0; }
 #nav .container { text-align: center; }
 #nav ul.carc-primary, #nav ul.carc-utilities { display: inline-block; vertical-align: middle; text-align: center; }
 #nav ul.carc-utilities { font-size: 1em; white-space: nowrap; }
@@ -227,12 +230,24 @@ html[data-theme="dark"] #nav ul.carc-sections li a { color: #4fd3e0; }
 html[data-theme="dark"] #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
 html[data-theme="dark"] #nav ul.carc-sections li.carc-dropdown .dropdown-menu { background-color: #10131a !important; border-color: #27313c !important; }
 html[data-theme="dark"] #gg-theme-btn { color: #4fd3e0; }
+html[data-theme="dark"] #nav .carc-search-form { border-color: #4fd3e0; background: #1c1f28; }
+html[data-theme="dark"] #nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(79,211,224,.25); }
+html[data-theme="dark"] #nav .carc-search-input { color: #e8e6e1; }
+html[data-theme="dark"] #nav .carc-search-input::placeholder { color: #a7a8aa; }
+html[data-theme="dark"] #nav .carc-search-submit { color: #4fd3e0; }
+html[data-theme="dark"] #nav .carc-search-submit:hover, html[data-theme="dark"] #nav .carc-search-submit:focus { background: #4fd3e0; color: #10131a; }
 @media (prefers-color-scheme: dark) {
   html:not([data-theme="light"]) #nav { background: #10131a; }
   html:not([data-theme="light"]) #nav ul.carc-sections li a { color: #4fd3e0; }
   html:not([data-theme="light"]) #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
   html:not([data-theme="light"]) #nav ul.carc-sections li.carc-dropdown .dropdown-menu { background-color: #10131a !important; border-color: #27313c !important; }
   html:not([data-theme="light"]) #gg-theme-btn { color: #4fd3e0; }
+  html:not([data-theme="light"]) #nav .carc-search-form { border-color: #4fd3e0; background: #1c1f28; }
+  html:not([data-theme="light"]) #nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(79,211,224,.25); }
+  html:not([data-theme="light"]) #nav .carc-search-input { color: #e8e6e1; }
+  html:not([data-theme="light"]) #nav .carc-search-input::placeholder { color: #a7a8aa; }
+  html:not([data-theme="light"]) #nav .carc-search-submit { color: #4fd3e0; }
+  html:not([data-theme="light"]) #nav .carc-search-submit:hover, html:not([data-theme="light"]) #nav .carc-search-submit:focus { background: #4fd3e0; color: #10131a; }
 }
 #gg-theme-btn { border: none; background: transparent; color: #ba0c2f;
   font-size: 1.35em; line-height: 1; padding: .15em .35em; margin: .18em 0;
