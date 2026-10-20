@@ -314,6 +314,13 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active > a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+#nav li.carc-search-li { display: inline-flex; align-items: center; padding: .3em .25em; vertical-align: middle; }
+#nav .carc-search-form { display: flex; align-items: stretch; margin: 0; }
+#nav .carc-search-input { width: 10em; min-width: 0; height: 2.2em; padding: .25em .55em;
+  border: 1px solid #a7a8aa; border-right: 0; border-radius: 3px 0 0 3px; color: #201c18; background: #fff; }
+#nav .carc-search-submit { width: 2.3em; height: 2.2em; padding: 0; border: 1px solid #ba0c2f;
+  border-radius: 0 3px 3px 0; background: #ba0c2f; color: #fff; }
+#nav .carc-search-submit:hover, #nav .carc-search-submit:focus { background: #8a0923; }
 #nav .container { text-align: center; }
 #nav ul.carc-primary, #nav ul.carc-utilities { display: inline-block; vertical-align: middle; text-align: center; }
 #nav ul.carc-utilities { font-size: 1em; white-space: nowrap; }
@@ -321,6 +328,10 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 @media (min-width: 992px) {
   #nav .container { display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; }
   #nav ul.carc-primary, #nav ul.carc-utilities { display: flex; flex: 0 0 auto; }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #nav ul.carc-sections li a { padding-left: .65em; padding-right: .65em; }
+  #nav .carc-search-input { width: 8em; }
 }
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
 #nav ul.carc-sections li.carc-dropdown { position: relative; }
@@ -466,6 +477,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li><a href="https://xdmod.alliance.unm.edu/#tg_usage?node=statistic&amp;realm=Jobs&amp;group_by=nsfdirectorate&amp;statistic=total_cpu_hours" target="_blank" rel="noopener">Center Utilization <span aria-hidden="true">↗</span></a></li>'
         f'<li><a href="{rel_root}downtime-notices/">Downtime Notices</a></li></ul></li>',
         f'<li><a href="{rel_root}as-support/">A&amp;S Support</a></li>',
+        '<li class="carc-search-li"><form class="carc-search-form" action="https://search.unm.edu/search" method="get" onsubmit="this.elements.q.value=\'site:carc.unm.edu \'+this.querySelector(\'.carc-search-input\').value"><input class="carc-search-input" type="search" aria-label="Search the CARC website" placeholder="Search CARC"><input type="hidden" name="q" value=""><button class="carc-search-submit" type="submit" aria-label="Submit search"><span class="fa fa-search" aria-hidden="true"></span></button></form></li>',
         '<li class="carc-theme-li"><button id="carc-theme-btn" type="button" aria-label="Toggle day / night theme" title="Toggle day / night theme">☾</button></li>',
     ]
     return "\n".join(primary), "\n".join(utilities)
