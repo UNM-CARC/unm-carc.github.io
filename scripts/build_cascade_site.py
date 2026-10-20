@@ -318,6 +318,10 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-primary, #nav ul.carc-utilities { display: inline-block; vertical-align: middle; text-align: center; }
 #nav ul.carc-utilities { font-size: 1em; white-space: nowrap; }
 @media (max-width: 767px) { #nav ul.carc-primary, #nav ul.carc-utilities { display: block; } #nav ul.carc-utilities { white-space: normal; } }
+@media (min-width: 992px) {
+  #nav .container { display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; }
+  #nav ul.carc-primary, #nav ul.carc-utilities { display: flex; flex: 0 0 auto; }
+}
 #nav ul.carc-utilities li.carc-theme-li { float: none; }
 #nav ul.carc-sections li.carc-dropdown { position: relative; }
 #nav ul.carc-sections li.carc-dropdown .dropdown-menu { min-width: 14em; padding: .35em 0; text-align: left; }
