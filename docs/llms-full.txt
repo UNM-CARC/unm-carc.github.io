@@ -7068,7 +7068,7 @@ Albuquerque NM 87106
 ## 2026-10-20
 
 * **Navigation**: Added the user documentation's [Storage and backups](/docs/systems/storage/) guide to the **HPC Resources** menu.
-* **Navigation**: Added a compact, theme-aware, site-scoped **Search CARC** field to the menu bar using UNM's supported departmental search service.
+* **Navigation**: Added a compact, theme-aware, site-scoped **Search CARC** field to the menu bar using UNM's supported departmental search service. Its placeholder is a faded theme accent until the user enters full-strength text.
 * **Navigation**: Kept the primary sections and user actions on one desktop menu row in Safari as well as Chrome by replacing the two adjacent inline navigation groups with a non-wrapping flex layout at desktop widths.
 
 ## 2026-10-14

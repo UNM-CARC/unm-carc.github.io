@@ -319,8 +319,8 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
   border: 1px solid var(--pg-link); border-radius: 999px; background: var(--pg-card); }
 #nav .carc-search-form:focus-within { box-shadow: 0 0 0 2px rgba(186,12,47,.22); }
 #nav .carc-search-input { width: 10em; min-width: 0; height: 2.2em; padding: .25em .55em;
-  border: 0; outline: 0; color: var(--pg-fg); background: transparent; }
-#nav .carc-search-input::placeholder { color: var(--pg-muted); opacity: 1; }
+  border: 0; outline: 0; color: var(--pg-link); background: transparent; }
+#nav .carc-search-input::placeholder { color: var(--pg-link); opacity: .55; }
 #nav .carc-search-submit { width: 2.3em; height: 2.2em; padding: 0; border: 0;
   border-radius: 50%; background: transparent; color: var(--pg-link); }
 #nav .carc-search-submit:hover, #nav .carc-search-submit:focus { background: var(--pg-link); color: var(--pg-bg); outline: 0; }
