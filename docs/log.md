@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-21
+
+* **Maintenance**: Added a [planned maintenance notice](downtime-notices.md) for December 2-3, when CARC systems will be unavailable for server updates and are expected to return by the end of Thursday.
+
 ## 2026-10-20
 
 * **Navigation**: Added the user documentation's [Storage and backups](/docs/systems/storage/) guide to the **HPC Resources** menu.

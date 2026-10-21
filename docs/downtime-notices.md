@@ -22,6 +22,13 @@ maintenance window.
 
 ## Scheduled maintenance
 
+### CARC system updates
+
+**December 2-3, 2026**
+
+CARC systems will be unavailable for two days while servers are updated.
+Services are expected to be restored by the end of Thursday, December 3.
+
 ### Easley cooling-system repairs
 
 **October 14-15, 2026**
