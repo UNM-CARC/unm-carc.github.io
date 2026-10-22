@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-22
+
+* **Navigation**: Added **Transfer Data (Globus)** to the **HPC Resources → Launch** menu alongside Open OnDemand and ColdFront.
+
 ## 2026-10-21
 
 * **Maintenance**: Added a [planned maintenance notice](downtime-notices.md) for December 2-3, when CARC systems will be unavailable for server updates and are expected to return by the end of Thursday.
