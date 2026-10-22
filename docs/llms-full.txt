@@ -7074,6 +7074,7 @@ Albuquerque NM 87106
 
 ## 2026-10-22
 
+* **Navigation**: Added a **Research Platforms** menu with direct links to ACCESS-CI, Jetstream2, CyVerse, and MESA, matching the destinations in the user documentation's Partner cyberinfrastructure guide.
 * **Navigation**: Added **Transfer Data (Globus)** to the **HPC Resources → Launch** menu alongside Open OnDemand and ColdFront.
 
 ## 2026-10-21
