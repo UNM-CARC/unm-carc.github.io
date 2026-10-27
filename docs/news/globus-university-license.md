@@ -15,7 +15,7 @@ generated:
 
 # UNM purchases university-wide Globus license
 
-<p class="carc-byline">By CARC staff · October 27, 2026</p>
+<p class="carc-byline">By Matthew Fricke · October 27, 2026</p>
 
 The University of New Mexico has purchased a university-wide license for Globus,
 a service that helps researchers transfer and share large datasets securely.

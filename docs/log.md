@@ -2,6 +2,8 @@
 
 ## 2026-10-27
 
+* **Correction**: Credited Matthew Fricke as the author of the [Globus license announcement](news/globus-university-license.md).
+
 * **News**: Announced UNM’s university-wide Globus license, linked the [data transfer tutorial](/docs/tutorials/data-transfer/globus/), and featured the [announcement](news/globus-university-license.md) on the homepage and News page.
 
 ## 2026-10-22
