@@ -2,6 +2,8 @@
 
 ## 2026-10-27
 
+* **Homepage**: Added a clickable news ticker with current headlines and active/upcoming maintenance notices, pause controls, and reduced-motion support. Structured downtime metadata and agent guidance keep notices in sync.
+
 * **Correction**: Credited Matthew Fricke as the author of the [Globus license announcement](news/globus-university-license.md).
 
 * **News**: Announced UNM’s university-wide Globus license, linked the [data transfer tutorial](/docs/tutorials/data-transfer/globus/), and featured the [announcement](news/globus-university-license.md) on the homepage and News page.

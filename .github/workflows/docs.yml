@@ -48,6 +48,8 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install pyyaml markdown
+      - run: python -m unittest discover -s tests
+      - run: node --test tests/news-ticker.test.cjs
       # Regenerate the llms.txt machine-readable indexes at build time, so
       # content edited straight in the GitHub web UI ships fresh indexes
       # without anyone running scripts locally

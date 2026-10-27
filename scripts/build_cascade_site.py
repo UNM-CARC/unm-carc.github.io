@@ -28,6 +28,8 @@ from pathlib import Path
 import markdown
 import yaml
 
+from news_ticker import ticker_html
+
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 SITE = ROOT / "site"
@@ -576,6 +578,7 @@ def main():
     # Pages origin; its canonical and self-links follow site_url at build time.
     home = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
     home = home.replace("https://unm-carc.github.io/", base)
+    home = home.replace("<!-- NEWS_TICKER -->", ticker_html(DOCS))
     if ga4_id():
         home = home.replace("<!-- Google Tag Manager", ga4_head(ga4_id()) + "\n<!-- Google Tag Manager", 1)
     (SITE / "index.html").write_text(home, encoding="utf-8")
