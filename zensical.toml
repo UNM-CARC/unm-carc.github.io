@@ -18,7 +18,7 @@ nav = [
   { "About" = [ { "Contents" = "about/index.md" }, "about/mission.md", "about/strategic-plan.md", "about/history.md", "about/iab.md" ] },
   { "Research" = [ { "Contents" = "research/index.md" }, "research/featured-projects.md", "research/publications.md", "research/grant-resources.md", "research/free-services.md", "research/premium-services.md" ] },
   { "Education" = [ { "Contents" = "education/index.md" }, "education/workshops.md", { "CSE Certificate" = [ "education/cse/index.md", "education/cse/requirements.md", "education/cse/application.md", "education/cse/electives.md", "education/cse/specializations.md" ] } ] },
-  { "News" = [ { "Contents" = "news/index.md" }, "news/2026-annual-meeting.md", "news/director-search.md", "news/psaap-iv-compass.md", "news/easley-cluster.md", "news/2025-annual-meeting.md", "news/hpc-course.md", "news/director-message.md", "news/sc24-team.md", "news/genome-sequencing.md", "news/molecular-modeling.md" ] },
+  { "News" = [ { "Contents" = "news/index.md" }, "news/globus-university-license.md", "news/2026-annual-meeting.md", "news/director-search.md", "news/psaap-iv-compass.md", "news/easley-cluster.md", "news/2025-annual-meeting.md", "news/hpc-course.md", "news/director-message.md", "news/sc24-team.md", "news/genome-sequencing.md", "news/molecular-modeling.md" ] },
   { "Contact" = [ { "Contents" = "contact/index.md" }, "contact/personnel.md", "contact/visiting.md" ] },
   { "User Docs ↗" = "/docs/" },
 ]

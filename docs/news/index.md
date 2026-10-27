@@ -2,6 +2,8 @@
 
 Announcements and stories from the CARC community.
 
+* [UNM purchases university-wide Globus license](globus-university-license.md) - Securely transfer and share large research datasets, with a walkthrough for CARC users.
+
 * [Welcome our new CARC Director, Tyson Swetnam](welcome-director-swetnam.md) - The Center for Advanced Research Computing welcomes its new Director.
 * [Recent departures and retirements](departures-retirements.md) - Thanking Patrick Bridges and Hussein Al-Azzawi, and wishing Jim Prewett a happy retirement.
 * [Remembering Cleve Moler](cleve-moler-memoriam.md) - Matthew Fricke remembers the creator of MATLAB, former UNM Computer Science chair, and a giant of high-performance computing (1939–2026).

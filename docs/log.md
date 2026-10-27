@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-27
+
+* **News**: Announced UNM’s university-wide Globus license, linked the [data transfer tutorial](/docs/tutorials/data-transfer/globus/), and featured the [announcement](news/globus-university-license.md) on the homepage and News page.
+
 ## 2026-10-22
 
 * **Navigation**: Added a **Research Platforms** menu with direct links to ACCESS-CI, Jetstream2, CyVerse, and MESA, matching the destinations in the user documentation's Partner cyberinfrastructure guide.
