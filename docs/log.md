@@ -2,6 +2,7 @@
 
 ## 2026-10-28
 
+* **Navigation**: Updated the **MESA** links in **Research Platforms** and the homepage partner links to [mesa.cyverse.org](https://mesa.cyverse.org/){target=_blank}.
 * **Navigation**: Added [The New Mexico Decedent Image Database](https://nmdid.unm.edu/){target=_blank} to the **Research Platforms** menu.
 
 ## 2026-10-27

@@ -490,7 +490,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         '<li><a href="https://access-ci.org/" target="_blank" rel="noopener">ACCESS-CI <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://docs.jetstream-cloud.org/" target="_blank" rel="noopener">Jetstream2 <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://cyverse.org/" target="_blank" rel="noopener">CyVerse <span aria-hidden="true">↗</span></a></li>'
-        '<li><a href="https://idss-mesa.github.io/" target="_blank" rel="noopener">MESA <span aria-hidden="true">↗</span></a></li>'
+        '<li><a href="https://mesa.cyverse.org/" target="_blank" rel="noopener">MESA <span aria-hidden="true">↗</span></a></li>'
         '<li><a href="https://nmdid.unm.edu/" target="_blank" rel="noopener">The New Mexico Decedent Image Database <span aria-hidden="true">↗</span></a></li></ul></li>',
         f'<li><a href="{rel_root}as-support/">A&amp;S Support</a></li>',
         '<li class="carc-search-li"><form class="carc-search-form" action="https://search.unm.edu/search" method="get" onsubmit="this.elements.q.value=\'site:carc.unm.edu \'+this.querySelector(\'.carc-search-input\').value"><input class="carc-search-input" type="search" aria-label="Search the CARC website" placeholder="Search CARC"><input type="hidden" name="q" value=""><button class="carc-search-submit" type="submit" aria-label="Submit search"><span class="fa fa-search" aria-hidden="true"></span></button></form></li>',
