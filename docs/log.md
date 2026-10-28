@@ -1,5 +1,10 @@
 # Website update log
 
+## 2026-10-28
+
+* **Navigation**: Updated the **MESA** links in **Research Platforms** and the homepage partner links to [mesa.cyverse.org](https://mesa.cyverse.org/){target=_blank}.
+* **Navigation**: Added [The New Mexico Decedent Image Database](https://nmdid.unm.edu/){target=_blank} to the **Research Platforms** menu.
+
 ## 2026-10-27
 
 * **Homepage**: Added a clickable news ticker with current headlines and active/upcoming maintenance notices, automatic hover/focus pausing, and reduced-motion support. The redundant left-hand **CARC NEWS** label and manual pause button were removed. Structured downtime metadata and agent guidance keep notices in sync.
