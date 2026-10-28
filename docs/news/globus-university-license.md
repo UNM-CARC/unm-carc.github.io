@@ -17,6 +17,8 @@ generated:
 
 <p class="carc-byline">By Matthew Fricke · October 27, 2026</p>
 
+<p><a href="https://www.globus.org/" target="_blank" rel="noopener"><img src="/assets/globus-logo-blue-horizontal.png" alt="Globus" width="420"></a></p>
+
 The University of New Mexico has purchased a university-wide license for Globus,
 a service that helps researchers transfer and share large datasets securely.
 

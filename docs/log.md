@@ -4,6 +4,8 @@
 
 * **Homepage**: Added a clickable news ticker with current headlines and active/upcoming maintenance notices, automatic hover/focus pausing, and reduced-motion support. The redundant left-hand **CARC NEWS** label and manual pause button were removed. Structured downtime metadata and agent guidance keep notices in sync.
 
+* **News**: Added the official Globus logo to the [university-wide license announcement](news/globus-university-license.md).
+
 * **Correction**: Credited Matthew Fricke as the author of the [Globus license announcement](news/globus-university-license.md).
 
 * **News**: Announced UNM’s university-wide Globus license, linked the [data transfer tutorial](/docs/tutorials/data-transfer/globus/), and featured the [announcement](news/globus-university-license.md) on the homepage and News page.

@@ -3455,6 +3455,8 @@ generated:
 
 <p class="carc-byline">By Matthew Fricke · October 27, 2026</p>
 
+<p><a href="https://www.globus.org/" target="_blank" rel="noopener"><img src="/assets/globus-logo-blue-horizontal.png" alt="Globus" width="420"></a></p>
+
 The University of New Mexico has purchased a university-wide license for Globus,
 a service that helps researchers transfer and share large datasets securely.
 
@@ -7131,6 +7133,8 @@ Albuquerque NM 87106
 ## 2026-10-27
 
 * **Homepage**: Added a clickable news ticker with current headlines and active/upcoming maintenance notices, automatic hover/focus pausing, and reduced-motion support. The redundant left-hand **CARC NEWS** label and manual pause button were removed. Structured downtime metadata and agent guidance keep notices in sync.
+
+* **News**: Added the official Globus logo to the [university-wide license announcement](news/globus-university-license.md).
 
 * **Correction**: Credited Matthew Fricke as the author of the [Globus license announcement](news/globus-university-license.md).
 
