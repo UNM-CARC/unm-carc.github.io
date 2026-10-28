@@ -13,7 +13,6 @@
   if (!ticker) return;
   const data = JSON.parse(document.getElementById('gg-ticker-data').textContent);
   const track = ticker.querySelector('.gg-ticker-track');
-  const pause = ticker.querySelector('.gg-ticker-pause');
   const motion = root.matchMedia('(prefers-reduced-motion: reduce)');
   let lastSelection = '';
   function render(force) {
@@ -41,7 +40,6 @@
     });
     track.replaceChildren(group);
     ticker.classList.toggle('is-moving', !motion.matches);
-    pause.hidden = motion.matches;
     if (!motion.matches) {
       const copy = group.cloneNode(true);
       copy.setAttribute('aria-hidden', 'true');
@@ -50,11 +48,6 @@
       track.style.setProperty('--ticker-duration', Math.max(30, group.offsetWidth / 35) + 's');
     }
   }
-  pause.addEventListener('click', () => {
-    const paused = ticker.classList.toggle('is-paused');
-    pause.textContent = paused ? 'Resume' : 'Pause';
-    pause.setAttribute('aria-pressed', String(paused));
-  });
   motion.addEventListener('change', () => render(true));
   root.addEventListener('resize', () => {
     const group = track.firstElementChild;

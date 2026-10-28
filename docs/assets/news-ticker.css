@@ -1,6 +1,5 @@
 /* Full-width news band between navigation and the homepage illustration. */
 .gg-ticker { display:flex; align-items:center; gap:0; min-height:46px; background:#123038; color:#f7efdf; border-top:1px solid #007a86; border-bottom:1px solid #007a86; font:15px/1.5 Arial,sans-serif; }
-.gg-ticker-label { flex:none; padding:12px 18px; background:#007a86; color:#fff; font-weight:bold; letter-spacing:.08em; }
 .gg-ticker-window { flex:1; min-width:0; overflow-x:auto; scrollbar-width:thin; }
 .gg-ticker-track,.gg-ticker-group { display:flex; align-items:center; width:max-content; }
 .gg-ticker-item { display:inline-flex; align-items:center; gap:10px; flex:none; padding:10px 0 10px 24px; color:#f7efdf; white-space:nowrap; text-decoration:none; }
@@ -8,14 +7,13 @@
 .gg-ticker-kind { font-size:11px; letter-spacing:.08em; font-weight:bold; color:#3fd6e4; }
 .gg-ticker-maintenance .gg-ticker-kind { color:#ffd287; }
 .gg-ticker-star { color:#3fd6e4; padding:0 12px; }
-.gg-ticker-pause,.gg-ticker-all { flex:none; margin:0 12px; color:#f7efdf; font-size:13px; }
-.gg-ticker-pause { background:transparent; border:1px solid #829b9f; border-radius:3px; padding:4px 8px; cursor:pointer; }
+.gg-ticker-all { flex:none; margin:0 12px; color:#f7efdf; font-size:13px; }
 .gg-ticker-all { text-decoration:underline; }
-.gg-ticker a:focus-visible,.gg-ticker button:focus-visible,.gg-ticker-window:focus-visible { outline:2px solid #ffd287; outline-offset:-2px; }
+.gg-ticker a:focus-visible,.gg-ticker-window:focus-visible { outline:2px solid #ffd287; outline-offset:-2px; }
 .gg-ticker.is-moving .gg-ticker-window { overflow:hidden; }
 .gg-ticker.is-moving .gg-ticker-track { animation:gg-ticker-scroll var(--ticker-duration,90s) linear infinite; }
-.gg-ticker:hover .gg-ticker-track,.gg-ticker:focus-within .gg-ticker-track,.gg-ticker.is-paused .gg-ticker-track { animation-play-state:paused; }
-.gg-ticker.is-paused .gg-ticker-window,.gg-ticker:focus-within .gg-ticker-window { overflow-x:auto; }
+.gg-ticker:hover .gg-ticker-track,.gg-ticker:focus-within .gg-ticker-track { animation-play-state:paused; }
+.gg-ticker:focus-within .gg-ticker-window { overflow-x:auto; }
 @keyframes gg-ticker-scroll { to { transform:translateX(-50%); } }
-@media(max-width:600px) { .gg-ticker { font-size:14px; } .gg-ticker-label { padding:13px 9px; font-size:11px; letter-spacing:.03em; } .gg-ticker-label span { display:none; } .gg-ticker-pause,.gg-ticker-all { margin:0 6px; font-size:11px; } }
+@media(max-width:600px) { .gg-ticker { font-size:14px; } .gg-ticker-all { margin:0 6px; font-size:11px; } }
 @media(prefers-reduced-motion:reduce) { .gg-ticker.is-moving .gg-ticker-track { animation:none; } .gg-ticker.is-moving .gg-ticker-window { overflow-x:auto; } .gg-ticker-group[aria-hidden] { display:none; } }

@@ -60,9 +60,7 @@ def ticker_html(docs):
                     + '"><span class="gg-ticker-kind">NEWS</span> ' + html.escape(item["title"])
                     + '<span class="gg-ticker-star" aria-hidden="true">✦</span></a>' for item in news)
     return ('<aside class="gg-ticker" aria-label="CARC news and downtime notices">'
-            '<span class="gg-ticker-label">CARC NEWS <span aria-hidden="true">✦</span></span>'
             '<div class="gg-ticker-window" tabindex="0" aria-label="Headlines; scroll to browse when paused">'
             '<div class="gg-ticker-track"><div class="gg-ticker-group">' + links + '</div></div></div>'
-            '<button class="gg-ticker-pause" type="button" hidden aria-pressed="false">Pause</button>'
             '<a class="gg-ticker-all" href="news/">All news</a></aside>'
             '<script type="application/json" id="gg-ticker-data">' + data + '</script>')
