@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-10-28
+
+* **Navigation**: Added [The New Mexico Decedent Image Database](https://nmdid.unm.edu/){target=_blank} to the **Research Platforms** menu.
+
 ## 2026-10-27
 
 * **Homepage**: Added a clickable news ticker with current headlines and active/upcoming maintenance notices, pause controls, and reduced-motion support. Structured downtime metadata and agent guidance keep notices in sync.
