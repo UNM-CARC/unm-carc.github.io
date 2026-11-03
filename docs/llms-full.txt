@@ -7132,6 +7132,7 @@ Albuquerque NM 87106
 
 ## 2026-10-28
 
+* **Fix**: Versioned the homepage news ticker assets so browsers do not combine the simplified ticker markup with older cached JavaScript, which prevented the ticker from moving.
 * **Navigation**: Updated the **MESA** links in **Research Platforms** and the homepage partner links to [mesa.cyverse.org](https://mesa.cyverse.org/){target=_blank}.
 * **Navigation**: Added [The New Mexico Decedent Image Database](https://nmdid.unm.edu/){target=_blank} to the **Research Platforms** menu.
 
