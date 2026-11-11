@@ -7130,6 +7130,10 @@ Albuquerque NM 87106
 
 # Website update log
 
+## 2026-11-11
+
+* **Navigation**: Added a Research menu with links to the [CARC publications search](https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29){target=_blank}, acknowledgement guidance, grant writing resources, featured projects, and free and premium services.
+
 ## 2026-10-28
 
 * **Fix**: Versioned the homepage news ticker assets so browsers do not combine the simplified ticker markup with older cached JavaScript, which prevented the ticker from moving.

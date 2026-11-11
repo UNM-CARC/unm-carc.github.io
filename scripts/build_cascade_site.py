@@ -461,6 +461,18 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
     for slug, label in SECTIONS:
         if slug in {"education", "contact"}:
             continue
+        if slug == "research":
+            active_cls = " active" if slug == active else ""
+            primary.append(
+                f'<li class="dropdown carc-dropdown{active_cls}"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a><ul class="dropdown-menu">'
+                '<li><a href="https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29" target="_blank" rel="noopener">Publications <span aria-hidden="true">↗</span></a></li>'
+                f'<li><a href="{rel_root}research/publications/">Acknowledging CARC</a></li>'
+                f'<li><a href="{rel_root}research/grant-resources/">Grant Writing Resources</a></li>'
+                f'<li><a href="{rel_root}research/featured-projects/">Featured Projects</a></li>'
+                f'<li><a href="{rel_root}research/free-services/">Free Research Computing</a></li>'
+                f'<li><a href="{rel_root}research/premium-services/">Premium Services</a></li></ul></li>'
+            )
+            continue
         cls = ' class="active"' if slug == active else ""
         primary.append(f'<li{cls}><a href="{rel_root}{slug}/">{label}</a></li>')
     utilities = [
