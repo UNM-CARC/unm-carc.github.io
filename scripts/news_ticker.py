@@ -23,7 +23,7 @@ def downtime_entries(docs):
             raise ValueError("Downtime notices need a title and a stable lowercase anchor")
         if anchor in seen or status not in ("scheduled", "active", "resolved"):
             raise ValueError(f"Duplicate anchor or invalid downtime status: {anchor}")
-        if f'id="{anchor}"' not in (docs / "downtime-notices.md").read_text():
+        if f'id="{anchor}"' not in (docs / "downtime-notices.md").read_text(encoding="utf-8"):
             raise ValueError(f"Missing downtime body anchor: {anchor}")
         seen.add(anchor)
         item = {"title": title, "url": f"downtime-notices/#{anchor}", "status": status}
@@ -44,7 +44,7 @@ def downtime_entries(docs):
 
 def ticker_html(docs):
     # Only the curated current stories, never the historical archive.
-    current = (docs / "news/index.md").read_text().split("<!-- archive:start -->")[0]
+    current = (docs / "news/index.md").read_text(encoding="utf-8").split("<!-- archive:start -->")[0]
     news = []
     for target in re.findall(r"^\* \[[^\]]+\]\(([^)]+\.md)\)", current, re.M):
         path = docs / "news" / target
