@@ -200,6 +200,9 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: #ba0c2f; text-decoration: none; }
 #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+#nav ul.carc-sections li button.carc-nav-toggle { display: inline-block; padding: .7em 1em; color: #ba0c2f; background: transparent; border: 0; font: inherit; line-height: inherit; text-decoration: none; cursor: pointer; }
+#nav ul.carc-sections li button.carc-nav-toggle:hover, #nav ul.carc-sections li button.carc-nav-toggle:focus { background: #ba0c2f; color: #fff; }
+#nav ul.carc-sections li button.carc-nav-toggle .caret { display: inline-block !important; }
 #nav li.carc-search-li { display: inline-flex; align-items: center; padding: .3em .25em; vertical-align: middle; }
 #nav .carc-search-form { display: flex; align-items: stretch; margin: 0; overflow: hidden;
   border: 1px solid #ba0c2f; border-radius: 999px; background: rgba(255,255,255,.45); }
@@ -230,6 +233,7 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 html[data-theme="dark"] #nav { background: #10131a; }
 html[data-theme="dark"] #nav ul.carc-sections li a { color: #4fd3e0; }
 html[data-theme="dark"] #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+html[data-theme="dark"] #nav ul.carc-sections li button.carc-nav-toggle { color: #4fd3e0; }
 html[data-theme="dark"] #nav ul.carc-sections li.carc-dropdown .dropdown-menu { background-color: #10131a !important; border-color: #27313c !important; }
 html[data-theme="dark"] #gg-theme-btn { color: #4fd3e0; }
 html[data-theme="dark"] #nav .carc-search-form { border-color: #4fd3e0; background: #1c1f28; }
@@ -283,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- department navigation (site sections) -->
 <div id="nav"><div class="container"><ul aria-label="Primary navigation" class="carc-sections carc-primary">
   <li><a href="about/">About</a></li>
-  <li class="dropdown carc-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29" target="_blank" rel="noopener">Publications <span aria-hidden="true">↗</span></a></li><li><a href="research/publications/">Acknowledging CARC</a></li><li><a href="research/grant-resources/">Grant Writing Resources</a></li><li><a href="research/featured-projects/">Featured Projects</a></li><li><a href="research/free-services/">Free Research Computing</a></li><li><a href="research/premium-services/">Premium Services</a></li></ul></li>
+  <li class="dropdown carc-dropdown"><button type="button" class="dropdown-toggle carc-nav-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></button><ul class="dropdown-menu"><li><a href="https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29" target="_blank" rel="noopener">Publications <span aria-hidden="true">↗</span></a></li><li><a href="research/publications/">Acknowledging CARC</a></li><li><a href="research/grant-resources/">Grant Writing Resources</a></li><li><a href="research/featured-projects/">Featured Projects</a></li><li><a href="research/free-services/">Free Research Computing</a></li><li><a href="research/premium-services/">Premium Services</a></li></ul></li>
   <li><a href="news/">News</a></li>
   <li><a href="jobs/">Jobs</a></li>
 </ul><ul aria-label="User actions" class="carc-sections carc-utilities">

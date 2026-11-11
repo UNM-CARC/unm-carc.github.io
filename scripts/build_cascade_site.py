@@ -316,6 +316,9 @@ html[data-theme="dark"] .carc-lockup-night { display: inline; }
 #nav ul.carc-sections li { display: inline-block; }
 #nav ul.carc-sections li a { display: inline-block; padding: .7em 1em; color: var(--pg-link); text-decoration: none; }
 #nav ul.carc-sections li.active > a, #nav ul.carc-sections li a:hover { background: #ba0c2f; color: #fff; }
+#nav ul.carc-sections li button.carc-nav-toggle { display: inline-block; padding: .7em 1em; color: var(--pg-link); background: transparent; border: 0; font: inherit; line-height: inherit; text-decoration: none; cursor: pointer; }
+#nav ul.carc-sections li.active > button.carc-nav-toggle, #nav ul.carc-sections li button.carc-nav-toggle:hover, #nav ul.carc-sections li button.carc-nav-toggle:focus { background: #ba0c2f; color: #fff; }
+#nav ul.carc-sections li button.carc-nav-toggle .caret { display: inline-block !important; }
 #nav li.carc-search-li { display: inline-flex; align-items: center; padding: .3em .25em; vertical-align: middle; }
 #nav .carc-search-form { display: flex; align-items: stretch; margin: 0; overflow: hidden;
   border: 1px solid var(--pg-link); border-radius: 999px; background: var(--pg-card); }
@@ -464,7 +467,7 @@ def nav_items(rel_root: str, active: str) -> tuple[str, str]:
         if slug == "research":
             active_cls = " active" if slug == active else ""
             primary.append(
-                f'<li class="dropdown carc-dropdown{active_cls}"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a><ul class="dropdown-menu">'
+                f'<li class="dropdown carc-dropdown{active_cls}"><button type="button" class="dropdown-toggle carc-nav-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></button><ul class="dropdown-menu">'
                 '<li><a href="https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29" target="_blank" rel="noopener">Publications <span aria-hidden="true">↗</span></a></li>'
                 f'<li><a href="{rel_root}research/publications/">Acknowledging CARC</a></li>'
                 f'<li><a href="{rel_root}research/grant-resources/">Grant Writing Resources</a></li>'

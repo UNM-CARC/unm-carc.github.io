@@ -2,6 +2,8 @@
 
 ## 2026-11-11
 
+* **Fix**: Made the Research menu label a menu button with a visible dropdown indicator, so its first click opens the menu instead of navigating.
+
 * **Navigation**: Added a Research menu with links to the [CARC publications search](https://scholar.google.com/scholar?q=%22Center+for+Advanced+Research+Computing%22+AND+%28UNM+OR+%22University+of+New+Mexico%22%29){target=_blank}, acknowledgement guidance, grant writing resources, featured projects, and free and premium services.
 
 ## 2026-10-28
