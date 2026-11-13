@@ -117,9 +117,9 @@ def split_frontmatter(text: str):
 def pretty_dir(rel: Path) -> str:
     """Source path -> site-relative pretty directory ('' for root index)."""
     if rel.name == "index.md":
-        d = str(rel.parent)
+        d = rel.parent.as_posix()
         return "" if d == "." else d + "/"
-    return str(rel.with_suffix("")) + "/"
+    return rel.with_suffix("").as_posix() + "/"
 
 
 def rewrite_md_links(html_text: str, src_dir: str, page_dir: str) -> str:

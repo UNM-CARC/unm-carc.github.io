@@ -2,6 +2,8 @@
 
 ## 2026-11-13
 
+* **Search**: Corrected generated sitemap URLs to use web-standard forward slashes, ensuring new news articles and all other pages can be crawled correctly.
+
 * **News**: Published two stories by Mariah Rosales: one welcoming CARC Director Tyson Swetnam and another on CARC research-computing support across UNM Arts and Sciences.
 
 ## 2026-11-11
