@@ -2,6 +2,8 @@
 
 Announcements and stories from the CARC community.
 
+* [CARC team provides research computing support across UNM Arts and Sciences](arts-sciences-research-computing-support.md) - CARC staff support research servers and technical systems for departments across UNM Arts and Sciences.
+* [CARC welcomes Tyson Swetnam as new director](welcome-director-swetnam.md) - Tyson Swetnam joins CARC as director, bringing experience in environmental research, data science, and research computing.
 * [UNM purchases university-wide Globus license](globus-university-license.md) - Securely transfer and share large research datasets, with a walkthrough for CARC users.
 
 * [Welcome our new CARC Director, Tyson Swetnam](welcome-director-swetnam.md) - The Center for Advanced Research Computing welcomes its new Director.

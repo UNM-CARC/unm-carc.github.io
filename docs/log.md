@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-11-13
+
+* **News**: Published two stories by Mariah Rosales: one welcoming CARC Director Tyson Swetnam and another on CARC research-computing support across UNM Arts and Sciences.
+
 ## 2026-11-11
 
 * **Fix**: Made the Research menu label a menu button with a visible dropdown indicator, so its first click opens the menu instead of navigating.
