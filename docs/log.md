@@ -1,5 +1,9 @@
 # Website update log
 
+## 2026-11-18
+
+* **Jobs**: Added [HPC Systems Specialist 2](jobs/hpc-systems-specialist-2.md) (requisition 38342) at the top of the Jobs page, with application details and a November 30 best-consideration date. Marked [Research Computing Facilitator](jobs/research-computing-facilitator.md) as **Filled** and removed its application links.
+
 ## 2026-11-13
 
 * **Search**: Corrected generated sitemap URLs to use web-standard forward slashes, ensuring new news articles and all other pages can be crawled correctly.

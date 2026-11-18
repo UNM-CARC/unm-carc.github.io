@@ -6889,6 +6889,60 @@ innovation and technology in the years to come.<br>
 
 ![](/assets/workforce-development-award-photo-matthew-fricke-w-caption.jpg)
 
+---8<--- https://carc.unm.edu/jobs/hpc-systems-specialist-2/
+
+---
+title: "HPC Systems Specialist 2"
+description: "Administer HPC storage, parallel filesystems, high-speed networks, and Linux infrastructure at CARC. Full-time term position; best consideration November 30, 2026."
+type: Reference
+status: stable
+tags:
+  - Jobs
+generated:
+  by: "openai/gpt-6"
+  at: "2026-11-18T00:00:00Z"
+sources:
+  - id: unm-jobs
+    resource: "https://unm.csod.com/ux/ats/careersite/18/home/requisition/38342?c=unm"
+    title: "UNM Jobs requisition 38342 — HPC Systems Splst 2"
+    author: "org:unm"
+---
+
+# HPC Systems Specialist 2
+
+**Full-time · CARC · Albuquerque · UNM Jobs requisition 38342**
+
+**[Apply for this position](https://unm.csod.com/ux/ats/careersite/18/home/requisition/38342?c=unm){target=_blank}**
+
+## The role
+
+Support CARC's production HPC environment, focusing on storage and data
+infrastructure alongside Ethernet and InfiniBand networks. Work spans parallel
+filesystems, Linux systems, hardware, firmware, and troubleshooting across
+these components.
+
+## What you bring
+
+* A bachelor's degree and at least three years of directly related experience.
+  Additional qualifying degrees may substitute for experience year for year.
+* Preferred experience includes parallel filesystems such as GPFS, BeeGFS, or
+  Lustre; data platforms such as iRODS, CyVerse, or Kubernetes; high-speed
+  networking; Linux administration; Slurm; and scripting or automation.
+
+Candidates need not know every listed technology. See the official posting
+for the complete qualifications and responsibilities.
+
+## Appointment and application
+
+* **Pay:** $4,924.40–$7,046.00 monthly; grade 14.
+* **Appointment:** Benefits-eligible, exempt, full-time term through December 31, 2027.
+* **Location:** Albuquerque; remote work is not available.
+* **Best consideration:** November 30, 2026.
+
+Submit your resume/UNMJobs application and cover letter through
+[UNM Jobs](https://unm.csod.com/ux/ats/careersite/18/home/requisition/38342?c=unm){target=_blank}.
+The University of New Mexico is an Equal Opportunity Employer.
+
 ---8<--- https://carc.unm.edu/jobs/postdoc-agentic-ai/
 
 ---
@@ -6955,8 +7009,9 @@ The University of New Mexico is an Equal Opportunity Employer.
 
 ---
 title: "Research Computing Facilitator"
-description: "Consult with UNM research groups, build and maintain Linux systems, install scientific software, and bring labs onto CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2."
+description: "Filled. Research Computing Facilitator at CARC, posted as Systems/Network Analyst 2 (requisition 37492). Retained for reference."
 type: Reference
+status: deprecated
 tags:
   - Jobs
 generated:
@@ -6977,7 +7032,9 @@ sources:
 
 **1.0 FTE · CARC · Research Facilitation Team · posted as Systems/Network Analyst 2 · UNM Jobs requisition 37492**
 
-**[Apply for this position](https://unm.csod.com/ux/ats/careersite/18/home/requisition/37492){target=_blank}**
+**Status: Filled.** This position is no longer accepting applications. The
+description below is retained for reference. See [Jobs](index.md) for current
+opportunities.
 
 ## The role
 
@@ -7001,7 +7058,6 @@ data-governance requirements.
 Preferred: HPC support, cloud provisioning, GitHub collaboration, AI-agent
 deployment, and experience with sensitive-data practice (CUI, FERPA).
 
-Apply through [UNM Jobs](https://unm.csod.com/ux/ats/careersite/18/home/requisition/37492){target=_blank}.
 The University of New Mexico is an Equal Opportunity Employer.
 
 ---8<--- https://carc.unm.edu/contact/office-hours/
@@ -7164,6 +7220,10 @@ Albuquerque NM 87106
 ---8<--- https://carc.unm.edu/log/
 
 # Website update log
+
+## 2026-11-18
+
+* **Jobs**: Added [HPC Systems Specialist 2](jobs/hpc-systems-specialist-2.md) (requisition 38342) at the top of the Jobs page, with application details and a November 30 best-consideration date. Marked [Research Computing Facilitator](jobs/research-computing-facilitator.md) as **Filled** and removed its application links.
 
 ## 2026-11-13
 

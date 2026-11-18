@@ -1,17 +1,18 @@
 # Jobs
 
-Open positions at the Center for Advanced Research Computing. The University of
+Positions at the Center for Advanced Research Computing. The University of
 New Mexico is an Equal Opportunity Employer. Questions about any opening:
 <info@carc.unm.edu>.
 
 ## Staff positions
 
-Every staff position below is full-time, based at CARC in Albuquerque, and
-posted through [UNM Jobs](https://unmjobs.unm.edu){target=_blank} — apply
-through the link on each listing.
+Staff positions below are full-time and based at CARC in Albuquerque. Apply
+for open positions through [UNM Jobs](https://unmjobs.unm.edu){target=_blank}
+using the link on each listing. Filled positions are marked below.
 
+* [HPC Systems Specialist 2](hpc-systems-specialist-2.md) - Administer HPC storage, parallel filesystems, high-speed networks, and Linux infrastructure. Full-time term position; best consideration November 30, 2026. [Apply](https://unm.csod.com/ux/ats/careersite/18/home/requisition/38342?c=unm){target=_blank}
 * [Postdoctoral Researcher — Agentic AI](postdoc-agentic-ai.md) - Lead the agentic AI orchestration prototype for the NSF-funded MESA project: self-hosted LLM serving, retrieval over curated scientific metadata, and the MCP server framework. 1.0 FTE. [Apply](https://unm.csod.com/ux/ats/careersite/18/home/requisition/37416){target=_blank}
-* [Research Computing Facilitator](research-computing-facilitator.md) - Consult with research groups, build and maintain Linux systems, install scientific software, and bring labs onto CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2. [Apply](https://unm.csod.com/ux/ats/careersite/18/home/requisition/37492){target=_blank}
+* [Research Computing Facilitator](research-computing-facilitator.md) — **Filled.** Research support, Linux systems, scientific software, and access to CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2.
 
 The postdoctoral position belongs to [MESA](https://idss-mesa.github.io/){target=_blank},
 the NSF Integrated Data Systems & Services award (#2632685, 2026–2029) led from

@@ -108,8 +108,9 @@ Every page's Markdown source (OKF frontmatter included) is served at its URL plu
 
 ## Jobs
 
+- [HPC Systems Specialist 2](https://carc.unm.edu/jobs/hpc-systems-specialist-2/): Administer HPC storage, parallel filesystems, high-speed networks, and Linux infrastructure at CARC. Full-time term position; best consideration November 30, 2026.
 - [Postdoctoral Researcher — Agentic AI](https://carc.unm.edu/jobs/postdoc-agentic-ai/): Lead the agentic AI orchestration prototype for the NSF MESA project at CARC: self-hosted LLM serving, retrieval over scientific metadata, and the MCP server framework. 1.0 FTE.
-- [Research Computing Facilitator](https://carc.unm.edu/jobs/research-computing-facilitator/): Consult with UNM research groups, build and maintain Linux systems, install scientific software, and bring labs onto CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2.
+- [Research Computing Facilitator](https://carc.unm.edu/jobs/research-computing-facilitator/): Filled. Research Computing Facilitator at CARC, posted as Systems/Network Analyst 2 (requisition 37492). Retained for reference. (deprecated; kept for history)
 
 ## Contact
 

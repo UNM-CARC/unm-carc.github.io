@@ -1,7 +1,8 @@
 ---
 title: "Research Computing Facilitator"
-description: "Consult with UNM research groups, build and maintain Linux systems, install scientific software, and bring labs onto CARC's HPC and cloud platforms. 1.0 FTE, posted as Systems/Network Analyst 2."
+description: "Filled. Research Computing Facilitator at CARC, posted as Systems/Network Analyst 2 (requisition 37492). Retained for reference."
 type: Reference
+status: deprecated
 tags:
   - Jobs
 generated:
@@ -22,7 +23,9 @@ sources:
 
 **1.0 FTE · CARC · Research Facilitation Team · posted as Systems/Network Analyst 2 · UNM Jobs requisition 37492**
 
-**[Apply for this position](https://unm.csod.com/ux/ats/careersite/18/home/requisition/37492){target=_blank}**
+**Status: Filled.** This position is no longer accepting applications. The
+description below is retained for reference. See [Jobs](index.md) for current
+opportunities.
 
 ## The role
 
@@ -46,5 +49,4 @@ data-governance requirements.
 Preferred: HPC support, cloud provisioning, GitHub collaboration, AI-agent
 deployment, and experience with sensitive-data practice (CUI, FERPA).
 
-Apply through [UNM Jobs](https://unm.csod.com/ux/ats/careersite/18/home/requisition/37492){target=_blank}.
 The University of New Mexico is an Equal Opportunity Employer.
